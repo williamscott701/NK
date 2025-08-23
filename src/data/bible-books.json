@@ -7,7 +7,33 @@
       "chapters": 50,
       "description": "The book of beginnings - creation, fall, flood, and the patriarchs",
       "author": "Moses",
-      "themes": ["Creation", "Fall", "Covenant", "Promise"]
+      "themes": ["Creation", "Fall", "Covenant", "Promise"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Creation of the World",
+          "summary": "God creates the heavens and the earth in six days and rests on the seventh",
+          "keyVerses": ["Genesis 1:1", "Genesis 1:27", "Genesis 1:31"],
+          "content": "In the beginning God created the heavens and the earth. The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters...",
+          "themes": ["Creation", "God's Power", "Order from Chaos"]
+        },
+        {
+          "number": 2,
+          "title": "The Garden of Eden",
+          "summary": "God forms man from dust, creates the Garden of Eden, and makes woman",
+          "keyVerses": ["Genesis 2:7", "Genesis 2:18", "Genesis 2:24"],
+          "content": "Then the Lord God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature...",
+          "themes": ["Humanity", "Marriage", "Relationship with God"]
+        },
+        {
+          "number": 3,
+          "title": "The Fall",
+          "summary": "Adam and Eve disobey God, sin enters the world, and they are expelled from Eden",
+          "keyVerses": ["Genesis 3:6", "Genesis 3:15", "Genesis 3:23"],
+          "content": "So when the woman saw that the tree was good for food, and that it was a delight to the eyes, and that the tree was to be desired to make one wise, she took of its fruit and ate...",
+          "themes": ["Sin", "Consequences", "Promise of Redemption"]
+        }
+      ]
     },
     {
       "id": "exodus",
@@ -16,7 +42,33 @@
       "chapters": 40,
       "description": "The deliverance of Israel from Egypt and the giving of the Law",
       "author": "Moses",
-      "themes": ["Deliverance", "Law", "Covenant", "Worship"]
+      "themes": ["Deliverance", "Law", "Covenant", "Worship"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Israel's Suffering in Egypt",
+          "summary": "The Israelites multiply in Egypt but are oppressed by a new pharaoh",
+          "keyVerses": ["Exodus 1:7", "Exodus 1:14", "Exodus 1:17"],
+          "content": "But the people of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong, so that the land was filled with them...",
+          "themes": ["Oppression", "God's Faithfulness", "Growth Despite Adversity"]
+        },
+        {
+          "number": 2,
+          "title": "The Birth and Calling of Moses",
+          "summary": "Moses is born, saved from death, and called by God at the burning bush",
+          "keyVerses": ["Exodus 2:10", "Exodus 3:14", "Exodus 4:12"],
+          "content": "When the child grew older, she brought him to Pharaoh's daughter, and he became her son. She named him Moses, saying, 'I drew him out of the water'...",
+          "themes": ["Divine Calling", "God's Name", "Preparation for Leadership"]
+        },
+        {
+          "number": 3,
+          "title": "The Burning Bush",
+          "summary": "God appears to Moses in a burning bush and commissions him to deliver Israel",
+          "keyVerses": ["Exodus 3:2", "Exodus 3:14", "Exodus 3:15"],
+          "content": "And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed...",
+          "themes": ["God's Holiness", "Divine Commission", "I AM"]
+        }
+      ]
     },
     {
       "id": "psalms",
@@ -25,7 +77,33 @@
       "chapters": 150,
       "description": "Songs and prayers expressing worship, praise, and petition",
       "author": "David and others",
-      "themes": ["Worship", "Prayer", "Praise", "Trust"]
+      "themes": ["Worship", "Prayer", "Praise", "Trust"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Way of the Righteous and the Wicked",
+          "summary": "Contrasts the blessed life of the righteous with the fate of the wicked",
+          "keyVerses": ["Psalm 1:1", "Psalm 1:3", "Psalm 1:6"],
+          "content": "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers...",
+          "themes": ["Righteousness", "Meditation on Scripture", "God's Care"]
+        },
+        {
+          "number": 23,
+          "title": "The Lord is My Shepherd",
+          "summary": "David's famous psalm about God's care and guidance",
+          "keyVerses": ["Psalm 23:1", "Psalm 23:4", "Psalm 23:6"],
+          "content": "The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters...",
+          "themes": ["God's Care", "Guidance", "Comfort", "Eternal Security"]
+        },
+        {
+          "number": 51,
+          "title": "A Prayer for Forgiveness",
+          "summary": "David's prayer of repentance after his sin with Bathsheba",
+          "keyVerses": ["Psalm 51:1", "Psalm 51:10", "Psalm 51:17"],
+          "content": "Have mercy on me, O God, according to your steadfast love; according to your abundant mercy blot out my transgressions...",
+          "themes": ["Repentance", "Forgiveness", "Cleansing", "Renewed Heart"]
+        }
+      ]
     },
     {
       "id": "matthew",
@@ -34,7 +112,33 @@
       "chapters": 28,
       "description": "The Gospel presenting Jesus as the promised Messiah and King",
       "author": "Matthew",
-      "themes": ["Messiah", "Kingdom", "Fulfillment", "Discipleship"]
+      "themes": ["Messiah", "Kingdom", "Fulfillment", "Discipleship"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Genealogy and Birth of Jesus",
+          "summary": "Matthew traces Jesus' lineage and recounts His virgin birth",
+          "keyVerses": ["Matthew 1:1", "Matthew 1:21", "Matthew 1:23"],
+          "content": "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham...",
+          "themes": ["Messianic Lineage", "Virgin Birth", "Emmanuel"]
+        },
+        {
+          "number": 5,
+          "title": "The Sermon on the Mount - Beatitudes",
+          "summary": "Jesus teaches the Beatitudes and principles of kingdom living",
+          "keyVerses": ["Matthew 5:3", "Matthew 5:14", "Matthew 5:16"],
+          "content": "Seeing the crowds, he went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying: 'Blessed are the poor in spirit, for theirs is the kingdom of heaven'...",
+          "themes": ["Kingdom Values", "Discipleship", "Light of the World"]
+        },
+        {
+          "number": 28,
+          "title": "The Resurrection and Great Commission",
+          "summary": "Jesus rises from the dead and commissions His disciples",
+          "keyVerses": ["Matthew 28:6", "Matthew 28:19", "Matthew 28:20"],
+          "content": "But the angel said to the women, 'Do not be afraid, for I know that you seek Jesus who was crucified. He is not here, for he has risen, as he said'...",
+          "themes": ["Resurrection", "Great Commission", "Authority", "Presence"]
+        }
+      ]
     },
     {
       "id": "john",
@@ -43,7 +147,33 @@
       "chapters": 21,
       "description": "The Gospel emphasizing Jesus as the Son of God and eternal life",
       "author": "John",
-      "themes": ["Eternal Life", "Love", "Light", "Truth"]
+      "themes": ["Eternal Life", "Love", "Light", "Truth"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Word Became Flesh",
+          "summary": "John introduces Jesus as the eternal Word who became flesh",
+          "keyVerses": ["John 1:1", "John 1:14", "John 1:29"],
+          "content": "In the beginning was the Word, and the Word was with God, and the Word was God...",
+          "themes": ["Divine Nature", "Incarnation", "Light", "Witness"]
+        },
+        {
+          "number": 3,
+          "title": "Jesus and Nicodemus",
+          "summary": "Jesus teaches about being born again and God's love for the world",
+          "keyVerses": ["John 3:3", "John 3:16", "John 3:17"],
+          "content": "Now there was a man of the Pharisees named Nicodemus, a ruler of the Jews. This man came to Jesus by night and said to him, 'Rabbi, we know that you are a teacher come from God'...",
+          "themes": ["New Birth", "God's Love", "Eternal Life", "Salvation"]
+        },
+        {
+          "number": 14,
+          "title": "Jesus the Way, Truth, and Life",
+          "summary": "Jesus comforts His disciples and promises the Holy Spirit",
+          "keyVerses": ["John 14:6", "John 14:16", "John 14:27"],
+          "content": "Let not your hearts be troubled. Believe in God; believe also in me. In my Father's house are many rooms...",
+          "themes": ["Comfort", "Holy Spirit", "Peace", "Truth"]
+        }
+      ]
     },
     {
       "id": "romans",
@@ -52,7 +182,33 @@
       "chapters": 16,
       "description": "Paul's systematic presentation of the Gospel and righteousness",
       "author": "Paul",
-      "themes": ["Salvation", "Righteousness", "Grace", "Faith"]
+      "themes": ["Salvation", "Righteousness", "Grace", "Faith"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Paul's Gospel and Human Sinfulness",
+          "summary": "Paul introduces his gospel and describes universal human sinfulness",
+          "keyVerses": ["Romans 1:16", "Romans 1:17", "Romans 1:20"],
+          "content": "Paul, a servant of Christ Jesus, called to be an apostle, set apart for the gospel of God...",
+          "themes": ["Gospel Power", "Righteousness", "God's Wrath", "Natural Revelation"]
+        },
+        {
+          "number": 3,
+          "title": "Righteousness Through Faith",
+          "summary": "Paul explains justification by faith apart from works",
+          "keyVerses": ["Romans 3:23", "Romans 3:24", "Romans 3:28"],
+          "content": "But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it...",
+          "themes": ["Justification", "Faith", "Grace", "Redemption"]
+        },
+        {
+          "number": 8,
+          "title": "Life in the Spirit",
+          "summary": "Paul describes the victory believers have through the Spirit",
+          "keyVerses": ["Romans 8:1", "Romans 8:28", "Romans 8:39"],
+          "content": "There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death...",
+          "themes": ["No Condemnation", "Spirit's Power", "God's Love", "Victory"]
+        }
+      ]
     }
   ]
 }
