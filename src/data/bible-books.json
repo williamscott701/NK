@@ -1300,6 +1300,461 @@
           "themes": ["Strength", "Vengeance", "Sacrifice", "God's Power"]
         }
       ]
+    },
+    {
+      "id": "1-samuel",
+      "name": "1 Samuel",
+      "testament": "Old Testament",
+      "chapters": 31,
+      "description": "The transition from judges to monarchy through Samuel, Saul, and David",
+      "author": "Samuel and others",
+      "themes": ["Leadership", "Obedience", "God's Choice", "Anointing"],
+      "chaptersContent": [
+        {
+          "number": 3,
+          "title": "Samuel's Call",
+          "summary": "Young Samuel hears God's voice and becomes a prophet",
+          "keyVerses": ["1 Samuel 3:9", "1 Samuel 3:10", "1 Samuel 3:19"],
+          "content": "Therefore Eli said to Samuel, 'Go, lie down, and if he calls you, you shall say, \"Speak, Lord, for your servant hears.\"' So Samuel went and lay down in his place. And the Lord came and stood, calling as at other times, 'Samuel! Samuel!' And Samuel said, 'Speak, for your servant hears.'",
+          "themes": ["God's Call", "Prophetic Ministry", "Listening", "Growth"]
+        },
+        {
+          "number": 17,
+          "title": "David and Goliath",
+          "summary": "Young David defeats the giant Goliath with faith in God",
+          "keyVerses": ["1 Samuel 17:45", "1 Samuel 17:47", "1 Samuel 17:50"],
+          "content": "Then David said to the Philistine, 'You come to me with a sword and with a spear and with a javelin, but I come to you in the name of the Lord of hosts, the God of the armies of Israel, whom you have defied. And that all this assembly may know that the Lord saves not with sword and spear. For the battle is the Lord's, and he will give you into our hand.'",
+          "themes": ["Faith", "God's Power", "Courage", "Victory"]
+        },
+        {
+          "number": 24,
+          "title": "David Spares Saul",
+          "summary": "David shows mercy by sparing Saul's life in the cave",
+          "keyVerses": ["1 Samuel 24:6", "1 Samuel 24:10", "1 Samuel 24:12"],
+          "content": "He said to his men, 'The Lord forbid that I should do this thing to my lord, the Lord's anointed, to put out my hand against him, seeing he is the Lord's anointed.' Behold, this day your eyes have seen how the Lord gave you today into my hand in the cave. And some told me to kill you, but I spared you.",
+          "themes": ["Mercy", "Respect for Authority", "God's Anointed", "Restraint"]
+        }
+      ]
+    },
+    {
+      "id": "2-samuel",
+      "name": "2 Samuel",
+      "testament": "Old Testament",
+      "chapters": 24,
+      "description": "David's reign as king of Israel, his triumphs and failures",
+      "author": "Unknown",
+      "themes": ["Kingship", "Covenant", "Sin", "Forgiveness"],
+      "chaptersContent": [
+        {
+          "number": 7,
+          "title": "The Davidic Covenant",
+          "summary": "God promises David an eternal kingdom through his descendants",
+          "keyVerses": ["2 Samuel 7:12", "2 Samuel 7:13", "2 Samuel 7:16"],
+          "content": "When your days are fulfilled and you lie down with your fathers, I will raise up your offspring after you, who shall come from your body, and I will establish his kingdom. He shall build a house for my name, and I will establish the throne of his kingdom forever.",
+          "themes": ["Covenant", "Eternal Kingdom", "Messiah", "God's Promises"]
+        },
+        {
+          "number": 11,
+          "title": "David's Sin with Bathsheba",
+          "summary": "David commits adultery and arranges Uriah's death",
+          "keyVerses": ["2 Samuel 11:2", "2 Samuel 11:4", "2 Samuel 11:15"],
+          "content": "It happened, late one afternoon, when David arose from his couch and was walking on the roof of the king's house, that he saw from the roof a woman bathing; and the woman was very beautiful. So David sent messengers and took her, and she came to him, and he lay with her.",
+          "themes": ["Temptation", "Sin", "Abuse of Power", "Consequences"]
+        },
+        {
+          "number": 12,
+          "title": "Nathan's Rebuke and David's Repentance",
+          "summary": "Nathan confronts David about his sin, and David repents",
+          "keyVerses": ["2 Samuel 12:7", "2 Samuel 12:13", "2 Samuel 12:14"],
+          "content": "Nathan said to David, 'You are the man! Thus says the Lord, the God of Israel, \"I anointed you king over Israel, and I delivered you out of the hand of Saul.\"' David said to Nathan, 'I have sinned against the Lord.' And Nathan said to David, 'The Lord also has put away your sin; you shall not die.'",
+          "themes": ["Confrontation", "Repentance", "Forgiveness", "Consequences"]
+        }
+      ]
+    },
+    {
+      "id": "1-kings",
+      "name": "1 Kings",
+      "testament": "Old Testament",
+      "chapters": 22,
+      "description": "Solomon's reign and the beginning of the divided kingdom",
+      "author": "Unknown",
+      "themes": ["Wisdom", "Temple", "Divided Kingdom", "Prophecy"],
+      "chaptersContent": [
+        {
+          "number": 3,
+          "title": "Solomon's Wisdom",
+          "summary": "Solomon asks for wisdom and God grants his request",
+          "keyVerses": ["1 Kings 3:9", "1 Kings 3:12", "1 Kings 3:28"],
+          "content": "Give your servant therefore an understanding mind to govern your people, that I may discern between good and evil, for who is able to govern this your great people? Behold, I now do according to your word. Behold, I give you a wise and discerning mind, so that none like you has been before you and none like you shall arise after you.",
+          "themes": ["Wisdom", "Leadership", "Discernment", "God's Gift"]
+        },
+        {
+          "number": 8,
+          "title": "Temple Dedication",
+          "summary": "Solomon dedicates the temple and God's glory fills it",
+          "keyVerses": ["1 Kings 8:10", "1 Kings 8:23", "1 Kings 8:27"],
+          "content": "And when the priests came out of the Holy Place, a cloud filled the house of the Lord, so that the priests could not stand to minister because of the cloud, for the glory of the Lord filled the house of the Lord. But will God indeed dwell on the earth? Behold, heaven and the highest heaven cannot contain you; how much less this house that I have built!",
+          "themes": ["God's Glory", "Temple", "Prayer", "God's Presence"]
+        },
+        {
+          "number": 18,
+          "title": "Elijah and the Prophets of Baal",
+          "summary": "Elijah defeats the prophets of Baal on Mount Carmel",
+          "keyVerses": ["1 Kings 18:21", "1 Kings 18:37", "1 Kings 18:39"],
+          "content": "And Elijah came near to all the people and said, 'How long will you go limping between two different opinions? If the Lord is God, follow him; but if Baal, then follow him.' And the people did not answer him a word. Answer me, O Lord, answer me, that this people may know that you, O Lord, are God, and that you have turned their hearts back.",
+          "themes": ["True God", "Contest", "Fire from Heaven", "Repentance"]
+        }
+      ]
+    },
+    {
+      "id": "2-kings",
+      "name": "2 Kings",
+      "testament": "Old Testament",
+      "chapters": 25,
+      "description": "The divided kingdom and eventual exile of both Israel and Judah",
+      "author": "Unknown",
+      "themes": ["Prophecy", "Judgment", "Exile", "God's Faithfulness"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "Elijah's Ascension",
+          "summary": "Elijah is taken up to heaven in a whirlwind, and Elisha receives his mantle",
+          "keyVerses": ["2 Kings 2:9", "2 Kings 2:11", "2 Kings 2:15"],
+          "content": "When they had crossed, Elijah said to Elisha, 'Ask what I shall do for you, before I am taken from you.' And Elisha said, 'Please let there be a double portion of your spirit on me.' And as they still went on and talked, behold, chariots of fire and horses of fire separated the two of them. And Elijah went up by a whirlwind into heaven.",
+          "themes": ["Translation", "Succession", "Double Portion", "Prophetic Ministry"]
+        },
+        {
+          "number": 17,
+          "title": "Fall of Israel",
+          "summary": "The northern kingdom of Israel is conquered and exiled by Assyria",
+          "keyVerses": ["2 Kings 17:6", "2 Kings 17:13", "2 Kings 17:23"],
+          "content": "In the ninth year of Hoshea, the king of Assyria captured Samaria, and he carried Israel away to Assyria and placed them in Halah, and on the Habor, the river of Gozan, and in the cities of the Medes. Yet the Lord warned Israel and Judah by every prophet and every seer, saying, 'Turn from your evil ways and keep my commandments.'",
+          "themes": ["Judgment", "Exile", "Warning Ignored", "Divine Justice"]
+        },
+        {
+          "number": 25,
+          "title": "Fall of Judah",
+          "summary": "Jerusalem is destroyed and Judah is exiled to Babylon",
+          "keyVerses": ["2 Kings 25:9", "2 Kings 25:11", "2 Kings 25:21"],
+          "content": "And he burned the house of the Lord and the king's house and all the houses of Jerusalem; every great house he burned down. And Nebuzaradan the captain of the guard carried into exile the rest of the people who were left in the city and the deserters who had deserted to the king of Babylon, together with the rest of the multitude.",
+          "themes": ["Destruction", "Exile", "End of Kingdom", "Judgment Fulfilled"]
+        }
+      ]
+    },
+    {
+      "id": "ezra",
+      "name": "Ezra",
+      "testament": "Old Testament",
+      "chapters": 10,
+      "description": "The return from Babylonian exile and rebuilding of the temple",
+      "author": "Ezra",
+      "themes": ["Return", "Restoration", "Temple", "Scripture"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Cyrus's Decree",
+          "summary": "King Cyrus allows the Jews to return and rebuild the temple",
+          "keyVerses": ["Ezra 1:1", "Ezra 1:2", "Ezra 1:3"],
+          "content": "In the first year of Cyrus king of Persia, that the word of the Lord by the mouth of Jeremiah might be fulfilled, the Lord stirred up the spirit of Cyrus king of Persia, so that he made a proclamation throughout all his kingdom and also put it in writing: 'Thus says Cyrus king of Persia: The Lord, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem, which is in Judah.'",
+          "themes": ["God's Sovereignty", "Restoration", "Prophecy Fulfilled", "Return"]
+        },
+        {
+          "number": 6,
+          "title": "Temple Completion",
+          "summary": "The temple is completed and dedicated with great joy",
+          "keyVerses": ["Ezra 6:14", "Ezra 6:16", "Ezra 6:22"],
+          "content": "And the elders of the Jews built and prospered through the prophesying of Haggai the prophet and Zechariah the son of Iddo. They finished their building by decree of the God of Israel and by decree of Cyrus and Darius and Artaxerxes king of Persia. And the people of Israel, the priests and the Levites, and the rest of the returned exiles, celebrated the dedication of this house of God with joy.",
+          "themes": ["Completion", "Joy", "Dedication", "God's Help"]
+        },
+        {
+          "number": 7,
+          "title": "Ezra's Mission",
+          "summary": "Ezra comes to Jerusalem to teach the Law",
+          "keyVerses": ["Ezra 7:6", "Ezra 7:10", "Ezra 7:25"],
+          "content": "This Ezra went up from Babylonia. He was a scribe skilled in the Law of Moses that the Lord, the God of Israel, had given, and the king granted him all that he asked, for the hand of the Lord his God was on him. For Ezra had set his heart to study the Law of the Lord, and to do it and to teach his statutes and rules in Israel.",
+          "themes": ["Teaching", "Law", "Study", "God's Hand"]
+        }
+      ]
+    },
+    {
+      "id": "nehemiah",
+      "name": "Nehemiah",
+      "testament": "Old Testament",
+      "chapters": 13,
+      "description": "Rebuilding Jerusalem's walls and spiritual renewal",
+      "author": "Nehemiah",
+      "themes": ["Rebuilding", "Leadership", "Prayer", "Renewal"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Nehemiah's Prayer",
+          "summary": "Nehemiah prays for Jerusalem and seeks God's favor",
+          "keyVerses": ["Nehemiah 1:4", "Nehemiah 1:6", "Nehemiah 1:11"],
+          "content": "As soon as I heard these words I sat down and wept and mourned for days, and I continued fasting and praying before the God of heaven. Let your ear be attentive and your eyes open, to hear the prayer of your servant that I now pray before you day and night for the people of Israel your servants, confessing the sins of the people of Israel, which we have sinned against you.",
+          "themes": ["Burden", "Prayer", "Confession", "Intercession"]
+        },
+        {
+          "number": 8,
+          "title": "Reading the Law",
+          "summary": "Ezra reads the Law to the people and they understand",
+          "keyVerses": ["Nehemiah 8:1", "Nehemiah 8:6", "Nehemiah 8:10"],
+          "content": "And all the people gathered as one man into the square before the Water Gate. And they told Ezra the scribe to bring the Book of the Law of Moses that the Lord had commanded Israel. And Ezra blessed the Lord, the great God, and all the people answered, 'Amen, Amen,' lifting up their hands. And they bowed their heads and worshiped the Lord with their faces to the ground.",
+          "themes": ["Scripture", "Understanding", "Worship", "Joy"]
+        },
+        {
+          "number": 9,
+          "title": "National Confession",
+          "summary": "The people confess their sins and God's faithfulness",
+          "keyVerses": ["Nehemiah 9:2", "Nehemiah 9:17", "Nehemiah 9:31"],
+          "content": "And the Israelites separated themselves from all foreigners and stood and confessed their sins and the iniquities of their fathers. But you are a God ready to forgive, gracious and merciful, slow to anger and abounding in steadfast love, and did not forsake them.",
+          "themes": ["Confession", "God's Mercy", "Faithfulness", "Forgiveness"]
+        }
+      ]
+    },
+    {
+      "id": "esther",
+      "name": "Esther",
+      "testament": "Old Testament",
+      "chapters": 10,
+      "description": "God's providence in saving the Jewish people through Queen Esther",
+      "author": "Unknown",
+      "themes": ["Providence", "Courage", "Deliverance", "God's Sovereignty"],
+      "chaptersContent": [
+        {
+          "number": 4,
+          "title": "For Such a Time as This",
+          "summary": "Mordecai challenges Esther to act for her people's salvation",
+          "keyVerses": ["Esther 4:13", "Esther 4:14", "Esther 4:16"],
+          "content": "Then Mordecai told them to reply to Esther, 'Do not think to yourself that in the king's palace you will escape any more than all the other Jews. For if you keep silent at this time, relief and deliverance will rise for the Jews from another place, but you and your father's house will perish. And who knows whether you have not come to the kingdom for such a time as this?'",
+          "themes": ["Divine Purpose", "Courage", "Opportunity", "Sacrifice"]
+        },
+        {
+          "number": 7,
+          "title": "Haman's Downfall",
+          "summary": "Esther reveals Haman's plot and the king condemns him",
+          "keyVerses": ["Esther 7:3", "Esther 7:6", "Esther 7:10"],
+          "content": "Then Queen Esther answered, 'If I have found favor in your sight, O king, and if it please the king, let my life be granted me for my petition, and my people for my request.' And Esther said, 'A foe and enemy! This wicked Haman!' Then Haman was terrified before the king and the queen.",
+          "themes": ["Justice", "Reversal", "God's Protection", "Evil Defeated"]
+        },
+        {
+          "number": 9,
+          "title": "The Festival of Purim",
+          "summary": "The Jews are delivered and establish the festival of Purim",
+          "keyVerses": ["Esther 9:1", "Esther 9:22", "Esther 9:28"],
+          "content": "Now in the twelfth month, which is the month of Adar, on the thirteenth day of the same, when the king's command and edict were about to be carried out, on the very day when the enemies of the Jews hoped to gain the mastery over them, the reverse occurred: the Jews gained mastery over those who hated them.",
+          "themes": ["Deliverance", "Celebration", "Remembrance", "Victory"]
+        }
+      ]
+    },
+    {
+      "id": "colossians",
+      "name": "Colossians",
+      "testament": "New Testament",
+      "chapters": 4,
+      "description": "Christ's supremacy and fullness in all things",
+      "author": "Paul",
+      "themes": ["Christ's Supremacy", "Fullness", "New Life", "False Teaching"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Christ Supreme",
+          "summary": "Christ is the image of God and supreme over all creation",
+          "keyVerses": ["Colossians 1:15", "Colossians 1:17", "Colossians 1:18"],
+          "content": "He is the image of the invisible God, the firstborn of all creation. For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things were created through him and for him. And he is before all things, and in him all things hold together.",
+          "themes": ["Image of God", "Creation", "Supremacy", "Preeminence"]
+        },
+        {
+          "number": 2,
+          "title": "Rooted in Christ",
+          "summary": "Believers are complete in Christ and rooted in Him",
+          "keyVerses": ["Colossians 2:6", "Colossians 2:9", "Colossians 2:10"],
+          "content": "Therefore, as you received Christ Jesus the Lord, so walk in him, rooted and built up in him and established in the faith, just as you were taught, abounding in thanksgiving. For in him the whole fullness of deity dwells bodily, and you have been filled in him, who is the head of all rule and authority.",
+          "themes": ["Rooted", "Fullness", "Complete", "Walk"]
+        },
+        {
+          "number": 3,
+          "title": "New Life in Christ",
+          "summary": "Instructions for the new life in Christ",
+          "keyVerses": ["Colossians 3:1", "Colossians 3:12", "Colossians 3:17"],
+          "content": "If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience. And whatever you do, in word or deed, do everything in the name of the Lord Jesus.",
+          "themes": ["Heavenly Mindset", "New Character", "Christ-Centered Living", "Gratitude"]
+        }
+      ]
+    },
+    {
+      "id": "2-thessalonians",
+      "name": "2 Thessalonians",
+      "testament": "New Testament",
+      "chapters": 3,
+      "description": "Clarification about the Day of the Lord and Christian living",
+      "author": "Paul",
+      "themes": ["Second Coming", "Perseverance", "Work Ethic", "False Teaching"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "God's Righteous Judgment",
+          "summary": "God will repay persecution and give relief to the persecuted",
+          "keyVerses": ["2 Thessalonians 1:4", "2 Thessalonians 1:7", "2 Thessalonians 1:11"],
+          "content": "Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering.",
+          "themes": ["Perseverance", "Righteous Judgment", "Relief", "Worthy"]
+        },
+        {
+          "number": 2,
+          "title": "The Man of Lawlessness",
+          "summary": "Paul clarifies signs that must precede the Day of the Lord",
+          "keyVerses": ["2 Thessalonians 2:3", "2 Thessalonians 2:8", "2 Thessalonians 2:15"],
+          "content": "Let no one deceive you in any way. For that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, the son of destruction. And then the lawless one will be revealed, whom the Lord Jesus will kill with the breath of his mouth and bring to nothing by the appearance of his coming.",
+          "themes": ["Deception", "Man of Lawlessness", "Signs", "Stand Firm"]
+        },
+        {
+          "number": 3,
+          "title": "Work and Discipline",
+          "summary": "Paul commands believers to work and avoid idleness",
+          "keyVerses": ["2 Thessalonians 3:10", "2 Thessalonians 3:12", "2 Thessalonians 3:16"],
+          "content": "For even when we were with you, we would give you this command: If anyone is not willing to work, let him not eat. Now such persons we command and encourage in the Lord Jesus Christ to do their work quietly and to earn their own living.",
+          "themes": ["Work Ethic", "Discipline", "Responsibility", "Peace"]
+        }
+      ]
+    },
+    {
+      "id": "1-timothy",
+      "name": "1 Timothy",
+      "testament": "New Testament",
+      "chapters": 6,
+      "description": "Instructions for church leadership and sound doctrine",
+      "author": "Paul",
+      "themes": ["Leadership", "Sound Doctrine", "Church Order", "Godliness"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Paul's Charge to Timothy",
+          "summary": "Paul charges Timothy to oppose false teaching and be faithful",
+          "keyVerses": ["1 Timothy 1:5", "1 Timothy 1:15", "1 Timothy 1:18"],
+          "content": "The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. The saying is trustworthy and deserving of full acceptance, that Christ Jesus came into the world to save sinners, of whom I am the foremost.",
+          "themes": ["Love", "Pure Heart", "Christ's Mission", "Faithful Ministry"]
+        },
+        {
+          "number": 3,
+          "title": "Qualifications for Church Leaders",
+          "summary": "Requirements for overseers and deacons in the church",
+          "keyVerses": ["1 Timothy 3:1", "1 Timothy 3:7", "1 Timothy 3:15"],
+          "content": "The saying is trustworthy: If anyone aspires to the office of overseer, he desires a noble task. Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach. If you delay, you may know how one ought to behave in the household of God, which is the church of the living God, a pillar and buttress of the truth.",
+          "themes": ["Leadership", "Character", "Church", "Truth"]
+        },
+        {
+          "number": 6,
+          "title": "Godliness and Contentment",
+          "summary": "True godliness with contentment and warnings about money",
+          "keyVerses": ["1 Timothy 6:6", "1 Timothy 6:10", "1 Timothy 6:12"],
+          "content": "But godliness with contentment is great gain, for we brought nothing into the world, and we cannot take anything out of the world. For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.",
+          "themes": ["Godliness", "Contentment", "Money", "Fight of Faith"]
+        }
+      ]
+    },
+    {
+      "id": "2-timothy",
+      "name": "2 Timothy",
+      "testament": "New Testament",
+      "chapters": 4,
+      "description": "Paul's final letter with encouragement to remain faithful",
+      "author": "Paul",
+      "themes": ["Faithfulness", "Persecution", "Scripture", "Final Charge"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "A Good Soldier of Christ",
+          "summary": "Paul uses metaphors of soldier, athlete, and farmer for ministry",
+          "keyVerses": ["2 Timothy 2:3", "2 Timothy 2:5", "2 Timothy 2:15"],
+          "content": "Share in suffering as a good soldier of Christ Jesus. No soldier gets entangled in civilian pursuits, since his aim is to please the one who enlisted him. An athlete is not crowned unless he competes according to the rules. Do your best to present yourself to God as one approved, a worker who has no need to be ashamed, rightly handling the word of truth.",
+          "themes": ["Soldier", "Athlete", "Worker", "Scripture"]
+        },
+        {
+          "number": 3,
+          "title": "Scripture and Last Days",
+          "summary": "The importance of Scripture and description of the last days",
+          "keyVerses": ["2 Timothy 3:12", "2 Timothy 3:16", "2 Timothy 3:17"],
+          "content": "Indeed, all who desire to live a godly life in Christ Jesus will be persecuted. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.",
+          "themes": ["Persecution", "Scripture", "God-breathed", "Complete"]
+        },
+        {
+          "number": 4,
+          "title": "Paul's Final Charge",
+          "summary": "Paul's final instructions and personal reflections",
+          "keyVerses": ["2 Timothy 4:2", "2 Timothy 4:7", "2 Timothy 4:8"],
+          "content": "Preach the word; be ready in season and out of season; reprove, rebuke, and exhort, with complete patience and teaching. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing.",
+          "themes": ["Preach", "Good Fight", "Crown", "Appearing"]
+        }
+      ]
+    },
+    {
+      "id": "titus",
+      "name": "Titus",
+      "testament": "New Testament",
+      "chapters": 3,
+      "description": "Instructions for church organization and Christian living",
+      "author": "Paul",
+      "themes": ["Church Order", "Good Works", "Sound Doctrine", "Grace"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Appointing Elders",
+          "summary": "Qualifications for elders and dealing with false teachers",
+          "keyVerses": ["Titus 1:5", "Titus 1:9", "Titus 1:16"],
+          "content": "This is why I left you in Crete, so that you might put what remained into order, and appoint elders in every town as I directed you. He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.",
+          "themes": ["Elders", "Order", "Sound Doctrine", "Rebuke"]
+        },
+        {
+          "number": 2,
+          "title": "Sound Doctrine and Good Works",
+          "summary": "Instructions for different groups in the church",
+          "keyVerses": ["Titus 2:11", "Titus 2:12", "Titus 2:14"],
+          "content": "For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age. Who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.",
+          "themes": ["Grace", "Training", "Self-Control", "Good Works"]
+        },
+        {
+          "number": 3,
+          "title": "Salvation and Good Works",
+          "summary": "Salvation by grace and the importance of good works",
+          "keyVerses": ["Titus 3:5", "Titus 3:8", "Titus 3:14"],
+          "content": "He saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit. The saying is trustworthy, and I want you to insist on these things, so that those who have believed in God may be careful to devote themselves to good works.",
+          "themes": ["Salvation", "Mercy", "Regeneration", "Devotion"]
+        }
+      ]
+    },
+    {
+      "id": "2-peter",
+      "name": "2 Peter",
+      "testament": "New Testament",
+      "chapters": 3,
+      "description": "Warning against false teachers and the Day of the Lord",
+      "author": "Peter",
+      "themes": ["False Teachers", "Knowledge", "Day of the Lord", "Growth"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Growing in Knowledge",
+          "summary": "Peter encourages growth in Christian virtues and knowledge",
+          "keyVerses": ["2 Peter 1:3", "2 Peter 1:8", "2 Peter 1:21"],
+          "content": "His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence. For if these qualities are yours and are increasing, they keep you from being ineffective or unfruitful in the knowledge of our Lord Jesus Christ.",
+          "themes": ["Divine Power", "Growth", "Knowledge", "Scripture"]
+        },
+        {
+          "number": 2,
+          "title": "False Teachers",
+          "summary": "Warning about false teachers and their destruction",
+          "keyVerses": ["2 Peter 2:1", "2 Peter 2:9", "2 Peter 2:19"],
+          "content": "But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. Then the Lord knows how to rescue the godly from trials, and to keep the unrighteous under punishment until the day of judgment.",
+          "themes": ["False Teachers", "Heresies", "Rescue", "Judgment"]
+        },
+        {
+          "number": 3,
+          "title": "The Day of the Lord",
+          "summary": "The promise of Christ's return and new heavens and earth",
+          "keyVerses": ["2 Peter 3:9", "2 Peter 3:10", "2 Peter 3:13"],
+          "content": "The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance. But the day of the Lord will come like a thief, and then the heavens will pass away with a roar, and the heavenly bodies will be burned up and dissolved, and the earth and the works that are done on it will be exposed.",
+          "themes": ["God's Patience", "Day of the Lord", "New Heavens", "Holy Living"]
+        }
+      ]
     }
   ]
 }
