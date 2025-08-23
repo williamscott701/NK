@@ -70,6 +70,28 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
           </button>
         ))}
       </div>
+      
+      {/* Quick Navigation */}
+      <div className="mt-6 flex flex-wrap justify-center gap-4">
+        <a 
+          href="/books" 
+          className="px-4 py-2 bg-bible-blue/10 border border-bible-blue/20 rounded-lg text-bible-blue hover:bg-bible-blue/20 transition-all duration-200 text-sm font-medium"
+        >
+          📖 Browse Books
+        </a>
+        <a 
+          href="/concepts" 
+          className="px-4 py-2 bg-bible-gold/10 border border-bible-gold/20 rounded-lg text-bible-gold hover:bg-bible-gold/20 transition-all duration-200 text-sm font-medium"
+        >
+          💡 Explore Concepts
+        </a>
+        <a 
+          href="/stories" 
+          className="px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-lg text-green-600 hover:bg-green-500/20 transition-all duration-200 text-sm font-medium"
+        >
+          📚 Read Stories
+        </a>
+      </div>
     </div>
   );
 }

@@ -12,6 +12,10 @@
         {
           "reference": "John 3:16",
           "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+        },
+        {
+          "reference": "1 John 4:8",
+          "text": "Whoever does not love does not know God, because God is love."
         }
       ]
     },
@@ -27,6 +31,10 @@
         {
           "reference": "Romans 10:17",
           "text": "Consequently, faith comes from hearing the message, and the message is heard through the word about Christ."
+        },
+        {
+          "reference": "Ephesians 2:8-9",
+          "text": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."
         }
       ]
     },
@@ -42,6 +50,67 @@
         {
           "reference": "Jeremiah 29:11",
           "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
+        },
+        {
+          "reference": "1 Peter 1:3",
+          "text": "Praise be to the God and Father of our Lord Jesus Christ! In his great mercy he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead."
+        }
+      ]
+    },
+    {
+      "id": "peace",
+      "title": "Peace",
+      "description": "The tranquility and harmony that comes from God",
+      "verses": [
+        {
+          "reference": "John 14:27",
+          "text": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."
+        },
+        {
+          "reference": "Philippians 4:7",
+          "text": "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        {
+          "reference": "Isaiah 26:3",
+          "text": "You will keep in perfect peace those whose minds are steadfast, because they trust in you."
+        }
+      ]
+    },
+    {
+      "id": "wisdom",
+      "title": "Wisdom",
+      "description": "Divine insight and understanding for righteous living",
+      "verses": [
+        {
+          "reference": "Proverbs 1:7",
+          "text": "The fear of the Lord is the beginning of knowledge, but fools despise wisdom and instruction."
+        },
+        {
+          "reference": "James 1:5",
+          "text": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you."
+        },
+        {
+          "reference": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+        }
+      ]
+    },
+    {
+      "id": "grace",
+      "title": "Grace",
+      "description": "God's unmerited favor and kindness toward humanity",
+      "verses": [
+        {
+          "reference": "Ephesians 2:8",
+          "text": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God."
+        },
+        {
+          "reference": "2 Corinthians 12:9",
+          "text": "But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.' Therefore I will boast all the more gladly about my weaknesses, so that Christ's power may rest on me."
+        },
+        {
+          "reference": "Romans 6:23",
+          "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord."
         }
       ]
     }

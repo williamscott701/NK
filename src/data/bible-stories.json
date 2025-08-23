@@ -1,0 +1,58 @@
+{
+  "stories": [
+    {
+      "id": "creation",
+      "title": "The Creation",
+      "book": "Genesis",
+      "chapters": "1-2",
+      "summary": "God creates the heavens and the earth, and all living creatures, culminating with the creation of mankind",
+      "themes": ["God's Power", "Purpose", "Beauty", "Order"],
+      "keyVerse": "Genesis 1:1 - In the beginning God created the heavens and the earth."
+    },
+    {
+      "id": "noahs-ark",
+      "title": "Noah's Ark",
+      "book": "Genesis",
+      "chapters": "6-9",
+      "summary": "God saves Noah and his family from the worldwide flood through the ark",
+      "themes": ["Obedience", "Salvation", "God's Judgment", "New Beginning"],
+      "keyVerse": "Genesis 7:1 - The LORD then said to Noah, 'Go into the ark, you and your whole family, because I have found you righteous in this generation.'"
+    },
+    {
+      "id": "moses-burning-bush",
+      "title": "Moses and the Burning Bush",
+      "book": "Exodus",
+      "chapters": "3-4",
+      "summary": "God calls Moses to lead the Israelites out of Egypt through a burning bush that is not consumed",
+      "themes": ["God's Call", "Holy Ground", "Divine Mission", "God's Name"],
+      "keyVerse": "Exodus 3:14 - God said to Moses, 'I AM WHO I AM. This is what you are to say to the Israelites: I AM has sent me to you.'"
+    },
+    {
+      "id": "david-goliath",
+      "title": "David and Goliath",
+      "book": "1 Samuel",
+      "chapters": "17",
+      "summary": "Young David defeats the giant Goliath with faith in God and a simple sling",
+      "themes": ["Faith", "Courage", "God's Power", "David's Rise"],
+      "keyVerse": "1 Samuel 17:45 - David said to the Philistine, 'You come against me with sword and spear and javelin, but I come against you in the name of the LORD Almighty.'"
+    },
+    {
+      "id": "birth-of-jesus",
+      "title": "The Birth of Jesus",
+      "book": "Luke",
+      "chapters": "2",
+      "summary": "Jesus is born in Bethlehem, announced by angels, and visited by shepherds",
+      "themes": ["Incarnation", "Humility", "Joy", "God's Love"],
+      "keyVerse": "Luke 2:11 - Today in the town of David a Savior has been born to you; he is the Messiah, the Lord."
+    },
+    {
+      "id": "resurrection",
+      "title": "The Resurrection",
+      "book": "Matthew",
+      "chapters": "28",
+      "summary": "Jesus rises from the dead, conquering death and providing eternal life for all who believe",
+      "themes": ["Victory", "Hope", "Eternal Life", "God's Power"],
+      "keyVerse": "Matthew 28:6 - He is not here; he has risen, just as he said. Come and see the place where he lay."
+    }
+  ]
+}

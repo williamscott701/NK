@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "id": "genesis",
+      "name": "Genesis",
+      "testament": "Old Testament",
+      "chapters": 50,
+      "description": "The book of beginnings - creation, fall, flood, and the patriarchs",
+      "author": "Moses",
+      "themes": ["Creation", "Fall", "Covenant", "Promise"]
+    },
+    {
+      "id": "exodus",
+      "name": "Exodus",
+      "testament": "Old Testament",
+      "chapters": 40,
+      "description": "The deliverance of Israel from Egypt and the giving of the Law",
+      "author": "Moses",
+      "themes": ["Deliverance", "Law", "Covenant", "Worship"]
+    },
+    {
+      "id": "psalms",
+      "name": "Psalms",
+      "testament": "Old Testament",
+      "chapters": 150,
+      "description": "Songs and prayers expressing worship, praise, and petition",
+      "author": "David and others",
+      "themes": ["Worship", "Prayer", "Praise", "Trust"]
+    },
+    {
+      "id": "matthew",
+      "name": "Matthew",
+      "testament": "New Testament",
+      "chapters": 28,
+      "description": "The Gospel presenting Jesus as the promised Messiah and King",
+      "author": "Matthew",
+      "themes": ["Messiah", "Kingdom", "Fulfillment", "Discipleship"]
+    },
+    {
+      "id": "john",
+      "name": "John",
+      "testament": "New Testament",
+      "chapters": 21,
+      "description": "The Gospel emphasizing Jesus as the Son of God and eternal life",
+      "author": "John",
+      "themes": ["Eternal Life", "Love", "Light", "Truth"]
+    },
+    {
+      "id": "romans",
+      "name": "Romans",
+      "testament": "New Testament",
+      "chapters": 16,
+      "description": "Paul's systematic presentation of the Gospel and righteousness",
+      "author": "Paul",
+      "themes": ["Salvation", "Righteousness", "Grace", "Faith"]
+    }
+  ]
+}
