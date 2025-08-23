@@ -14,7 +14,7 @@
           "title": "The Creation of the World",
           "summary": "God creates the heavens and the earth in six days and rests on the seventh",
           "keyVerses": ["Genesis 1:1", "Genesis 1:27", "Genesis 1:31"],
-          "content": "In the beginning God created the heavens and the earth. The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters...",
+          "content": "In the beginning God created the heavens and the earth. The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters. And God said, 'Let there be light,' and there was light.",
           "themes": ["Creation", "God's Power", "Order from Chaos"]
         },
         {
@@ -22,7 +22,7 @@
           "title": "The Garden of Eden",
           "summary": "God forms man from dust, creates the Garden of Eden, and makes woman",
           "keyVerses": ["Genesis 2:7", "Genesis 2:18", "Genesis 2:24"],
-          "content": "Then the Lord God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature...",
+          "content": "Then the Lord God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature. And the Lord God planted a garden in Eden, in the east, and there he put the man whom he had formed.",
           "themes": ["Humanity", "Marriage", "Relationship with God"]
         },
         {
@@ -30,8 +30,40 @@
           "title": "The Fall",
           "summary": "Adam and Eve disobey God, sin enters the world, and they are expelled from Eden",
           "keyVerses": ["Genesis 3:6", "Genesis 3:15", "Genesis 3:23"],
-          "content": "So when the woman saw that the tree was good for food, and that it was a delight to the eyes, and that the tree was to be desired to make one wise, she took of its fruit and ate...",
+          "content": "So when the woman saw that the tree was good for food, and that it was a delight to the eyes, and that the tree was to be desired to make one wise, she took of its fruit and ate, and she also gave some to her husband who was with her, and he ate.",
           "themes": ["Sin", "Consequences", "Promise of Redemption"]
+        },
+        {
+          "number": 4,
+          "title": "Cain and Abel",
+          "summary": "The first murder occurs when Cain kills his brother Abel out of jealousy",
+          "keyVerses": ["Genesis 4:4", "Genesis 4:9", "Genesis 4:26"],
+          "content": "And Abel also brought of the firstborn of his flock and of their fat portions. And the Lord had regard for Abel and his offering, but for Cain and his offering he had no regard.",
+          "themes": ["Jealousy", "Murder", "God's Justice", "Worship"]
+        },
+        {
+          "number": 6,
+          "title": "Noah and the Flood",
+          "summary": "God calls Noah to build an ark to save humanity and animals from the flood",
+          "keyVerses": ["Genesis 6:8", "Genesis 6:19", "Genesis 6:9"],
+          "content": "But Noah found favor in the eyes of the Lord. These are the generations of Noah. Noah was a righteous man, blameless in his generation. Noah walked with God.",
+          "themes": ["Righteousness", "Judgment", "Salvation", "Covenant"]
+        },
+        {
+          "number": 12,
+          "title": "The Call of Abraham",
+          "summary": "God calls Abram to leave his country and promises to make him a great nation",
+          "keyVerses": ["Genesis 12:1", "Genesis 12:2", "Genesis 12:3"],
+          "content": "Now the Lord said to Abram, 'Go from your country and your kindred and your father's house to the land that I will show you. And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing.'",
+          "themes": ["Faith", "Obedience", "Promise", "Blessing"]
+        },
+        {
+          "number": 22,
+          "title": "The Sacrifice of Isaac",
+          "summary": "God tests Abraham's faith by asking him to sacrifice his son Isaac",
+          "keyVerses": ["Genesis 22:2", "Genesis 22:12", "Genesis 22:14"],
+          "content": "He said, 'Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I shall tell you.'",
+          "themes": ["Faith", "Obedience", "God's Provision", "Testing"]
         }
       ]
     },
@@ -49,24 +81,121 @@
           "title": "Israel's Suffering in Egypt",
           "summary": "The Israelites multiply in Egypt but are oppressed by a new pharaoh",
           "keyVerses": ["Exodus 1:7", "Exodus 1:14", "Exodus 1:17"],
-          "content": "But the people of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong, so that the land was filled with them...",
+          "content": "But the people of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong, so that the land was filled with them. Now there arose a new king over Egypt, who did not know Joseph.",
           "themes": ["Oppression", "God's Faithfulness", "Growth Despite Adversity"]
-        },
-        {
-          "number": 2,
-          "title": "The Birth and Calling of Moses",
-          "summary": "Moses is born, saved from death, and called by God at the burning bush",
-          "keyVerses": ["Exodus 2:10", "Exodus 3:14", "Exodus 4:12"],
-          "content": "When the child grew older, she brought him to Pharaoh's daughter, and he became her son. She named him Moses, saying, 'I drew him out of the water'...",
-          "themes": ["Divine Calling", "God's Name", "Preparation for Leadership"]
         },
         {
           "number": 3,
           "title": "The Burning Bush",
           "summary": "God appears to Moses in a burning bush and commissions him to deliver Israel",
           "keyVerses": ["Exodus 3:2", "Exodus 3:14", "Exodus 3:15"],
-          "content": "And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed...",
+          "content": "And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed. And Moses said, 'I will turn aside to see this great sight, why the bush is not burned.'",
           "themes": ["God's Holiness", "Divine Commission", "I AM"]
+        },
+        {
+          "number": 12,
+          "title": "The Passover",
+          "summary": "God institutes the Passover and delivers Israel from Egypt",
+          "keyVerses": ["Exodus 12:13", "Exodus 12:23", "Exodus 12:42"],
+          "content": "The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you, and no plague will befall you to destroy you, when I strike the land of Egypt.",
+          "themes": ["Passover", "Deliverance", "Blood Sacrifice", "Redemption"]
+        },
+        {
+          "number": 14,
+          "title": "Crossing the Red Sea",
+          "summary": "God parts the Red Sea for Israel to escape and destroys Pharaoh's army",
+          "keyVerses": ["Exodus 14:13", "Exodus 14:21", "Exodus 14:30"],
+          "content": "And Moses said to the people, 'Fear not, stand firm, and see the salvation of the Lord, which he will work for you today. For the Egyptians whom you see today, you shall never see again.'",
+          "themes": ["Deliverance", "God's Power", "Faith", "Victory"]
+        },
+        {
+          "number": 20,
+          "title": "The Ten Commandments",
+          "summary": "God gives the Ten Commandments to Israel at Mount Sinai",
+          "keyVerses": ["Exodus 20:2", "Exodus 20:3", "Exodus 20:12"],
+          "content": "And God spoke all these words, saying, 'I am the Lord your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before me.'",
+          "themes": ["Law", "Covenant", "Holiness", "Commandments"]
+        }
+      ]
+    },
+    {
+      "id": "leviticus",
+      "name": "Leviticus",
+      "testament": "Old Testament",
+      "chapters": 27,
+      "description": "Laws and rituals for worship, holiness, and priestly duties",
+      "author": "Moses",
+      "themes": ["Holiness", "Sacrifice", "Worship", "Purity"],
+      "chaptersContent": [
+        {
+          "number": 16,
+          "title": "The Day of Atonement",
+          "summary": "God establishes the annual Day of Atonement for Israel's sins",
+          "keyVerses": ["Leviticus 16:30", "Leviticus 16:34", "Leviticus 16:15"],
+          "content": "For on this day shall atonement be made for you to cleanse you. You shall be clean before the Lord from all your sins. It is a Sabbath of solemn rest to you, and you shall afflict yourselves; it is a statute forever.",
+          "themes": ["Atonement", "Forgiveness", "High Priest", "Sacrifice"]
+        },
+        {
+          "number": 19,
+          "title": "Laws of Holiness",
+          "summary": "God calls Israel to be holy and gives laws for righteous living",
+          "keyVerses": ["Leviticus 19:2", "Leviticus 19:18", "Leviticus 19:15"],
+          "content": "Speak to all the congregation of the people of Israel and say to them: You shall be holy, for I the Lord your God am holy. You shall not hate your brother in your heart, but you shall reason frankly with your neighbor, lest you incur sin because of him.",
+          "themes": ["Holiness", "Love", "Justice", "Righteousness"]
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "testament": "Old Testament",
+      "chapters": 36,
+      "description": "Israel's wilderness wanderings and preparations to enter the Promised Land",
+      "author": "Moses",
+      "themes": ["Wilderness", "Faith", "Rebellion", "God's Faithfulness"],
+      "chaptersContent": [
+        {
+          "number": 13,
+          "title": "The Twelve Spies",
+          "summary": "Twelve spies explore the Promised Land, but only two trust God",
+          "keyVerses": ["Numbers 13:30", "Numbers 13:31", "Numbers 13:33"],
+          "content": "But Caleb quieted the people before Moses and said, 'Let us go up at once and occupy it, for we are well able to overcome it.' Then the men who had gone up with him said, 'We are not able to go up against the people, for they are stronger than we are.'",
+          "themes": ["Faith", "Fear", "Trust", "Promise"]
+        },
+        {
+          "number": 14,
+          "title": "Israel's Rebellion",
+          "summary": "Israel rebels against God and is sentenced to wander 40 years",
+          "keyVerses": ["Numbers 14:11", "Numbers 14:23", "Numbers 14:34"],
+          "content": "And the Lord said to Moses, 'How long will this people despise me? And how long will they not believe in me, in spite of all the signs that I have done among them?'",
+          "themes": ["Rebellion", "Consequences", "Judgment", "Patience"]
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy",
+      "name": "Deuteronomy",
+      "testament": "Old Testament",
+      "chapters": 34,
+      "description": "Moses' final speeches reviewing the law and preparing Israel for the Promised Land",
+      "author": "Moses",
+      "themes": ["Law", "Covenant", "Obedience", "Blessing"],
+      "chaptersContent": [
+        {
+          "number": 6,
+          "title": "The Great Commandment",
+          "summary": "Moses declares the greatest commandment to love God with all your heart",
+          "keyVerses": ["Deuteronomy 6:4", "Deuteronomy 6:5", "Deuteronomy 6:6"],
+          "content": "Hear, O Israel: The Lord our God, the Lord is one. You shall love the Lord your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart.",
+          "themes": ["Love", "Obedience", "Teaching", "Heart"]
+        },
+        {
+          "number": 30,
+          "title": "Choose Life",
+          "summary": "Moses presents the choice between life and death, blessing and curse",
+          "keyVerses": ["Deuteronomy 30:19", "Deuteronomy 30:20", "Deuteronomy 30:14"],
+          "content": "I call heaven and earth to witness against you today, that I have set before you life and death, blessing and curse. Therefore choose life, that you and your offspring may live, loving the Lord your God, obeying his voice and holding fast to him.",
+          "themes": ["Choice", "Life", "Blessing", "Obedience"]
         }
       ]
     },
@@ -84,7 +213,7 @@
           "title": "The Way of the Righteous and the Wicked",
           "summary": "Contrasts the blessed life of the righteous with the fate of the wicked",
           "keyVerses": ["Psalm 1:1", "Psalm 1:3", "Psalm 1:6"],
-          "content": "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers...",
+          "content": "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers, but his delight is in the law of the Lord, and on his law he meditates day and night.",
           "themes": ["Righteousness", "Meditation on Scripture", "God's Care"]
         },
         {
@@ -92,7 +221,7 @@
           "title": "The Lord is My Shepherd",
           "summary": "David's famous psalm about God's care and guidance",
           "keyVerses": ["Psalm 23:1", "Psalm 23:4", "Psalm 23:6"],
-          "content": "The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters...",
+          "content": "The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He leads me in paths of righteousness for his name's sake.",
           "themes": ["God's Care", "Guidance", "Comfort", "Eternal Security"]
         },
         {
@@ -100,8 +229,105 @@
           "title": "A Prayer for Forgiveness",
           "summary": "David's prayer of repentance after his sin with Bathsheba",
           "keyVerses": ["Psalm 51:1", "Psalm 51:10", "Psalm 51:17"],
-          "content": "Have mercy on me, O God, according to your steadfast love; according to your abundant mercy blot out my transgressions...",
+          "content": "Have mercy on me, O God, according to your steadfast love; according to your abundant mercy blot out my transgressions. Wash me thoroughly from my iniquity, and cleanse me from my sin!",
           "themes": ["Repentance", "Forgiveness", "Cleansing", "Renewed Heart"]
+        },
+        {
+          "number": 119,
+          "title": "The Glory of God's Word",
+          "summary": "The longest chapter in the Bible celebrating God's Word and law",
+          "keyVerses": ["Psalm 119:9", "Psalm 119:11", "Psalm 119:105"],
+          "content": "How can a young man keep his way pure? By guarding it according to your word. I have stored up your word in my heart, that I might not sin against you.",
+          "themes": ["God's Word", "Purity", "Guidance", "Obedience"]
+        }
+      ]
+    },
+    {
+      "id": "proverbs",
+      "name": "Proverbs",
+      "testament": "Old Testament",
+      "chapters": 31,
+      "description": "Wisdom literature providing practical guidance for righteous living",
+      "author": "Solomon and others",
+      "themes": ["Wisdom", "Knowledge", "Understanding", "Righteousness"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Purpose of Proverbs",
+          "summary": "Introduction to the purpose and value of wisdom and instruction",
+          "keyVerses": ["Proverbs 1:7", "Proverbs 1:3", "Proverbs 1:33"],
+          "content": "The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction. To receive instruction in wise dealing, in righteousness, justice, and equity.",
+          "themes": ["Fear of the Lord", "Wisdom", "Instruction", "Knowledge"]
+        },
+        {
+          "number": 3,
+          "title": "Trust in the Lord",
+          "summary": "Wisdom about trusting God and the benefits of following His ways",
+          "keyVerses": ["Proverbs 3:5", "Proverbs 3:6", "Proverbs 3:12"],
+          "content": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
+          "themes": ["Trust", "Guidance", "Understanding", "God's Ways"]
+        },
+        {
+          "number": 31,
+          "title": "The Virtuous Woman",
+          "summary": "Description of a woman of noble character and her qualities",
+          "keyVerses": ["Proverbs 31:10", "Proverbs 31:25", "Proverbs 31:30"],
+          "content": "An excellent wife who can find? She is far more precious than jewels. The heart of her husband trusts in her, and he will have no lack of gain.",
+          "themes": ["Virtue", "Character", "Marriage", "Excellence"]
+        }
+      ]
+    },
+    {
+      "id": "ecclesiastes",
+      "name": "Ecclesiastes",
+      "testament": "Old Testament",
+      "chapters": 12,
+      "description": "Solomon's reflections on the meaning and purpose of life",
+      "author": "Solomon",
+      "themes": ["Meaning", "Vanity", "Wisdom", "Life's Purpose"],
+      "chaptersContent": [
+        {
+          "number": 3,
+          "title": "A Time for Everything",
+          "summary": "Famous passage about times and seasons in life",
+          "keyVerses": ["Ecclesiastes 3:1", "Ecclesiastes 3:11", "Ecclesiastes 3:14"],
+          "content": "For everything there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted.",
+          "themes": ["Time", "Seasons", "God's Timing", "Life"]
+        },
+        {
+          "number": 12,
+          "title": "Remember Your Creator",
+          "summary": "The conclusion: fear God and keep His commandments",
+          "keyVerses": ["Ecclesiastes 12:1", "Ecclesiastes 12:13", "Ecclesiastes 12:14"],
+          "content": "Remember also your Creator in the days of your youth, before the evil days come and the years draw near of which you will say, 'I have no pleasure in them.'",
+          "themes": ["Youth", "Creator", "Judgment", "Commandments"]
+        }
+      ]
+    },
+    {
+      "id": "isaiah",
+      "name": "Isaiah",
+      "testament": "Old Testament",
+      "chapters": 66,
+      "description": "Prophecies of judgment and salvation, including Messianic prophecies",
+      "author": "Isaiah",
+      "themes": ["Prophecy", "Messiah", "Salvation", "Judgment"],
+      "chaptersContent": [
+        {
+          "number": 7,
+          "title": "The Sign of Immanuel",
+          "summary": "Prophecy of the virgin birth and Immanuel",
+          "keyVerses": ["Isaiah 7:14", "Isaiah 7:9", "Isaiah 7:16"],
+          "content": "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.",
+          "themes": ["Virgin Birth", "Immanuel", "Sign", "Prophecy"]
+        },
+        {
+          "number": 53,
+          "title": "The Suffering Servant",
+          "summary": "Prophecy of the Messiah's suffering for our sins",
+          "keyVerses": ["Isaiah 53:5", "Isaiah 53:6", "Isaiah 53:12"],
+          "content": "But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.",
+          "themes": ["Suffering Servant", "Atonement", "Healing", "Salvation"]
         }
       ]
     },
@@ -119,7 +345,7 @@
           "title": "The Genealogy and Birth of Jesus",
           "summary": "Matthew traces Jesus' lineage and recounts His virgin birth",
           "keyVerses": ["Matthew 1:1", "Matthew 1:21", "Matthew 1:23"],
-          "content": "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham...",
+          "content": "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham. She will bear a son, and you shall call his name Jesus, for he will save his people from their sins.",
           "themes": ["Messianic Lineage", "Virgin Birth", "Emmanuel"]
         },
         {
@@ -127,16 +353,78 @@
           "title": "The Sermon on the Mount - Beatitudes",
           "summary": "Jesus teaches the Beatitudes and principles of kingdom living",
           "keyVerses": ["Matthew 5:3", "Matthew 5:14", "Matthew 5:16"],
-          "content": "Seeing the crowds, he went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying: 'Blessed are the poor in spirit, for theirs is the kingdom of heaven'...",
+          "content": "Seeing the crowds, he went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying: 'Blessed are the poor in spirit, for theirs is the kingdom of heaven.'",
           "themes": ["Kingdom Values", "Discipleship", "Light of the World"]
+        },
+        {
+          "number": 16,
+          "title": "Peter's Confession",
+          "summary": "Peter declares Jesus as the Christ, the Son of the living God",
+          "keyVerses": ["Matthew 16:16", "Matthew 16:18", "Matthew 16:24"],
+          "content": "Simon Peter replied, 'You are the Christ, the Son of the living God.' And Jesus answered him, 'Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven.'",
+          "themes": ["Confession", "Church", "Discipleship", "Cross"]
         },
         {
           "number": 28,
           "title": "The Resurrection and Great Commission",
           "summary": "Jesus rises from the dead and commissions His disciples",
           "keyVerses": ["Matthew 28:6", "Matthew 28:19", "Matthew 28:20"],
-          "content": "But the angel said to the women, 'Do not be afraid, for I know that you seek Jesus who was crucified. He is not here, for he has risen, as he said'...",
+          "content": "He is not here, for he has risen, as he said. Come, see the place where he lay. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.",
           "themes": ["Resurrection", "Great Commission", "Authority", "Presence"]
+        }
+      ]
+    },
+    {
+      "id": "mark",
+      "name": "Mark",
+      "testament": "New Testament",
+      "chapters": 16,
+      "description": "The Gospel emphasizing Jesus as the suffering Servant",
+      "author": "Mark",
+      "themes": ["Servant", "Action", "Suffering", "Power"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Beginning of the Gospel",
+          "summary": "John the Baptist prepares the way; Jesus is baptized and begins ministry",
+          "keyVerses": ["Mark 1:1", "Mark 1:11", "Mark 1:15"],
+          "content": "The beginning of the gospel of Jesus Christ, the Son of God. And a voice came from heaven, 'You are my beloved Son; with you I am well pleased.'",
+          "themes": ["Gospel", "Baptism", "Beloved Son", "Kingdom"]
+        },
+        {
+          "number": 8,
+          "title": "Peter's Confession and the Cross",
+          "summary": "Peter confesses Jesus as Christ; Jesus predicts His death",
+          "keyVerses": ["Mark 8:29", "Mark 8:34", "Mark 8:36"],
+          "content": "And he asked them, 'But who do you say that I am?' Peter answered him, 'You are the Christ.' And calling the crowd to him with his disciples, he said to them, 'If anyone would come after me, let him deny himself and take up his cross and follow me.'",
+          "themes": ["Confession", "Cross", "Discipleship", "Self-Denial"]
+        }
+      ]
+    },
+    {
+      "id": "luke",
+      "name": "Luke",
+      "testament": "New Testament",
+      "chapters": 24,
+      "description": "The Gospel emphasizing Jesus' humanity and compassion for all people",
+      "author": "Luke",
+      "themes": ["Humanity", "Compassion", "Salvation", "Prayer"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Birth of John and Jesus Foretold",
+          "summary": "Angel Gabriel announces the births of John the Baptist and Jesus",
+          "keyVerses": ["Luke 1:35", "Luke 1:37", "Luke 1:46"],
+          "content": "And the angel answered her, 'The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God.'",
+          "themes": ["Annunciation", "Holy Spirit", "Son of God", "Praise"]
+        },
+        {
+          "number": 15,
+          "title": "The Lost Sheep, Coin, and Son",
+          "summary": "Jesus tells three parables about God's joy over the repentant",
+          "keyVerses": ["Luke 15:7", "Luke 15:20", "Luke 15:32"],
+          "content": "Just so, I tell you, there will be more joy in heaven over one sinner who repents than over ninety-nine righteous persons who need no repentance.",
+          "themes": ["Repentance", "Joy", "Forgiveness", "Love"]
         }
       ]
     },
@@ -154,7 +442,7 @@
           "title": "The Word Became Flesh",
           "summary": "John introduces Jesus as the eternal Word who became flesh",
           "keyVerses": ["John 1:1", "John 1:14", "John 1:29"],
-          "content": "In the beginning was the Word, and the Word was with God, and the Word was God...",
+          "content": "In the beginning was the Word, and the Word was with God, and the Word was God. And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.",
           "themes": ["Divine Nature", "Incarnation", "Light", "Witness"]
         },
         {
@@ -162,7 +450,7 @@
           "title": "Jesus and Nicodemus",
           "summary": "Jesus teaches about being born again and God's love for the world",
           "keyVerses": ["John 3:3", "John 3:16", "John 3:17"],
-          "content": "Now there was a man of the Pharisees named Nicodemus, a ruler of the Jews. This man came to Jesus by night and said to him, 'Rabbi, we know that you are a teacher come from God'...",
+          "content": "Jesus answered him, 'Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.' For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
           "themes": ["New Birth", "God's Love", "Eternal Life", "Salvation"]
         },
         {
@@ -170,8 +458,35 @@
           "title": "Jesus the Way, Truth, and Life",
           "summary": "Jesus comforts His disciples and promises the Holy Spirit",
           "keyVerses": ["John 14:6", "John 14:16", "John 14:27"],
-          "content": "Let not your hearts be troubled. Believe in God; believe also in me. In my Father's house are many rooms...",
+          "content": "Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me. And I will ask the Father, and he will give you another Helper, to be with you forever.'",
           "themes": ["Comfort", "Holy Spirit", "Peace", "Truth"]
+        }
+      ]
+    },
+    {
+      "id": "acts",
+      "name": "Acts",
+      "testament": "New Testament",
+      "chapters": 28,
+      "description": "The history of the early church and the spread of the Gospel",
+      "author": "Luke",
+      "themes": ["Holy Spirit", "Church", "Mission", "Persecution"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Ascension and Promise of the Spirit",
+          "summary": "Jesus ascends to heaven and promises the Holy Spirit",
+          "keyVerses": ["Acts 1:8", "Acts 1:9", "Acts 1:11"],
+          "content": "But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.",
+          "themes": ["Ascension", "Holy Spirit", "Witness", "Power"]
+        },
+        {
+          "number": 2,
+          "title": "Pentecost",
+          "summary": "The Holy Spirit comes upon the disciples at Pentecost",
+          "keyVerses": ["Acts 2:4", "Acts 2:38", "Acts 2:41"],
+          "content": "And they were all filled with the Holy Spirit and began to speak in other tongues as the Spirit gave them utterance. And Peter said to them, 'Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.'",
+          "themes": ["Pentecost", "Tongues", "Baptism", "Church Birth"]
         }
       ]
     },
@@ -189,7 +504,7 @@
           "title": "Paul's Gospel and Human Sinfulness",
           "summary": "Paul introduces his gospel and describes universal human sinfulness",
           "keyVerses": ["Romans 1:16", "Romans 1:17", "Romans 1:20"],
-          "content": "Paul, a servant of Christ Jesus, called to be an apostle, set apart for the gospel of God...",
+          "content": "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. For in it the righteousness of God is revealed from faith for faith, as it is written, 'The righteous shall live by faith.'",
           "themes": ["Gospel Power", "Righteousness", "God's Wrath", "Natural Revelation"]
         },
         {
@@ -197,7 +512,7 @@
           "title": "Righteousness Through Faith",
           "summary": "Paul explains justification by faith apart from works",
           "keyVerses": ["Romans 3:23", "Romans 3:24", "Romans 3:28"],
-          "content": "But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it...",
+          "content": "For all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus. For we hold that one is justified by faith apart from works of the law.",
           "themes": ["Justification", "Faith", "Grace", "Redemption"]
         },
         {
@@ -205,8 +520,116 @@
           "title": "Life in the Spirit",
           "summary": "Paul describes the victory believers have through the Spirit",
           "keyVerses": ["Romans 8:1", "Romans 8:28", "Romans 8:39"],
-          "content": "There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death...",
+          "content": "There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. And we know that for those who love God all things work together for good, for those who are called according to his purpose.",
           "themes": ["No Condemnation", "Spirit's Power", "God's Love", "Victory"]
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians",
+      "name": "1 Corinthians",
+      "testament": "New Testament",
+      "chapters": 16,
+      "description": "Paul's letter addressing problems in the Corinthian church",
+      "author": "Paul",
+      "themes": ["Unity", "Love", "Spiritual Gifts", "Resurrection"],
+      "chaptersContent": [
+        {
+          "number": 13,
+          "title": "The Way of Love",
+          "summary": "Paul's famous chapter on love being the greatest virtue",
+          "keyVerses": ["1 Corinthians 13:4", "1 Corinthians 13:8", "1 Corinthians 13:13"],
+          "content": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful. Love never ends. So now faith, hope, and love abide, these three; but the greatest of these is love.",
+          "themes": ["Love", "Patience", "Kindness", "Endurance"]
+        },
+        {
+          "number": 15,
+          "title": "The Resurrection",
+          "summary": "Paul defends the reality and importance of Christ's resurrection",
+          "keyVerses": ["1 Corinthians 15:3", "1 Corinthians 15:20", "1 Corinthians 15:55"],
+          "content": "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures.",
+          "themes": ["Resurrection", "Gospel", "Victory", "Hope"]
+        }
+      ]
+    },
+    {
+      "id": "ephesians",
+      "name": "Ephesians",
+      "testament": "New Testament",
+      "chapters": 6,
+      "description": "Paul's letter about the church as the body of Christ and Christian living",
+      "author": "Paul",
+      "themes": ["Church", "Unity", "Spiritual Warfare", "Grace"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "Saved by Grace",
+          "summary": "Paul explains salvation by grace through faith, not works",
+          "keyVerses": ["Ephesians 2:8", "Ephesians 2:9", "Ephesians 2:10"],
+          "content": "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
+          "themes": ["Grace", "Faith", "Salvation", "Good Works"]
+        },
+        {
+          "number": 6,
+          "title": "The Armor of God",
+          "summary": "Paul describes the spiritual armor believers need for spiritual warfare",
+          "keyVerses": ["Ephesians 6:11", "Ephesians 6:13", "Ephesians 6:17"],
+          "content": "Put on the whole armor of God, that you may be able to stand against the schemes of the devil. Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm.",
+          "themes": ["Spiritual Warfare", "Armor", "Prayer", "Strength"]
+        }
+      ]
+    },
+    {
+      "id": "philippians",
+      "name": "Philippians",
+      "testament": "New Testament",
+      "chapters": 4,
+      "description": "Paul's joyful letter about contentment and joy in Christ",
+      "author": "Paul",
+      "themes": ["Joy", "Contentment", "Humility", "Unity"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "The Mind of Christ",
+          "summary": "Paul exhorts to humility using Christ's example of incarnation",
+          "keyVerses": ["Philippians 2:5", "Philippians 2:6", "Philippians 2:11"],
+          "content": "Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but emptied himself, by taking the form of a servant, being born in the likeness of men.",
+          "themes": ["Humility", "Incarnation", "Service", "Unity"]
+        },
+        {
+          "number": 4,
+          "title": "Rejoice in the Lord",
+          "summary": "Paul's instructions on joy, peace, and contentment in all circumstances",
+          "keyVerses": ["Philippians 4:4", "Philippians 4:13", "Philippians 4:19"],
+          "content": "Rejoice in the Lord always; again I will say, rejoice. I can do all things through him who strengthens me. And my God will supply every need of yours according to his riches in glory in Christ Jesus.",
+          "themes": ["Joy", "Strength", "Contentment", "God's Provision"]
+        }
+      ]
+    },
+    {
+      "id": "revelation",
+      "name": "Revelation",
+      "testament": "New Testament",
+      "chapters": 22,
+      "description": "John's apocalyptic vision of the end times and Christ's return",
+      "author": "John",
+      "themes": ["Prophecy", "Judgment", "Victory", "New Creation"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Revelation of Jesus Christ",
+          "summary": "John introduces his vision of the glorified Christ",
+          "keyVerses": ["Revelation 1:1", "Revelation 1:8", "Revelation 1:17"],
+          "content": "The revelation of Jesus Christ, which God gave him to show to his servants the things that must soon take place. 'I am the Alpha and the Omega,' says the Lord God, 'who is and who was and who is to come, the Almighty.'",
+          "themes": ["Revelation", "Alpha and Omega", "Glory", "Vision"]
+        },
+        {
+          "number": 21,
+          "title": "The New Heaven and New Earth",
+          "summary": "God creates a new heaven and earth; the New Jerusalem descends",
+          "keyVerses": ["Revelation 21:1", "Revelation 21:4", "Revelation 21:5"],
+          "content": "Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And he who was seated on the throne said, 'Behold, I am making all things new.'",
+          "themes": ["New Creation", "No More Death", "God's Dwelling", "All Things New"]
         }
       ]
     }
