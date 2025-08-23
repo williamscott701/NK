@@ -1,0 +1,49 @@
+{
+  "concepts": [
+    {
+      "id": "love",
+      "title": "Love",
+      "description": "The greatest commandment according to Jesus",
+      "verses": [
+        {
+          "reference": "1 Corinthians 13:4-7",
+          "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres."
+        },
+        {
+          "reference": "John 3:16",
+          "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+        }
+      ]
+    },
+    {
+      "id": "faith",
+      "title": "Faith",
+      "description": "Trust and belief in God's promises",
+      "verses": [
+        {
+          "reference": "Hebrews 11:1",
+          "text": "Now faith is confidence in what we hope for and assurance about what we do not see."
+        },
+        {
+          "reference": "Romans 10:17",
+          "text": "Consequently, faith comes from hearing the message, and the message is heard through the word about Christ."
+        }
+      ]
+    },
+    {
+      "id": "hope",
+      "title": "Hope",
+      "description": "Confident expectation in God's promises",
+      "verses": [
+        {
+          "reference": "Romans 15:13",
+          "text": "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit."
+        },
+        {
+          "reference": "Jeremiah 29:11",
+          "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
+        }
+      ]
+    }
+  ]
+}
