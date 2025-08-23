@@ -632,6 +632,674 @@
           "themes": ["New Creation", "No More Death", "God's Dwelling", "All Things New"]
         }
       ]
+    },
+    {
+      "id": "ruth",
+      "name": "Ruth",
+      "testament": "Old Testament",
+      "chapters": 4,
+      "description": "The story of Ruth's loyalty and God's providence",
+      "author": "Unknown",
+      "themes": ["Loyalty", "Redemption", "Providence", "Kindness"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Ruth's Loyalty to Naomi",
+          "summary": "Ruth chooses to stay with Naomi after her husband's death",
+          "keyVerses": ["Ruth 1:16", "Ruth 1:17", "Ruth 1:20"],
+          "content": "But Ruth said, 'Do not urge me to leave you or to return from following you. For where you go I will go, and where you lodge I will lodge. Your people shall be my people, and your God my God.'",
+          "themes": ["Loyalty", "Commitment", "Faith", "Family"]
+        },
+        {
+          "number": 2,
+          "title": "Ruth Meets Boaz",
+          "summary": "Ruth gleans in Boaz's field and finds favor with him",
+          "keyVerses": ["Ruth 2:11", "Ruth 2:12", "Ruth 2:20"],
+          "content": "But Boaz answered her, 'All that you have done for your mother-in-law since the death of your husband has been fully told to me, and how you left your father and mother and your native land and came to a people that you did not know before.'",
+          "themes": ["Kindness", "Providence", "Work", "Favor"]
+        },
+        {
+          "number": 3,
+          "title": "Ruth's Request to Boaz",
+          "summary": "Ruth asks Boaz to be her kinsman-redeemer",
+          "keyVerses": ["Ruth 3:9", "Ruth 3:11", "Ruth 3:18"],
+          "content": "He said, 'Who are you?' And she answered, 'I am Ruth, your servant. Spread your wings over your servant, for you are a redeemer.'",
+          "themes": ["Redemption", "Marriage", "Boldness", "Honor"]
+        },
+        {
+          "number": 4,
+          "title": "Boaz Redeems Ruth",
+          "summary": "Boaz marries Ruth and they become ancestors of David",
+          "keyVerses": ["Ruth 4:13", "Ruth 4:14", "Ruth 4:17"],
+          "content": "So Boaz took Ruth, and she became his wife. And he went in to her, and the Lord gave her conception, and she bore a son. And they named him Obed. He was the father of Jesse, the father of David.",
+          "themes": ["Redemption", "Marriage", "Lineage", "Blessing"]
+        }
+      ]
+    },
+    {
+      "id": "joel",
+      "name": "Joel",
+      "testament": "Old Testament",
+      "chapters": 3,
+      "description": "Prophecy about the Day of the Lord and outpouring of the Spirit",
+      "author": "Joel",
+      "themes": ["Day of the Lord", "Judgment", "Spirit", "Restoration"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Locust Plague",
+          "summary": "Joel describes a devastating locust plague as a sign of judgment",
+          "keyVerses": ["Joel 1:4", "Joel 1:15", "Joel 1:19"],
+          "content": "What the cutting locust left, the swarming locust has eaten. What the swarming locust left, the hopping locust has eaten, and what the hopping locust left, the destroying locust has eaten.",
+          "themes": ["Judgment", "Devastation", "Call to Repentance", "Natural Disasters"]
+        },
+        {
+          "number": 2,
+          "title": "The Day of the Lord and Promise of the Spirit",
+          "summary": "Joel prophesies about the Day of the Lord and God's Spirit being poured out",
+          "keyVerses": ["Joel 2:28", "Joel 2:29", "Joel 2:32"],
+          "content": "And it shall come to pass afterward, that I will pour out my Spirit on all flesh; your sons and your daughters shall prophesy, your old men shall dream dreams, and your young men shall see visions.",
+          "themes": ["Holy Spirit", "Prophecy", "Salvation", "Universal Outpouring"]
+        },
+        {
+          "number": 3,
+          "title": "Judgment of the Nations",
+          "summary": "God promises to judge the nations and restore Israel",
+          "keyVerses": ["Joel 3:2", "Joel 3:16", "Joel 3:21"],
+          "content": "I will gather all the nations and bring them down to the Valley of Jehoshaphat. And I will enter into judgment with them there, on behalf of my people and my heritage Israel.",
+          "themes": ["Divine Judgment", "National Restoration", "God's Protection", "Final Victory"]
+        }
+      ]
+    },
+    {
+      "id": "obadiah",
+      "name": "Obadiah",
+      "testament": "Old Testament",
+      "chapters": 1,
+      "description": "Prophecy of judgment against Edom for their pride and violence",
+      "author": "Obadiah",
+      "themes": ["Judgment", "Pride", "Justice", "Restoration"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Judgment on Edom",
+          "summary": "God pronounces judgment on Edom for their pride and violence against Israel",
+          "keyVerses": ["Obadiah 1:3", "Obadiah 1:15", "Obadiah 1:21"],
+          "content": "The pride of your heart has deceived you, you who live in the clefts of the rock, in your lofty dwelling, who say in your heart, 'Who will bring me down to the ground?' For the day of the Lord is near upon all the nations. As you have done, it shall be done to you; your deeds shall return on your own head.",
+          "themes": ["Pride", "Divine Justice", "Retribution", "God's Sovereignty"]
+        }
+      ]
+    },
+    {
+      "id": "jonah",
+      "name": "Jonah",
+      "testament": "Old Testament",
+      "chapters": 4,
+      "description": "The story of Jonah's mission to Nineveh and God's mercy",
+      "author": "Unknown",
+      "themes": ["Obedience", "Mercy", "Repentance", "God's Compassion"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Jonah Flees from God",
+          "summary": "Jonah tries to flee from God's command to go to Nineveh",
+          "keyVerses": ["Jonah 1:1", "Jonah 1:3", "Jonah 1:17"],
+          "content": "Now the word of the Lord came to Jonah the son of Amittai, saying, 'Arise, go to Nineveh, that great city, and call out against it, for their evil has come up before me.' But Jonah rose to flee to Tarshish from the presence of the Lord.",
+          "themes": ["Disobedience", "Running from God", "Divine Pursuit", "Consequences"]
+        },
+        {
+          "number": 2,
+          "title": "Jonah's Prayer",
+          "summary": "From the belly of the fish, Jonah prays and is delivered",
+          "keyVerses": ["Jonah 2:1", "Jonah 2:7", "Jonah 2:10"],
+          "content": "Then Jonah prayed to the Lord his God from the belly of the fish, saying, 'I called out to the Lord, out of my distress, and he answered me; out of the belly of Sheol I cried, and you heard my voice.'",
+          "themes": ["Prayer", "Deliverance", "God's Mercy", "Second Chances"]
+        },
+        {
+          "number": 3,
+          "title": "Nineveh Repents",
+          "summary": "Jonah preaches to Nineveh and the entire city repents",
+          "keyVerses": ["Jonah 3:5", "Jonah 3:10", "Jonah 3:4"],
+          "content": "And the people of Nineveh believed God. They called for a fast and put on sackcloth, from the greatest of them to the least of them. When God saw what they did, how they turned from their evil way, God relented of the disaster that he had said he would do to them, and he did not do it.",
+          "themes": ["Repentance", "God's Mercy", "Preaching", "Divine Compassion"]
+        },
+        {
+          "number": 4,
+          "title": "Jonah's Anger and God's Compassion",
+          "summary": "Jonah is angry at God's mercy, but God teaches him about compassion",
+          "keyVerses": ["Jonah 4:2", "Jonah 4:10", "Jonah 4:11"],
+          "content": "And he prayed to the Lord and said, 'O Lord, is not this what I said when I was yet in my country? That is why I made haste to flee to Tarshish; for I knew that you are a gracious God and merciful, slow to anger and abounding in steadfast love, and relenting from disaster.'",
+          "themes": ["God's Compassion", "Mercy", "Understanding God's Heart", "Universal Love"]
+        }
+      ]
+    },
+    {
+      "id": "haggai",
+      "name": "Haggai",
+      "testament": "Old Testament",
+      "chapters": 2,
+      "description": "Prophecy encouraging the rebuilding of the temple after exile",
+      "author": "Haggai",
+      "themes": ["Temple", "Priorities", "God's Presence", "Blessing"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Call to Rebuild the Temple",
+          "summary": "Haggai challenges the people to prioritize rebuilding God's temple",
+          "keyVerses": ["Haggai 1:4", "Haggai 1:7", "Haggai 1:14"],
+          "content": "Is it a time for you yourselves to dwell in your paneled houses, while this house lies in ruins? Now, therefore, thus says the Lord of hosts: Consider your ways. You have sown much, and harvested little.",
+          "themes": ["Priorities", "Stewardship", "God's House", "Obedience"]
+        },
+        {
+          "number": 2,
+          "title": "The Glory of the New Temple",
+          "summary": "God promises that the new temple's glory will exceed the former",
+          "keyVerses": ["Haggai 2:4", "Haggai 2:9", "Haggai 2:23"],
+          "content": "Yet now be strong, O Zerubbabel, declares the Lord. Be strong, O Joshua, son of Jehozadak, the high priest. Be strong, all you people of the land, declares the Lord. Work, for I am with you, declares the Lord of hosts.",
+          "themes": ["God's Presence", "Future Glory", "Encouragement", "Divine Promise"]
+        }
+      ]
+    },
+    {
+      "id": "philemon",
+      "name": "Philemon",
+      "testament": "New Testament",
+      "chapters": 1,
+      "description": "Paul's personal letter about forgiveness and reconciliation",
+      "author": "Paul",
+      "themes": ["Forgiveness", "Reconciliation", "Brotherhood", "Love"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "A Plea for Onesimus",
+          "summary": "Paul appeals to Philemon to forgive and receive back his runaway slave Onesimus",
+          "keyVerses": ["Philemon 1:10", "Philemon 1:16", "Philemon 1:17"],
+          "content": "I appeal to you for my child, Onesimus, whose father I became in my imprisonment. No longer as a bondservant but more than a bondservant, as a beloved brother—especially to me, but how much more to you, both in the flesh and in the Lord.",
+          "themes": ["Forgiveness", "Transformation", "Christian Brotherhood", "Reconciliation"]
+        }
+      ]
+    },
+    {
+      "id": "2-john",
+      "name": "2 John",
+      "testament": "New Testament",
+      "chapters": 1,
+      "description": "John's letter about truth and love in Christian fellowship",
+      "author": "John",
+      "themes": ["Truth", "Love", "Fellowship", "False Teachers"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Walking in Truth and Love",
+          "summary": "John emphasizes the importance of truth and love, warning against false teachers",
+          "keyVerses": ["2 John 1:4", "2 John 1:6", "2 John 1:9"],
+          "content": "I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it.",
+          "themes": ["Truth", "Love", "Commandments", "Warning"]
+        }
+      ]
+    },
+    {
+      "id": "3-john",
+      "name": "3 John",
+      "testament": "New Testament",
+      "chapters": 1,
+      "description": "John's letter about hospitality and church leadership",
+      "author": "John",
+      "themes": ["Hospitality", "Leadership", "Truth", "Support"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Gaius's Hospitality",
+          "summary": "John commends Gaius for his hospitality and warns against Diotrephes",
+          "keyVerses": ["3 John 1:4", "3 John 1:11", "3 John 1:12"],
+          "content": "I have no greater joy than to hear that my children are walking in the truth. Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God.",
+          "themes": ["Hospitality", "Good Example", "Church Leadership", "Truth"]
+        }
+      ]
+    },
+    {
+      "id": "jude",
+      "name": "Jude",
+      "testament": "New Testament",
+      "chapters": 1,
+      "description": "Jude's urgent letter about contending for the faith",
+      "author": "Jude",
+      "themes": ["Contending for Faith", "False Teachers", "Judgment", "Perseverance"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Contend for the Faith",
+          "summary": "Jude urges believers to contend for the faith against false teachers",
+          "keyVerses": ["Jude 1:3", "Jude 1:24", "Jude 1:25"],
+          "content": "Beloved, although I was very eager to write to you about our common salvation, I found it necessary to write appealing to you to contend for the faith that was once for all delivered to the saints. Now to him who is able to keep you from stumbling and to present you blameless before the presence of his glory with great joy.",
+          "themes": ["Faith", "Perseverance", "False Teachers", "God's Keeping Power"]
+        }
+      ]
+    },
+    {
+      "id": "2-corinthians",
+      "name": "2 Corinthians",
+      "testament": "New Testament",
+      "chapters": 13,
+      "description": "Paul's defense of his apostolic ministry and call to Christian living",
+      "author": "Paul",
+      "themes": ["Ministry", "Suffering", "Grace", "Reconciliation"],
+      "chaptersContent": [
+        {
+          "number": 4,
+          "title": "Treasure in Jars of Clay",
+          "summary": "Paul describes the ministry as treasure in earthen vessels",
+          "keyVerses": ["2 Corinthians 4:7", "2 Corinthians 4:16", "2 Corinthians 4:18"],
+          "content": "But we have this treasure in jars of clay, to show that the surpassing power belongs to God and not to us. So we do not lose heart. Though our outer self is wasting away, our inner self is being renewed day by day.",
+          "themes": ["Weakness", "God's Power", "Perseverance", "Eternal Perspective"]
+        },
+        {
+          "number": 5,
+          "title": "New Creation and Reconciliation",
+          "summary": "Paul teaches about the new creation and ministry of reconciliation",
+          "keyVerses": ["2 Corinthians 5:17", "2 Corinthians 5:20", "2 Corinthians 5:21"],
+          "content": "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. All this is from God, who reconciled us to himself through Christ and gave us the ministry of reconciliation.",
+          "themes": ["New Creation", "Reconciliation", "Ambassadors", "Righteousness"]
+        },
+        {
+          "number": 12,
+          "title": "Paul's Thorn in the Flesh",
+          "summary": "Paul shares about his weakness and God's sufficient grace",
+          "keyVerses": ["2 Corinthians 12:7", "2 Corinthians 12:9", "2 Corinthians 12:10"],
+          "content": "So to keep me from becoming conceited because of the surpassing greatness of the revelations, a thorn was given me in the flesh, a messenger of Satan to harass me, to keep me from becoming conceited. But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.'",
+          "themes": ["Weakness", "Grace", "Humility", "God's Strength"]
+        }
+      ]
+    },
+    {
+      "id": "galatians",
+      "name": "Galatians",
+      "testament": "New Testament",
+      "chapters": 6,
+      "description": "Paul's passionate defense of salvation by grace through faith",
+      "author": "Paul",
+      "themes": ["Grace", "Faith", "Freedom", "Spirit"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "Justified by Faith",
+          "summary": "Paul defends justification by faith, not by works of the law",
+          "keyVerses": ["Galatians 2:16", "Galatians 2:20", "Galatians 2:21"],
+          "content": "Yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified.",
+          "themes": ["Justification", "Faith", "Grace", "Crucified Life"]
+        },
+        {
+          "number": 5,
+          "title": "Freedom and the Fruit of the Spirit",
+          "summary": "Paul teaches about Christian freedom and the fruit of the Spirit",
+          "keyVerses": ["Galatians 5:1", "Galatians 5:22", "Galatians 5:25"],
+          "content": "For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.",
+          "themes": ["Freedom", "Fruit of Spirit", "Walking in Spirit", "Self-Control"]
+        },
+        {
+          "number": 6,
+          "title": "Sowing and Reaping",
+          "summary": "Paul teaches about sowing and reaping, bearing burdens, and doing good",
+          "keyVerses": ["Galatians 6:2", "Galatians 6:7", "Galatians 6:9"],
+          "content": "Bear one another's burdens, and so fulfill the law of Christ. Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. And let us not grow weary of doing good, for in due season we will reap, if we do not give up.",
+          "themes": ["Burden Bearing", "Sowing and Reaping", "Perseverance", "Good Works"]
+        }
+      ]
+    },
+    {
+      "id": "hebrews",
+      "name": "Hebrews",
+      "testament": "New Testament",
+      "chapters": 13,
+      "description": "The superiority of Christ and the new covenant",
+      "author": "Unknown",
+      "themes": ["Superiority of Christ", "Faith", "Perseverance", "New Covenant"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Supremacy of the Son",
+          "summary": "The Son is superior to angels and prophets",
+          "keyVerses": ["Hebrews 1:1", "Hebrews 1:3", "Hebrews 1:14"],
+          "content": "Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son, whom he appointed the heir of all things, through whom also he created the world.",
+          "themes": ["Christ's Supremacy", "Divine Son", "Creation", "Revelation"]
+        },
+        {
+          "number": 4,
+          "title": "The Promise of Rest",
+          "summary": "God's promise of rest for His people",
+          "keyVerses": ["Hebrews 4:9", "Hebrews 4:12", "Hebrews 4:16"],
+          "content": "So then, there remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works as God did from his. Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.",
+          "themes": ["Rest", "God's Word", "High Priest", "Grace"]
+        },
+        {
+          "number": 11,
+          "title": "The Hall of Faith",
+          "summary": "Examples of faith from Old Testament heroes",
+          "keyVerses": ["Hebrews 11:1", "Hebrews 11:6", "Hebrews 11:39"],
+          "content": "Now faith is the assurance of things hoped for, the conviction of things not seen. And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.",
+          "themes": ["Faith", "Hope", "Perseverance", "God's Promises"]
+        },
+        {
+          "number": 12,
+          "title": "Endurance and Discipline",
+          "summary": "The discipline of the Lord and running the race with endurance",
+          "keyVerses": ["Hebrews 12:1", "Hebrews 12:6", "Hebrews 12:14"],
+          "content": "Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith.",
+          "themes": ["Endurance", "Discipline", "Race", "Holiness"]
+        }
+      ]
+    },
+    {
+      "id": "james",
+      "name": "James",
+      "testament": "New Testament",
+      "chapters": 5,
+      "description": "Practical wisdom for Christian living and faith in action",
+      "author": "James",
+      "themes": ["Practical Faith", "Wisdom", "Trials", "Good Works"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Trials and Temptations",
+          "summary": "James teaches about trials, temptations, and hearing God's word",
+          "keyVerses": ["James 1:2", "James 1:17", "James 1:22"],
+          "content": "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. Every good gift and every perfect gift is from above, coming down from the Father of lights.",
+          "themes": ["Trials", "Joy", "God's Gifts", "Doing the Word"]
+        },
+        {
+          "number": 2,
+          "title": "Faith and Works",
+          "summary": "True faith is demonstrated by good works",
+          "keyVerses": ["James 2:17", "James 2:20", "James 2:26"],
+          "content": "So also faith by itself, if it does not have works, is dead. Do you want to be shown, you foolish person, that faith apart from works is useless? For as the body apart from the spirit is dead, so also faith apart from works is dead.",
+          "themes": ["Faith and Works", "Partiality", "Mercy", "Living Faith"]
+        },
+        {
+          "number": 3,
+          "title": "Taming the Tongue",
+          "summary": "The power and danger of the tongue",
+          "keyVerses": ["James 3:5", "James 3:8", "James 3:17"],
+          "content": "So also the tongue is a small member, yet it boasts of great things. How great a forest is set ablaze by such a small fire! But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits.",
+          "themes": ["Tongue", "Wisdom", "Teachers", "Peace"]
+        },
+        {
+          "number": 5,
+          "title": "Prayer and Patience",
+          "summary": "Instructions on prayer, patience, and caring for one another",
+          "keyVerses": ["James 5:7", "James 5:16", "James 5:20"],
+          "content": "Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it until it receives the early and the late rains. The prayer of a righteous person has great power as it is working.",
+          "themes": ["Patience", "Prayer", "Healing", "Restoration"]
+        }
+      ]
+    },
+    {
+      "id": "1-peter",
+      "name": "1 Peter",
+      "testament": "New Testament",
+      "chapters": 5,
+      "description": "Hope and encouragement for suffering Christians",
+      "author": "Peter",
+      "themes": ["Suffering", "Hope", "Holiness", "Submission"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Living Hope",
+          "summary": "Peter describes the living hope we have through Christ's resurrection",
+          "keyVerses": ["1 Peter 1:3", "1 Peter 1:15", "1 Peter 1:23"],
+          "content": "Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead, to an inheritance that is imperishable, undefiled, and unfading.",
+          "themes": ["Living Hope", "Inheritance", "Holiness", "Born Again"]
+        },
+        {
+          "number": 2,
+          "title": "Living Stones",
+          "summary": "Believers are living stones being built into a spiritual house",
+          "keyVerses": ["1 Peter 2:5", "1 Peter 2:9", "1 Peter 2:24"],
+          "content": "You yourselves like living stones are being built up as a spiritual house, to be a holy priesthood, to offer spiritual sacrifices acceptable to God through Jesus Christ. But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession.",
+          "themes": ["Living Stones", "Royal Priesthood", "Submission", "Christ's Example"]
+        },
+        {
+          "number": 4,
+          "title": "Suffering for Christ",
+          "summary": "How to respond to suffering as a Christian",
+          "keyVerses": ["1 Peter 4:12", "1 Peter 4:16", "1 Peter 4:19"],
+          "content": "Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ's sufferings, that you may also rejoice and be glad when his glory is revealed.",
+          "themes": ["Suffering", "Rejoicing", "God's Will", "Stewardship"]
+        }
+      ]
+    },
+    {
+      "id": "1-john",
+      "name": "1 John",
+      "testament": "New Testament",
+      "chapters": 5,
+      "description": "Fellowship with God through love and obedience",
+      "author": "John",
+      "themes": ["Love", "Fellowship", "Light", "Assurance"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Walking in the Light",
+          "summary": "Fellowship with God requires walking in the light",
+          "keyVerses": ["1 John 1:5", "1 John 1:7", "1 John 1:9"],
+          "content": "This is the message we have heard from him and proclaim to you, that God is light, and in him is no darkness at all. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.",
+          "themes": ["Light", "Fellowship", "Confession", "Cleansing"]
+        },
+        {
+          "number": 3,
+          "title": "God's Love and Our Love",
+          "summary": "Understanding and practicing God's love",
+          "keyVerses": ["1 John 3:1", "1 John 3:16", "1 John 3:18"],
+          "content": "See what kind of love the Father has given to us, that we should be called children of God; and so we are. By this we know love, that he laid down his life for us, and we ought to lay down our lives for the brothers.",
+          "themes": ["God's Love", "Children of God", "Laying Down Life", "Love in Action"]
+        },
+        {
+          "number": 4,
+          "title": "God is Love",
+          "summary": "The nature and importance of love",
+          "keyVerses": ["1 John 4:8", "1 John 4:16", "1 John 4:19"],
+          "content": "Anyone who does not love does not know God, because God is love. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him.",
+          "themes": ["God is Love", "Perfect Love", "Fear", "Love First"]
+        },
+        {
+          "number": 5,
+          "title": "Assurance of Eternal Life",
+          "summary": "Confidence in eternal life through faith in Christ",
+          "keyVerses": ["1 John 5:11", "1 John 5:13", "1 John 5:14"],
+          "content": "And this is the testimony, that God gave us eternal life, and this life is in his Son. I write these things to you who believe in the name of the Son of God, that you may know that you have eternal life.",
+          "themes": ["Eternal Life", "Assurance", "Prayer", "Confidence"]
+        }
+      ]
+    },
+    {
+      "id": "1-thessalonians",
+      "name": "1 Thessalonians",
+      "testament": "New Testament",
+      "chapters": 5,
+      "description": "Paul's encouragement and teaching about Christ's return",
+      "author": "Paul",
+      "themes": ["Second Coming", "Hope", "Sanctification", "Encouragement"],
+      "chaptersContent": [
+        {
+          "number": 4,
+          "title": "The Rapture and Second Coming",
+          "summary": "Paul teaches about the rapture and resurrection of believers",
+          "keyVerses": ["1 Thessalonians 4:16", "1 Thessalonians 4:17", "1 Thessalonians 4:18"],
+          "content": "For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air.",
+          "themes": ["Rapture", "Resurrection", "Second Coming", "Comfort"]
+        },
+        {
+          "number": 5,
+          "title": "The Day of the Lord",
+          "summary": "Being ready for the Day of the Lord and Christian living",
+          "keyVerses": ["1 Thessalonians 5:2", "1 Thessalonians 5:17", "1 Thessalonians 5:23"],
+          "content": "For you yourselves are fully aware that the day of the Lord will come like a thief in the night. Pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+          "themes": ["Day of the Lord", "Watchfulness", "Prayer", "Sanctification"]
+        }
+      ]
+    },
+    {
+      "id": "job",
+      "name": "Job",
+      "testament": "Old Testament",
+      "chapters": 42,
+      "description": "The story of Job's suffering and God's sovereignty",
+      "author": "Unknown",
+      "themes": ["Suffering", "Faith", "God's Sovereignty", "Patience"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Job's Character and First Test",
+          "summary": "Job is introduced as a righteous man who faces Satan's first test",
+          "keyVerses": ["Job 1:1", "Job 1:21", "Job 1:22"],
+          "content": "There was a man in the land of Uz whose name was Job, and that man was blameless and upright, one who feared God and turned away from evil. And he said, 'Naked I came from my mother's womb, and naked shall I return. The Lord gave, and the Lord has taken away; blessed be the name of the Lord.'",
+          "themes": ["Righteousness", "Testing", "Trust in God", "Worship"]
+        },
+        {
+          "number": 2,
+          "title": "Job's Second Test",
+          "summary": "Satan afflicts Job with painful sores, but Job remains faithful",
+          "keyVerses": ["Job 2:3", "Job 2:10", "Job 2:13"],
+          "content": "And the Lord said to Satan, 'Have you considered my servant Job, that there is none like him on the earth, a blameless and upright man, who fears God and turns away from evil?' But he said to her, 'You speak as one of the foolish women would speak. Shall we receive good from God, and shall we not receive evil?'",
+          "themes": ["Continued Testing", "Faithfulness", "Acceptance", "Comfort"]
+        },
+        {
+          "number": 19,
+          "title": "My Redeemer Lives",
+          "summary": "Job expresses faith that his Redeemer lives",
+          "keyVerses": ["Job 19:25", "Job 19:26", "Job 19:27"],
+          "content": "For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another.",
+          "themes": ["Redeemer", "Resurrection Hope", "Faith", "Vision of God"]
+        },
+        {
+          "number": 38,
+          "title": "God Answers Job",
+          "summary": "God speaks to Job out of the whirlwind about His power and wisdom",
+          "keyVerses": ["Job 38:1", "Job 38:4", "Job 38:11"],
+          "content": "Then the Lord answered Job out of the whirlwind and said: 'Who is this that darkens counsel by words without knowledge? Where were you when I laid the foundation of the earth? Tell me, if you have understanding.'",
+          "themes": ["God's Power", "Divine Wisdom", "Human Limitations", "Creator's Authority"]
+        },
+        {
+          "number": 42,
+          "title": "Job's Restoration",
+          "summary": "Job repents and God restores his fortunes double",
+          "keyVerses": ["Job 42:2", "Job 42:5", "Job 42:10"],
+          "content": "I know that you can do all things, and that no purpose of yours can be thwarted. I had heard of you by the hearing of the ear, but now my eye sees you; therefore I despise myself, and repent in dust and ashes.",
+          "themes": ["Repentance", "God's Sovereignty", "Restoration", "Blessing"]
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "testament": "Old Testament",
+      "chapters": 12,
+      "description": "Daniel's faithfulness in exile and prophetic visions",
+      "author": "Daniel",
+      "themes": ["Faithfulness", "Prophecy", "God's Kingdom", "Divine Protection"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Daniel's Resolve",
+          "summary": "Daniel and his friends remain faithful to God in Babylon",
+          "keyVerses": ["Daniel 1:8", "Daniel 1:17", "Daniel 1:20"],
+          "content": "But Daniel resolved that he would not defile himself with the king's food, or with the wine that he drank. Therefore he asked the chief of the eunuchs to allow him not to defile himself. As for these four youths, God gave them learning and skill in all literature and wisdom, and Daniel had understanding in all visions and dreams.",
+          "themes": ["Faithfulness", "Resolve", "God's Blessing", "Wisdom"]
+        },
+        {
+          "number": 3,
+          "title": "The Fiery Furnace",
+          "summary": "Shadrach, Meshach, and Abednego refuse to worship the golden image",
+          "keyVerses": ["Daniel 3:17", "Daniel 3:18", "Daniel 3:25"],
+          "content": "If this be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of your hand, O king. But if not, be it known to you, O king, that we will not serve your gods or worship the golden image that you have set up.",
+          "themes": ["Courage", "Faith", "Divine Deliverance", "Loyalty to God"]
+        },
+        {
+          "number": 6,
+          "title": "Daniel in the Lion's Den",
+          "summary": "Daniel continues to pray despite the king's decree and is protected by God",
+          "keyVerses": ["Daniel 6:10", "Daniel 6:16", "Daniel 6:22"],
+          "content": "When Daniel knew that the document had been signed, he went to his house where he had windows in his upper chamber open toward Jerusalem. He got down on his knees three times a day and prayed and gave thanks before his God, as he had done previously.",
+          "themes": ["Prayer", "Faithfulness", "Divine Protection", "Consistency"]
+        },
+        {
+          "number": 9,
+          "title": "Daniel's Prayer and the Seventy Weeks",
+          "summary": "Daniel's prayer of confession and the prophecy of seventy weeks",
+          "keyVerses": ["Daniel 9:3", "Daniel 9:19", "Daniel 9:24"],
+          "content": "Then I turned my face to the Lord God, seeking him by prayer and pleas for mercy with fasting and sackcloth and ashes. O Lord, hear; O Lord, forgive. O Lord, pay attention and act. Delay not, for your own sake, O my God, because your city and your people are called by your name.",
+          "themes": ["Prayer", "Confession", "Prophecy", "God's Mercy"]
+        }
+      ]
+    },
+    {
+      "id": "joshua",
+      "name": "Joshua",
+      "testament": "Old Testament",
+      "chapters": 24,
+      "description": "The conquest of the Promised Land under Joshua's leadership",
+      "author": "Unknown",
+      "themes": ["Conquest", "Faith", "Obedience", "God's Faithfulness"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Joshua's Commission",
+          "summary": "God commissions Joshua to lead Israel into the Promised Land",
+          "keyVerses": ["Joshua 1:5", "Joshua 1:8", "Joshua 1:9"],
+          "content": "No man shall be able to stand before you all the days of your life. Just as I was with Moses, so I will be with you. I will not leave you or forsake you. This Book of the Law shall not depart from your mouth, but you shall meditate on it day and night.",
+          "themes": ["Leadership", "God's Presence", "Courage", "Scripture Meditation"]
+        },
+        {
+          "number": 6,
+          "title": "The Fall of Jericho",
+          "summary": "The walls of Jericho fall after Israel marches around the city",
+          "keyVerses": ["Joshua 6:2", "Joshua 6:20", "Joshua 6:27"],
+          "content": "And the Lord said to Joshua, 'See, I have given Jericho into your hand, with its king and mighty men of valor.' So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people shouted a great shout, and the wall fell down flat.",
+          "themes": ["Obedience", "Faith", "God's Power", "Victory"]
+        },
+        {
+          "number": 24,
+          "title": "The Covenant Renewed",
+          "summary": "Joshua challenges Israel to choose whom they will serve",
+          "keyVerses": ["Joshua 24:14", "Joshua 24:15", "Joshua 24:24"],
+          "content": "Now therefore fear the Lord and serve him in sincerity and in faithfulness. Put away the gods that your fathers served beyond the River and in Egypt, and serve the Lord. And if it is evil in your eyes to serve the Lord, choose this day whom you will serve. But as for me and my house, we will serve the Lord.",
+          "themes": ["Choice", "Commitment", "Covenant", "Serving God"]
+        }
+      ]
+    },
+    {
+      "id": "judges",
+      "name": "Judges",
+      "testament": "Old Testament",
+      "chapters": 21,
+      "description": "The period of judges and Israel's cycle of sin and deliverance",
+      "author": "Unknown",
+      "themes": ["Deliverance", "Rebellion", "Cycle of Sin", "God's Mercy"],
+      "chaptersContent": [
+        {
+          "number": 6,
+          "title": "Gideon's Call",
+          "summary": "God calls Gideon to deliver Israel from the Midianites",
+          "keyVerses": ["Judges 6:12", "Judges 6:15", "Judges 6:16"],
+          "content": "And the angel of the Lord appeared to him and said to him, 'The Lord is with you, O mighty man of valor.' And he said to him, 'Please, Lord, how can I save Israel? Behold, my clan is the weakest in Manasseh, and I am the least in my father's house.'",
+          "themes": ["God's Call", "Weakness", "Divine Strength", "Doubt"]
+        },
+        {
+          "number": 7,
+          "title": "Gideon's Victory",
+          "summary": "God gives victory through Gideon's small army of 300 men",
+          "keyVerses": ["Judges 7:2", "Judges 7:7", "Judges 7:22"],
+          "content": "The Lord said to Gideon, 'The people with you are too many for me to give the Midianites into their hand, lest Israel boast over me, saying, \"My own hand has saved me.\"' And the Lord said to Gideon, 'With the 300 men who lapped I will save you and give the Midianites into your hand.'",
+          "themes": ["God's Power", "Small Numbers", "Divine Victory", "Humility"]
+        },
+        {
+          "number": 16,
+          "title": "Samson's Death",
+          "summary": "Samson's final act of strength destroys the Philistine temple",
+          "keyVerses": ["Judges 16:28", "Judges 16:30", "Judges 16:31"],
+          "content": "Then Samson called to the Lord and said, 'O Lord God, please remember me and please strengthen me only this once, O God, that I may be avenged on the Philistines for my two eyes.' And Samson grasped the two middle pillars on which the house rested, and he leaned his weight against them.",
+          "themes": ["Strength", "Vengeance", "Sacrifice", "God's Power"]
+        }
+      ]
     }
   ]
 }
