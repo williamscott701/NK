@@ -1755,6 +1755,375 @@
           "themes": ["God's Patience", "Day of the Lord", "New Heavens", "Holy Living"]
         }
       ]
+    },
+    {
+      "id": "song-of-solomon",
+      "name": "Song of Solomon",
+      "testament": "Old Testament", 
+      "chapters": 8,
+      "description": "Poetic celebration of love between husband and wife",
+      "author": "Solomon",
+      "themes": ["Love", "Marriage", "Beauty", "Romance"],
+      "chaptersContent": [
+        {
+          "number": 2,
+          "title": "The Beloved's Beauty",
+          "summary": "The lover and beloved express their love for each other",
+          "keyVerses": ["Song of Solomon 2:10", "Song of Solomon 2:11", "Song of Solomon 2:16"],
+          "content": "My beloved speaks and says to me: 'Arise, my love, my beautiful one, and come away, for behold, the winter is past, the rain is over and gone. My beloved is mine, and I am his; he grazes among the lilies.'",
+          "themes": ["Mutual Love", "Beauty", "Seasons", "Devotion"]
+        },
+        {
+          "number": 8,
+          "title": "Love is Strong",
+          "summary": "The strength and value of true love",
+          "keyVerses": ["Song of Solomon 8:6", "Song of Solomon 8:7", "Song of Solomon 8:14"],
+          "content": "Set me as a seal upon your heart, as a seal upon your arm, for love is strong as death, jealousy is fierce as the grave. Its flashes are flashes of fire, the very flame of the Lord. Many waters cannot quench love, neither can floods drown it.",
+          "themes": ["Strong Love", "Permanence", "Divine Love", "Commitment"]
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "name": "Jeremiah",
+      "testament": "Old Testament",
+      "chapters": 52,
+      "description": "The weeping prophet's call to repentance and prophecies of judgment",
+      "author": "Jeremiah",
+      "themes": ["Judgment", "Repentance", "New Covenant", "Hope"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Jeremiah's Call",
+          "summary": "God calls Jeremiah to be a prophet to the nations",
+          "keyVerses": ["Jeremiah 1:5", "Jeremiah 1:9", "Jeremiah 1:12"],
+          "content": "Before I formed you in the womb I knew you, and before you were born I consecrated you; I appointed you a prophet to the nations. Then the Lord put out his hand and touched my mouth. And the Lord said to me, 'Behold, I have put my words in your mouth.'",
+          "themes": ["Divine Call", "Consecration", "God's Word", "Youth"]
+        },
+        {
+          "number": 18,
+          "title": "The Potter and the Clay",
+          "summary": "God's sovereignty illustrated through the potter and clay",
+          "keyVerses": ["Jeremiah 18:3", "Jeremiah 18:4", "Jeremiah 18:6"],
+          "content": "So I went down to the potter's house, and there he was working at his wheel. And the vessel he was making of clay was spoiled in the potter's hand, and he reworked it into another vessel, as it seemed good to the potter to do. O house of Israel, can I not do with you as this potter has done? declares the Lord. Behold, like the clay in the potter's hand, so are you in my hand, O house of Israel.",
+          "themes": ["God's Sovereignty", "Repentance", "Restoration", "Divine Control"]
+        },
+        {
+          "number": 29,
+          "title": "Letter to the Exiles",
+          "summary": "Jeremiah's letter of hope to the Babylonian exiles",
+          "keyVerses": ["Jeremiah 29:11", "Jeremiah 29:12", "Jeremiah 29:13"],
+          "content": "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope. Then you will call upon me and come and pray to me, and I will hear you. You will seek me and find me, when you seek me with all your heart.",
+          "themes": ["Hope", "God's Plans", "Future", "Seeking God"]
+        },
+        {
+          "number": 31,
+          "title": "The New Covenant",
+          "summary": "God promises a new covenant written on hearts",
+          "keyVerses": ["Jeremiah 31:31", "Jeremiah 31:33", "Jeremiah 31:34"],
+          "content": "Behold, the days are coming, declares the Lord, when I will make a new covenant with the house of Israel and the house of Judah. But this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my law within them, and I will write it on their hearts. And I will be their God, and they shall be my people.",
+          "themes": ["New Covenant", "Heart", "Forgiveness", "Restoration"]
+        }
+      ]
+    },
+    {
+      "id": "lamentations",
+      "name": "Lamentations",
+      "testament": "Old Testament",
+      "chapters": 5,
+      "description": "Mourning poems over Jerusalem's destruction",
+      "author": "Jeremiah",
+      "themes": ["Mourning", "God's Faithfulness", "Hope", "Suffering"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Jerusalem's Desolation",
+          "summary": "The once-great city of Jerusalem lies in ruins",
+          "keyVerses": ["Lamentations 1:1", "Lamentations 1:12", "Lamentations 1:18"],
+          "content": "How lonely sits the city that was full of people! How like a widow has she become, she who was great among the nations! She who was a princess among the provinces has become a slave. Is it nothing to you, all you who pass by? Look and see if there is any sorrow like my sorrow, which was brought upon me.",
+          "themes": ["Desolation", "Sorrow", "Judgment", "Loneliness"]
+        },
+        {
+          "number": 3,
+          "title": "Hope in God's Mercy",
+          "summary": "Despite suffering, hope remains in God's steadfast love",
+          "keyVerses": ["Lamentations 3:22", "Lamentations 3:23", "Lamentations 3:25"],
+          "content": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness. The Lord is good to those who wait for him, to the soul who seeks him.",
+          "themes": ["Steadfast Love", "New Mercies", "Faithfulness", "Hope"]
+        },
+        {
+          "number": 5,
+          "title": "A Prayer for Restoration",
+          "summary": "A final plea for God to remember and restore His people",
+          "keyVerses": ["Lamentations 5:1", "Lamentations 5:19", "Lamentations 5:21"],
+          "content": "Remember, O Lord, what has befallen us; look, and see our disgrace! But you, O Lord, reign forever; your throne endures to all generations. Restore us to yourself, O Lord, that we may be restored! Renew our days as of old.",
+          "themes": ["Prayer", "Restoration", "God's Reign", "Renewal"]
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "name": "Ezekiel",
+      "testament": "Old Testament",
+      "chapters": 48,
+      "description": "Visions of God's glory and prophecies of restoration",
+      "author": "Ezekiel",
+      "themes": ["God's Glory", "Restoration", "Responsibility", "New Heart"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Vision of God's Glory",
+          "summary": "Ezekiel sees the glory of God with living creatures and wheels",
+          "keyVerses": ["Ezekiel 1:4", "Ezekiel 1:26", "Ezekiel 1:28"],
+          "content": "As I looked, behold, a stormy wind came out of the north, and a great cloud, with brightness around it, and fire flashing forth continually, and in the midst of the fire, as it were gleaming metal. And above the expanse over their heads there was the likeness of a throne, in appearance like sapphire; and seated above the likeness of a throne was a likeness with a human appearance.",
+          "themes": ["God's Glory", "Vision", "Throne", "Divine Appearance"]
+        },
+        {
+          "number": 37,
+          "title": "The Valley of Dry Bones",
+          "summary": "Vision of dry bones coming to life, symbolizing Israel's restoration",
+          "keyVerses": ["Ezekiel 37:3", "Ezekiel 37:5", "Ezekiel 37:14"],
+          "content": "And he said to me, 'Son of man, can these bones live?' And I answered, 'O Lord God, you know.' Thus says the Lord God to these bones: Behold, I will cause breath to enter you, and you shall live. And I will put my Spirit within you, and you shall live, and I will place you in your own land.",
+          "themes": ["Resurrection", "Restoration", "God's Spirit", "New Life"]
+        },
+        {
+          "number": 47,
+          "title": "The River of Life",
+          "summary": "Vision of water flowing from the temple bringing life",
+          "keyVerses": ["Ezekiel 47:1", "Ezekiel 47:9", "Ezekiel 47:12"],
+          "content": "Then he brought me back to the door of the temple, and behold, water was issuing from below the threshold of the temple toward the east. And wherever the river goes, every living creature that swarms will live, and there will be very many fish. Everything will live where the river goes.",
+          "themes": ["Living Water", "Life", "Healing", "Temple"]
+        }
+      ]
+    },
+    {
+      "id": "hosea",
+      "name": "Hosea",
+      "testament": "Old Testament",
+      "chapters": 14,
+      "description": "God's unfailing love despite Israel's unfaithfulness",
+      "author": "Hosea",
+      "themes": ["Unfailing Love", "Unfaithfulness", "Restoration", "Marriage"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Hosea's Marriage",
+          "summary": "God commands Hosea to marry an unfaithful woman as a symbol",
+          "keyVerses": ["Hosea 1:2", "Hosea 1:6", "Hosea 1:10"],
+          "content": "When the Lord first spoke through Hosea, the Lord said to Hosea, 'Go, take to yourself a wife of whoredom and have children of whoredom, for the land commits great whoredom by forsaking the Lord.' Yet the number of the children of Israel shall be like the sand of the sea, which cannot be measured or numbered.",
+          "themes": ["Symbolic Marriage", "Unfaithfulness", "God's Love", "Promise"]
+        },
+        {
+          "number": 11,
+          "title": "God's Love for Israel",
+          "summary": "God's tender love and reluctance to give up on Israel",
+          "keyVerses": ["Hosea 11:1", "Hosea 11:4", "Hosea 11:8"],
+          "content": "When Israel was a child, I loved him, and out of Egypt I called my son. I led them with cords of kindness, with the bands of love, and I became to them as one who eases the yoke on their jaws, and I bent down to them and fed them. How can I give you up, O Ephraim? How can I hand you over, O Israel?",
+          "themes": ["God's Love", "Tenderness", "Reluctance to Punish", "Compassion"]
+        },
+        {
+          "number": 14,
+          "title": "Return to the Lord",
+          "summary": "Call to repentance and promise of restoration",
+          "keyVerses": ["Hosea 14:1", "Hosea 14:4", "Hosea 14:9"],
+          "content": "Return, O Israel, to the Lord your God, for you have stumbled because of your iniquity. I will heal their apostasy; I will love them freely, for my anger has turned from them. Whoever is wise, let him understand these things; whoever is discerning, let him know them; for the ways of the Lord are right, and the upright walk in them, but transgressors stumble in them.",
+          "themes": ["Repentance", "Healing", "Free Love", "Wisdom"]
+        }
+      ]
+    },
+    {
+      "id": "amos",
+      "name": "Amos",
+      "testament": "Old Testament",
+      "chapters": 9,
+      "description": "Prophecy calling for social justice and righteousness",
+      "author": "Amos",
+      "themes": ["Social Justice", "Righteousness", "Judgment", "Restoration"],
+      "chaptersContent": [
+        {
+          "number": 5,
+          "title": "Seek Good",
+          "summary": "Call to seek good and establish justice",
+          "keyVerses": ["Amos 5:14", "Amos 5:15", "Amos 5:24"],
+          "content": "Seek good, and not evil, that you may live; and so the Lord, the God of hosts, will be with you, as you have said. Hate evil, and love good, and establish justice in the gate; it may be that the Lord, the God of hosts, will be gracious to the remnant of Joseph. But let justice roll down like waters, and righteousness like an ever-flowing stream.",
+          "themes": ["Seek Good", "Justice", "Righteousness", "God's Presence"]
+        },
+        {
+          "number": 7,
+          "title": "Visions of Judgment",
+          "summary": "Amos sees visions of coming judgment on Israel",
+          "keyVerses": ["Amos 7:7", "Amos 7:8", "Amos 7:15"],
+          "content": "This is what he showed me: behold, the Lord was standing beside a wall built with a plumb line, with a plumb line in his hand. And the Lord said to me, 'Amos, what do you see?' And I said, 'A plumb line.' Then the Lord said, 'Behold, I am setting a plumb line in the midst of my people Israel; I will never again pass by them.'",
+          "themes": ["Visions", "Plumb Line", "Divine Standard", "Judgment"]
+        },
+        {
+          "number": 9,
+          "title": "Promise of Restoration",
+          "summary": "Despite judgment, God promises future restoration",
+          "keyVerses": ["Amos 9:11", "Amos 9:13", "Amos 9:15"],
+          "content": "In that day I will raise up the booth of David that is fallen and repair its breaches, and raise up its ruins and rebuild it as in the days of old. Behold, the days are coming, declares the Lord, when the plowman shall overtake the reaper and the treader of grapes him who sows the seed; the mountains shall drip sweet wine, and all the hills shall flow with it.",
+          "themes": ["Restoration", "David's Booth", "Abundance", "Permanence"]
+        }
+      ]
+    },
+    {
+      "id": "micah",
+      "name": "Micah",
+      "testament": "Old Testament",
+      "chapters": 7,
+      "description": "Prophecy combining judgment with hope and the requirements of God",
+      "author": "Micah",
+      "themes": ["Justice", "Mercy", "Bethlehem", "Requirements"],
+      "chaptersContent": [
+        {
+          "number": 5,
+          "title": "The Ruler from Bethlehem",
+          "summary": "Prophecy of the Messiah's birth in Bethlehem",
+          "keyVerses": ["Micah 5:2", "Micah 5:4", "Micah 5:5"],
+          "content": "But you, O Bethlehem Ephrathah, who are too little to be among the clans of Judah, from you shall come forth for me one who is to be ruler in Israel, whose coming forth is from of old, from ancient days. And he shall stand and shepherd his flock in the strength of the Lord, in the majesty of the name of the Lord his God.",
+          "themes": ["Bethlehem", "Messiah", "Ruler", "Shepherd"]
+        },
+        {
+          "number": 6,
+          "title": "What Does the Lord Require?",
+          "summary": "God's requirements: justice, mercy, and humble walking",
+          "keyVerses": ["Micah 6:6", "Micah 6:8", "Micah 6:9"],
+          "content": "With what shall I come before the Lord, and bow myself before God on high? Shall I come before him with burnt offerings, with calves a year old? He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?",
+          "themes": ["Requirements", "Justice", "Kindness", "Humility"]
+        },
+        {
+          "number": 7,
+          "title": "God's Mercy and Forgiveness",
+          "summary": "Confidence in God's mercy and forgiveness",
+          "keyVerses": ["Micah 7:7", "Micah 7:18", "Micah 7:19"],
+          "content": "But as for me, I will look to the Lord; I will wait for the God of my salvation; my God will hear me. Who is a God like you, pardoning iniquity and passing over transgression for the remnant of his inheritance? He does not retain his anger forever, because he delights in steadfast love.",
+          "themes": ["Waiting", "Forgiveness", "Steadfast Love", "Mercy"]
+        }
+      ]
+    },
+    {
+      "id": "habakkuk",
+      "name": "Habakkuk",
+      "testament": "Old Testament",
+      "chapters": 3,
+      "description": "A prophet's dialogue with God about justice and faith",
+      "author": "Habakkuk",
+      "themes": ["Faith", "Justice", "Trust", "God's Ways"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Habakkuk's Complaint",
+          "summary": "The prophet questions God about injustice and violence",
+          "keyVerses": ["Habakkuk 1:2", "Habakkuk 1:5", "Habakkuk 1:13"],
+          "content": "O Lord, how long shall I cry for help, and you will not hear? Or cry to you 'Violence!' and you will not save? Look among the nations, and see; wonder and be astounded. For I am doing a work in your days that you would not believe if told. You who are of purer eyes than to see evil and cannot look at wrong, why do you idly look at traitors and remain silent when the wicked swallows up the man more righteous than he?",
+          "themes": ["Complaint", "Violence", "God's Work", "Justice"]
+        },
+        {
+          "number": 2,
+          "title": "The Righteous Shall Live by Faith",
+          "summary": "God's answer and the principle of living by faith",
+          "keyVerses": ["Habakkuk 2:2", "Habakkuk 2:4", "Habakkuk 2:14"],
+          "content": "And the Lord answered me: 'Write the vision; make it plain on tablets, so he may run who reads it. Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. For the earth will be filled with the knowledge of the glory of the Lord as the waters cover the sea.'",
+          "themes": ["Vision", "Faith", "Righteousness", "God's Glory"]
+        },
+        {
+          "number": 3,
+          "title": "Habakkuk's Prayer",
+          "summary": "A prayer of trust and joy despite circumstances",
+          "keyVerses": ["Habakkuk 3:2", "Habakkuk 3:17", "Habakkuk 3:18"],
+          "content": "O Lord, I have heard the report of you, and your work, O Lord, do I fear. In the midst of the years revive it; in the midst of the years make it known; in wrath remember mercy. Though the fig tree should not blossom, nor fruit be on the vines, the produce of the olive fail and the fields yield no food, the flock be cut off from the fold and there be no herd in the stalls, yet I will rejoice in the Lord; I will take joy in the God of my salvation.",
+          "themes": ["Prayer", "Revival", "Rejoicing", "Salvation"]
+        }
+      ]
+    },
+    {
+      "id": "zephaniah",
+      "name": "Zephaniah",
+      "testament": "Old Testament",
+      "chapters": 3,
+      "description": "Prophecy of the Day of the Lord and future restoration",
+      "author": "Zephaniah",
+      "themes": ["Day of the Lord", "Judgment", "Restoration", "Remnant"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "The Day of Wrath",
+          "summary": "Description of the coming Day of the Lord's wrath",
+          "keyVerses": ["Zephaniah 1:7", "Zephaniah 1:14", "Zephaniah 1:18"],
+          "content": "Be silent before the Lord God! For the day of the Lord is near; the Lord has prepared a sacrifice and consecrated his guests. The great day of the Lord is near, near and hastening fast; the sound of the day of the Lord is bitter; the mighty man cries aloud there. Neither their silver nor their gold shall be able to deliver them on the day of the wrath of the Lord.",
+          "themes": ["Day of Wrath", "Judgment", "Sacrifice", "No Escape"]
+        },
+        {
+          "number": 3,
+          "title": "Promise of Restoration",
+          "summary": "God's promise to restore and rejoice over His people",
+          "keyVerses": ["Zephaniah 3:9", "Zephaniah 3:17", "Zephaniah 3:20"],
+          "content": "For at that time I will change the speech of the peoples to a pure speech, that all of them may call upon the name of the Lord and serve him with one accord. The Lord your God is in your midst, a mighty one who will save; he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing.",
+          "themes": ["Pure Speech", "God's Joy", "Love", "Restoration"]
+        }
+      ]
+    },
+    {
+      "id": "zechariah",
+      "name": "Zechariah",
+      "testament": "Old Testament",
+      "chapters": 14,
+      "description": "Visions of restoration and the coming Messiah",
+      "author": "Zechariah",
+      "themes": ["Restoration", "Messiah", "Visions", "Temple"],
+      "chaptersContent": [
+        {
+          "number": 1,
+          "title": "Call to Return",
+          "summary": "God calls His people to return to Him",
+          "keyVerses": ["Zechariah 1:3", "Zechariah 1:16", "Zechariah 1:17"],
+          "content": "Therefore say to them, Thus declares the Lord of hosts: Return to me, says the Lord of hosts, and I will return to you, says the Lord of hosts. Therefore thus says the Lord: I have returned to Jerusalem with mercy; my house shall be built in it, declares the Lord of hosts, and the measuring line shall be stretched out over Jerusalem.",
+          "themes": ["Return", "Mercy", "Rebuilding", "God's House"]
+        },
+        {
+          "number": 9,
+          "title": "The King on a Donkey",
+          "summary": "Prophecy of the Messiah coming humbly on a donkey",
+          "keyVerses": ["Zechariah 9:9", "Zechariah 9:10", "Zechariah 9:16"],
+          "content": "Rejoice greatly, O daughter of Zion! Shout aloud, O daughter of Jerusalem! Behold, your king is coming to you; righteous and having salvation is he, humble and mounted on a donkey, on a colt, the foal of a donkey. I will cut off the chariot from Ephraim and the war horse from Jerusalem; and the battle bow shall be cut off, and he shall speak peace to the nations.",
+          "themes": ["Humble King", "Peace", "Salvation", "Rejoicing"]
+        },
+        {
+          "number": 14,
+          "title": "The Day of the Lord",
+          "summary": "The final Day of the Lord and God's reign",
+          "keyVerses": ["Zechariah 14:4", "Zechariah 14:9", "Zechariah 14:16"],
+          "content": "On that day his feet shall stand on the Mount of Olives that is before Jerusalem on the east, and the Mount of Olives shall be split in two from east to west by a very wide valley. And the Lord will be king over all the earth. On that day the Lord will be one and his name one.",
+          "themes": ["Second Coming", "God's Reign", "Universal Kingdom", "Worship"]
+        }
+      ]
+    },
+    {
+      "id": "malachi",
+      "name": "Malachi",
+      "testament": "Old Testament",
+      "chapters": 4,
+      "description": "The final Old Testament prophet's call to faithfulness",
+      "author": "Malachi",
+      "themes": ["Faithfulness", "Tithing", "Elijah", "Day of the Lord"],
+      "chaptersContent": [
+        {
+          "number": 3,
+          "title": "Tithing and God's Blessing",
+          "summary": "God challenges His people to test Him in tithing",
+          "keyVerses": ["Malachi 3:8", "Malachi 3:10", "Malachi 3:12"],
+          "content": "Will man rob God? Yet you are robbing me. But you say, 'How have we robbed you?' In your tithes and contributions. Bring the full tithe into the storehouse, that there may be food in my house. And thereby put me to the test, says the Lord of hosts, if I will not open the windows of heaven for you and pour down for you a blessing until there is no more need.",
+          "themes": ["Tithing", "Testing God", "Blessing", "Storehouse"]
+        },
+        {
+          "number": 4,
+          "title": "Elijah's Return",
+          "summary": "Promise of Elijah's return before the Day of the Lord",
+          "keyVerses": ["Malachi 4:2", "Malachi 4:5", "Malachi 4:6"],
+          "content": "But for you who fear my name, the sun of righteousness shall rise with healing in its wings. You shall go out leaping like calves from the stall. Behold, I will send you Elijah the prophet before the great and awesome day of the Lord comes. And he will turn the hearts of fathers to their children and the hearts of children to their fathers, lest I come and strike the land with a decree of utter destruction.",
+          "themes": ["Sun of Righteousness", "Healing", "Elijah", "Hearts Turned"]
+        }
+      ]
     }
   ]
 }
