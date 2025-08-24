@@ -311,7 +311,10 @@ export default function PageSearch({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setIsFocused(true)}
-                onBlur={() => setTimeout(() => setShowResults(false), 200)}
+                onBlur={() => {
+                  setIsFocused(false);
+                  setTimeout(() => setShowResults(false), 200);
+                }}
                 placeholder={searchMode === 'all' ? placeholder : 
                              searchMode === 'stories' ? "Search stories..." : 
                              searchMode === 'concepts' ? "Search concepts..." : 

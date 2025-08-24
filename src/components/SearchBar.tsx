@@ -202,7 +202,10 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setIsFocused(true)}
-                onBlur={() => setTimeout(() => setShowResults(false), 200)}
+                onBlur={() => {
+                  setIsFocused(false);
+                  setTimeout(() => setShowResults(false), 200);
+                }}
                 placeholder={placeholder}
                 className="flex-1 text-xl text-gray-800 placeholder-gray-500 bg-transparent outline-none"
               />

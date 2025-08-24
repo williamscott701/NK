@@ -3303,23 +3303,6 @@
           ]
         },
         {
-          "number": 1,
-          "title": "God's Commission to Joshua",
-          "summary": "God commissions Joshua to lead Israel into the Promised Land",
-          "keyVerses": [
-            "Joshua 1:5",
-            "Joshua 1:8",
-            "Joshua 1:9"
-          ],
-          "content": "No man shall be able to stand before you all the days of your life. Just as I was with Moses, so I will be with you. I will not leave you or forsake you. This Book of the Law shall not depart from your mouth, but you shall meditate on it day and night.",
-          "themes": [
-            "Leadership",
-            "God's Presence",
-            "Courage",
-            "Scripture Meditation"
-          ]
-        },
-        {
           "number": 2,
           "title": "Rahab and the Spies",
           "summary": "Two spies are hidden by Rahab in Jericho",
@@ -3385,23 +3368,6 @@
             "Reproach",
             "Manna",
             "Produce"
-          ]
-        },
-        {
-          "number": 6,
-          "title": "The Fall of Jericho",
-          "summary": "The walls of Jericho fall after Israel marches around the city",
-          "keyVerses": [
-            "Joshua 6:2",
-            "Joshua 6:20",
-            "Joshua 6:27"
-          ],
-          "content": "And the Lord said to Joshua, 'See, I have given Jericho into your hand, with its king and mighty men of valor.' So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people shouted a great shout, and the wall fell down flat.",
-          "themes": [
-            "Obedience",
-            "Faith",
-            "God's Power",
-            "Victory"
           ]
         },
         {
@@ -7762,6 +7728,584 @@
           ]
         },
         {
+          "number": 3,
+          "title": "Job Curses the Day of His Birth",
+          "summary": "Job curses the day he was born and longs for death",
+          "keyVerses": [
+            "Job 3:1",
+            "Job 3:11",
+            "Job 3:26"
+          ],
+          "content": "After this Job opened his mouth and cursed the day of his birth. And Job said: 'Let the day perish on which I was born, and the night that said, \"A man is conceived.\" Why did I not die at birth, come out from the womb and expire?'",
+          "themes": [
+            "Despair",
+            "Birth",
+            "Death",
+            "Suffering"
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Eliphaz's First Speech",
+          "summary": "Eliphaz suggests Job's suffering is due to sin",
+          "keyVerses": [
+            "Job 4:7",
+            "Job 4:8",
+            "Job 4:17"
+          ],
+          "content": "Remember: who that was innocent ever perished? Or where were the upright cut off? As I have seen, those who plow iniquity and sow trouble reap the same. Can mortal man be in the right before God? Can a man be pure before his Maker?",
+          "themes": [
+            "Retribution",
+            "Innocence",
+            "Sin",
+            "Divine Justice"
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Eliphaz Continues His Counsel",
+          "summary": "Eliphaz advises Job to seek God and accept His discipline",
+          "keyVerses": [
+            "Job 5:7",
+            "Job 5:17",
+            "Job 5:27"
+          ],
+          "content": "But man is born to trouble as the sparks fly upward. Behold, blessed is the one whom God reproves; therefore despise not the discipline of the Almighty. Behold, this we have searched out; it is true. Hear, and know it for your good.",
+          "themes": [
+            "Trouble",
+            "Discipline",
+            "Blessing",
+            "Wisdom"
+          ]
+        },
+        {
+          "number": 6,
+          "title": "Job's Response to Eliphaz",
+          "summary": "Job defends his complaint and asks for understanding",
+          "keyVerses": [
+            "Job 6:2",
+            "Job 6:14",
+            "Job 6:24"
+          ],
+          "content": "Oh that my vexation were weighed, and all my calamity laid in the balances! He who withholds kindness from a friend forsakes the fear of the Almighty. Teach me, and I will be silent; make me understand how I have gone astray.",
+          "themes": [
+            "Vexation",
+            "Kindness",
+            "Teaching",
+            "Understanding"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Job's Complaint About Life",
+          "summary": "Job describes the misery of his life and questions God",
+          "keyVerses": [
+            "Job 7:1",
+            "Job 7:11",
+            "Job 7:20"
+          ],
+          "content": "Has not man a hard service on earth, and are not his days like the days of a hired worker? I will not restrain my mouth; I will speak in the anguish of my spirit; I will complain in the bitterness of my soul.",
+          "themes": [
+            "Hard Service",
+            "Anguish",
+            "Complaint",
+            "Bitterness"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Bildad's First Speech",
+          "summary": "Bildad argues that Job's children died because of their sin",
+          "keyVerses": [
+            "Job 8:3",
+            "Job 8:6",
+            "Job 8:20"
+          ],
+          "content": "Does God pervert justice? Or does the Almighty pervert the right? If your children have sinned against him, he has delivered them into the hand of their transgression. Behold, God will not reject a blameless man, nor take the hand of evildoers.",
+          "themes": [
+            "Justice",
+            "Sin",
+            "Transgression",
+            "Blamelessness"
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Job's Response to Bildad",
+          "summary": "Job acknowledges God's power but questions His justice",
+          "keyVerses": [
+            "Job 9:2",
+            "Job 9:14",
+            "Job 9:32"
+          ],
+          "content": "Truly I know that it is so: But how can a man be in the right before God? If one wished to contend with him, one could not answer him once in a thousand times. For he is not a man, as I am, that I might answer him, that we should come to trial together.",
+          "themes": [
+            "Righteousness",
+            "Contention",
+            "Power",
+            "Trial"
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Job's Plea to God",
+          "summary": "Job asks God why He has made him and allowed his suffering",
+          "keyVerses": [
+            "Job 10:1",
+            "Job 10:8",
+            "Job 10:18"
+          ],
+          "content": "I loathe my life; I will give free utterance to my complaint; I will speak in the bitterness of my soul. Your hands fashioned and made me together round about, and now you have destroyed me altogether. Why did you bring me out from the womb?",
+          "themes": [
+            "Life",
+            "Complaint",
+            "Creation",
+            "Destruction"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "Zophar's First Speech",
+          "summary": "Zophar rebukes Job and urges him to repent",
+          "keyVerses": [
+            "Job 11:6",
+            "Job 11:13",
+            "Job 11:20"
+          ],
+          "content": "Oh that God would speak and open his lips to you, and that he would tell you the secrets of wisdom! If you prepare your heart, you will stretch out your hands toward him. But the eyes of the wicked will fail; all ways of escape will be lost to them.",
+          "themes": [
+            "Wisdom",
+            "Repentance",
+            "Heart",
+            "Wickedness"
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Job's Response to Zophar",
+          "summary": "Job sarcastically responds to his friends' wisdom",
+          "keyVerses": [
+            "Job 12:2",
+            "Job 12:13",
+            "Job 12:25"
+          ],
+          "content": "No doubt you are the people, and wisdom will die with you. With God are wisdom and might; he has counsel and understanding. They grope in the dark without light, and he makes them stagger like a drunken man.",
+          "themes": [
+            "Wisdom",
+            "Might",
+            "Counsel",
+            "Darkness"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Job's Challenge to His Friends",
+          "summary": "Job challenges his friends and demands to speak with God",
+          "keyVerses": [
+            "Job 13:3",
+            "Job 13:15",
+            "Job 13:24"
+          ],
+          "content": "But I would speak to the Almighty, and I desire to argue my case with God. Though he slay me, I will hope in him; yet I will argue my ways to his face. Why do you hide your face and count me as your enemy?",
+          "themes": [
+            "Argument",
+            "Hope",
+            "Face",
+            "Enemy"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Job's Reflection on Mortality",
+          "summary": "Job reflects on the brevity and frailty of human life",
+          "keyVerses": [
+            "Job 14:1",
+            "Job 14:7",
+            "Job 14:14"
+          ],
+          "content": "Man who is born of a woman is few of days and full of trouble. For there is hope for a tree, if it be cut down, that it will sprout again, and that its shoots will not cease. If a man dies, shall he live again?",
+          "themes": [
+            "Mortality",
+            "Trouble",
+            "Hope",
+            "Resurrection"
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Eliphaz's Second Speech",
+          "summary": "Eliphaz accuses Job of undermining religion",
+          "keyVerses": [
+            "Job 15:4",
+            "Job 15:14",
+            "Job 15:35"
+          ],
+          "content": "But you are doing away with the fear of God and hindering meditation before God. What is man, that he can be pure? Or he who is born of a woman, that he can be righteous? They conceive trouble and give birth to evil, and their womb prepares deceit.",
+          "themes": [
+            "Fear of God",
+            "Meditation",
+            "Purity",
+            "Evil"
+          ]
+        },
+        {
+          "number": 16,
+          "title": "Job's Response to Eliphaz",
+          "summary": "Job complains about his friends' lack of comfort",
+          "keyVerses": [
+            "Job 16:2",
+            "Job 16:19",
+            "Job 16:22"
+          ],
+          "content": "I have heard many such things; miserable comforters are you all. Even now, behold, my witness is in heaven, and he who testifies for me is on high. For when a few years have come I shall go the way from which I shall not return.",
+          "themes": [
+            "Comfort",
+            "Witness",
+            "Heaven",
+            "Death"
+          ]
+        },
+        {
+          "number": 17,
+          "title": "Job's Prayer for Vindication",
+          "summary": "Job prays for God to vindicate him before his death",
+          "keyVerses": [
+            "Job 17:1",
+            "Job 17:9",
+            "Job 17:16"
+          ],
+          "content": "My spirit is broken; my days are extinct; the graveyard is ready for me. Yet the righteous holds to his way, and he who has clean hands grows stronger and stronger. Will they go down to the gates of Sheol?",
+          "themes": [
+            "Broken Spirit",
+            "Righteousness",
+            "Clean Hands",
+            "Sheol"
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Bildad's Second Speech",
+          "summary": "Bildad describes the fate of the wicked",
+          "keyVerses": [
+            "Job 18:4",
+            "Job 18:21",
+            "Job 18:21"
+          ],
+          "content": "You who tear yourself in your anger, shall the earth be forsaken for you, or the rock be removed out of its place? Surely such are the dwellings of the unrighteous, such is the place of him who knows not God.",
+          "themes": [
+            "Anger",
+            "Earth",
+            "Unrighteousness",
+            "Knowledge of God"
+          ]
+        },
+        {
+          "number": 20,
+          "title": "Zophar's Second Speech",
+          "summary": "Zophar describes the short-lived prosperity of the wicked",
+          "keyVerses": [
+            "Job 20:4",
+            "Job 20:7",
+            "Job 20:29"
+          ],
+          "content": "Do you not know this from of old, since man was placed on earth, that the exulting of the wicked is short, and the joy of the godless is but for a moment? This is the wicked man's portion from God, the heritage decreed for him by God.",
+          "themes": [
+            "Wickedness",
+            "Prosperity",
+            "Joy",
+            "Heritage"
+          ]
+        },
+        {
+          "number": 21,
+          "title": "Job's Response to Zophar",
+          "summary": "Job argues that the wicked often prosper",
+          "keyVerses": [
+            "Job 21:7",
+            "Job 21:13",
+            "Job 21:34"
+          ],
+          "content": "Why do the wicked live, reach old age, and grow mighty in power? They spend their days in prosperity, and in peace they go down to Sheol. How then will you comfort me with empty nothings?",
+          "themes": [
+            "Wickedness",
+            "Prosperity",
+            "Peace",
+            "Comfort"
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Eliphaz's Third Speech",
+          "summary": "Eliphaz accuses Job of specific sins",
+          "keyVerses": [
+            "Job 22:2",
+            "Job 22:12",
+            "Job 22:21"
+          ],
+          "content": "Can a man be profitable to God? Surely he who is wise is profitable to himself. Is not God high in the heavens? See the highest stars, how lofty they are! Agree with God, and be at peace; thereby good will come to you.",
+          "themes": [
+            "Profit",
+            "Wisdom",
+            "Heavens",
+            "Peace"
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Job's Response to Eliphaz",
+          "summary": "Job longs to find God and present his case",
+          "keyVerses": [
+            "Job 23:3",
+            "Job 23:10",
+            "Job 23:17"
+          ],
+          "content": "Oh, that I knew where I might find him, that I might come even to his seat! But he knows the way that I take; when he has tried me, I shall come out as gold. I am not silenced by the darkness, nor by thick darkness which covers my face.",
+          "themes": [
+            "Finding God",
+            "Testing",
+            "Gold",
+            "Darkness"
+          ]
+        },
+        {
+          "number": 24,
+          "title": "Job's Complaint About Injustice",
+          "summary": "Job describes the wicked who oppress the poor",
+          "keyVerses": [
+            "Job 24:1",
+            "Job 24:12",
+            "Job 24:25"
+          ],
+          "content": "Why are not times of judgment kept by the Almighty, and why do those who know him never see his days? From out of the city the dying groan, and the soul of the wounded cries for help; yet God charges no one with wrong.",
+          "themes": [
+            "Judgment",
+            "Injustice",
+            "Groaning",
+            "Wrong"
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Bildad's Third Speech",
+          "summary": "Bildad emphasizes man's insignificance before God",
+          "keyVerses": [
+            "Job 25:4",
+            "Job 25:5",
+            "Job 25:6"
+          ],
+          "content": "How then can man be in the right before God? How can he who is born of woman be pure? Behold, even the moon is not bright, and the stars are not pure in his eyes; how much less man, who is a maggot, and the son of man, who is a worm!",
+          "themes": [
+            "Righteousness",
+            "Purity",
+            "Brightness",
+            "Insignificance"
+          ]
+        },
+        {
+          "number": 26,
+          "title": "Job's Response to Bildad",
+          "summary": "Job sarcastically responds to Bildad's wisdom",
+          "keyVerses": [
+            "Job 26:2",
+            "Job 26:4",
+            "Job 26:14"
+          ],
+          "content": "How you have helped him who has no power! How you have saved the arm that has no strength! How you have counseled him who has no wisdom, and plentifully declared sound knowledge! Behold, these are but the outskirts of his ways.",
+          "themes": [
+            "Help",
+            "Power",
+            "Counsel",
+            "Knowledge"
+          ]
+        },
+        {
+          "number": 27,
+          "title": "Job's Final Speech to His Friends",
+          "summary": "Job maintains his integrity and describes the fate of the wicked",
+          "keyVerses": [
+            "Job 27:2",
+            "Job 27:5",
+            "Job 27:23"
+          ],
+          "content": "As God lives, who has taken away my right, and the Almighty, who has made my soul bitter, as long as my breath is in me, and the spirit of God is in my nostrils, my lips will not speak falsehood, and my tongue will not utter deceit.",
+          "themes": [
+            "Integrity",
+            "Right",
+            "Breath",
+            "Truth"
+          ]
+        },
+        {
+          "number": 28,
+          "title": "The Search for Wisdom",
+          "summary": "Job describes the search for wisdom and its source",
+          "keyVerses": [
+            "Job 28:12",
+            "Job 28:20",
+            "Job 28:28"
+          ],
+          "content": "But where shall wisdom be found? And where is the place of understanding? It is hidden from the eyes of all living and concealed from the birds of the air. And he said to man, 'Behold, the fear of the Lord, that is wisdom, and to turn away from evil is understanding.'",
+          "themes": [
+            "Wisdom",
+            "Understanding",
+            "Fear of Lord",
+            "Evil"
+          ]
+        },
+        {
+          "number": 29,
+          "title": "Job's Past Prosperity",
+          "summary": "Job recalls his former days of blessing and honor",
+          "keyVerses": [
+            "Job 29:2",
+            "Job 29:14",
+            "Job 29:25"
+          ],
+          "content": "Oh, that I were as in the months of my prime, as in the days when God watched over me, when his lamp shone upon my head, and by his light I walked through darkness. I chose their way and sat as chief, and I lived like a king among his troops.",
+          "themes": [
+            "Prime",
+            "Watching",
+            "Light",
+            "Leadership"
+          ]
+        },
+        {
+          "number": 30,
+          "title": "Job's Present Misery",
+          "summary": "Job contrasts his present suffering with his past glory",
+          "keyVerses": [
+            "Job 30:1",
+            "Job 30:16",
+            "Job 30:31"
+          ],
+          "content": "But now they laugh at me, men who are younger than I, whose fathers I would have disdained to set with the dogs of my flock. And now my soul is poured out within me; days of affliction have taken hold of me. My lyre is turned to mourning, and my pipe to the voice of those who weep.",
+          "themes": [
+            "Laughter",
+            "Youth",
+            "Affliction",
+            "Mourning"
+          ]
+        },
+        {
+          "number": 31,
+          "title": "Job's Final Defense",
+          "summary": "Job makes his final appeal of innocence",
+          "keyVerses": [
+            "Job 31:1",
+            "Job 31:35",
+            "Job 31:40"
+          ],
+          "content": "I have made a covenant with my eyes; how then could I gaze at a virgin? Oh, that I had one to hear me! Behold, my signature! Let the Almighty answer me! Let thorns grow instead of wheat, and foul weeds instead of barley.",
+          "themes": [
+            "Covenant",
+            "Eyes",
+            "Answer",
+            "Curses"
+          ]
+        },
+        {
+          "number": 32,
+          "title": "Elihu's Introduction",
+          "summary": "Elihu introduces himself as a new speaker",
+          "keyVerses": [
+            "Job 32:2",
+            "Job 32:8",
+            "Job 32:22"
+          ],
+          "content": "Then Elihu the son of Barachel the Buzite, of the family of Ram, burned with anger. He burned with anger at Job because he justified himself rather than God. For I am full of words; the spirit within me constrains me.",
+          "themes": [
+            "Anger",
+            "Justification",
+            "Words",
+            "Spirit"
+          ]
+        },
+        {
+          "number": 33,
+          "title": "Elihu's First Speech",
+          "summary": "Elihu claims to speak for God and rebukes Job",
+          "keyVerses": [
+            "Job 33:4",
+            "Job 33:12",
+            "Job 33:29"
+          ],
+          "content": "The Spirit of God has made me, and the breath of the Almighty gives me life. Behold, in this you are not right. I will answer you, for God is greater than man. Behold, God does all these things, twice, three times, with a man.",
+          "themes": [
+            "Spirit of God",
+            "Breath",
+            "Righteousness",
+            "Divine Action"
+          ]
+        },
+        {
+          "number": 34,
+          "title": "Elihu's Second Speech",
+          "summary": "Elihu defends God's justice and rebukes Job",
+          "keyVerses": [
+            "Job 34:10",
+            "Job 34:12",
+            "Job 34:37"
+          ],
+          "content": "Therefore, hear me, you men of understanding: far be it from God that he should do wickedness, and from the Almighty that he should do wrong. For according to the work of a man he will repay him, and according to his ways he will make it befall him.",
+          "themes": [
+            "Understanding",
+            "Wickedness",
+            "Wrong",
+            "Repayment"
+          ]
+        },
+        {
+          "number": 35,
+          "title": "Elihu's Third Speech",
+          "summary": "Elihu argues that Job's righteousness doesn't affect God",
+          "keyVerses": [
+            "Job 35:2",
+            "Job 35:6",
+            "Job 35:16"
+          ],
+          "content": "And Elihu answered and said: Do you think this to be just? Do you say, 'It is my right before God,' that you ask, 'What advantage have I? How am I better off than if I had sinned?'",
+          "themes": [
+            "Justice",
+            "Right",
+            "Advantage",
+            "Sin"
+          ]
+        },
+        {
+          "number": 36,
+          "title": "Elihu's Fourth Speech",
+          "summary": "Elihu continues to defend God's ways",
+          "keyVerses": [
+            "Job 36:5",
+            "Job 36:15",
+            "Job 36:26"
+          ],
+          "content": "Behold, God is mighty, and does not despise any; he is mighty in strength of understanding. He delivers the afflicted by their affliction and opens their ear by adversity. Behold, God is great, and we know him not; the number of his years is unsearchable.",
+          "themes": [
+            "Might",
+            "Understanding",
+            "Affliction",
+            "Greatness"
+          ]
+        },
+        {
+          "number": 37,
+          "title": "Elihu's Final Speech",
+          "summary": "Elihu concludes with God's power in nature",
+          "keyVerses": [
+            "Job 37:5",
+            "Job 37:14",
+            "Job 37:23"
+          ],
+          "content": "God thunders wondrously with his voice; he does great things that we cannot comprehend. Listen to this, O Job; stand still and consider the wondrous works of God. The Almighty—we cannot find him; he is great in power; justice and abundant righteousness he will not violate.",
+          "themes": [
+            "Thunder",
+            "Voice",
+            "Works",
+            "Power"
+          ]
+        },
+        {
           "number": 19,
           "title": "My Redeemer Lives",
           "summary": "Job expresses faith that his Redeemer lives",
@@ -7793,6 +8337,57 @@
             "Divine Wisdom",
             "Human Limitations",
             "Creator's Authority"
+          ]
+        },
+        {
+          "number": 39,
+          "title": "God's Questions About Animals",
+          "summary": "God continues questioning Job about His creation and care of animals",
+          "keyVerses": [
+            "Job 39:1",
+            "Job 39:9",
+            "Job 39:26"
+          ],
+          "content": "Do you know when the mountain goats give birth? Do you observe the calving of the does? Will the wild ox consent to serve you? Will he spend the night at your manger? Is it by your understanding that the hawk soars and spreads his wings toward the south?",
+          "themes": [
+            "Creation",
+            "Animals",
+            "Understanding",
+            "Divine Care"
+          ]
+        },
+        {
+          "number": 40,
+          "title": "God's Challenge to Job",
+          "summary": "God challenges Job to answer His questions and describes Behemoth",
+          "keyVerses": [
+            "Job 40:2",
+            "Job 40:8",
+            "Job 40:15"
+          ],
+          "content": "Shall a faultfinder contend with the Almighty? He who argues with God, let him answer it. Will you even put me in the wrong? Will you condemn me that you may be in the right? Behold, Behemoth, which I made as I made you.",
+          "themes": [
+            "Contention",
+            "Almighty",
+            "Condemnation",
+            "Behemoth"
+          ]
+        },
+        {
+          "number": 41,
+          "title": "God's Description of Leviathan",
+          "summary": "God describes the mighty Leviathan to demonstrate His power",
+          "keyVerses": [
+            "Job 41:1",
+            "Job 41:10",
+            "Job 41:34"
+          ],
+          "content": "Can you draw out Leviathan with a fishhook or press down his tongue with a cord? No one is so fierce that he dares to stir him up. Who then is he who can stand before me? He is king over all the sons of pride.",
+          "themes": [
+            "Leviathan",
+            "Power",
+            "Fear",
+            "Pride"
           ]
         },
         {
@@ -14720,23 +15315,6 @@
           ]
         },
         {
-          "number": 11,
-          "title": "God's Love for Israel",
-          "summary": "God's tender love and reluctance to give up on Israel",
-          "keyVerses": [
-            "Hosea 11:1",
-            "Hosea 11:4",
-            "Hosea 11:8"
-          ],
-          "content": "When Israel was a child, I loved him, and out of Egypt I called my son. I led them with cords of kindness, with the bands of love, and I became to them as one who eases the yoke on their jaws, and I bent down to them and fed them. How can I give you up, O Ephraim? How can I hand you over, O Israel?",
-          "themes": [
-            "God's Love",
-            "Tenderness",
-            "Reluctance to Punish",
-            "Compassion"
-          ]
-        },
-        {
           "number": 14,
           "title": "Return to the Lord",
           "summary": "Call to repentance and promise of restoration",
@@ -16354,20 +16932,20 @@
           ]
         },
         {
-          "number": 1,
-          "title": "The Beginning of the Gospel",
-          "summary": "John the Baptist prepares the way; Jesus is baptized and begins ministry",
+          "number": 2,
+          "title": "Jesus Heals and Forgives Sins",
+          "summary": "Jesus heals a paralytic and forgives his sins, showing His authority",
           "keyVerses": [
-            "Mark 1:1",
-            "Mark 1:11",
-            "Mark 1:15"
+            "Mark 2:5",
+            "Mark 2:10",
+            "Mark 2:17"
           ],
-          "content": "The beginning of the gospel of Jesus Christ, the Son of God. And a voice came from heaven, 'You are my beloved Son; with you I am well pleased.'",
+          "content": "And when Jesus saw their faith, he said to the paralytic, 'Son, your sins are forgiven.' But that you may know that the Son of Man has authority on earth to forgive sins—he said to the paralytic—'I say to you, rise, pick up your bed, and go home.'",
           "themes": [
-            "Gospel",
-            "Baptism",
-            "Beloved Son",
-            "Kingdom"
+            "Faith",
+            "Forgiveness",
+            "Authority",
+            "Healing"
           ]
         },
         {
@@ -16642,20 +17220,20 @@
           ]
         },
         {
-          "number": 1,
-          "title": "The Birth of John and Jesus Foretold",
-          "summary": "Angel Gabriel announces the births of John the Baptist and Jesus",
+          "number": 2,
+          "title": "The Birth of John and Jesus",
+          "summary": "John the Baptist is born and Jesus is born in Bethlehem",
           "keyVerses": [
-            "Luke 1:35",
-            "Luke 1:37",
-            "Luke 1:46"
+            "Luke 2:7",
+            "Luke 2:11",
+            "Luke 2:14"
           ],
-          "content": "And the angel answered her, 'The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God.'",
+          "content": "And she gave birth to her firstborn son and wrapped him in swaddling cloths and laid him in a manger, because there was no place for them in the inn. For unto you is born this day in the city of David a Savior, who is Christ the Lord. Glory to God in the highest, and on earth peace among those with whom he is pleased!",
           "themes": [
-            "Annunciation",
-            "Holy Spirit",
-            "Son of God",
-            "Praise"
+            "Birth",
+            "Savior",
+            "Christ",
+            "Peace"
           ]
         },
         {
@@ -17083,23 +17661,6 @@
           ]
         },
         {
-          "number": 1,
-          "title": "The Word Became Flesh",
-          "summary": "John introduces Jesus as the eternal Word who became flesh",
-          "keyVerses": [
-            "John 1:1",
-            "John 1:14",
-            "John 1:29"
-          ],
-          "content": "In the beginning was the Word, and the Word was with God, and the Word was God. And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.",
-          "themes": [
-            "Divine Nature",
-            "Incarnation",
-            "Light",
-            "Witness"
-          ]
-        },
-        {
           "number": 2,
           "title": "The Wedding at Cana",
           "summary": "Jesus performs His first miracle by turning water into wine",
@@ -17438,23 +17999,6 @@
         "Persecution"
       ],
       "chaptersContent": [
-        {
-          "number": 1,
-          "title": "The Ascension and Promise of the Spirit",
-          "summary": "Jesus ascends to heaven and promises the Holy Spirit",
-          "keyVerses": [
-            "Acts 1:8",
-            "Acts 1:9",
-            "Acts 1:11"
-          ],
-          "content": "But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.",
-          "themes": [
-            "Ascension",
-            "Holy Spirit",
-            "Witness",
-            "Power"
-          ]
-        },
         {
           "number": 1,
           "title": "The Ascension and Promise of the Spirit",
@@ -17947,23 +18491,6 @@
         "Faith"
       ],
       "chaptersContent": [
-        {
-          "number": 1,
-          "title": "Paul's Gospel and Human Sinfulness",
-          "summary": "Paul introduces his gospel and describes universal human sinfulness",
-          "keyVerses": [
-            "Romans 1:16",
-            "Romans 1:17",
-            "Romans 1:20"
-          ],
-          "content": "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. For in it the righteousness of God is revealed from faith for faith, as it is written, 'The righteous shall live by faith.'",
-          "themes": [
-            "Gospel Power",
-            "Righteousness",
-            "God's Wrath",
-            "Natural Revelation"
-          ]
-        },
         {
           "number": 1,
           "title": "Paul's Gospel and Human Sinfulness",
