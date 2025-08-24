@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SearchBar from '../components/SearchBar.tsx';
+import booksData from '../data/bible-books.json';
+import conceptsData from '../data/bible-concepts.json';
+import storiesData from '../data/bible-stories.json';
 ---
 
-<Layout title="Bible Learning App - Discover Divine Wisdom">
+<Layout title="BibleBing - Discover Divine Wisdom">
   <main class="min-h-screen">
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
@@ -12,21 +15,44 @@ import SearchBar from '../components/SearchBar.tsx';
       <div class="absolute top-20 left-20 w-72 h-72 bg-bible-gold/10 rounded-full blur-3xl"></div>
       <div class="absolute bottom-20 right-20 w-96 h-96 bg-bible-blue/10 rounded-full blur-3xl"></div>
       
-      <div class="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <div class="relative z-10 max-w-7xl mx-auto px-6 py-12">
         <!-- Header -->
-        <header class="text-center mb-16">
-          <h1 class="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-bible-blue to-indigo-600 mb-6 leading-tight">
-            Discover Divine
-            <span class="block text-bible-gold">Wisdom</span>
-          </h1>
-          <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore the timeless teachings of the Bible with our modern, interactive platform designed to deepen your understanding and strengthen your faith.
-          </p>
+        <header class="relative z-20 mb-16">
+          <!-- Main Title Section -->
+          <div class="text-center mb-8 relative z-20">
+            <div class="inline-block relative">
+              <h1 class="text-5xl md:text-6xl font-black leading-none tracking-tighter">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-bible-blue via-indigo-600 to-purple-700">Bible</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-bible-gold via-amber-500 to-orange-500 ml-4">Bing</span>
+              </h1>
+              <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-bible-gold to-amber-500 rounded-full animate-pulse"></div>
+              <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-bible-blue to-indigo-600 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+            </div>
+          </div>
+
+          <!-- Tagline Section -->
+          <div class="text-center relative z-20">
+            <div class="inline-flex items-center bg-white/80 backdrop-blur-2xl rounded-full px-8 py-4 border border-white/60 shadow-2xl shadow-gray-200/30">
+              <span class="text-sm font-bold text-gray-800 tracking-wide">
+                Discover Divine Wisdom
+              </span>
+            </div>
+          </div>
+
+          <!-- Decorative Elements -->
+          <div class="absolute top-0 left-1/4 w-32 h-32 bg-gradient-to-r from-bible-gold/20 to-amber-200/20 rounded-full blur-3xl animate-pulse"></div>
+          <div class="absolute bottom-0 right-1/4 w-40 h-40 bg-gradient-to-r from-bible-blue/20 to-indigo-200/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
         </header>
 
         <!-- Search Section -->
-        <div class="mb-20">
-          <SearchBar client:load />
+        <div class="mt-64 mb-80">
+          <SearchBar 
+            client:load 
+            placeholder="Search for Bible books, stories, concepts, or verses..."
+            booksData={booksData}
+            conceptsData={conceptsData}
+            storiesData={storiesData}
+          />
         </div>
 
         <!-- Main Navigation Cards -->

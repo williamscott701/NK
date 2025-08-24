@@ -1,47 +1,44 @@
 ---
 import Layout from '../../../../layouts/Layout.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.tsx';
 import booksData from '../../../../data/bible-books.json';
 
 export async function getStaticPaths() {
-  const books = booksData.books;
   const paths = [];
-  
-  books.forEach((book) => {
-    if (book.chaptersContent && book.chaptersContent.length > 0) {
-      book.chaptersContent.forEach((chapter) => {
+  booksData.books.forEach((book: any) => {
+    if (book.chaptersContent) {
+      book.chaptersContent.forEach((chapter: any) => {
         paths.push({
-          params: { 
-            bookId: book.id,
-            chapterNumber: chapter.number.toString()
-          },
-          props: { book, chapter },
+          params: { bookId: book.id, chapterNumber: chapter.number.toString() },
+          props: { book, chapter }
         });
       });
     }
   });
-  
   return paths;
 }
 
 const { book, chapter } = Astro.props;
 ---
 
-<Layout title={`${book.name} ${chapter.number}: ${chapter.title} | NK Bible App`}>
+<Layout title={`${book.name} Chapter ${chapter.number} - ${chapter.title || 'Bible Chapter'}`}>
   <main class="min-h-screen">
     <!-- Header Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-16">
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 py-16">
       <div class="absolute top-10 left-10 w-48 h-48 bg-bible-blue/5 rounded-full blur-2xl"></div>
       <div class="absolute bottom-10 right-10 w-64 h-64 bg-bible-gold/5 rounded-full blur-2xl"></div>
       
       <div class="relative z-10 max-w-6xl mx-auto px-6">
-        <!-- Breadcrumb Navigation -->
-        <div class="mb-8 flex items-center space-x-2 text-sm">
-          <a href="/books" class="text-bible-blue hover:text-blue-700 transition-colors duration-200">Books</a>
-          <span class="text-gray-400">›</span>
-          <a href={`/book/${book.id}`} class="text-bible-blue hover:text-blue-700 transition-colors duration-200">{book.name}</a>
-          <span class="text-gray-400">›</span>
-          <span class="text-gray-600">Chapter {chapter.number}</span>
-        </div>
+        <!-- Breadcrumb -->
+        <Breadcrumb 
+          client:load 
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Books', href: '/books' },
+            { label: book.name, href: `/book/${book.id}` },
+            { label: `Chapter ${chapter.number}` }
+          ]} 
+        />
 
         <!-- Chapter Header -->
         <div class="text-center mb-12">

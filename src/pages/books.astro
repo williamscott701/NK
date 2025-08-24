@@ -1,29 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageSearch from '../components/PageSearch.tsx';
+import Breadcrumb from '../components/Breadcrumb.tsx';
 import booksData from '../data/bible-books.json';
 
 const books = booksData.books;
-const bookSuggestions = books.slice(0, 6).map(book => book.name);
 ---
 
-<Layout title="Bible Books - Explore Scripture">
+<Layout title="Bible Books - Complete Collection">
   <main class="min-h-screen">
     <!-- Header Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-16">
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 py-16">
       <div class="absolute top-10 left-10 w-48 h-48 bg-bible-blue/5 rounded-full blur-2xl"></div>
       <div class="absolute bottom-10 right-10 w-64 h-64 bg-bible-gold/5 rounded-full blur-2xl"></div>
       
       <div class="relative z-10 max-w-6xl mx-auto px-6">
-        <!-- Back to Home -->
-        <div class="mb-8">
-          <a href="/" class="inline-flex items-center text-bible-blue hover:text-blue-700 transition-colors duration-200">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-            </svg>
-            Back to Home
-          </a>
-        </div>
+        <!-- Breadcrumb -->
+        <Breadcrumb 
+          client:load 
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Books' }
+          ]} 
+        />
 
         <!-- Page Header -->
         <div class="text-center mb-12">
@@ -31,25 +30,56 @@ const bookSuggestions = books.slice(0, 6).map(book => book.name);
             Bible Books
           </h1>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore all 66 books of the Bible, from Genesis to Revelation. Discover their themes, authors, and key messages.
+            Explore all 66 books of the Bible with detailed information, chapters, and verses.
           </p>
         </div>
 
         <!-- Search Section -->
         <PageSearch 
           client:load 
-          placeholder="Search for books, authors, or themes..."
-          suggestions={bookSuggestions}
+          placeholder="Search for books, authors, themes, chapters..."
+          booksData={books}
+          searchMode="books"
         />
+
+        <!-- Compact Category Filters -->
+        <div class="mt-6 flex flex-wrap gap-2 justify-center">
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="law" data-books="">Law</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="history" data-books="joshua,judges,ruth,1-samuel,2-samuel,1-kings,2-kings,1-chronicles,2-chronicles,ezra,nehemiah,esther,acts">History</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="wisdom" data-books="job,proverbs,ecclesiastes,song-of-solomon">Wisdom</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="prophets" data-books="isaiah,jeremiah,lamentations,ezekiel,daniel,hosea,joel,amos,obadiah,jonah,micah,nahum,habakkuk,zephaniah,haggai,zechariah,malachi">Prophets</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="gospels" data-books="matthew,mark,luke,john">Gospels</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="letters" data-books="romans,1-corinthians,2-corinthians,galatians,ephesians,philippians,colossians,1-thessalonians,2-thessalonians,1-timothy,2-timothy,titus,philemon,hebrews,james,1-peter,2-peter,1-john,2-john,3-john,jude">Letters</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="apocalyptic" data-books="daniel,revelation">Apocalyptic</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="old-testament" data-testament="Old Testament">OT</button>
+          <button class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="new-testament" data-testament="New Testament">NT</button>
+          <button id="clearFilters" class="category-filter-btn px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-gray-300 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600 data-[selected=true]:hover:bg-blue-600 data-[selected=true]:hover:text-white data-[selected=true]:hover:border-blue-600" data-category="all">All</button>
+        </div>
       </div>
     </section>
 
     <!-- Books Grid Section -->
     <section class="py-16 bg-gradient-to-br from-white to-gray-50">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Results Count -->
+        <div class="mb-6 flex items-center justify-between">
+          <div class="text-gray-600">
+            Showing <span id="resultsCount">{books.length}</span> of {books.length} books
+          </div>
+          <div class="text-sm text-gray-500">
+            <span id="filteredCount" class="hidden">Filtered results</span>
+          </div>
+        </div>
+
+        <div id="booksGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {books.map((book) => (
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden">
+            <div class="book-card bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden" 
+                 data-id={book.id}
+                 data-testament={book.testament}
+                 data-author={book.author}
+                 data-themes={book.themes.join(',')}
+                 data-name={book.name.toLowerCase()}
+                 data-description={book.description.toLowerCase()}>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-4">
                   <h3 class="text-xl font-bold text-gray-800">{book.name}</h3>
@@ -59,7 +89,11 @@ const bookSuggestions = books.slice(0, 6).map(book => book.name);
                 </div>
                 
                 <div class="mb-4">
-                  <span class="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                  <span class={`text-sm px-3 py-1 rounded-full font-medium ${
+                    book.testament === 'Old Testament' 
+                      ? 'text-blue-700 bg-blue-100 border border-blue-200' 
+                      : 'text-amber-700 bg-amber-100 border border-amber-200'
+                  }`}>
                     {book.testament}
                   </span>
                   <span class="text-sm text-gray-500 ml-2">by {book.author}</span>
@@ -90,6 +124,22 @@ const bookSuggestions = books.slice(0, 6).map(book => book.name);
             </div>
           ))}
         </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="hidden text-center py-12">
+          <div class="text-gray-500">
+            <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29 1.009-5.824 2.65M15 6.3a4 4 0 00-6 0M7 6.3a4 4 0 00-6 0"></path>
+            </svg>
+            <h3 class="text-xl font-medium text-gray-600 mb-2">No books found</h3>
+            <p class="text-gray-500">Try adjusting your filters or search terms</p>
+          </div>
+        </div>
+
+        <!-- Active Filters Display -->
+        <div id="activeFilters" class="mt-6 flex flex-wrap gap-2 hidden">
+          <!-- Active filters will be displayed here -->
+        </div>
       </div>
     </section>
 
@@ -98,23 +148,29 @@ const bookSuggestions = books.slice(0, 6).map(book => book.name);
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Old Testament -->
-          <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
-            <h3 class="text-2xl font-bold text-bible-blue mb-4">Old Testament</h3>
-            <p class="text-gray-600 mb-6">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg border-2 border-blue-200 hover:border-blue-300 transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+              <h3 class="text-2xl font-bold text-blue-800">Old Testament</h3>
+            </div>
+            <p class="text-gray-700 mb-6 leading-relaxed">
               The foundation of faith, containing 39 books from Genesis to Malachi, revealing God's covenant with humanity.
             </p>
-            <div class="text-sm text-gray-500">
+            <div class="text-sm text-blue-600 font-medium">
               <strong>{books.filter(book => book.testament === 'Old Testament').length}</strong> books available
             </div>
           </div>
           
           <!-- New Testament -->
-          <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
-            <h3 class="text-2xl font-bold text-bible-gold mb-4">New Testament</h3>
-            <p class="text-gray-600 mb-6">
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-100 rounded-2xl p-8 shadow-lg border-2 border-amber-200 hover:border-amber-300 transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-3 h-3 bg-amber-500 rounded-full mr-3"></div>
+              <h3 class="text-2xl font-bold text-amber-800">New Testament</h3>
+            </div>
+            <p class="text-gray-700 mb-6 leading-relaxed">
               The fulfillment of promises, containing 27 books from Matthew to Revelation, revealing Jesus Christ and the early church.
             </p>
-            <div class="text-sm text-gray-500">
+            <div class="text-sm text-amber-600 font-medium">
               <strong>{books.filter(book => book.testament === 'New Testament').length}</strong> books available
             </div>
           </div>
@@ -122,4 +178,169 @@ const bookSuggestions = books.slice(0, 6).map(book => book.name);
       </div>
     </section>
   </main>
+  <script>
+    // Book filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const booksGrid = document.getElementById('booksGrid');
+      const bookCards = document.querySelectorAll('.book-card');
+      const resultsCount = document.getElementById('resultsCount');
+      const filteredCount = document.getElementById('filteredCount');
+      const noResults = document.getElementById('noResults');
+      const activeFilters = document.getElementById('activeFilters');
+      
+      // Filter elements
+      const categoryButtons = document.querySelectorAll('.category-filter-btn');
+      const clearFiltersBtn = document.getElementById('clearFilters');
+
+      // Store original books for reset
+      const originalBooks = Array.from(bookCards);
+      let activeCategory = null;
+
+      function applyCategoryFilter(category, books, testament) {
+        // Reset all buttons to inactive state
+        categoryButtons.forEach(btn => {
+          btn.classList.remove('ring-4', 'ring-white', 'ring-opacity-50');
+          btn.removeAttribute('data-selected');
+        });
+
+        // Highlight the active button
+        const activeButton = document.querySelector(`[data-category="${category}"]`);
+        if (activeButton) {
+          activeButton.setAttribute('data-selected', 'true');
+        }
+
+        let visibleCount = 0;
+
+        bookCards.forEach(card => {
+          let shouldShow = false;
+
+          if (testament) {
+            // Testament-based filtering
+            const cardTestament = card.dataset.testament;
+            shouldShow = cardTestament === testament;
+          } else if (books) {
+            // Book ID-based filtering
+            const cardId = card.dataset.id;
+            const bookList = books.split(',');
+            shouldShow = bookList.includes(cardId);
+          }
+
+          // Show/hide card
+          if (shouldShow) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update UI
+        resultsCount.textContent = visibleCount;
+        
+        if (category !== 'all') {
+          filteredCount.classList.remove('hidden');
+          filteredCount.textContent = `Showing ${category} books`;
+        } else {
+          filteredCount.classList.add('hidden');
+        }
+
+        // Show/hide no results message
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+
+        // Update active filters display
+        updateActiveFiltersDisplay(category);
+      }
+
+      function updateActiveFiltersDisplay(category) {
+        if (category && category !== 'all') {
+          const categoryNames = {
+            'law': 'Law (Torah)',
+            'history': 'History',
+            'wisdom': 'Wisdom & Poetry',
+            'prophets': 'Prophets',
+            'gospels': 'Gospels',
+            'letters': 'Letters (Epistles)',
+            'apocalyptic': 'Apocalyptic',
+            'old-testament': 'Old Testament',
+            'new-testament': 'New Testament'
+          };
+
+          activeFilters.innerHTML = `<span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full border border-blue-200">${categoryNames[category]}</span>`;
+          activeFilters.classList.remove('hidden');
+        } else {
+          activeFilters.classList.add('hidden');
+        }
+      }
+
+      function clearAllFilters() {
+        // Reset all buttons
+        categoryButtons.forEach(btn => {
+          btn.classList.remove('ring-4', 'ring-white', 'ring-opacity-50');
+          btn.removeAttribute('data-selected');
+        });
+
+        // Show all books
+        bookCards.forEach(card => {
+          card.style.display = 'block';
+        });
+
+        // Update UI
+        resultsCount.textContent = originalBooks.length;
+        filteredCount.classList.add('hidden');
+        noResults.classList.add('hidden');
+        activeFilters.classList.add('hidden');
+        activeCategory = null;
+      }
+
+      // Event listeners for category buttons
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const category = this.dataset.category;
+          const books = this.dataset.books;
+          const testament = this.dataset.testament;
+
+          // If clicking the same category, clear it
+          if (activeCategory === category) {
+            clearAllFilters();
+            return;
+          }
+
+          // Handle "All" button specially
+          if (category === 'all') {
+            // Immediately reset all buttons
+            categoryButtons.forEach(btn => {
+              btn.removeAttribute('data-selected');
+            });
+            
+            // Make this button selected
+            this.setAttribute('data-selected', 'true');
+            
+            clearAllFilters();
+            activeCategory = category;
+            return;
+          }
+
+          // Immediately reset all buttons
+          categoryButtons.forEach(btn => {
+            btn.removeAttribute('data-selected');
+          });
+
+          // Immediately make this button selected
+          this.setAttribute('data-selected', 'true');
+
+          activeCategory = category;
+          applyCategoryFilter(category, books, testament);
+        });
+      });
+
+      // Remove the separate clear filters button event listener since it's now handled above
+      
+      // Initialize
+      clearAllFilters();
+    });
+  </script>
 </Layout>

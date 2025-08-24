@@ -1,35 +1,35 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.tsx';
 import booksData from '../../data/bible-books.json';
 
 export async function getStaticPaths() {
-  const books = booksData.books;
-  return books.map((book) => ({
+  return booksData.books.map((book) => ({
     params: { bookId: book.id },
-    props: { book },
+    props: { book }
   }));
 }
 
 const { book } = Astro.props;
 ---
 
-<Layout title={`${book.name} - Chapters | NK Bible App`}>
+<Layout title={`${book.name} - Bible Book`}>
   <main class="min-h-screen">
     <!-- Header Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-16">
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 py-16">
       <div class="absolute top-10 left-10 w-48 h-48 bg-bible-blue/5 rounded-full blur-2xl"></div>
       <div class="absolute bottom-10 right-10 w-64 h-64 bg-bible-gold/5 rounded-full blur-2xl"></div>
       
       <div class="relative z-10 max-w-6xl mx-auto px-6">
-        <!-- Back Navigation -->
-        <div class="mb-8">
-          <a href="/books" class="inline-flex items-center text-bible-blue hover:text-blue-700 transition-colors duration-200">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-            </svg>
-            Back to Books
-          </a>
-        </div>
+        <!-- Breadcrumb -->
+        <Breadcrumb 
+          client:load 
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Books', href: '/books' },
+            { label: book.name }
+          ]} 
+        />
 
         <!-- Book Header -->
         <div class="text-center mb-12">
