@@ -292,38 +292,40 @@ export default function PageSearch({
         }`}>
           <div className="absolute inset-0 bg-gradient-to-r from-bible-gold/10 to-bible-blue/10 rounded-xl blur-lg"></div>
           <div className="relative bg-white/90 backdrop-blur-sm border border-white/20 rounded-xl shadow-lg overflow-hidden">
-            <div className="flex items-center p-4">
-              <svg 
-                className="w-5 h-5 text-bible-blue mr-3 flex-shrink-0" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+            <div className="flex flex-col sm:flex-row items-center p-3 sm:p-4 gap-3 sm:gap-0">
+              <div className="flex items-center w-full sm:w-auto flex-1">
+                <svg 
+                  className="w-5 h-5 text-bible-blue mr-3 flex-shrink-0" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                  />
+                </svg>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onFocus={() => setIsFocused(true)}
+                  onBlur={() => {
+                    setIsFocused(false);
+                    setTimeout(() => setShowResults(false), 200);
+                  }}
+                  placeholder={searchMode === 'all' ? placeholder : 
+                               searchMode === 'stories' ? "Search stories..." : 
+                               searchMode === 'concepts' ? "Search concepts..." : 
+                               "Search books..."}
+                  className="flex-1 text-base sm:text-lg text-gray-800 placeholder-gray-500 bg-transparent outline-none w-full"
                 />
-              </svg>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onFocus={() => setIsFocused(true)}
-                onBlur={() => {
-                  setIsFocused(false);
-                  setTimeout(() => setShowResults(false), 200);
-                }}
-                placeholder={searchMode === 'all' ? placeholder : 
-                             searchMode === 'stories' ? "Search stories..." : 
-                             searchMode === 'concepts' ? "Search concepts..." : 
-                             "Search books..."}
-                className="flex-1 text-lg text-gray-800 placeholder-gray-500 bg-transparent outline-none"
-              />
+              </div>
               <button
                 type="submit"
-                className="ml-3 px-6 py-2 bg-gradient-to-r from-bible-blue to-blue-600 text-white font-semibold rounded-lg hover:from-bible-blue/90 hover:to-blue-600/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                className="w-full sm:w-auto px-4 sm:px-6 py-2 bg-gradient-to-r from-bible-blue to-blue-600 text-white font-semibold rounded-lg hover:from-bible-blue/90 hover:to-blue-600/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 text-sm sm:text-base"
               >
                 Search
               </button>
@@ -336,14 +338,14 @@ export default function PageSearch({
       {showResults && searchResults.length > 0 && (
         <div className="fixed inset-0 z-[9999] pointer-events-none">
           <div 
-            className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto pointer-events-auto"
+            className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto pointer-events-auto mx-4 sm:mx-0"
             style={{
               top: `${searchBarPosition.top + 8}px`,
-              left: `${searchBarPosition.left}px`,
-              width: `${searchBarPosition.width}px`
+              left: window.innerWidth < 640 ? '16px' : `${searchBarPosition.left}px`,
+              width: window.innerWidth < 640 ? 'calc(100vw - 32px)' : `${searchBarPosition.width}px`
             }}
           >
-            <div className="p-4">
+            <div className="p-3 sm:p-4">
               <div className="text-sm text-gray-500 mb-3 px-2 flex items-center justify-between">
                 <span>Found {searchResults.length} results</span>
                 {searchMode !== 'all' && (
@@ -358,18 +360,18 @@ export default function PageSearch({
                 <a
                   key={index}
                   href={result.url}
-                  className="block p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 border-b border-gray-100 last:border-b-0"
+                  className="block p-2 sm:p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 border-b border-gray-100 last:border-b-0"
                 >
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">{getTypeIcon(result.type)}</span>
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <span className="text-xl sm:text-2xl">{getTypeIcon(result.type)}</span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="font-semibold text-gray-900 truncate">{result.title}</h4>
+                        <h4 className="font-semibold text-gray-900 truncate text-sm sm:text-base">{result.title}</h4>
                         <span className={`px-2 py-1 text-xs font-medium rounded-full border ${getTypeColor(result.type)}`}>
                           {result.type}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600 line-clamp-2">{result.description}</p>
+                      <p className="text-xs sm:text-sm text-gray-600 line-clamp-2">{result.description}</p>
                     </div>
                   </div>
                 </a>
@@ -383,17 +385,17 @@ export default function PageSearch({
       {showResults && searchQuery.trim() && searchResults.length === 0 && (
         <div className="fixed inset-0 z-[9999] pointer-events-none">
           <div 
-            className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 p-6 pointer-events-auto"
+            className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 p-4 sm:p-6 pointer-events-auto mx-4 sm:mx-0"
             style={{
               top: `${searchBarPosition.top + 8}px`,
-              left: `${searchBarPosition.left}px`,
-              width: `${searchBarPosition.width}px`
+              left: window.innerWidth < 640 ? '16px' : `${searchBarPosition.left}px`,
+              width: window.innerWidth < 640 ? 'calc(100vw - 32px)' : `${searchBarPosition.width}px`
             }}
           >
             <div className="text-center text-gray-500">
-              <div className="text-4xl mb-2">🔍</div>
-              <p className="text-lg font-medium mb-2">No results found</p>
-              <p className="text-sm">Try searching for different keywords</p>
+              <div className="text-3xl sm:text-4xl mb-2">🔍</div>
+              <p className="text-base sm:text-lg font-medium mb-2">No results found</p>
+              <p className="text-xs sm:text-sm">Try searching for different keywords</p>
             </div>
           </div>
         </div>

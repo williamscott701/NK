@@ -68,7 +68,25 @@ const { book } = Astro.props;
     <!-- Chapters Grid Section -->
     <section class="py-16 bg-gradient-to-br from-white to-gray-50">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Chapters</h2>
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold text-gray-800">Chapters</h2>
+          
+          <select 
+            id="chapterSelect" 
+            class="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-bible-blue focus:border-bible-blue bg-white hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+          >
+            <option value="">Chapter</option>
+            {book.chaptersContent && book.chaptersContent.length > 0 ? (
+              book.chaptersContent
+                .sort((a, b) => a.number - b.number)
+                .map((chapter) => (
+                  <option value={chapter.number}>{chapter.number}</option>
+                ))
+            ) : (
+              <option value="" disabled>-</option>
+            )}
+          </select>
+        </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {book.chaptersContent && book.chaptersContent.length > 0 ? (
@@ -148,4 +166,19 @@ const { book } = Astro.props;
       </div>
     </section>
   </main>
+
+  <script define:vars={{ bookId: book.id }}>
+    // Chapter dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const chapterSelect = document.getElementById('chapterSelect');
+      
+      chapterSelect.addEventListener('change', function() {
+        const selectedChapter = this.value;
+        if (selectedChapter) {
+          // Navigate to the selected chapter page
+          window.location.href = `/book/${bookId}/chapter/${selectedChapter}`;
+        }
+      });
+    });
+  </script>
 </Layout>

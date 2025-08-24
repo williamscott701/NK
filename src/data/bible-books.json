@@ -861,7 +861,9 @@
             "Preservation"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 1,
+      "chronologicalOrder": 1
     },
     {
       "id": "exodus",
@@ -1555,7 +1557,9 @@
             "Cloud"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 2,
+      "chronologicalOrder": 3
     },
     {
       "id": "leviticus",
@@ -2030,7 +2034,9 @@
             "Righteousness"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 3,
+      "chronologicalOrder": 4
     },
     {
       "id": "numbers",
@@ -2658,7 +2664,9 @@
             "Patience"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 4,
+      "chronologicalOrder": 5
     },
     {
       "id": "deuteronomy",
@@ -3252,7 +3260,9 @@
             "Obedience"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 5,
+      "chronologicalOrder": 6
     },
     {
       "id": "joshua",
@@ -3676,7 +3686,9 @@
             "Serving God"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 6,
+      "chronologicalOrder": 7
     },
     {
       "id": "judges",
@@ -4049,7 +4061,9 @@
             "No King"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 7,
+      "chronologicalOrder": 8
     },
     {
       "id": "ruth",
@@ -4133,7 +4147,9 @@
             "Blessing"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 8,
+      "chronologicalOrder": 9
     },
     {
       "id": "1-samuel",
@@ -4676,7 +4692,9 @@
             "Suicide"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 9,
+      "chronologicalOrder": 10
     },
     {
       "id": "2-samuel",
@@ -5100,7 +5118,9 @@
             "Foolishness"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 10,
+      "chronologicalOrder": 11
     },
     {
       "id": "1-kings",
@@ -5490,7 +5510,9 @@
             "Consequences"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 11,
+      "chronologicalOrder": 17
     },
     {
       "id": "2-kings",
@@ -5931,7 +5953,9 @@
             "Judgment Fulfilled"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 12,
+      "chronologicalOrder": 18
     },
     {
       "id": "1-chronicles",
@@ -6440,7 +6464,9 @@
             "Willing Heart"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 13,
+      "chronologicalOrder": 12
     },
     {
       "id": "2-chronicles",
@@ -7068,7 +7094,9 @@
             "Return"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 14,
+      "chronologicalOrder": 19
     },
     {
       "id": "ezra",
@@ -7254,7 +7282,9 @@
             "Obedience"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 15,
+      "chronologicalOrder": 36
     },
     {
       "id": "nehemiah",
@@ -7491,7 +7521,9 @@
             "Sabbath"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 16,
+      "chronologicalOrder": 37
     },
     {
       "id": "esther",
@@ -7677,7 +7709,9 @@
             "Chronicles"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 17,
+      "chronologicalOrder": 38
     },
     {
       "id": "job",
@@ -8407,7 +8441,9 @@
             "Blessing"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 18,
+      "chronologicalOrder": 2
     },
     {
       "id": "psalms",
@@ -10971,7 +11007,9 @@
             "Breath"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 19,
+      "chronologicalOrder": 13
     },
     {
       "id": "proverbs",
@@ -11514,7 +11552,9 @@
             "Excellence"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 20,
+      "chronologicalOrder": 14
     },
     {
       "id": "ecclesiastes",
@@ -11734,7 +11774,9 @@
             "Commandments"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 21,
+      "chronologicalOrder": 15
     },
     {
       "id": "song-of-solomon",
@@ -11886,7 +11928,9 @@
             "Commitment"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 22,
+      "chronologicalOrder": 16
     },
     {
       "id": "isaiah",
@@ -13024,7 +13068,9 @@
             "Liberty"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 23,
+      "chronologicalOrder": 25
     },
     {
       "id": "jeremiah",
@@ -13924,7 +13970,9 @@
             "Chains"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 24,
+      "chronologicalOrder": 29
     },
     {
       "id": "lamentations",
@@ -14025,7 +14073,9 @@
             "Renewal"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 25,
+      "chronologicalOrder": 31
     },
     {
       "id": "ezekiel",
@@ -14857,7 +14907,9 @@
             "Division"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 26,
+      "chronologicalOrder": 32
     },
     {
       "id": "daniel",
@@ -15077,7 +15129,9 @@
             "Deliverance"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 27,
+      "chronologicalOrder": 33
     },
     {
       "id": "hosea",
@@ -15331,7 +15385,9 @@
             "Wisdom"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 28,
+      "chronologicalOrder": 23
     },
     {
       "id": "joel",
@@ -15398,7 +15454,9 @@
             "Final Victory"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 29,
+      "chronologicalOrder": 21
     },
     {
       "id": "amos",
@@ -15567,7 +15625,9 @@
             "Permanence"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 30,
+      "chronologicalOrder": 22
     },
     {
       "id": "obadiah",
@@ -15600,7 +15660,9 @@
             "God's Sovereignty"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 31,
+      "chronologicalOrder": 20
     },
     {
       "id": "jonah",
@@ -15684,7 +15746,9 @@
             "Universal Love"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 32,
+      "chronologicalOrder": 24
     },
     {
       "id": "micah",
@@ -15819,7 +15883,9 @@
             "Mercy"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 33,
+      "chronologicalOrder": 26
     },
     {
       "id": "nahum",
@@ -15886,7 +15952,9 @@
             "Justice Served"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 34,
+      "chronologicalOrder": 27
     },
     {
       "id": "habakkuk",
@@ -15953,7 +16021,9 @@
             "Salvation"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 35,
+      "chronologicalOrder": 30
     },
     {
       "id": "zephaniah",
@@ -16020,7 +16090,9 @@
             "Restoration"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 36,
+      "chronologicalOrder": 28
     },
     {
       "id": "haggai",
@@ -16070,7 +16142,9 @@
             "Divine Promise"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 37,
+      "chronologicalOrder": 34
     },
     {
       "id": "zechariah",
@@ -16324,7 +16398,9 @@
             "Worship"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 38,
+      "chronologicalOrder": 35
     },
     {
       "id": "malachi",
@@ -16408,7 +16484,9 @@
             "Hearts Turned"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 39,
+      "chronologicalOrder": 39
     },
     {
       "id": "matthew",
@@ -16898,7 +16976,9 @@
             "Presence"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 40,
+      "chronologicalOrder": 48
     },
     {
       "id": "mark",
@@ -17186,7 +17266,9 @@
             "Signs"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 41,
+      "chronologicalOrder": 47
     },
     {
       "id": "luke",
@@ -17610,7 +17692,9 @@
             "Ascension"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 42,
+      "chronologicalOrder": 49
     },
     {
       "id": "john",
@@ -17983,7 +18067,9 @@
             "Following"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 43,
+      "chronologicalOrder": 62
     },
     {
       "id": "acts",
@@ -18475,7 +18561,9 @@
             "Convincing"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 44,
+      "chronologicalOrder": 50
     },
     {
       "id": "romans",
@@ -18763,7 +18851,9 @@
             "God's Power"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 45,
+      "chronologicalOrder": 46
     },
     {
       "id": "1-corinthians",
@@ -19051,7 +19141,9 @@
             "Grace"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 46,
+      "chronologicalOrder": 44
     },
     {
       "id": "2-corinthians",
@@ -19288,7 +19380,9 @@
             "Grace"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 47,
+      "chronologicalOrder": 45
     },
     {
       "id": "galatians",
@@ -19406,7 +19500,9 @@
             "Good Works"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 48,
+      "chronologicalOrder": 41
     },
     {
       "id": "ephesians",
@@ -19524,7 +19620,9 @@
             "Strength"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 49,
+      "chronologicalOrder": 51
     },
     {
       "id": "philippians",
@@ -19608,7 +19706,9 @@
             "God's Provision"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 50,
+      "chronologicalOrder": 52
     },
     {
       "id": "colossians",
@@ -19692,7 +19792,9 @@
             "Witness"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 51,
+      "chronologicalOrder": 53
     },
     {
       "id": "1-thessalonians",
@@ -19793,7 +19895,9 @@
             "Sanctification"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 52,
+      "chronologicalOrder": 42
     },
     {
       "id": "2-thessalonians",
@@ -19860,7 +19964,9 @@
             "Peace"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 53,
+      "chronologicalOrder": 43
     },
     {
       "id": "1-timothy",
@@ -19978,7 +20084,9 @@
             "Fight of Faith"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 54,
+      "chronologicalOrder": 55
     },
     {
       "id": "2-timothy",
@@ -20062,7 +20170,9 @@
             "Appearing"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 55,
+      "chronologicalOrder": 58
     },
     {
       "id": "titus",
@@ -20129,7 +20239,9 @@
             "Devotion"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 56,
+      "chronologicalOrder": 56
     },
     {
       "id": "philemon",
@@ -20162,7 +20274,9 @@
             "Reconciliation"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 57,
+      "chronologicalOrder": 54
     },
     {
       "id": "hebrews",
@@ -20399,7 +20513,9 @@
             "God's Provision"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 58,
+      "chronologicalOrder": 60
     },
     {
       "id": "james",
@@ -20500,7 +20616,9 @@
             "Restoration"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 59,
+      "chronologicalOrder": 40
     },
     {
       "id": "1-peter",
@@ -20601,7 +20719,9 @@
             "Steadfastness"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 60,
+      "chronologicalOrder": 57
     },
     {
       "id": "2-peter",
@@ -20668,7 +20788,9 @@
             "Holy Living"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 61,
+      "chronologicalOrder": 59
     },
     {
       "id": "1-john",
@@ -20769,7 +20891,9 @@
             "Confidence"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 62,
+      "chronologicalOrder": 63
     },
     {
       "id": "2-john",
@@ -20802,7 +20926,9 @@
             "Warning"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 63,
+      "chronologicalOrder": 64
     },
     {
       "id": "3-john",
@@ -20835,7 +20961,9 @@
             "Truth"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 64,
+      "chronologicalOrder": 65
     },
     {
       "id": "jude",
@@ -20868,7 +20996,9 @@
             "God's Keeping Power"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 65,
+      "chronologicalOrder": 61
     },
     {
       "id": "revelation",
@@ -21258,7 +21388,9 @@
             "Come Lord Jesus"
           ]
         }
-      ]
+      ],
+      "canonicalOrder": 66,
+      "chronologicalOrder": 66
     }
   ]
 }
