@@ -26,7 +26,7 @@ const concepts = conceptsData.concepts;
 
         <!-- Page Header -->
         <div class="text-center mb-12">
-          <h1 class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-bible-gold to-yellow-600 mb-4">
+          <h1 class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-400 mb-4">
             Bible Concepts
           </h1>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -47,12 +47,38 @@ const concepts = conceptsData.concepts;
     <!-- Concepts Grid Section -->
     <section class="py-16 bg-gradient-to-br from-white to-gray-50">
       <div class="max-w-6xl mx-auto px-6">
+        <!-- Filter Section -->
+        <div class="flex flex-wrap gap-4 justify-end mb-6">
+          <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-bible-gold focus:border-transparent">
+            <option value="">All Categories</option>
+            <option value="Christian Living">Christian Living</option>
+            <option value="Spiritual Growth">Spiritual Growth</option>
+            <option value="God's Character">God's Character</option>
+            <option value="Spiritual Warfare">Spiritual Warfare</option>
+            <option value="Eternal Rewards">Eternal Rewards</option>
+            <option value="Kingdom of God">Kingdom of God</option>
+            <option value="Influence">Influence</option>
+            <option value="Spiritual Life">Spiritual Life</option>
+            <option value="Christology">Christology</option>
+            <option value="Spiritual Identity">Spiritual Identity</option>
+            <option value="God's Word">God's Word</option>
+            <option value="Spiritual Realms">Spiritual Realms</option>
+            <option value="Evangelism">Evangelism</option>
+            <option value="Righteous Living">Righteous Living</option>
+          </select>
+        </div>
+        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {concepts.map((concept) => (
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden flex flex-col">
+            <div 
+              class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden flex flex-col"
+              data-concept={concept.id}
+              data-category={concept.category || ''}
+              data-significance={concept.significance || ''}
+            >
               <div class="p-6 flex flex-col flex-grow">
                 <div class="flex items-center mb-4">
-                  <div class="w-12 h-12 bg-gradient-to-r from-bible-gold to-yellow-500 rounded-xl flex items-center justify-center mr-4">
+                  <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-sky-400 rounded-xl flex items-center justify-center mr-4">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                     </svg>
@@ -60,31 +86,66 @@ const concepts = conceptsData.concepts;
                   <h3 class="text-xl font-bold text-gray-800">{concept.title}</h3>
                 </div>
                 
-                <p class="text-gray-600 mb-6 leading-relaxed">
+                <p class="text-gray-600 mb-4 leading-relaxed">
                   {concept.description}
                 </p>
                 
-                <div class="space-y-4">
-                  <h4 class="text-sm font-semibold text-gray-700">Key Verses:</h4>
-                  {concept.verses.slice(0, 2).map((verse) => (
-                    <div class="bg-gray-50 rounded-lg p-4">
-                      <p class="text-sm text-gray-600 italic mb-2">"{verse.text}"</p>
-                      <p class="text-xs text-bible-blue font-semibold">{verse.reference}</p>
+                <!-- Additional Information -->
+                <div class="space-y-3 mb-6">
+                  <!-- Category -->
+                  {concept.category && (
+                    <div class="flex items-center gap-3">
+                      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-sky-50 text-sky-600">
+                        {concept.category}
+                      </span>
                     </div>
-                  ))}
-                  {concept.verses.length > 2 && (
-                    <p class="text-xs text-gray-500">
-                      +{concept.verses.length - 2} more verses
-                    </p>
+                  )}
+                  
+                  <!-- Key Themes -->
+                  {concept.keyThemes && concept.keyThemes.length > 0 && (
+                    <div>
+                      <p class="text-xs font-semibold text-gray-700 mb-1">Key Themes:</p>
+                      <div class="flex flex-wrap gap-1">
+                        {concept.keyThemes.slice(0, 3).map((theme) => (
+                          <span class="inline-flex items-center px-2 py-1 rounded-md text-xs bg-gray-100 text-gray-700">
+                            {theme}
+                          </span>
+                        ))}
+                        {concept.keyThemes.length > 3 && (
+                          <span class="inline-flex items-center px-2 py-1 rounded-md text-xs bg-gray-100 text-gray-600">
+                            +{concept.keyThemes.length - 3}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  
+                  <!-- Application -->
+                  {concept.application && concept.application.length > 0 && (
+                    <div>
+                      <p class="text-xs font-semibold text-gray-700 mb-1">Application:</p>
+                      <div class="flex flex-wrap gap-1">
+                        {concept.application.slice(0, 2).map((app) => (
+                          <span class="inline-flex items-center px-2 py-1 rounded-md text-xs bg-blue-50 text-blue-500 border border-blue-100">
+                            {app}
+                          </span>
+                          ))}
+                        {concept.application.length > 2 && (
+                          <span class="inline-flex items-center px-2 py-1 rounded-md text-xs bg-gray-100 text-gray-600">
+                            +{concept.application.length - 2}
+                          </span>
+                        )}
+                      </div>
+                    </div>
                   )}
                 </div>
                 
                 <div class="mt-auto">
                   <a 
                     href={`/concept/${concept.id}`}
-                    class="block w-full bg-gradient-to-r from-bible-gold to-yellow-500 text-white py-2 px-4 rounded-lg hover:from-bible-gold/90 hover:to-yellow-500/90 transition-all duration-200 font-semibold text-center"
+                    class="block w-full bg-gradient-to-r from-blue-400 to-sky-400 text-white py-2 px-4 rounded-lg hover:from-blue-500 hover:to-sky-500 transition-all duration-200 font-semibold text-center"
                   >
-                    Explore {concept.title}
+                    Start reading
                   </a>
                 </div>
               </div>
@@ -95,14 +156,14 @@ const concepts = conceptsData.concepts;
     </section>
 
     <!-- Featured Concept -->
-    <section class="py-16 bg-gradient-to-br from-bible-gold/5 to-yellow-50">
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-sky-50">
       <div class="max-w-4xl mx-auto px-6">
         <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 text-center">
-          <h3 class="text-3xl font-bold text-bible-gold mb-4">Featured Concept: Love</h3>
+          <h3 class="text-3xl font-bold text-blue-400 mb-4">Featured Concept: Love</h3>
           <p class="text-xl text-gray-600 mb-6">
             "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
           </p>
-          <p class="text-bible-blue font-semibold mb-6">1 Corinthians 13:4</p>
+          <p class="text-blue-400 font-semibold mb-6">1 Corinthians 13:4</p>
           <p class="text-gray-600 leading-relaxed">
             Love is perhaps the most central concept in Christianity. From God's love for humanity demonstrated through Christ's sacrifice, 
             to the call for believers to love one another, this theme runs throughout Scripture as the greatest commandment and the defining characteristic of faith.
@@ -111,4 +172,96 @@ const concepts = conceptsData.concepts;
       </div>
     </section>
   </main>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand Section -->
+        <div class="col-span-2">
+          <div class="flex items-center mb-4">
+            <h3 class="text-2xl font-bold">
+              <span class="text-bible-blue">Bible</span>
+              <span class="text-bible-gold">Bing</span>
+            </h3>
+          </div>
+          <p class="text-gray-300 mb-6 max-w-md">
+            Discover divine wisdom with powerful tools designed to make Bible study engaging, meaningful, and accessible to everyone.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/books" class="text-gray-300 hover:text-white transition-colors">Books</a></li>
+            <li><a href="/concepts" class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
+            <li><a href="/stories" class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+        <p class="text-gray-400">
+          © 2025 BibleBing. All rights reserved. Made with ❤️ for spreading divine wisdom.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryFilter = document.getElementById('categoryFilter');
+      const conceptCards = document.querySelectorAll('[data-concept]');
+      
+      function filterConcepts() {
+        const selectedCategory = categoryFilter.value;
+        
+        conceptCards.forEach(card => {
+          const category = card.dataset.category;
+          
+          const categoryMatch = !selectedCategory || category === selectedCategory;
+          
+          if (categoryMatch) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+      
+      categoryFilter.addEventListener('change', filterConcepts);
+    });
+  </script>
 </Layout>

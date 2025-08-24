@@ -1,116 +1,322 @@
 {
   "concepts": [
     {
-      "id": "love",
-      "title": "Love",
-      "description": "The greatest commandment according to Jesus",
+      "id": "salt-of-the-earth",
+      "title": "Salt of the Earth",
+      "description": "Metaphor for preserving goodness and adding flavor to the world",
+      "category": "Christian Living",
+      "significance": "High",
+      "keyThemes": ["Influence", "Preservation", "Distinctiveness", "Responsibility"],
+      "application": ["Daily witness", "Cultural impact", "Moral influence"],
       "verses": [
         {
-          "reference": "1 Corinthians 13:4-7",
-          "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres."
-        },
-        {
-          "reference": "John 3:16",
-          "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
-        },
-        {
-          "reference": "1 John 4:8",
-          "text": "Whoever does not love does not know God, because God is love."
+          "reference": "Matthew 5:13",
+          "text": "You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot."
         }
       ]
     },
     {
-      "id": "faith",
-      "title": "Faith",
-      "description": "Trust and belief in God's promises",
+      "id": "light-of-the-world",
+      "title": "Light of the World",
+      "description": "Metaphor for guiding truth and exposing darkness",
+      "category": "Christian Living",
+      "significance": "High",
+      "keyThemes": ["Truth", "Guidance", "Exposure", "Witness"],
+      "application": ["Sharing the gospel", "Living transparently", "Leading others"],
       "verses": [
         {
-          "reference": "Hebrews 11:1",
-          "text": "Now faith is confidence in what we hope for and assurance about what we do not see."
+          "reference": "Matthew 5:14",
+          "text": "You are the light of the world. A town built on a hill cannot be hidden."
         },
         {
-          "reference": "Romans 10:17",
-          "text": "Consequently, faith comes from hearing the message, and the message is heard through the word about Christ."
-        },
-        {
-          "reference": "Ephesians 2:8-9",
-          "text": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."
+          "reference": "John 8:12",
+          "text": "When Jesus spoke again to the people, he said, 'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.'"
         }
       ]
     },
     {
-      "id": "hope",
-      "title": "Hope",
-      "description": "Confident expectation in God's promises",
+      "id": "vine-and-branches",
+      "title": "Vine and Branches",
+      "description": "Allegory showing dependence on Christ for life and fruitfulness",
+      "category": "Spiritual Growth",
+      "significance": "High",
+      "keyThemes": ["Abiding", "Fruitfulness", "Dependence", "Pruning"],
+      "application": ["Daily prayer", "Bible study", "Spiritual disciplines"],
       "verses": [
         {
-          "reference": "Romans 15:13",
-          "text": "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit."
-        },
-        {
-          "reference": "Jeremiah 29:11",
-          "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
-        },
-        {
-          "reference": "1 Peter 1:3",
-          "text": "Praise be to the God and Father of our Lord Jesus Christ! In his great mercy he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead."
+          "reference": "John 15:1-8",
+          "text": "I am the true vine, and my Father is the gardener. He cuts off every branch in me that bears no fruit, while every branch that does bear fruit he prunes so that it will be even more fruitful. You are already clean because of the word I have spoken to you. Remain in me, as I also remain in you. No branch can bear fruit by itself; it must remain in the vine. Neither can you bear fruit unless you remain in me. I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing. If you do not remain in me, you are like a branch that is thrown away and withers; such branches are picked up, thrown into the fire and burned. If you remain in me and my words remain in you, ask whatever you wish, and it will be done for you. This is to my Father's glory, that you bear much fruit, showing yourselves to be my disciples."
         }
       ]
     },
     {
-      "id": "peace",
-      "title": "Peace",
-      "description": "The tranquility and harmony that comes from God",
+      "id": "sheep-of-his-pasture",
+      "title": "Sheep of His Pasture",
+      "description": "Metaphor for God's care and believers' dependence",
+      "category": "God's Character",
+      "significance": "Medium",
+      "keyThemes": ["God's care", "Dependence", "Protection", "Guidance"],
+      "application": ["Trusting God", "Following God's lead", "Finding security"],
       "verses": [
         {
-          "reference": "John 14:27",
-          "text": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."
+          "reference": "Psalm 100:3",
+          "text": "Know that the Lord is God. It is he who made us, and we are his; we are his people, the sheep of his pasture."
         },
         {
-          "reference": "Philippians 4:7",
-          "text": "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
-        },
-        {
-          "reference": "Isaiah 26:3",
-          "text": "You will keep in perfect peace those whose minds are steadfast, because they trust in you."
+          "reference": "John 10:11",
+          "text": "I am the good shepherd. The good shepherd lays down his life for the sheep."
         }
       ]
     },
     {
-      "id": "wisdom",
-      "title": "Wisdom",
-      "description": "Divine insight and understanding for righteous living",
+      "id": "temple-of-the-holy-spirit",
+      "title": "Temple of the Holy Spirit",
+      "description": "Metaphor for God's dwelling within believers",
+      "category": "Christian Identity",
+      "significance": "High",
+      "keyThemes": ["Holiness", "God's presence", "Body stewardship", "Sacredness"],
+      "application": ["Personal holiness", "Body care", "Respect for others"],
       "verses": [
         {
-          "reference": "Proverbs 1:7",
-          "text": "The fear of the Lord is the beginning of knowledge, but fools despise wisdom and instruction."
-        },
-        {
-          "reference": "James 1:5",
-          "text": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you."
-        },
-        {
-          "reference": "Proverbs 3:5-6",
-          "text": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+          "reference": "1 Corinthians 6:19",
+          "text": "Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own."
         }
       ]
     },
     {
-      "id": "grace",
-      "title": "Grace",
-      "description": "God's unmerited favor and kindness toward humanity",
+      "id": "armour-of-god",
+      "title": "Armour of God",
+      "description": "Extended metaphor/allegory for spiritual defenses",
+      "category": "Spiritual Warfare",
+      "significance": "High",
+      "keyThemes": ["Protection", "Preparation", "Spiritual battle", "Defense"],
+      "application": ["Daily spiritual preparation", "Prayer", "Scripture study"],
       "verses": [
         {
-          "reference": "Ephesians 2:8",
-          "text": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God."
+          "reference": "Ephesians 6:10-18",
+          "text": "Finally, be strong in the Lord and in his mighty power. Put on the full armor of God, so that you can take your stand against the devil's schemes. For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. Therefore put on the full armor of God, so that when the day of evil comes, you may be able to stand your ground, and after you have done everything, to stand. Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness in place, and with your feet fitted with the readiness that comes from the gospel of peace. In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one. Take the helmet of salvation and the sword of the Spirit, which is the word of God. And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord's people."
+        }
+      ]
+    },
+    {
+      "id": "good-fight-of-faith",
+      "title": "Good Fight of Faith",
+      "description": "Metaphor comparing Christian life to combat",
+      "category": "Spiritual Warfare",
+      "significance": "Medium",
+      "keyThemes": ["Perseverance", "Courage", "Faithfulness", "Endurance"],
+      "application": ["Standing firm in trials", "Maintaining faith", "Spiritual discipline"],
+      "verses": [
+        {
+          "reference": "1 Timothy 6:12",
+          "text": "Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses."
+        }
+      ]
+    },
+    {
+      "id": "running-the-race",
+      "title": "Running the Race",
+      "description": "Metaphor for endurance in faith",
+      "category": "Spiritual Growth",
+      "significance": "Medium",
+      "keyThemes": ["Endurance", "Discipline", "Focus", "Goal-oriented"],
+      "application": ["Spiritual discipline", "Setting priorities", "Staying focused"],
+      "verses": [
+        {
+          "reference": "Hebrews 12:1",
+          "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us."
         },
         {
-          "reference": "2 Corinthians 12:9",
-          "text": "But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.' Therefore I will boast all the more gladly about my weaknesses, so that Christ's power may rest on me."
+          "reference": "1 Corinthians 9:24",
+          "text": "Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize."
+        }
+      ]
+    },
+    {
+      "id": "crown-of-life",
+      "title": "Crown of Life",
+      "description": "Symbol of eternal reward for perseverance",
+      "category": "Eternal Rewards",
+      "significance": "Medium",
+      "keyThemes": ["Reward", "Perseverance", "Eternal life", "Faithfulness"],
+      "application": ["Enduring trials", "Staying faithful", "Focusing on eternity"],
+      "verses": [
+        {
+          "reference": "James 1:12",
+          "text": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him."
         },
         {
-          "reference": "Romans 6:23",
-          "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord."
+          "reference": "Revelation 2:10",
+          "text": "Do not be afraid of what you are about to suffer. I tell you, the devil will put some of you in prison to test you, and you will suffer persecution for ten days. Be faithful, even to the point of death, and I will give you life as your victor's crown."
+        }
+      ]
+    },
+    {
+      "id": "mustard-seed",
+      "title": "Mustard Seed",
+      "description": "Parable symbolizing small beginnings that grow large",
+      "category": "Kingdom of God",
+      "significance": "Medium",
+      "keyThemes": ["Growth", "Small beginnings", "Faith", "Potential"],
+      "application": ["Starting small", "Having faith", "Being patient"],
+      "verses": [
+        {
+          "reference": "Matthew 13:31-32",
+          "text": "He told them another parable: 'The kingdom of heaven is like a mustard seed, which a man took and planted in his field. Though it is the smallest of all seeds, yet when it grows, it is the largest of garden plants and becomes a tree, so that the birds come and perch in its branches.'"
+        }
+      ]
+    },
+    {
+      "id": "leaven",
+      "title": "Leaven",
+      "description": "Symbol of influence (positive or negative)",
+      "category": "Influence",
+      "significance": "Medium",
+      "keyThemes": ["Influence", "Spread", "Impact", "Contamination"],
+      "application": ["Being a positive influence", "Avoiding negative influence", "Understanding impact"],
+      "verses": [
+        {
+          "reference": "Matthew 13:33",
+          "text": "He told them still another parable: 'The kingdom of heaven is like yeast that a woman took and mixed into about sixty pounds of flour until it worked all through the dough.'"
+        },
+        {
+          "reference": "1 Corinthians 5:6",
+          "text": "Your boasting is not good. Don't you know that a little yeast leavens the whole batch of dough?"
+        }
+      ]
+    },
+    {
+      "id": "living-water",
+      "title": "Living Water",
+      "description": "Metaphor for the Spirit giving eternal life",
+      "category": "Spiritual Life",
+      "significance": "High",
+      "keyThemes": ["Eternal life", "Spiritual refreshment", "Satisfaction", "Abundance"],
+      "application": ["Seeking spiritual fulfillment", "Sharing the gospel", "Living abundantly"],
+      "verses": [
+        {
+          "reference": "John 4:10-14",
+          "text": "Jesus answered her, 'If you knew the gift of God and who it is that asks you for a drink, you would have asked him and he would have given you living water.' 'Sir,' the woman said, 'you have nothing to draw with and the well is deep. Where can you get this living water? Are you greater than our father Jacob, who gave us the well and drank from it himself, as did also his sons and his livestock?' Jesus answered, 'Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst. Indeed, the water I give them will become in them a spring of water welling up to eternal life.'"
+        }
+      ]
+    },
+    {
+      "id": "bread-of-life",
+      "title": "Bread of Life",
+      "description": "Metaphor for Jesus as spiritual sustenance",
+      "category": "Christology",
+      "significance": "High",
+      "keyThemes": ["Spiritual nourishment", "Dependence on Christ", "Satisfaction", "Life"],
+      "application": ["Daily spiritual feeding", "Dependence on Jesus", "Finding satisfaction in Christ"],
+      "verses": [
+        {
+          "reference": "John 6:35",
+          "text": "Then Jesus declared, 'I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty.'"
+        }
+      ]
+    },
+    {
+      "id": "children-of-light-darkness",
+      "title": "Children of Light vs Darkness",
+      "description": "Contrast between believers and unbelievers",
+      "category": "Spiritual Identity",
+      "significance": "Medium",
+      "keyThemes": ["Identity", "Contrast", "Choice", "Transformation"],
+      "application": ["Choosing light", "Living as children of light", "Avoiding darkness"],
+      "verses": [
+        {
+          "reference": "Ephesians 5:8",
+          "text": "For you were once darkness, but now you are light in the Lord. Live as children of light."
+        }
+      ]
+    },
+    {
+      "id": "lamp-to-my-feet",
+      "title": "Lamp to My Feet",
+      "description": "Metaphor for God's Word as guidance",
+      "category": "God's Word",
+      "significance": "Medium",
+      "keyThemes": ["Guidance", "God's Word", "Direction", "Illumination"],
+      "application": ["Reading Scripture", "Following God's guidance", "Seeking direction"],
+      "verses": [
+        {
+          "reference": "Psalm 119:105",
+          "text": "Your word is a lamp for my feet, a light on my path."
+        }
+      ]
+    },
+    {
+      "id": "kingdom-of-light-vs-darkness",
+      "title": "Kingdom of Light vs Darkness",
+      "description": "Contrast between God's kingdom and Satan's domain",
+      "category": "Spiritual Realms",
+      "significance": "High",
+      "keyThemes": ["Kingdom", "Contrast", "Authority", "Transfer"],
+      "application": ["Understanding spiritual realms", "Living in God's kingdom", "Avoiding darkness"],
+      "verses": [
+        {
+          "reference": "Colossians 1:13",
+          "text": "For he has rescued us from the dominion of darkness and brought us into the kingdom of the Son he loves."
+        }
+      ]
+    },
+    {
+      "id": "sower-and-the-seed",
+      "title": "Sower and the Seed",
+      "description": "Parable about different responses to God's Word",
+      "category": "Kingdom of God",
+      "significance": "High",
+      "keyThemes": ["God's Word", "Response", "Growth", "Fruitfulness"],
+      "application": ["Sharing God's Word", "Preparing soil", "Being receptive"],
+      "verses": [
+        {
+          "reference": "Matthew 13:3-8",
+          "text": "Then he told them many things in parables, saying: 'A farmer went out to sow his seed. As he was scattering the seed, some fell along the path, and the birds came and ate it up. Some fell on rocky places, where it did not have much soil. It sprang up quickly, because the soil was shallow. But when the sun came up, the plants were scorched, and they withered because they had no root. Other seed fell among thorns, which grew up and choked the plants. Still other seed fell on good soil, where it produced a crop—a hundred, sixty or thirty times what was sown.'"
+        }
+      ]
+    },
+    {
+      "id": "harvest",
+      "title": "Harvest",
+      "description": "Metaphor for spiritual results and judgment",
+      "category": "Kingdom of God",
+      "significance": "Medium",
+      "keyThemes": ["Results", "Judgment", "Timing", "Reaping"],
+      "application": ["Being patient", "Preparing for harvest", "Understanding timing"],
+      "verses": [
+        {
+          "reference": "Matthew 9:37-38",
+          "text": "Then he said to his disciples, 'The harvest is plentiful but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into his harvest field.'"
+        }
+      ]
+    },
+    {
+      "id": "tree-planted-by-streams",
+      "title": "Tree Planted by Streams",
+      "description": "Metaphor for spiritual stability and fruitfulness",
+      "category": "Spiritual Growth",
+      "significance": "Medium",
+      "keyThemes": ["Stability", "Fruitfulness", "Nourishment", "Growth"],
+      "application": ["Staying rooted in God", "Finding nourishment", "Growing spiritually"],
+      "verses": [
+        {
+          "reference": "Psalm 1:3",
+          "text": "That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither—whatever they do prospers."
+        }
+      ]
+    },
+    {
+      "id": "fruit-of-the-spirit",
+      "title": "Fruit of the Spirit",
+      "description": "Metaphor for visible results of God's work in a believer",
+      "category": "Spiritual Growth",
+      "significance": "High",
+      "keyThemes": ["Character", "Spiritual growth", "God's work", "Evidence"],
+      "application": ["Developing character", "Allowing God to work", "Showing evidence of faith"],
+      "verses": [
+        {
+          "reference": "Galatians 5:22-23",
+          "text": "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law."
         }
       ]
     }

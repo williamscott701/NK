@@ -3,11 +3,19 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "npm run kill-port && astro dev",
+    "start": "npm run kill-port && astro dev",
+    "kill-port": "lsof -ti:8080 | xargs kill -9 2>/dev/null || true",
+    "dev-clean": "npm run kill-port && astro dev",
+    "start-robust": "./start-dev.sh",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "validate-csp": "node scripts/security/validate-csp.js",
+    "security-check": "npm run validate-csp",
+    "test-404": "echo 'Navigate to a non-existent URL (e.g., /nonexistent-page) to test the 404 page'",
+    "check-concepts": "node scripts/check-pending-concepts.js",
+    "concepts-report": "node scripts/check-pending-concepts.js docs/CONCEPTS_PROGRESS_REPORT.md"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",

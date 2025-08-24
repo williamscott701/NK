@@ -1,0 +1,363 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.tsx';
+import PageSearch from '../components/PageSearch.tsx';
+import conceptsData from '../data/bible-concepts.json';
+import booksData from '../data/bible-books.json';
+import storiesData from '../data/bible-stories.json';
+
+const concepts = conceptsData.concepts;
+const books = booksData.books;
+const stories = storiesData.stories;
+
+// Get some featured content for suggestions
+const featuredConcepts = concepts.slice(0, 3);
+const featuredBooks = books.slice(0, 3);
+const featuredStories = stories.slice(0, 3);
+---
+
+<Layout title="Page Not Found - BibleBing" description="The page you're looking for couldn't be found. Explore our Bible resources and get back on track.">
+  <main class="min-h-screen">
+    <!-- Header Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-16">
+      <div class="absolute top-10 left-10 w-48 h-48 bg-bible-gold/5 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-10 right-10 w-64 h-64 bg-bible-blue/5 rounded-full blur-2xl"></div>
+      
+      <div class="relative z-10 max-w-6xl mx-auto px-6">
+        <!-- Breadcrumb -->
+        <Breadcrumb 
+          client:load 
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Page Not Found' }
+          ]} 
+        />
+
+        <!-- 404 Header -->
+        <div class="text-center mb-12">
+          <div class="mb-8">
+            <h1 class="text-8xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400 mb-4">
+              404
+            </h1>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Page Not Found
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              The page you're looking for doesn't exist. But don't worry - you can still explore our Bible resources and find what you need.
+            </p>
+          </div>
+
+          <!-- Search Section -->
+          <div class="max-w-2xl mx-auto">
+            <PageSearch 
+              client:load 
+              placeholder="Search for Bible concepts, stories, or books..."
+              conceptsData={concepts}
+              booksData={books}
+              storiesData={stories}
+              searchMode="all"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Quick Navigation
+        </h3>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Bible Books -->
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-sky-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Books</h4>
+            <p class="text-gray-600 mb-4">Explore all 66 books of the Bible with chapter-by-chapter navigation.</p>
+            <a href="/books" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+              Browse Books
+            </a>
+          </div>
+
+          <!-- Bible Concepts -->
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Concepts</h4>
+            <p class="text-gray-600 mb-4">Discover key biblical concepts like love, faith, hope, and more.</p>
+            <a href="/concepts" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold">
+              Explore Concepts
+            </a>
+          </div>
+
+          <!-- Bible Stories -->
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Stories</h4>
+            <p class="text-gray-600 mb-4">Read inspiring stories from the Bible with modern explanations.</p>
+            <a href="/stories" class="inline-block bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition-colors font-semibold">
+              Read Stories
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Popular Content
+        </h3>
+        
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Featured Concepts -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+              Popular Concepts
+            </h4>
+            <div class="space-y-3">
+              {featuredConcepts.map((concept) => (
+                <a href={`/concept/${concept.id}`} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <h5 class="font-semibold text-gray-800">{concept.title}</h5>
+                  <p class="text-sm text-gray-600 line-clamp-2">{concept.description}</p>
+                </a>
+              ))}
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-200">
+              <a href="/concepts" class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
+                View All Concepts →
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured Books -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
+              </svg>
+              Popular Books
+            </h4>
+            <div class="space-y-3">
+              {featuredBooks.map((book) => (
+                <a href={`/book/${book.id}`} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <h5 class="font-semibold text-gray-800">{book.name}</h5>
+                  <p class="text-sm text-gray-600 line-clamp-2">{book.description}</p>
+                </a>
+              ))}
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-200">
+              <a href="/books" class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
+                View All Books →
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured Stories -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <svg class="w-6 h-6 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+              </svg>
+              Popular Stories
+            </h4>
+            <div class="space-y-3">
+              {featuredStories.map((story) => (
+                <a href={`/story/${story.id}`} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <h5 class="font-semibold text-gray-800">{story.title}</h5>
+                  <p class="text-sm text-gray-600 line-clamp-2">{story.description}</p>
+                </a>
+              ))}
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-200">
+              <a href="/stories" class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
+                View All Stories →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+          Still Can't Find What You're Looking For?
+        </h3>
+        <p class="text-lg text-gray-600 mb-8">
+          Our search feature can help you find specific Bible verses, concepts, or stories. 
+          Try searching with different keywords or browse our categories.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/" class="inline-block bg-gradient-to-r from-blue-500 to-sky-500 text-white px-8 py-4 rounded-lg hover:from-blue-600 hover:to-sky-600 transition-all duration-200 font-semibold text-lg">
+            Go to Homepage
+          </a>
+          <a href="/books" class="inline-block bg-gray-100 text-gray-700 px-8 py-4 rounded-lg hover:bg-gray-200 transition-colors font-semibold text-lg">
+            Browse All Content
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand Section -->
+        <div class="col-span-2">
+          <div class="flex items-center mb-4">
+            <h3 class="text-2xl font-bold">
+              <span class="text-bible-blue">Bible</span>
+              <span class="text-bible-gold">Bing</span>
+            </h3>
+          </div>
+          <p class="text-gray-300 mb-6 max-w-md">
+            Discover divine wisdom with powerful tools designed to make Bible study engaging, meaningful, and accessible to everyone.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/books" class="text-gray-300 hover:text-white transition-colors">Books</a></li>
+            <li><a href="/concepts" class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
+            <li><a href="/stories" class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+          
+          <!-- Support Buttons -->
+          <div class="mt-6 space-y-3">
+            <a href="#" class="inline-block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-4 py-2 rounded-lg transition-colors font-medium">
+              Donate Now
+            </a>
+            <button
+              onclick="window.open('https://www.buymeacoffee.com/pswilliam', '_blank')"
+              class="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-colors font-medium flex items-center justify-center"
+            >
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 12a2 2 0 104 0 2 2 0 00-4 0zm6-4a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Buy me a coffee
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+        <p class="text-gray-400">
+          © 2025 BibleBing. All rights reserved. Made with ❤️ for spreading divine wisdom.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // Track 404 error for analytics
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track 404 page view
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'page_view', {
+        page_title: '404 - Page Not Found',
+        page_location: window.location.href,
+        custom_map: {
+          'error_type': '404',
+          'error_url': window.location.href,
+          'error_referrer': document.referrer
+        }
+      });
+    }
+
+    // Track 404 error event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'error', {
+        event_category: 'error',
+        event_label: '404',
+        value: 1,
+        custom_map: {
+          'error_url': window.location.href,
+          'error_message': 'Page not found',
+          'error_referrer': document.referrer
+        }
+      });
+    }
+
+    // Send to custom analytics if available
+    try {
+      fetch('/api/analytics/404', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          url: window.location.href,
+          referrer: document.referrer,
+          userAgent: navigator.userAgent,
+          timestamp: Date.now()
+        }),
+      }).catch(() => {
+        // Silently fail if endpoint doesn't exist
+      });
+    } catch (e) {
+      // Ignore errors
+    }
+  });
+</script>

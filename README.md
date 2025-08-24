@@ -1,153 +1,80 @@
+# NK - Bible Study Project
 
+A comprehensive Bible study application built with Astro, featuring Bible concepts, stories, and chronological ordering tools.
 
-## Bible Book Structure
+## Project Structure
 
-The `bible-books.json` file contains comprehensive information about each book of the Bible, including:
+### 📁 Scripts
+All JavaScript utilities and analysis tools are organized in the `scripts/` directory:
 
-### Book Properties
-- **id**: Unique identifier for the book (e.g., "genesis", "exodus")
-- **name**: Full name of the book (e.g., "Genesis", "Exodus")
-- **testament**: "Old Testament" or "New Testament"
-- **chapters**: Total number of chapters in the book
-- **description**: Brief description of the book's content and purpose
-- **author**: Traditional author of the book
-- **themes**: Array of key themes and topics covered in the book
-- **canonicalOrder**: Position in the standard Bible order (1-66)
-- **chronologicalOrder**: Position in chronological order of events (1-66)
-- **chaptersContent**: Detailed information for each chapter
+#### `scripts/bible-order/` - Bible Ordering Scripts
+Scripts for managing and fixing Bible book and chapter ordering:
+- `show_chronological_order.js` - Display chronological order of Bible books
+- `show_canonical_order.js` - Display canonical order of Bible books
+- `final_chronological_fix.js` - Final fixes for chronological ordering
+- `fix_duplicate_chronological.js` - Remove duplicate chronological entries
+- `update_chronological_order.js` - Update chronological order data
+- `fix_chronological_order.js` - Fix chronological order issues
+- `verify_and_fix_book_orders.js` - Verify and fix book order problems
+- `check_book_orders.js` - Check book ordering consistency
+- `check_book_chapters.js` - Verify chapter counts for books
+- `remove_duplicate_chapters.js` - Remove duplicate chapter entries
+- `check_remaining.js` - Check remaining tasks and issues
 
-### Chapter Properties
-- **number**: Chapter number
-- **title**: Descriptive title of the chapter
-- **summary**: Brief summary of the chapter's content
-- **keyVerses**: Important verses from the chapter
-- **content**: Sample content or key passage
-- **themes**: Themes present in the chapter
+#### `scripts/analysis/` - Analysis Scripts
+Scripts for analyzing Bible data and order:
+- `chronological_order_analysis.js` - Analyze chronological ordering
+- `detailed_order_check.js` - Detailed checking of book orders
 
-### Order Information
+#### `scripts/utilities/` - Utility Scripts
+General utility scripts:
+- `start-dev.sh` - Development server startup script
 
-#### Canonical Order (1-66)
-The traditional order of books as they appear in most Bibles:
-- **Old Testament (Books 1-39)**: Genesis through Malachi
-- **New Testament (Books 40-66)**: Matthew through Revelation
+### 📁 Documentation
+Markdown documentation files:
+- `docs/BIBLE_ORDER_STATUS.md` - Current status of Bible ordering
+- `docs/BIBLE_COMPLETION_TASKS.md` - Tasks for completing Bible setup
 
-This order follows the standard Protestant Bible arrangement and is used for:
-- Traditional Bible study and reference
-- Cross-referencing between translations
-- Standard chapter and verse citations
-- Bible reading plans and devotionals
+### 🚀 Getting Started
 
-#### Chronological Order (1-66)
-The approximate order based on when events occurred historically:
-- **Books 1-5**: Pentateuch (Genesis-Deuteronomy) - Creation to ~1406 BC
-- **Books 6-17**: Historical books (Joshua-Esther) - ~1406 BC to ~400 BC
-- **Books 18-39**: Wisdom and Prophetic books (Job-Malachi) - Various periods
-- **Books 40-66**: New Testament (Matthew-Revelation) - ~4 BC to ~95 AD
-
-This order is useful for:
-- Understanding the historical timeline of biblical events
-- Studying the development of God's plan through time
-- Contextualizing prophecies and their fulfillments
-- Historical Bible studies and chronological reading plans
-
-### Data Integrity
-All 66 books in the database include:
-- ✅ Complete canonical order numbering (1-66)
-- ✅ Complete chronological order numbering (1-66)
-- ✅ Consistent book ID structure
-- ✅ Comprehensive chapter content for each book
-- ✅ Detailed thematic information
-
-# Bible Learning Web App
-
-A modern, interactive Bible learning platform built with Astro SSG, React, Tailwind CSS, and MDX.
-
-## Features
-
-- **Modern Design**: Clean, classy interface with beautiful gradients and animations
-- **Interactive Search**: Large, prominent search area for Bible verses and concepts
-- **React Islands**: Fast, interactive components where needed
-- **SSG Performance**: Static site generation for optimal loading speeds
-- **Responsive Design**: Works beautifully on all devices
-
-## Tech Stack
-
-- **Astro**: Static Site Generator with islands architecture
-- **React**: For interactive components
-- **Tailwind CSS**: Utility-first CSS framework
-- **TypeScript**: Type-safe development
-- **MDX**: Markdown with React components
-
-## Getting Started
-
-1. Install dependencies:
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. Start the development server:
+2. **Start development server:**
    ```bash
-   npm run dev
+   ./scripts/utilities/start-dev.sh
    ```
 
-3. Open [http://localhost:4321](http://localhost:4321) in your browser
+3. **Run Bible ordering scripts:**
+   ```bash
+   # Show current chronological order
+   node scripts/bible-order/show_chronological_order.js
+   
+   # Fix ordering issues
+   node scripts/bible-order/fix_chronological_order.js
+   ```
 
-## Project Structure
+## Features
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   ├── Breadcrumb.tsx
-│   │   ├── PageSearch.tsx
-│   │   └── SearchBar.tsx
-│   ├── data/
-│   │   ├── bible-books.json      # Complete Bible book data
-│   │   ├── bible-concepts.json   # Biblical concepts and themes
-│   │   └── bible-stories.json    # Bible stories and narratives
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       ├── book/                 # Individual book pages
-│       ├── concept/              # Concept pages
-│       ├── stories/              # Story pages
-│       └── index.astro
-├── astro.config.mjs
-├── package.json
-├── tailwind.config.mjs
-└── tsconfig.json
-```
+- **Bible Concepts**: Explore theological concepts with detailed explanations
+- **Bible Stories**: Interactive storytelling with chronological context
+- **Book Navigation**: Browse all 66 books with chapter-by-chapter access
+- **Search Functionality**: Find concepts, stories, and passages quickly
+- **Responsive Design**: Modern UI built with Tailwind CSS
 
-## Commands
+## Technology Stack
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
+- **Framework**: Astro
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Build Tool**: Vite
 
-## Data Validation
+## Development
 
-The project includes validation scripts to ensure data integrity:
-
-- **`check_book_orders.js`**: Verifies that all books have proper canonical and chronological order fields
-- **`check_book_chapters.js`**: Validates chapter completeness across all books
-- **`check_remaining.js`**: Identifies any missing or incomplete data
-
-Run these scripts to validate the Bible data:
-```bash
-node check_book_orders.js
-node check_book_chapters.js
-node check_remaining.js
-```
-
-## Customization
-
-- **Colors**: Modify the custom colors in `tailwind.config.mjs`
-- **Content**: Update Bible data in the JSON files under `src/data/`
-- **Search**: Enhance search functionality in the search components
-- **Navigation**: Customize breadcrumb and navigation components
+The project uses Astro for static site generation with TypeScript support. All Bible-related scripts are organized in the `scripts/` directory for easy maintenance and execution.
 
 ## License
 
-MIT
+[Add your license information here]
