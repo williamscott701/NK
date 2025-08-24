@@ -49,8 +49,8 @@ const concepts = conceptsData.concepts;
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {concepts.map((concept) => (
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden">
-              <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden flex flex-col">
+              <div class="p-6 flex flex-col flex-grow">
                 <div class="flex items-center mb-4">
                   <div class="w-12 h-12 bg-gradient-to-r from-bible-gold to-yellow-500 rounded-xl flex items-center justify-center mr-4">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,12 +79,14 @@ const concepts = conceptsData.concepts;
                   )}
                 </div>
                 
-                <a 
-                  href={`/concept/${concept.id}`}
-                  class="block w-full mt-6 bg-gradient-to-r from-bible-gold to-yellow-500 text-white py-2 px-4 rounded-lg hover:from-bible-gold/90 hover:to-yellow-500/90 transition-all duration-200 font-semibold text-center"
-                >
-                  Explore {concept.title}
-                </a>
+                <div class="mt-auto">
+                  <a 
+                    href={`/concept/${concept.id}`}
+                    class="block w-full bg-gradient-to-r from-bible-gold to-yellow-500 text-white py-2 px-4 rounded-lg hover:from-bible-gold/90 hover:to-yellow-500/90 transition-all duration-200 font-semibold text-center"
+                  >
+                    Explore {concept.title}
+                  </a>
+                </div>
               </div>
             </div>
           ))}

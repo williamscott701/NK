@@ -49,8 +49,8 @@ const stories = storiesData.stories;
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-8">
           {stories.map((story) => (
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden">
-              <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden flex flex-col">
+              <div class="p-6 flex flex-col flex-grow">
                 <div class="flex items-start justify-between mb-4">
                   <div class="flex items-center">
                     <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
@@ -85,12 +85,14 @@ const stories = storiesData.stories;
                   <p class="text-sm text-green-700 italic">{story.keyVerse}</p>
                 </div>
                 
-                <a 
-                  href={`/story/${story.id}`}
-                  class="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-4 rounded-lg hover:from-green-500/90 hover:to-emerald-600/90 transition-all duration-200 font-semibold text-center"
-                >
-                  Read Full Story
-                </a>
+                <div class="mt-auto">
+                  <a 
+                    href={`/story/${story.id}`}
+                    class="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-4 rounded-lg hover:from-green-500/90 hover:to-emerald-600/90 transition-all duration-200 font-semibold text-center"
+                  >
+                    Read Full Story
+                  </a>
+                </div>
               </div>
             </div>
           ))}
