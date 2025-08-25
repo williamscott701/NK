@@ -1,0 +1,83 @@
+---
+interface Props {
+  title: string;
+  headers: string[];
+  rows: Record<string, any>[];
+}
+
+const { title, headers, rows } = Astro.props;
+
+// Create a mapping from header display names to possible row keys
+function getCellValue(row: Record<string, any>, header: string): any {
+  // Try different possible key formats
+  const possibleKeys = [
+    header.toLowerCase().replace(/\s+/g, ''), // "Daily Application" -> "dailyapplication"
+    header.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, ''), // "Biblical Example" -> "biblicalexample"
+    header.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '').replace(/^biblical/, 'biblical'), // Keep "biblical" prefix
+    header.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '').replace(/^daily/, 'daily'), // Keep "daily" prefix
+    header.toLowerCase().replace(/\s+/g, '').replace(/[^a-z]/g, '').replace(/^growth/, 'growth'), // Keep "growth" prefix
+  ];
+  
+  // Also try the exact header as a key
+  possibleKeys.unshift(header);
+  
+  for (const key of possibleKeys) {
+    if (row[key] !== undefined) {
+      return row[key];
+    }
+  }
+  
+  // If no exact match, try to find a key that contains the header words
+  const headerWords = header.toLowerCase().split(/\s+/);
+  for (const [rowKey, value] of Object.entries(row)) {
+    const rowKeyLower = rowKey.toLowerCase();
+    if (headerWords.some(word => rowKeyLower.includes(word))) {
+      return value;
+    }
+  }
+  
+  // Last resort: return the first value or empty string
+  return Object.values(row)[0] || '';
+}
+
+// Function to render cell content
+function renderCellContent(value: any): string {
+  if (Array.isArray(value)) {
+    return value.map(item => `• ${item}`).join('\n');
+  }
+  return String(value);
+}
+---
+
+<div class="mb-8">
+  <h3 class="text-xl font-bold text-gray-800 mb-4">{title}</h3>
+  
+  <div class="overflow-x-auto">
+    <table class="w-full border border-gray-200 rounded-lg">
+      <thead class="bg-gray-50">
+        <tr>
+          {headers.map((header) => (
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
+              {header}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        {rows.map((row) => (
+          <tr class="hover:bg-gray-50 transition-colors duration-150">
+            {headers.map((header) => {
+              const cellValue = getCellValue(row, header);
+              const isArray = Array.isArray(cellValue);
+              return (
+                <td class={`px-6 py-4 text-sm text-gray-900 ${isArray ? 'whitespace-pre-line' : 'whitespace-nowrap'}`}>
+                  {isArray ? cellValue.map(item => `• ${item}`).join('\n') : cellValue}
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>

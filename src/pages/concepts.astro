@@ -34,6 +34,22 @@ const concepts = conceptsData.concepts;
           </p>
         </div>
 
+        <!-- Detailed Content Notice -->
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-200 mb-8">
+          <div class="flex items-center justify-center gap-3">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div class="text-center">
+              <h3 class="text-lg font-semibold text-green-800 mb-1">Enhanced Content Available!</h3>
+              <p class="text-green-700 text-sm">
+                Many concepts now include detailed explanations, biblical context, practical applications, and modern relevance. 
+                Look for the ✨ badge to see which concepts have comprehensive content.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- Search Section -->
         <PageSearch 
           client:load 
@@ -83,12 +99,28 @@ const concepts = conceptsData.concepts;
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                     </svg>
                   </div>
-                  <h3 class="text-xl font-bold text-gray-800">{concept.title}</h3>
+                  <div class="flex-1">
+                    <h3 class="text-xl font-bold text-gray-800">{concept.title}</h3>
+                    {concept.detailedContent && (
+                      <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 mt-1">
+                        ✨ Detailed Content Available
+                      </span>
+                    )}
+                  </div>
                 </div>
                 
                 <p class="text-gray-600 mb-4 leading-relaxed">
                   {concept.description}
                 </p>
+
+                <!-- Detailed Content Preview -->
+                {concept.detailedContent && concept.detailedContent.overview && (
+                  <div class="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                    <p class="text-sm text-blue-700 line-clamp-3">
+                      {concept.detailedContent.overview.substring(0, 150)}...
+                    </p>
+                  </div>
+                )}
                 
                 <!-- Additional Information -->
                 <div class="space-y-3 mb-6">
@@ -145,7 +177,7 @@ const concepts = conceptsData.concepts;
                     href={`/concept/${concept.id}`}
                     class="block w-full bg-gradient-to-r from-blue-400 to-sky-400 text-white py-2 px-4 rounded-lg hover:from-blue-500 hover:to-sky-500 transition-all duration-200 font-semibold text-center"
                   >
-                    Start reading
+                    {concept.detailedContent ? 'Read Full Content' : 'Start Reading'}
                   </a>
                 </div>
               </div>
@@ -264,4 +296,13 @@ const concepts = conceptsData.concepts;
       categoryFilter.addEventListener('change', filterConcepts);
     });
   </script>
+
+  <style>
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
 </Layout>

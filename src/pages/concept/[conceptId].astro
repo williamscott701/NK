@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.tsx';
+import DataTable from '../../components/DataTable.astro';
 import conceptsData from '../../data/bible-concepts.json';
 
 export async function getStaticPaths() {
@@ -59,19 +60,35 @@ function parseList(content, startIndex) {
             {concept.description}
           </p>
           
-          <!-- Category and Significance -->
-          <div class="flex flex-wrap justify-center gap-3 mt-6">
-            {concept.category && (
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-50 text-sky-600 border border-sky-200">
-                {concept.category}
-              </span>
-            )}
-            {concept.significance && (
-              <span class="text-amber-600 border border-amber-200">
-                {concept.significance} Significance
-              </span>
-            )}
-          </div>
+
+          
+          <!-- Key Themes -->
+          {concept.keyThemes && concept.keyThemes.length > 0 && (
+            <div class="mt-6">
+              <h3 class="text-lg font-semibold text-gray-700 mb-3">Key Themes</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                {concept.keyThemes.map((theme) => (
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-600 border border-blue-200">
+                    {theme}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          <!-- Application Areas -->
+          {concept.application && concept.application.length > 0 && (
+            <div class="mt-6">
+              <h3 class="text-lg font-semibold text-gray-700 mb-3">Application Areas</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                {concept.application.map((app) => (
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-50 text-green-600 border border-green-200">
+                    {app}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
@@ -79,108 +96,621 @@ function parseList(content, startIndex) {
     <!-- Concept Content -->
     <section class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="grid lg:grid-cols-3 gap-8">
+        <div class="flex justify-center">
           <!-- Main Content Column -->
-          <div class="lg:col-span-2 space-y-12">
+          <div class="max-w-4xl w-full space-y-12">
             
-            <!-- Content Development Note -->
-            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border border-yellow-200">
-              <h2 class="text-3xl font-bold text-yellow-800 mb-6 flex items-center gap-3">
-                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-                </svg>
-                Content Development Note
-              </h2>
-              <p class="text-yellow-800 mb-4">
-                This concept page is currently displaying basic information. Detailed content including Biblical Context, Theological Depth, and Practical Applications is being developed and will be available soon.
-              </p>
-              <p class="text-yellow-700 text-sm">
-                Check the <a href="/concepts" class="underline hover:text-yellow-900">concepts page</a> for updates.
-              </p>
-            </div>
+            <!-- Detailed Content -->
+            {concept.detailedContent && (
+              <div class="space-y-12">
 
-            <!-- Key Verses -->
-            {concept.verses && concept.verses.length > 0 && (
-              <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-100">
-                <h2 class="text-3xl font-bold text-amber-800 mb-8 text-center">Key Bible Verses</h2>
-                <div class="space-y-6">
-                  {concept.verses.map((verse, index) => (
-                    <div class="bg-white rounded-xl p-6 shadow-lg border border-amber-200">
-                      <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 bg-bible-gold text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                          {index + 1}
+                
+                <!-- Table of Contents -->
+                <div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-6 border border-gray-200">
+                  <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                    </svg>
+                    Table of Contents
+                  </h2>
+                  <div class="grid md:grid-cols-2 gap-3">
+                    <a 
+                      href="#overview"
+                      class="flex items-center gap-2 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 group"
+                    >
+                      <span class="w-2 h-2 bg-blue-400 rounded-full group-hover:bg-blue-600 transition-colors"></span>
+                      <span class="text-gray-700 group-hover:text-blue-700 font-medium">Overview</span>
+                    </a>
+                    {concept.verses && concept.verses.length > 0 && (
+                      <a 
+                        href="#verse-analysis"
+                        class="flex items-center gap-2 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 group"
+                      >
+                        <span class="w-2 h-2 bg-indigo-400 rounded-full group-hover:bg-indigo-600 transition-colors"></span>
+                        <span class="text-gray-700 group-hover:text-indigo-700 font-medium">Verse Analysis</span>
+                      </a>
+                    )}
+                    {Object.keys(concept.detailedContent).filter(key => key !== 'overview').map((section) => (
+                      <a 
+                        key={section}
+                        href={`#${section}`}
+                        class="flex items-center gap-2 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 group"
+                      >
+                        <span class="w-2 h-2 bg-blue-400 rounded-full group-hover:bg-blue-600 transition-colors"></span>
+                        <span class="text-gray-700 group-hover:text-blue-700 font-medium capitalize">
+                          {section.replace(/([A-Z])/g, ' $1').trim()}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                <!-- Overview -->
+                {concept.detailedContent.overview && (
+                  <div id="overview" class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
+                    <h2 class="text-3xl font-bold text-blue-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Overview
+                    </h2>
+                    <p class="text-lg text-blue-800 leading-relaxed">
+                      {concept.detailedContent.overview}
+                    </p>
+                  </div>
+                )}
+
+                <!-- Comprehensive Verse Analysis -->
+                {concept.verses && concept.verses.length > 0 && (
+                  <div id="verse-analysis" class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-200">
+                    <h2 class="text-3xl font-bold text-indigo-800 mb-8 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                                              Deep Dive
+                    </h2>
+                    
+                    <div class="space-y-8">
+                      {concept.verses.map((verse, index) => (
+                        <div key={index} class="bg-white rounded-xl p-6 shadow-lg border border-indigo-200">
+                          <div class="mb-6">
+                            <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+                              {verse.reference}
+                            </h3>
+                            <blockquote class="text-xl text-gray-800 leading-relaxed italic border-l-4 border-indigo-400 pl-6 mb-4">
+                              "{verse.text}"
+                            </blockquote>
+                          </div>
+
+                          <!-- Verse Breakdown -->
+                          <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Historical Context -->
+                            <div class="space-y-4">
+                              <h4 class="text-lg font-semibold text-indigo-600 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Historical Context
+                              </h4>
+                              <div class="text-sm text-gray-600 space-y-2">
+                                {verse.reference.includes('Matthew') && (
+                                  <>
+                                    <p><strong>Author:</strong> Matthew, a former tax collector and disciple of Jesus</p>
+                                    <p><strong>Audience:</strong> Jewish Christians, emphasizing Jesus as the promised Messiah</p>
+                                    <p><strong>Setting:</strong> Sermon on the Mount, early in Jesus' ministry</p>
+                                    <p><strong>Purpose:</strong> To show how Jesus fulfills and expands Old Testament law</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('John') && (
+                                  <>
+                                    <p><strong>Author:</strong> John, the beloved disciple and eyewitness</p>
+                                    <p><strong>Audience:</strong> All believers, emphasizing Jesus' divinity</p>
+                                    <p><strong>Setting:</strong> Various locations during Jesus' ministry</p>
+                                    <p><strong>Purpose:</strong> To reveal Jesus as the Son of God and source of life</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('1 Corinthians') && (
+                                  <>
+                                    <p><strong>Author:</strong> Paul, apostle to the Gentiles</p>
+                                    <p><strong>Audience:</strong> Corinthian church dealing with various issues</p>
+                                    <p><strong>Setting:</strong> Corinth, a major commercial city in Greece</p>
+                                    <p><strong>Purpose:</strong> To address church problems and teach proper Christian living</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Ephesians') && (
+                                  <>
+                                    <p><strong>Author:</strong> Paul, writing from prison in Rome</p>
+                                    <p><strong>Audience:</strong> Ephesian church and surrounding churches</p>
+                                    <p><strong>Setting:</strong> Ephesus, major city in Asia Minor</p>
+                                    <p><strong>Purpose:</strong> To explain the church's identity and spiritual warfare</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('1 Timothy') && (
+                                  <>
+                                    <p><strong>Author:</strong> Paul, writing to his protégé Timothy</p>
+                                    <p><strong>Audience:</strong> Timothy, a young church leader</p>
+                                    <p><strong>Setting:</strong> Timothy's ministry in Ephesus</p>
+                                    <p><strong>Purpose:</strong> To provide guidance for church leadership and personal conduct</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Hebrews') && (
+                                  <>
+                                    <p><strong>Author:</strong> Unknown, possibly Paul or a close associate</p>
+                                    <p><strong>Audience:</strong> Jewish Christians considering returning to Judaism</p>
+                                    <p><strong>Setting:</strong> Likely written before 70 AD</p>
+                                    <p><strong>Purpose:</strong> To show Jesus' superiority and encourage perseverance</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('James') && (
+                                  <>
+                                    <p><strong>Author:</strong> James, brother of Jesus and leader of Jerusalem church</p>
+                                    <p><strong>Audience:</strong> Jewish Christians scattered throughout the Roman Empire</p>
+                                    <p><strong>Setting:</strong> Jerusalem, center of early Christianity</p>
+                                    <p><strong>Purpose:</strong> To emphasize practical faith and righteous living</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Revelation') && (
+                                  <>
+                                    <p><strong>Author:</strong> John, exiled on the island of Patmos</p>
+                                    <p><strong>Audience:</strong> Seven churches in Asia Minor</p>
+                                    <p><strong>Setting:</strong> Roman persecution under Domitian</p>
+                                    <p><strong>Purpose:</strong> To encourage believers during persecution and reveal God's ultimate victory</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Psalm') && (
+                                  <>
+                                    <p><strong>Author:</strong> Various authors including David, Asaph, and others</p>
+                                    <p><strong>Audience:</strong> Israel, God's chosen people</p>
+                                    <p><strong>Setting:</strong> Various periods of Israel's history</p>
+                                    <p><strong>Purpose:</strong> To express worship, prayer, and reflection on God's character</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Isaiah') && (
+                                  <>
+                                    <p><strong>Author:</strong> Isaiah, prophet to Judah</p>
+                                    <p><strong>Audience:</strong> Kingdom of Judah during Assyrian threat</p>
+                                    <p><strong>Setting:</strong> Jerusalem, 8th century BC</p>
+                                    <p><strong>Purpose:</strong> To call Judah to repentance and promise future restoration</p>
+                                  </>
+                                )}
+                                {verse.reference.includes('Colossians') && (
+                                  <>
+                                    <p><strong>Author:</strong> Paul, writing from prison</p>
+                                    <p><strong>Audience:</strong> Colossian church facing false teaching</p>
+                                    <p><strong>Setting:</strong> Colossae, city in Asia Minor</p>
+                                    <p><strong>Purpose:</strong> To establish Christ's supremacy and correct false doctrine</p>
+                                  </>
+                                )}
+                              </div>
+                            </div>
+
+                            <!-- Theological Insights -->
+                            <div class="space-y-4">
+                              <h4 class="text-lg font-semibold text-indigo-600 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                                Theological Insights
+                              </h4>
+                              <div class="text-sm text-gray-600 space-y-2">
+                                {concept.id === 'salt-of-the-earth' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Salt represents preserving influence and distinctive character</p>
+                                    <p><strong>Kingdom Principle:</strong> Believers are called to impact culture, not withdraw from it</p>
+                                    <p><strong>Warning:</strong> Loss of saltiness represents spiritual compromise and ineffectiveness</p>
+                                    <p><strong>Promise:</strong> Faithful believers will be used by God to preserve goodness in society</p>
+                                  </>
+                                )}
+                                {concept.id === 'light-of-the-world' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Light represents truth, guidance, and exposure of darkness</p>
+                                    <p><strong>Kingdom Principle:</strong> Believers are called to illuminate truth and guide others</p>
+                                    <p><strong>Warning:</strong> Hidden light serves no purpose and fails its mission</p>
+                                    <p><strong>Promise:</strong> Visible light will be seen and will guide others to God</p>
+                                  </>
+                                )}
+                                {concept.id === 'vine-and-branches' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Vine represents Christ as the source of spiritual life</p>
+                                    <p><strong>Kingdom Principle:</strong> Apart from Christ, believers can do nothing of eternal value</p>
+                                    <p><strong>Warning:</strong> Disconnected branches wither and are removed</p>
+                                    <p><strong>Promise:</strong> Abiding branches bear much fruit and glorify God</p>
+                                  </>
+                                )}
+                                {concept.id === 'sheep-of-his-pasture' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Sheep represent believers' dependence and God's care</p>
+                                    <p><strong>Kingdom Principle:</strong> God provides, protects, and guides His people</p>
+                                    <p><strong>Warning:</strong> Sheep who wander from the shepherd face danger</p>
+                                    <p><strong>Promise:</strong> The Good Shepherd lays down His life for the sheep</p>
+                                  </>
+                                )}
+                                {concept.id === 'temple-of-the-holy-spirit' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Temple represents the sacred dwelling place of God</p>
+                                    <p><strong>Kingdom Principle:</strong> Believers' bodies are holy and set apart for God</p>
+                                    <p><strong>Warning:</strong> Defiling the temple brings consequences</p>
+                                    <p><strong>Promise:</strong> God's presence transforms and empowers believers</p>
+                                  </>
+                                )}
+                                {concept.id === 'armour-of-god' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Armor represents spiritual protection and weapons</p>
+                                    <p><strong>Kingdom Principle:</strong> Spiritual warfare requires God's equipment</p>
+                                    <p><strong>Warning:</strong> Unprepared believers are vulnerable to attack</p>
+                                    <p><strong>Promise:</strong> God provides complete protection for spiritual battles</p>
+                                  </>
+                                )}
+                                {concept.id === 'good-fight-of-faith' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Fight represents ongoing spiritual struggle and perseverance</p>
+                                    <p><strong>Kingdom Principle:</strong> Christian life requires courage and endurance</p>
+                                    <p><strong>Warning:</strong> Giving up the fight leads to spiritual defeat</p>
+                                    <p><strong>Promise:</strong> Faithful fighters will receive eternal rewards</p>
+                                  </>
+                                )}
+                                {concept.id === 'running-the-race' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Race represents the Christian life journey</p>
+                                    <p><strong>Kingdom Principle:</strong> Spiritual growth requires discipline and focus</p>
+                                    <p><strong>Warning:</strong> Distractions and sin can disqualify runners</p>
+                                    <p><strong>Promise:</strong> Finishing the race brings eternal rewards</p>
+                                  </>
+                                )}
+                                {concept.id === 'crown-of-life' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Crown represents reward for faithfulness</p>
+                                    <p><strong>Kingdom Principle:</strong> Perseverance through trials brings eternal rewards</p>
+                                    <p><strong>Warning:</strong> Giving up during trials forfeits rewards</p>
+                                    <p><strong>Promise:</strong> God rewards those who love Him and endure</p>
+                                  </>
+                                )}
+                                {concept.id === 'mustard-seed' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Mustard seed represents small beginnings with great potential</p>
+                                    <p><strong>Kingdom Principle:</strong> God's kingdom grows from humble origins</p>
+                                    <p><strong>Warning:</strong> Don't despise small beginnings</p>
+                                    <p><strong>Promise:</strong> Small faith can produce great results</p>
+                                  </>
+                                )}
+                                {concept.id === 'leaven' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Leaven represents pervasive influence</p>
+                                    <p><strong>Kingdom Principle:</strong> Small influences can have widespread effects</p>
+                                    <p><strong>Warning:</strong> Negative influence spreads quickly</p>
+                                    <p><strong>Promise:</strong> Positive influence can transform communities</p>
+                                  </>
+                                )}
+                                {concept.id === 'living-water' && (
+                                  <>
+                                    <p><strong>Metaphor:</strong> Living water represents eternal life and satisfaction</p>
+                                    <p><strong>Kingdom Principle:</strong> Jesus provides what nothing else can</p>
+                                    <p><strong>Warning:</strong> Physical solutions don't address spiritual needs</p>
+                                    <p><strong>Promise:</strong> Believers become springs of living water for others</p>
+                                  </>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Practical Application -->
+                          <div class="mt-6 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                            <h4 class="text-lg font-semibold text-indigo-700 mb-3 flex items-center gap-2">
+                              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                              </svg>
+                              How This Applies Today
+                            </h4>
+                            <div class="text-sm text-indigo-700 space-y-2">
+                              {concept.application && concept.application.map((app, appIndex) => (
+                                <p key={appIndex} class="flex items-start gap-2">
+                                  <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></span>
+                                  <span>{app}</span>
+                                </p>
+                              ))}
+                            </div>
+                          </div>
                         </div>
-                        <div class="flex-1">
-                          <h3 class="text-lg font-semibold text-bible-gold mb-3">
-                            {verse.reference}
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Tables Section - Always displayed right after Deep Dive -->
+                {concept.detailedContent && Object.entries(concept.detailedContent).map(([key, value]) => {
+                  if (key.endsWith('Table') && value && typeof value === 'object' && 'title' in value && 'headers' in value && 'rows' in value) {
+                    return (
+                      <div key={key} id={key} class="mb-8">
+                        <DataTable 
+                          title={value.title}
+                          headers={value.headers}
+                          rows={value.rows}
+                        />
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+
+                <!-- Biblical Context -->
+                {concept.detailedContent.biblicalContext && (
+                  <div id="biblicalContext" class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                      </svg>
+                      Biblical Context
+                    </h2>
+                    <div class="space-y-6">
+                      {Object.entries(concept.detailedContent.biblicalContext).map(([key, value]) => (
+                        <div key={key}>
+                          <h3 class="text-xl font-semibold text-green-700 mb-3 capitalize">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
                           </h3>
-                          <blockquote class="text-lg text-gray-700 leading-relaxed italic border-l-4 border-bible-gold pl-6 mb-4">
-                            "{verse.text}"
-                          </blockquote>
+                          {Array.isArray(value) ? (
+                            <ul class="list-disc list-inside space-y-2 text-green-700">
+                              {value.map((item, index) => (
+                                <li key={index} class="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p class="text-green-700 leading-relaxed">{value}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Spiritual Meaning -->
+                {concept.detailedContent.spiritualMeaning && (
+                  <div id="spiritualMeaning" class="bg-gradient-to-r from-purple-50 to-violet-50 rounded-2xl p-8 border border-purple-200">
+                    <h2 class="text-3xl font-bold text-purple-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                      </svg>
+                      Spiritual Meaning
+                    </h2>
+                    <div class="space-y-6">
+                      {Object.entries(concept.detailedContent.spiritualMeaning).map(([key, value]) => (
+                        <div key={key}>
+                          <h3 class="text-xl font-semibold text-purple-700 mb-3 capitalize">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
+                          </h3>
+                          {Array.isArray(value) ? (
+                            <ul class="list-disc list-inside space-y-2 text-purple-700">
+                              {value.map((item, index) => (
+                                <li key={index} class="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p class="text-purple-700 leading-relaxed">{value}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Practical Applications -->
+                {concept.detailedContent.practicalApplications && (
+                  <div id="practicalApplications" class="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-200">
+                    <h2 class="text-3xl font-bold text-orange-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Practical Applications
+                    </h2>
+                    <div class="space-y-6">
+                      {Object.entries(concept.detailedContent.practicalApplications).map(([key, value]) => (
+                        <div key={key}>
+                          <h3 class="text-xl font-semibold text-orange-700 mb-3 capitalize">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
+                          </h3>
+                          {Array.isArray(value) ? (
+                            <ul class="list-disc list-inside space-y-2 text-orange-700">
+                              {value.map((item, index) => (
+                                <li key={index} class="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p class="text-orange-700 leading-relaxed">{value}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Biblical Examples -->
+                {concept.detailedContent.biblicalExamples && (
+                  <div id="biblicalExamples" class="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl p-8 border border-amber-200">
+                    <h2 class="text-3xl font-bold text-amber-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                      </svg>
+                      Biblical Examples
+                    </h2>
+                    <div class="space-y-6">
+                      {Object.entries(concept.detailedContent.biblicalExamples).map(([key, value]) => (
+                        <div key={key}>
+                          <h3 class="text-xl font-semibold text-amber-700 mb-3 capitalize">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
+                          </h3>
+                          {Array.isArray(value) ? (
+                            <ul class="list-disc list-inside space-y-2 text-amber-700">
+                              {value.map((item, index) => (
+                                <li key={index} class="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p class="text-amber-700 leading-relaxed">{value}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Modern Applications -->
+                {concept.detailedContent.modernApplications && (
+                  <div id="modernApplications" class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 border border-teal-200">
+                    <h2 class="text-3xl font-bold text-teal-800 mb-6 flex items-center gap-3">
+                      <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                      Modern Applications
+                    </h2>
+                    <div class="space-y-6">
+                      {Object.entries(concept.detailedContent.modernApplications).map(([key, value]) => (
+                        <div key={key}>
+                          <h3 class="text-xl font-semibold text-teal-700 mb-3 capitalize">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
+                          </h3>
+                          {Array.isArray(value) ? (
+                            <ul class="list-disc list-inside space-y-2 text-teal-700">
+                              {value.map((item, index) => (
+                                <li key={index} class="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p class="text-teal-700 leading-relaxed">{value}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <!-- Additional Sections -->
+                {Object.entries(concept.detailedContent).map(([key, value]) => {
+                  // Skip sections we've already handled above
+                  const handledSections = ['overview', 'biblicalContext', 'spiritualMeaning', 'practicalApplications', 'biblicalExamples', 'modernApplications', 'fourTypesOfSoil', 'theSoils', 'soilPreparation'];
+                  
+                  if (handledSections.includes(key)) return null;
+                  
+
+                  
+                  // Special handling for componentsOfTheArmour
+                  if (key === 'componentsOfTheArmour') {
+                    return (
+                      <div key={key} id={key} class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
+                        <h2 class="text-3xl font-bold text-amber-800 mb-8 flex items-center gap-3">
+                          <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                          </svg>
+                          Components of the Armour
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                          {Object.entries(value).map(([armorPiece, armorDetails]) => (
+                            <div key={armorPiece} class="bg-white rounded-xl p-6 shadow-lg border border-amber-200">
+                              <h3 class="text-xl font-bold text-amber-700 mb-4 capitalize">
+                                {armorPiece.replace(/([A-Z])/g, ' $1').trim()}
+                              </h3>
+                              <div class="space-y-4">
+                                {Object.entries(armorDetails).map(([detailKey, detailValue]) => (
+                                  <div key={detailKey}>
+                                    <h4 class="text-lg font-semibold text-amber-600 mb-2 capitalize">
+                                      {detailKey.replace(/([A-Z])/g, ' $1').trim()}
+                                    </h4>
+                                    {Array.isArray(detailValue) ? (
+                                      <ul class="list-disc list-inside space-y-1 text-gray-600">
+                                        {detailValue.map((item, index) => (
+                                          <li key={index} class="leading-relaxed">{item}</li>
+                                        ))}
+                                      </ul>
+                                    ) : (
+                                      <p class="text-gray-600 leading-relaxed">{detailValue}</p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
+                    );
+                  }
+                  
+                  return (
+                    <div key={key} id={key} class="bg-gradient-to-r from-gray-50 to-slate-50 rounded-2xl p-8 border border-gray-200">
+                      <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3 capitalize">
+                        <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                        {key.replace(/([A-Z])/g, ' $1').trim()}
+                      </h2>
+                      <div class="space-y-6">
+                        {typeof value === 'object' && value !== null ? (
+                          Object.entries(value).map(([subKey, subValue]) => (
+                            <div key={subKey}>
+                              <h3 class="text-xl font-semibold text-gray-700 mb-3 capitalize">
+                                {subKey.replace(/([A-Z])/g, ' $1').trim()}
+                              </h3>
+                              {typeof subValue === 'object' && subValue !== null && !Array.isArray(subValue) ? (
+                                // Handle nested objects (like componentsOfTheArmour)
+                                <div class="space-y-4">
+                                  {Object.entries(subValue).map(([nestedKey, nestedValue]) => (
+                                    <div key={nestedKey} class="bg-white rounded-lg p-4 border border-gray-200">
+                                      <h4 class="text-lg font-medium text-gray-800 mb-2 capitalize">
+                                        {nestedKey.replace(/([A-Z])/g, ' $1').trim()}
+                                      </h4>
+                                      {Array.isArray(nestedValue) ? (
+                                        <ul class="list-disc list-inside space-y-1 text-gray-600">
+                                          {nestedValue.map((item, index) => (
+                                            <li key={index} class="leading-relaxed">{item}</li>
+                                          ))}
+                                        </ul>
+                                      ) : (
+                                        <p class="text-gray-600 leading-relaxed">{nestedValue}</p>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              ) : Array.isArray(subValue) ? (
+                                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                  {subValue.map((item, index) => (
+                                    <li key={index} class="leading-relaxed">{item}</li>
+                                  ))}
+                                </ul>
+                              ) : (
+                                <p class="text-gray-700 leading-relaxed">{subValue}</p>
+                              )}
+                            </div>
+                          ))
+                        ) : (
+                          <p class="text-gray-700 leading-relaxed">{value}</p>
+                        )}
+                      </div>
                     </div>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
             )}
+            
+
+
+            <!-- Content Development Note (fallback) -->
+            {!concept.detailedContent && (
+              <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border border-yellow-200">
+                <h2 class="text-3xl font-bold text-yellow-800 mb-6 flex items-center gap-3">
+                  <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                  </svg>
+                  Content Development Note
+                </h2>
+                <p class="text-yellow-800 mb-4">
+                  This concept page is currently displaying basic information. Detailed content including Biblical Context, Theological Depth, and Practical Applications is being developed and will be available soon.
+                </p>
+                <p class="text-yellow-700 text-sm">
+                  Check the <a href="/concepts" class="underline hover:text-yellow-900">concepts page</a> for updates.
+                </p>
+              </div>
+            )}
+
+
           </div>
 
-          <!-- Sidebar -->
-          <div class="space-y-6">
-            <!-- Key Themes -->
-            {concept.keyThemes && concept.keyThemes.length > 0 && (
-              <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">Key Themes</h3>
-                <div class="flex flex-wrap gap-2">
-                  {concept.keyThemes.map((theme) => (
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-600 border border-blue-200">
-                      {theme}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <!-- Application Areas -->
-            {concept.application && concept.application.length > 0 && (
-              <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">Application Areas</h3>
-                <div class="flex flex-wrap gap-2">
-                  {concept.application.map((app) => (
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-50 text-green-600 border border-green-200">
-                      {app}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <!-- Quick Actions -->
-            <div class="bg-gradient-to-r from-bible-gold to-amber-500 rounded-xl p-6 text-white">
-              <h3 class="text-xl font-bold mb-4">Ready to Explore?</h3>
-              <div class="space-y-3">
-                <a 
-                  href="/concepts" 
-                  class="block w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-lg text-center transition-all duration-200"
-                >
-                  Browse All Concepts
-                </a>
-                <a 
-                  href="/books" 
-                  class="block w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-lg text-center transition-all duration-200"
-                >
-                  Study Bible Books
-                </a>
-                <a 
-                  href="/stories" 
-                  class="block w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-lg text-center transition-all duration-200"
-                >
-                  Read Bible Stories
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
