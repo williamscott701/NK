@@ -6,11 +6,24 @@
       "description": "Metaphor for preserving goodness and adding flavor to the world",
       "category": "Christian Living",
       "significance": "High",
-      "keyThemes": ["Influence", "Preservation", "Distinctiveness", "Responsibility"],
-      "application": ["Daily witness", "Cultural impact", "Moral influence"],
+      "keyThemes": [
+        "Influence",
+        "Preservation",
+        "Distinctiveness",
+        "Responsibility"
+      ],
+      "application": [
+        "Daily witness",
+        "Cultural impact",
+        "Moral influence"
+      ],
       "detailedContent": {
-        "overview": "The 'Salt of the Earth' metaphor is one of Jesus' most powerful teachings about Christian influence and responsibility in society. This metaphor appears in the Sermon on the Mount and carries profound implications for how believers should interact with the world around them.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Salt of the Earth' metaphor is one of Jesus' most powerful teachings about Christian influence and responsibility in society. This metaphor appears in the Sermon on the Mount and carries profound implications for how believers should interact with the world around them."
+        },
         "historicalContext": {
+          "type": "section",
           "ancientUses": [
             "Preservation: Salt was essential for preserving meat and fish in ancient times",
             "Flavor enhancement: Salt made food palatable and enjoyable",
@@ -20,6 +33,7 @@
           "culturalSignificance": "In Jesus' time, salt was not just a seasoning but a vital necessity for survival and commerce"
         },
         "spiritualMeaning": {
+          "type": "section",
           "preservation": [
             "Believers preserve moral and ethical standards in society",
             "Christians maintain truth and justice in their communities",
@@ -40,6 +54,7 @@
           ]
         },
         "practicalApplications": {
+          "type": "section",
           "personalLife": [
             "Maintain personal integrity in all situations",
             "Show kindness and compassion to others",
@@ -74,6 +89,7 @@
           ]
         },
         "biblicalExamples": {
+          "type": "section",
           "positive": [
             "Daniel in Babylon (Daniel 1-6)",
             "Joseph in Egypt (Genesis 39-41)",
@@ -87,6 +103,7 @@
           ]
         },
         "modernRelevance": {
+          "type": "section",
           "socialMedia": [
             "Use platforms to share hope and encouragement",
             "Avoid spreading negativity or division",
@@ -110,7 +127,19 @@
       "verses": [
         {
           "reference": "Matthew 5:13",
-          "text": "You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot."
+          "text": "You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.",
+          "historicalContext": {
+            "author": "Matthew, a former tax collector and disciple of Jesus",
+            "audience": "Jewish Christians, emphasizing Jesus as the promised Messiah",
+            "setting": "Sermon on the Mount, early in Jesus' ministry",
+            "purpose": "To show how Jesus fulfills and expands Old Testament law"
+          },
+          "theologicalInsights": {
+            "metaphor": "Salt represents preserving influence and distinctive character",
+            "kingdomPrinciple": "Believers are called to impact culture, not withdraw from it",
+            "warning": "Loss of saltiness represents spiritual compromise and ineffectiveness",
+            "promise": "Faithful believers will be used by God to preserve goodness in society"
+          }
         }
       ]
     },
@@ -120,8 +149,17 @@
       "description": "Metaphor for guiding truth and exposing darkness",
       "category": "Christian Living",
       "significance": "High",
-      "keyThemes": ["Truth", "Guidance", "Exposure", "Witness"],
-      "application": ["Sharing the gospel", "Living transparently", "Leading others"],
+      "keyThemes": [
+        "Truth",
+        "Guidance",
+        "Exposure",
+        "Witness"
+      ],
+      "application": [
+        "Sharing the gospel",
+        "Living transparently",
+        "Leading others"
+      ],
       "detailedContent": {
         "overview": "The 'Light of the World' metaphor is a central teaching of Jesus that describes the essential role of believers in illuminating truth, exposing darkness, and guiding others toward God. This powerful imagery appears in both the Sermon on the Mount and Jesus' personal declarations.",
         "biblicalContext": {
@@ -274,11 +312,35 @@
       "verses": [
         {
           "reference": "Matthew 5:14",
-          "text": "You are the light of the world. A town built on a hill cannot be hidden."
+          "text": "You are the light of the world. A town built on a hill cannot be hidden.",
+          "historicalContext": {
+            "author": "Matthew, a former tax collector and disciple of Jesus",
+            "audience": "Jewish Christians, emphasizing Jesus as the promised Messiah",
+            "setting": "Sermon on the Mount, early in Jesus' ministry",
+            "purpose": "To show how Jesus fulfills and expands Old Testament law"
+          },
+          "theologicalInsights": {
+            "metaphor": "Light represents truth, guidance, and exposure of darkness",
+            "kingdomPrinciple": "Believers are called to illuminate truth and guide others",
+            "warning": "Hidden light serves no purpose and fails its mission",
+            "promise": "Visible light will be seen and will guide others to God"
+          }
         },
         {
           "reference": "John 8:12",
-          "text": "When Jesus spoke again to the people, he said, 'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.'"
+          "text": "When Jesus spoke again to the people, he said, 'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.'",
+          "historicalContext": {
+            "author": "John, the beloved disciple and eyewitness",
+            "audience": "All believers, emphasizing Jesus' divinity",
+            "setting": "Various locations during Jesus' ministry",
+            "purpose": "To reveal Jesus as the Son of God and source of life"
+          },
+          "theologicalInsights": {
+            "metaphor": "Light represents truth, guidance, and exposure of darkness",
+            "kingdomPrinciple": "Believers are called to illuminate truth and guide others",
+            "warning": "Hidden light serves no purpose and fails its mission",
+            "promise": "Visible light will be seen and will guide others to God"
+          }
         }
       ]
     },
@@ -288,8 +350,17 @@
       "description": "Allegory showing dependence on Christ for life and fruitfulness",
       "category": "Spiritual Growth",
       "significance": "High",
-      "keyThemes": ["Abiding", "Fruitfulness", "Dependence", "Pruning"],
-      "application": ["Daily prayer", "Bible study", "Spiritual disciplines"],
+      "keyThemes": [
+        "Abiding",
+        "Fruitfulness",
+        "Dependence",
+        "Pruning"
+      ],
+      "application": [
+        "Daily prayer",
+        "Bible study",
+        "Spiritual disciplines"
+      ],
       "detailedContent": {
         "overview": "The Vine and Branches allegory is one of Jesus' most profound teachings about the essential relationship between believers and Christ. This metaphor, found in John 15, illustrates the vital connection required for spiritual life and fruitfulness, emphasizing that apart from Christ, we can do nothing of eternal value.",
         "agriculturalContext": {
@@ -463,7 +534,19 @@
       "verses": [
         {
           "reference": "John 15:1-8",
-          "text": "I am the true vine, and my Father is the gardener. He cuts off every branch in me that bears no fruit, while every branch that does bear fruit he prunes so that it will be even more fruitful. You are already clean because of the word I have spoken to you. Remain in me, as I also remain in you. No branch can bear fruit by itself; it must remain in the vine. Neither can you bear fruit unless you remain in me. I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing. If you do not remain in me, you are like a branch that is thrown away and withers; such branches are picked up, thrown into the fire and burned. If you remain in me and my words remain in you, ask whatever you wish, and it will be done for you. This is to my Father's glory, that you bear much fruit, showing yourselves to be my disciples."
+          "text": "I am the true vine, and my Father is the gardener. He cuts off every branch in me that bears no fruit, while every branch that does bear fruit he prunes so that it will be even more fruitful. You are already clean because of the word I have spoken to you. Remain in me, as I also remain in you. No branch can bear fruit by itself; it must remain in the vine. Neither can you bear fruit unless you remain in me. I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing. If you do not remain in me, you are like a branch that is thrown away and withers; such branches are picked up, thrown into the fire and burned. If you remain in me and my words remain in you, ask whatever you wish, and it will be done for you. This is to my Father's glory, that you bear much fruit, showing yourselves to be my disciples.",
+          "historicalContext": {
+            "author": "John, the beloved disciple and eyewitness",
+            "audience": "All believers, emphasizing Jesus' divinity",
+            "setting": "Various locations during Jesus' ministry",
+            "purpose": "To reveal Jesus as the Son of God and source of life"
+          },
+          "theologicalInsights": {
+            "metaphor": "Vine represents Christ as the source of spiritual life",
+            "kingdomPrinciple": "Apart from Christ, believers can do nothing of eternal value",
+            "warning": "Disconnected branches wither and are removed",
+            "promise": "Abiding branches bear much fruit and glorify God"
+          }
         }
       ]
     },
@@ -473,8 +556,17 @@
       "description": "Metaphor for God's care and believers' dependence",
       "category": "God's Character",
       "significance": "Medium",
-      "keyThemes": ["God's care", "Dependence", "Protection", "Guidance"],
-      "application": ["Trusting God", "Following God's lead", "Finding security"],
+      "keyThemes": [
+        "God's care",
+        "Dependence",
+        "Protection",
+        "Guidance"
+      ],
+      "application": [
+        "Trusting God",
+        "Following God's lead",
+        "Finding security"
+      ],
       "detailedContent": {
         "overview": "The 'Sheep of His Pasture' metaphor is a beautiful and comforting image that illustrates the intimate relationship between God and His people. This metaphor appears throughout Scripture, particularly in the Psalms and the teachings of Jesus, revealing God's tender care and our complete dependence on Him.",
         "biblicalContext": {
@@ -679,11 +771,35 @@
       "verses": [
         {
           "reference": "Psalm 100:3",
-          "text": "Know that the Lord is God. It is he who made us, and we are his; we are his people, the sheep of his pasture."
+          "text": "Know that the Lord is God. It is he who made us, and we are his; we are his people, the sheep of his pasture.",
+          "historicalContext": {
+            "author": "Various authors including David, Asaph, and others",
+            "audience": "Israel, God's chosen people",
+            "setting": "Various periods of Israel's history",
+            "purpose": "To express worship, prayer, and reflection on God's character"
+          },
+          "theologicalInsights": {
+            "metaphor": "Sheep represent believers' dependence and God's care",
+            "kingdomPrinciple": "God provides, protects, and guides His people",
+            "warning": "Sheep who wander from the shepherd face danger",
+            "promise": "The Good Shepherd lays down His life for the sheep"
+          }
         },
         {
           "reference": "John 10:11",
-          "text": "I am the good shepherd. The good shepherd lays down his life for the sheep."
+          "text": "I am the good shepherd. The good shepherd lays down his life for the sheep.",
+          "historicalContext": {
+            "author": "Various authors including David, Asaph, and others",
+            "audience": "Israel, God's chosen people",
+            "setting": "Various periods of Israel's history",
+            "purpose": "To express worship, prayer, and reflection on God's character"
+          },
+          "theologicalInsights": {
+            "metaphor": "Sheep represent believers' dependence and God's care",
+            "kingdomPrinciple": "God provides, protects, and guides His people",
+            "warning": "Sheep who wander from the shepherd face danger",
+            "promise": "The Good Shepherd lays down His life for the sheep"
+          }
         }
       ]
     },
@@ -693,8 +809,17 @@
       "description": "Metaphor for God's dwelling within believers",
       "category": "Christian Identity",
       "significance": "High",
-      "keyThemes": ["Holiness", "God's presence", "Body stewardship", "Sacredness"],
-      "application": ["Personal holiness", "Body care", "Respect for others"],
+      "keyThemes": [
+        "Holiness",
+        "God's presence",
+        "Body stewardship",
+        "Sacredness"
+      ],
+      "application": [
+        "Personal holiness",
+        "Body care",
+        "Respect for others"
+      ],
       "detailedContent": {
         "overview": "The 'Temple of the Holy Spirit' metaphor is a profound theological concept that transforms how we view our bodies and our identity as believers. This teaching, found primarily in Paul's letters, reveals that our physical bodies are sacred dwelling places of God Himself, calling us to live with reverence and holiness.",
         "biblicalContext": {
@@ -875,7 +1000,19 @@
       "verses": [
         {
           "reference": "1 Corinthians 6:19",
-          "text": "Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own."
+          "text": "Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own.",
+          "historicalContext": {
+            "author": "Paul, apostle to the Gentiles",
+            "audience": "Corinthian church dealing with various issues",
+            "setting": "Corinth, a major commercial city in Greece",
+            "purpose": "To address church problems and teach proper Christian living"
+          },
+          "theologicalInsights": {
+            "metaphor": "Temple represents the sacred dwelling place of God",
+            "kingdomPrinciple": "Believers' bodies are holy and set apart for God",
+            "warning": "Defiling the temple brings consequences",
+            "promise": "God's presence transforms and empowers believers"
+          }
         }
       ]
     },
@@ -885,8 +1022,17 @@
       "description": "Extended metaphor/allegory for spiritual defenses",
       "category": "Spiritual Warfare",
       "significance": "High",
-      "keyThemes": ["Protection", "Preparation", "Spiritual battle", "Defense"],
-      "application": ["Daily spiritual preparation", "Prayer", "Scripture study"],
+      "keyThemes": [
+        "Protection",
+        "Preparation",
+        "Spiritual battle",
+        "Defense"
+      ],
+      "application": [
+        "Daily spiritual preparation",
+        "Prayer",
+        "Scripture study"
+      ],
       "detailedContent": {
         "overview": "The Armour of God is one of the most comprehensive metaphors in Scripture for spiritual warfare and protection. Found in Ephesians 6:10-18, this extended allegory describes the complete spiritual equipment God provides for believers to stand against the schemes of the devil and the spiritual forces of evil.",
         "biblicalContext": {
@@ -1002,8 +1148,16 @@
           }
         },
         "armourSummaryTable": {
+          "type": "table",
           "title": "The Full Armour of God: Complete Protection System",
-          "headers": ["Piece of Armour", "Physical Function", "Spiritual Protection", "Key Scripture", "Daily Practice", "Enemy Attack"],
+          "headers": [
+            "Piece of Armour",
+            "Physical Function",
+            "Spiritual Protection",
+            "Key Scripture",
+            "Daily Practice",
+            "Enemy Attack"
+          ],
           "rows": [
             {
               "pieceOfArmour": "Belt of Truth",
@@ -1171,7 +1325,19 @@
       "verses": [
         {
           "reference": "Ephesians 6:10-18",
-          "text": "Finally, be strong in the Lord and in his mighty power. Put on the full armor of God, so that you can take your stand against the devil's schemes. For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. Therefore put on the full armor of God, so that when the day of evil comes, you may be able to stand your ground, and after you have done everything, to stand. Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness in place, and with your feet fitted with the readiness that comes from the gospel of peace. In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one. Take the helmet of salvation and the sword of the Spirit, which is the word of God. And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord's people."
+          "text": "Finally, be strong in the Lord and in his mighty power. Put on the full armor of God, so that you can take your stand against the devil's schemes. For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. Therefore put on the full armor of God, so that when the day of evil comes, you may be able to stand your ground, and after you have done everything, to stand. Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness in place, and with your feet fitted with the readiness that comes from the gospel of peace. In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one. Take the helmet of salvation and the sword of the Spirit, which is the word of God. And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord's people.",
+          "historicalContext": {
+            "author": "Paul, writing from prison in Rome",
+            "audience": "Ephesian church and surrounding churches",
+            "setting": "Ephesus, major city in Asia Minor",
+            "purpose": "To explain the church's identity and spiritual warfare"
+          },
+          "theologicalInsights": {
+            "metaphor": "Armor represents spiritual protection and weapons",
+            "kingdomPrinciple": "Spiritual warfare requires God's equipment",
+            "warning": "Unprepared believers are vulnerable to attack",
+            "promise": "God provides complete protection for spiritual battles"
+          }
         }
       ]
     },
@@ -1181,8 +1347,17 @@
       "description": "Metaphor comparing Christian life to combat",
       "category": "Spiritual Warfare",
       "significance": "Medium",
-      "keyThemes": ["Perseverance", "Courage", "Faithfulness", "Endurance"],
-      "application": ["Standing firm in trials", "Maintaining faith", "Spiritual discipline"],
+      "keyThemes": [
+        "Perseverance",
+        "Courage",
+        "Faithfulness",
+        "Endurance"
+      ],
+      "application": [
+        "Standing firm in trials",
+        "Maintaining faith",
+        "Spiritual discipline"
+      ],
       "detailedContent": {
         "overview": "The 'Good Fight of Faith' is a powerful metaphor that portrays the Christian life as an ongoing spiritual battle requiring courage, perseverance, and faithfulness. This concept, found in Paul's letters to Timothy, emphasizes that following Christ is not a passive journey but an active engagement in spiritual warfare.",
         "biblicalContext": {
@@ -1395,7 +1570,19 @@
       "verses": [
         {
           "reference": "1 Timothy 6:12",
-          "text": "Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses."
+          "text": "Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses.",
+          "historicalContext": {
+            "author": "Paul, writing to his protégé Timothy",
+            "audience": "Timothy, a young church leader",
+            "setting": "Timothy's ministry in Ephesus",
+            "purpose": "To provide guidance for church leadership and personal conduct"
+          },
+          "theologicalInsights": {
+            "metaphor": "Fight represents ongoing spiritual struggle and perseverance",
+            "kingdomPrinciple": "Christian life requires courage and endurance",
+            "warning": "Giving up the fight leads to spiritual defeat",
+            "promise": "Faithful fighters will receive eternal rewards"
+          }
         }
       ]
     },
@@ -1405,8 +1592,17 @@
       "description": "Metaphor for endurance in faith",
       "category": "Spiritual Growth",
       "significance": "Medium",
-      "keyThemes": ["Endurance", "Discipline", "Focus", "Goal-oriented"],
-      "application": ["Spiritual discipline", "Setting priorities", "Staying focused"],
+      "keyThemes": [
+        "Endurance",
+        "Discipline",
+        "Focus",
+        "Goal-oriented"
+      ],
+      "application": [
+        "Spiritual discipline",
+        "Setting priorities",
+        "Staying focused"
+      ],
       "detailedContent": {
         "overview": "The 'Running the Race' metaphor is a powerful image that compares the Christian life to an athletic competition requiring discipline, endurance, and focus. This metaphor, found in Hebrews 12 and 1 Corinthians 9, emphasizes the importance of spiritual training, perseverance, and keeping our eyes fixed on the ultimate prize.",
         "biblicalContext": {
@@ -1619,11 +1815,35 @@
       "verses": [
         {
           "reference": "Hebrews 12:1",
-          "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us."
+          "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us.",
+          "historicalContext": {
+            "author": "Unknown, possibly Paul or a close associate",
+            "audience": "Jewish Christians considering returning to Judaism",
+            "setting": "Likely written before 70 AD",
+            "purpose": "To show Jesus' superiority and encourage perseverance"
+          },
+          "theologicalInsights": {
+            "metaphor": "Race represents the Christian life journey",
+            "kingdomPrinciple": "Spiritual growth requires discipline and focus",
+            "warning": "Distractions and sin can disqualify runners",
+            "promise": "Finishing the race brings eternal rewards"
+          }
         },
         {
           "reference": "1 Corinthians 9:24",
-          "text": "Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize."
+          "text": "Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize.",
+          "historicalContext": {
+            "author": "Unknown, possibly Paul or a close associate",
+            "audience": "Jewish Christians considering returning to Judaism",
+            "setting": "Likely written before 70 AD",
+            "purpose": "To show Jesus' superiority and encourage perseverance"
+          },
+          "theologicalInsights": {
+            "metaphor": "Race represents the Christian life journey",
+            "kingdomPrinciple": "Spiritual growth requires discipline and focus",
+            "warning": "Distractions and sin can disqualify runners",
+            "promise": "Finishing the race brings eternal rewards"
+          }
         }
       ]
     },
@@ -1633,8 +1853,17 @@
       "description": "Symbol of eternal reward for perseverance",
       "category": "Eternal Rewards",
       "significance": "Medium",
-      "keyThemes": ["Reward", "Perseverance", "Eternal life", "Faithfulness"],
-      "application": ["Enduring trials", "Staying faithful", "Focusing on eternity"],
+      "keyThemes": [
+        "Reward",
+        "Perseverance",
+        "Eternal life",
+        "Faithfulness"
+      ],
+      "application": [
+        "Enduring trials",
+        "Staying faithful",
+        "Focusing on eternity"
+      ],
       "detailedContent": {
         "overview": "The 'Crown of Life' is a powerful symbol of the eternal rewards that await believers who persevere through trials and remain faithful to God. This concept, found in James 1:12 and Revelation 2:10, emphasizes that our faithfulness in this life will be rewarded with eternal life and glory in the next.",
         "biblicalContext": {
@@ -1835,11 +2064,35 @@
       "verses": [
         {
           "reference": "James 1:12",
-          "text": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him."
+          "text": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.",
+          "historicalContext": {
+            "author": "James, brother of Jesus and leader of Jerusalem church",
+            "audience": "Jewish Christians scattered throughout the Roman Empire",
+            "setting": "Jerusalem, center of early Christianity",
+            "purpose": "To emphasize practical faith and righteous living"
+          },
+          "theologicalInsights": {
+            "metaphor": "Crown represents reward for faithfulness",
+            "kingdomPrinciple": "Perseverance through trials brings eternal rewards",
+            "warning": "Giving up during trials forfeits rewards",
+            "promise": "God rewards those who love Him and endure"
+          }
         },
         {
           "reference": "Revelation 2:10",
-          "text": "Do not be afraid of what you are about to suffer. I tell you, the devil will put some of you in prison to test you, and you will suffer persecution for ten days. Be faithful, even to the point of death, and I will give you life as your victor's crown."
+          "text": "Do not be afraid of what you are about to suffer. I tell you, the devil will put some of you in prison to test you, and you will suffer persecution for ten days. Be faithful, even to the point of death, and I will give you life as your victor's crown.",
+          "historicalContext": {
+            "author": "James, brother of Jesus and leader of Jerusalem church",
+            "audience": "Jewish Christians scattered throughout the Roman Empire",
+            "setting": "Jerusalem, center of early Christianity",
+            "purpose": "To emphasize practical faith and righteous living"
+          },
+          "theologicalInsights": {
+            "metaphor": "Crown represents reward for faithfulness",
+            "kingdomPrinciple": "Perseverance through trials brings eternal rewards",
+            "warning": "Giving up during trials forfeits rewards",
+            "promise": "God rewards those who love Him and endure"
+          }
         }
       ]
     },
@@ -1849,8 +2102,17 @@
       "description": "Parable symbolizing small beginnings that grow large",
       "category": "Kingdom of God",
       "significance": "Medium",
-      "keyThemes": ["Growth", "Small beginnings", "Faith", "Potential"],
-      "application": ["Starting small", "Having faith", "Being patient"],
+      "keyThemes": [
+        "Growth",
+        "Small beginnings",
+        "Faith",
+        "Potential"
+      ],
+      "application": [
+        "Starting small",
+        "Having faith",
+        "Being patient"
+      ],
       "detailedContent": {
         "overview": "The Mustard Seed parable is one of Jesus' most encouraging teachings about the Kingdom of God. This parable, found in Matthew 13:31-32, illustrates how God's kingdom starts with seemingly insignificant beginnings but grows into something substantial and beneficial for many. It teaches us about faith, patience, and the power of small things in God's hands.",
         "biblicalContext": {
@@ -2051,7 +2313,19 @@
       "verses": [
         {
           "reference": "Matthew 13:31-32",
-          "text": "He told them another parable: 'The kingdom of heaven is like a mustard seed, which a man took and planted in his field. Though it is the smallest of all seeds, yet when it grows, it is the largest of garden plants and becomes a tree, so that the birds come and perch in its branches.'"
+          "text": "He told them another parable: 'The kingdom of heaven is like a mustard seed, which a man took and planted in his field. Though it is the smallest of all seeds, yet when it grows, it is the largest of garden plants and becomes a tree, so that the birds come and perch in its branches.'",
+          "historicalContext": {
+            "author": "Matthew, a former tax collector and disciple of Jesus",
+            "audience": "Jewish Christians, emphasizing Jesus as the promised Messiah",
+            "setting": "Sermon on the Mount, early in Jesus' ministry",
+            "purpose": "To show how Jesus fulfills and expands Old Testament law"
+          },
+          "theologicalInsights": {
+            "metaphor": "Mustard seed represents small beginnings with great potential",
+            "kingdomPrinciple": "God's kingdom grows from humble origins",
+            "warning": "Don't despise small beginnings",
+            "promise": "Small faith can produce great results"
+          }
         }
       ]
     },
@@ -2061,8 +2335,17 @@
       "description": "Symbol of influence (positive or negative)",
       "category": "Influence",
       "significance": "Medium",
-      "keyThemes": ["Influence", "Spread", "Impact", "Contamination"],
-      "application": ["Being a positive influence", "Avoiding negative influence", "Understanding impact"],
+      "keyThemes": [
+        "Influence",
+        "Spread",
+        "Impact",
+        "Contamination"
+      ],
+      "application": [
+        "Being a positive influence",
+        "Avoiding negative influence",
+        "Understanding impact"
+      ],
       "detailedContent": {
         "overview": "The Leaven metaphor is a powerful biblical symbol that illustrates how small influences can have widespread effects, either positive or negative. This metaphor appears in both positive contexts (the Kingdom of God) and negative contexts (sin and corruption), teaching us about the power of influence and the importance of being intentional about what we allow to influence us and others.",
         "biblicalContext": {
@@ -2263,11 +2546,35 @@
       "verses": [
         {
           "reference": "Matthew 13:33",
-          "text": "He told them still another parable: 'The kingdom of heaven is like yeast that a woman took and mixed into about sixty pounds of flour until it worked all through the dough.'"
+          "text": "He told them still another parable: 'The kingdom of heaven is like yeast that a woman took and mixed into about sixty pounds of flour until it worked all through the dough.'",
+          "historicalContext": {
+            "author": "Matthew, a former tax collector and disciple of Jesus",
+            "audience": "Jewish Christians, emphasizing Jesus as the promised Messiah",
+            "setting": "Sermon on the Mount, early in Jesus' ministry",
+            "purpose": "To show how Jesus fulfills and expands Old Testament law"
+          },
+          "theologicalInsights": {
+            "metaphor": "Leaven represents pervasive influence",
+            "kingdomPrinciple": "Small influences can have widespread effects",
+            "warning": "Negative influence spreads quickly",
+            "promise": "Positive influence can transform communities"
+          }
         },
         {
           "reference": "1 Corinthians 5:6",
-          "text": "Your boasting is not good. Don't you know that a little yeast leavens the whole batch of dough?"
+          "text": "Your boasting is not good. Don't you know that a little yeast leavens the whole batch of dough?",
+          "historicalContext": {
+            "author": "Matthew, a former tax collector and disciple of Jesus",
+            "audience": "Jewish Christians, emphasizing Jesus as the promised Messiah",
+            "setting": "Sermon on the Mount, early in Jesus' ministry",
+            "purpose": "To show how Jesus fulfills and expands Old Testament law"
+          },
+          "theologicalInsights": {
+            "metaphor": "Leaven represents pervasive influence",
+            "kingdomPrinciple": "Small influences can have widespread effects",
+            "warning": "Negative influence spreads quickly",
+            "promise": "Positive influence can transform communities"
+          }
         }
       ]
     },
@@ -2277,8 +2584,17 @@
       "description": "Metaphor for the Spirit giving eternal life",
       "category": "Spiritual Life",
       "significance": "High",
-      "keyThemes": ["Eternal life", "Spiritual refreshment", "Satisfaction", "Abundance"],
-      "application": ["Seeking spiritual fulfillment", "Sharing the gospel", "Living abundantly"],
+      "keyThemes": [
+        "Eternal life",
+        "Spiritual refreshment",
+        "Satisfaction",
+        "Abundance"
+      ],
+      "application": [
+        "Seeking spiritual fulfillment",
+        "Sharing the gospel",
+        "Living abundantly"
+      ],
       "detailedContent": {
         "overview": "The 'Living Water' metaphor is one of Jesus' most profound teachings about spiritual life and satisfaction. This metaphor, found in John 4, reveals that Jesus offers something far superior to physical water - a spiritual reality that quenches our deepest thirst and becomes a source of life for others. It speaks to our fundamental need for spiritual fulfillment and the abundant life that comes through relationship with Christ.",
         "biblicalContext": {
@@ -2479,7 +2795,19 @@
       "verses": [
         {
           "reference": "John 4:10-14",
-          "text": "Jesus answered her, 'If you knew the gift of God and who it is that asks you for a drink, you would have asked him and he would have given you living water.' 'Sir,' the woman said, 'you have nothing to draw with and the well is deep. Where can you get this living water? Are you greater than our father Jacob, who gave us the well and drank from it himself, as did also his sons and his livestock?' Jesus answered, 'Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst. Indeed, the water I give them will become in them a spring of water welling up to eternal life.'"
+          "text": "Jesus answered her, 'If you knew the gift of God and who it is that asks you for a drink, you would have asked him and he would have given you living water.' 'Sir,' the woman said, 'you have nothing to draw with and the well is deep. Where can you get this living water? Are you greater than our father Jacob, who gave us the well and drank from it himself, as did also his sons and his livestock?' Jesus answered, 'Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst. Indeed, the water I give them will become in them a spring of water welling up to eternal life.'",
+          "historicalContext": {
+            "author": "John, the beloved disciple and eyewitness",
+            "audience": "All believers, emphasizing Jesus' divinity",
+            "setting": "Various locations during Jesus' ministry",
+            "purpose": "To reveal Jesus as the Son of God and source of life"
+          },
+          "theologicalInsights": {
+            "metaphor": "Living water represents eternal life and satisfaction",
+            "kingdomPrinciple": "Jesus provides what nothing else can",
+            "warning": "Physical solutions don't address spiritual needs",
+            "promise": "Believers become springs of living water for others"
+          }
         }
       ]
     },
@@ -2489,8 +2817,17 @@
       "description": "Metaphor for Jesus as spiritual sustenance",
       "category": "Christology",
       "significance": "High",
-      "keyThemes": ["Spiritual nourishment", "Dependence on Christ", "Satisfaction", "Life"],
-      "application": ["Daily spiritual feeding", "Dependence on Jesus", "Finding satisfaction in Christ"],
+      "keyThemes": [
+        "Spiritual nourishment",
+        "Dependence on Christ",
+        "Satisfaction",
+        "Life"
+      ],
+      "application": [
+        "Daily spiritual feeding",
+        "Dependence on Jesus",
+        "Finding satisfaction in Christ"
+      ],
       "detailedContent": {
         "overview": "The 'Bread of Life' metaphor is one of Jesus' most profound 'I AM' statements, revealing His role as the essential spiritual sustenance for humanity. This metaphor, found in John 6, follows the miraculous feeding of the 5,000 and establishes Jesus as the only source of true spiritual satisfaction and eternal life.",
         "biblicalContext": {
@@ -2534,8 +2871,16 @@
           ]
         },
         "nourishmentComparisonTable": {
+          "type": "table",
           "title": "Spiritual Nourishment: Bread of Life vs Worldly Alternatives",
-          "headers": ["Nourishment Type", "Source", "Satisfaction Level", "Duration", "Cost", "Result"],
+          "headers": [
+            "Nourishment Type",
+            "Source",
+            "Satisfaction Level",
+            "Duration",
+            "Cost",
+            "Result"
+          ],
           "rows": [
             {
               "nourishmentType": "Bread of Life (Jesus)",
@@ -2687,8 +3032,17 @@
       "description": "Contrast between believers and unbelievers",
       "category": "Spiritual Identity",
       "significance": "Medium",
-      "keyThemes": ["Identity", "Contrast", "Choice", "Transformation"],
-      "application": ["Choosing light", "Living as children of light", "Avoiding darkness"],
+      "keyThemes": [
+        "Identity",
+        "Contrast",
+        "Choice",
+        "Transformation"
+      ],
+      "application": [
+        "Choosing light",
+        "Living as children of light",
+        "Avoiding darkness"
+      ],
       "detailedContent": {
         "overview": "The 'Children of Light vs Darkness' metaphor is a powerful biblical contrast that illustrates the fundamental difference between believers and unbelievers. This concept, found throughout Scripture, reveals that our spiritual identity determines our nature, behavior, and destiny. It emphasizes the transformation that occurs when we become children of light and the responsibility to live accordingly.",
         "biblicalContext": {
@@ -2732,8 +3086,16 @@
           ]
         },
         "lightVsDarknessTable": {
+          "type": "table",
           "title": "Children of Light vs Children of Darkness: Identity & Behavior",
-          "headers": ["Characteristic", "Children of Light", "Children of Darkness", "Biblical Evidence", "Daily Manifestation", "Eternal Impact"],
+          "headers": [
+            "Characteristic",
+            "Children of Light",
+            "Children of Darkness",
+            "Biblical Evidence",
+            "Daily Manifestation",
+            "Eternal Impact"
+          ],
           "rows": [
             {
               "characteristic": "Identity",
@@ -2885,8 +3247,17 @@
       "description": "Metaphor for God's Word as guidance",
       "category": "God's Word",
       "significance": "Medium",
-      "keyThemes": ["Guidance", "God's Word", "Direction", "Illumination"],
-      "application": ["Reading Scripture", "Following God's guidance", "Seeking direction"],
+      "keyThemes": [
+        "Guidance",
+        "God's Word",
+        "Direction",
+        "Illumination"
+      ],
+      "application": [
+        "Reading Scripture",
+        "Following God's guidance",
+        "Seeking direction"
+      ],
       "detailedContent": {
         "overview": "The 'Lamp to My Feet' metaphor is a beautiful and practical image that illustrates how God's Word provides guidance and illumination for our daily journey. This metaphor, found in Psalm 119:105, reveals that Scripture is not just a book of rules or history, but a living guide that lights our path and shows us the way forward in life.",
         "biblicalContext": {
@@ -2930,8 +3301,16 @@
           ]
         },
         "guidanceComparisonTable": {
+          "type": "table",
           "title": "Sources of Guidance: God's Word vs Worldly Wisdom",
-          "headers": ["Guidance Source", "Reliability", "Scope", "Timing", "Cost", "Outcome"],
+          "headers": [
+            "Guidance Source",
+            "Reliability",
+            "Scope",
+            "Timing",
+            "Cost",
+            "Outcome"
+          ],
           "rows": [
             {
               "guidanceSource": "God's Word (Bible)",
@@ -3083,8 +3462,17 @@
       "description": "Contrast between God's kingdom and Satan's domain",
       "category": "Spiritual Realms",
       "significance": "High",
-      "keyThemes": ["Kingdom", "Contrast", "Authority", "Transfer"],
-      "application": ["Understanding spiritual realms", "Living in God's kingdom", "Avoiding darkness"],
+      "keyThemes": [
+        "Kingdom",
+        "Contrast",
+        "Authority",
+        "Transfer"
+      ],
+      "application": [
+        "Understanding spiritual realms",
+        "Living in God's kingdom",
+        "Avoiding darkness"
+      ],
       "detailedContent": {
         "overview": "The 'Kingdom of Light vs Darkness' concept reveals the fundamental spiritual reality of two opposing kingdoms that exist in the spiritual realm. This teaching, found throughout Scripture, explains that we are either citizens of God's kingdom of light or subjects of Satan's domain of darkness. Understanding this spiritual reality is crucial for Christian living and spiritual warfare.",
         "biblicalContext": {
@@ -3128,8 +3516,16 @@
           ]
         },
         "kingdomComparisonTable": {
+          "type": "table",
           "title": "Kingdom of Light vs Kingdom of Darkness: Complete Contrast",
-          "headers": ["Aspect", "Kingdom of Light", "Kingdom of Darkness", "Biblical Reference", "Evidence in Life", "Outcome"],
+          "headers": [
+            "Aspect",
+            "Kingdom of Light",
+            "Kingdom of Darkness",
+            "Biblical Reference",
+            "Evidence in Life",
+            "Outcome"
+          ],
           "rows": [
             {
               "aspect": "Ruler",
@@ -3281,8 +3677,17 @@
       "description": "Parable about different responses to God's Word",
       "category": "Kingdom of God",
       "significance": "High",
-      "keyThemes": ["God's Word", "Response", "Growth", "Fruitfulness"],
-      "application": ["Sharing God's Word", "Preparing soil", "Being receptive"],
+      "keyThemes": [
+        "God's Word",
+        "Response",
+        "Growth",
+        "Fruitfulness"
+      ],
+      "application": [
+        "Sharing God's Word",
+        "Preparing soil",
+        "Being receptive"
+      ],
       "detailedContent": {
         "overview": "The 'Sower and the Seed' parable is one of Jesus' most important teachings about the Kingdom of God and how people respond to God's Word. This parable, found in Matthew 13, reveals that the same message produces different results depending on the condition of the heart. It teaches us about evangelism, spiritual growth, and the importance of preparing our hearts to receive God's truth.",
         "biblicalContext": {
@@ -3346,8 +3751,16 @@
           ]
         },
         "soilComparisonTable": {
+          "type": "table",
           "title": "Four Types of Soil: Heart Conditions & Responses",
-          "headers": ["Soil Type", "Heart Condition", "Response to Word", "Obstacles", "Result", "Remedy"],
+          "headers": [
+            "Soil Type",
+            "Heart Condition",
+            "Response to Word",
+            "Obstacles",
+            "Result",
+            "Remedy"
+          ],
           "rows": [
             {
               "soilType": "Path",
@@ -3491,8 +3904,17 @@
       "description": "Metaphor for spiritual results and judgment",
       "category": "Kingdom of God",
       "significance": "Medium",
-      "keyThemes": ["Results", "Judgment", "Timing", "Reaping"],
-      "application": ["Being patient", "Preparing for harvest", "Understanding timing"],
+      "keyThemes": [
+        "Results",
+        "Judgment",
+        "Timing",
+        "Reaping"
+      ],
+      "application": [
+        "Being patient",
+        "Preparing for harvest",
+        "Understanding timing"
+      ],
       "detailedContent": {
         "overview": "The 'Harvest' metaphor is a powerful biblical image that represents both the spiritual results of our labor and the final judgment of God. This concept, found throughout Scripture, teaches us about God's timing, the principle of sowing and reaping, and the importance of being prepared for the harvest. It encourages us to be patient in our work and faithful in our service.",
         "biblicalContext": {
@@ -3643,8 +4065,17 @@
       "description": "Metaphor for spiritual stability and fruitfulness",
       "category": "Spiritual Growth",
       "significance": "Medium",
-      "keyThemes": ["Stability", "Fruitfulness", "Nourishment", "Growth"],
-      "application": ["Staying rooted in God", "Finding nourishment", "Growing spiritually"],
+      "keyThemes": [
+        "Stability",
+        "Fruitfulness",
+        "Nourishment",
+        "Growth"
+      ],
+      "application": [
+        "Staying rooted in God",
+        "Finding nourishment",
+        "Growing spiritually"
+      ],
       "detailedContent": {
         "overview": "The 'Tree Planted by Streams' metaphor is a beautiful biblical image that illustrates spiritual stability, nourishment, and fruitfulness. This metaphor, found in Psalm 1:3, describes the person who delights in God's Word and meditates on it day and night. It reveals the secret to spiritual health and productivity: staying connected to the source of life and nourishment.",
         "biblicalContext": {
@@ -3795,8 +4226,17 @@
       "description": "Metaphor for visible results of God's work in a believer",
       "category": "Spiritual Growth",
       "significance": "High",
-      "keyThemes": ["Character", "Spiritual growth", "God's work", "Evidence"],
-      "application": ["Developing character", "Allowing God to work", "Showing evidence of faith"],
+      "keyThemes": [
+        "Character",
+        "Spiritual growth",
+        "God's work",
+        "Evidence"
+      ],
+      "application": [
+        "Developing character",
+        "Allowing God to work",
+        "Showing evidence of faith"
+      ],
       "detailedContent": {
         "overview": "The 'Fruit of the Spirit' is a beautiful biblical metaphor that describes the visible evidence of God's work in a believer's life. This teaching, found in Galatians 5:22-23, reveals that when we allow the Holy Spirit to work in us, He produces character qualities that reflect God's nature. These fruits are not something we manufacture ourselves, but the natural result of God's transforming work in our hearts.",
         "biblicalContext": {
@@ -3840,8 +4280,15 @@
           ]
         },
         "fruitComparisonTable": {
+          "type": "table",
           "title": "Fruit of the Spirit: Characteristics & Applications",
-          "headers": ["Fruit", "Definition & Characteristics", "Biblical Example", "Daily Application", "Growth Indicator"],
+          "headers": [
+            "Fruit",
+            "Definition & Characteristics",
+            "Biblical Example",
+            "Daily Application",
+            "Growth Indicator"
+          ],
           "rows": [
             {
               "fruit": "Love",
