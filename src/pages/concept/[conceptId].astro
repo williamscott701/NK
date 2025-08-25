@@ -396,23 +396,7 @@ function parseList(content, startIndex) {
                             </div>
                           </div>
 
-                          <!-- Practical Application -->
-                          <div class="mt-6 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
-                            <h4 class="text-lg font-semibold text-indigo-700 mb-3 flex items-center gap-2">
-                              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                              </svg>
-                              How This Applies Today
-                            </h4>
-                            <div class="text-sm text-indigo-700 space-y-2">
-                              {concept.application && concept.application.map((app, appIndex) => (
-                                <p key={appIndex} class="flex items-start gap-2">
-                                  <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></span>
-                                  <span>{app}</span>
-                                </p>
-                              ))}
-                            </div>
-                          </div>
+
                         </div>
                       ))}
                     </div>
@@ -589,6 +573,9 @@ function parseList(content, startIndex) {
                 {Object.entries(concept.detailedContent).map(([key, value]) => {
                   // Skip sections we've already handled above
                   const handledSections = ['overview', 'biblicalContext', 'spiritualMeaning', 'practicalApplications', 'biblicalExamples', 'modernApplications', 'fourTypesOfSoil', 'theSoils', 'soilPreparation'];
+                  
+                  // Skip table entries (they're handled separately above)
+                  if (key.endsWith('Table')) return null;
                   
                   if (handledSections.includes(key)) return null;
                   
