@@ -95,14 +95,7 @@ const concepts = conceptsData.concepts;
                   {concept.description}
                 </p>
 
-                <!-- Detailed Content Preview -->
-                {concept.detailedContent && concept.detailedContent.overview && concept.detailedContent.overview.type === 'text' && (
-                  <div class="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <p class="text-sm text-blue-700 line-clamp-3">
-                      {concept.detailedContent.overview.content.substring(0, 150)}...
-                    </p>
-                  </div>
-                )}
+
                 
                 <!-- Additional Information -->
                 <div class="space-y-3 mb-6">
