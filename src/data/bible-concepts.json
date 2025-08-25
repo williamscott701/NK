@@ -161,7 +161,10 @@
         "Leading others"
       ],
       "detailedContent": {
-        "overview": "The 'Light of the World' metaphor is a central teaching of Jesus that describes the essential role of believers in illuminating truth, exposing darkness, and guiding others toward God. This powerful imagery appears in both the Sermon on the Mount and Jesus' personal declarations.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Light of the World' metaphor is a central teaching of Jesus that describes the essential role of believers in illuminating truth, exposing darkness, and guiding others toward God. This powerful imagery appears in both the Sermon on the Mount and Jesus' personal declarations."
+        },
         "biblicalContext": {
           "oldTestamentBackground": [
             "Isaiah 9:2: 'The people walking in darkness have seen a great light'",
@@ -362,7 +365,10 @@
         "Spiritual disciplines"
       ],
       "detailedContent": {
-        "overview": "The Vine and Branches allegory is one of Jesus' most profound teachings about the essential relationship between believers and Christ. This metaphor, found in John 15, illustrates the vital connection required for spiritual life and fruitfulness, emphasizing that apart from Christ, we can do nothing of eternal value.",
+        "overview": {
+          "type": "text",
+          "content": "The Vine and Branches allegory is one of Jesus' most profound teachings about the essential relationship between believers and Christ. This metaphor, found in John 15, illustrates the vital connection required for spiritual life and fruitfulness, emphasizing that apart from Christ, we can do nothing of eternal value."
+        },
         "agriculturalContext": {
           "vineyardPractices": [
             "Vines require careful cultivation and maintenance",
@@ -568,7 +574,10 @@
         "Finding security"
       ],
       "detailedContent": {
-        "overview": "The 'Sheep of His Pasture' metaphor is a beautiful and comforting image that illustrates the intimate relationship between God and His people. This metaphor appears throughout Scripture, particularly in the Psalms and the teachings of Jesus, revealing God's tender care and our complete dependence on Him.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Sheep of His Pasture' metaphor is a beautiful and comforting image that illustrates the intimate relationship between God and His people. This metaphor appears throughout Scripture, particularly in the Psalms and the teachings of Jesus, revealing God's tender care and our complete dependence on Him."
+        },
         "biblicalContext": {
           "oldTestamentReferences": [
             "Psalm 23: The Lord as our shepherd who provides and protects",
@@ -821,7 +830,10 @@
         "Respect for others"
       ],
       "detailedContent": {
-        "overview": "The 'Temple of the Holy Spirit' metaphor is a profound theological concept that transforms how we view our bodies and our identity as believers. This teaching, found primarily in Paul's letters, reveals that our physical bodies are sacred dwelling places of God Himself, calling us to live with reverence and holiness.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Temple of the Holy Spirit' metaphor is a profound theological concept that transforms how we view our bodies and our identity as believers. This teaching, found primarily in Paul's letters, reveals that our physical bodies are sacred dwelling places of God Himself, calling us to live with reverence and holiness."
+        },
         "biblicalContext": {
           "oldTestamentBackground": [
             "Solomon's Temple: God's dwelling place among His people",
@@ -1034,7 +1046,10 @@
         "Scripture study"
       ],
       "detailedContent": {
-        "overview": "The Armour of God is one of the most comprehensive metaphors in Scripture for spiritual warfare and protection. Found in Ephesians 6:10-18, this extended allegory describes the complete spiritual equipment God provides for believers to stand against the schemes of the devil and the spiritual forces of evil.",
+        "overview": {
+          "type": "text",
+          "content": "The Armour of God is one of the most comprehensive metaphors in Scripture for spiritual warfare and protection. Found in Ephesians 6:10-18, this extended allegory describes the complete spiritual equipment God provides for believers to stand against the schemes of the devil and the spiritual forces of evil."
+        },
         "biblicalContext": {
           "historicalBackground": [
             "Roman military equipment that Paul's audience would recognize",
@@ -1359,7 +1374,10 @@
         "Spiritual discipline"
       ],
       "detailedContent": {
-        "overview": "The 'Good Fight of Faith' is a powerful metaphor that portrays the Christian life as an ongoing spiritual battle requiring courage, perseverance, and faithfulness. This concept, found in Paul's letters to Timothy, emphasizes that following Christ is not a passive journey but an active engagement in spiritual warfare.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Good Fight of Faith' is a powerful metaphor that portrays the Christian life as an ongoing spiritual battle requiring courage, perseverance, and faithfulness. This concept, found in Paul's letters to Timothy, emphasizes that following Christ is not a passive journey but an active engagement in spiritual warfare."
+        },
         "biblicalContext": {
           "paulineTeaching": [
             "1 Timothy 6:12: 'Fight the good fight of the faith'",
@@ -1604,7 +1622,10 @@
         "Staying focused"
       ],
       "detailedContent": {
-        "overview": "The 'Running the Race' metaphor is a powerful image that compares the Christian life to an athletic competition requiring discipline, endurance, and focus. This metaphor, found in Hebrews 12 and 1 Corinthians 9, emphasizes the importance of spiritual training, perseverance, and keeping our eyes fixed on the ultimate prize.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Running the Race' metaphor is a powerful image that compares the Christian life to an athletic competition requiring discipline, endurance, and focus. This metaphor, found in Hebrews 12 and 1 Corinthians 9, emphasizes the importance of spiritual training, perseverance, and keeping our eyes fixed on the ultimate prize."
+        },
         "biblicalContext": {
           "athleticImagery": [
             "Ancient Greek Olympic games and athletic competitions",
@@ -1865,7 +1886,10 @@
         "Focusing on eternity"
       ],
       "detailedContent": {
-        "overview": "The 'Crown of Life' is a powerful symbol of the eternal rewards that await believers who persevere through trials and remain faithful to God. This concept, found in James 1:12 and Revelation 2:10, emphasizes that our faithfulness in this life will be rewarded with eternal life and glory in the next.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Crown of Life' is a powerful symbol of the eternal rewards that await believers who persevere through trials and remain faithful to God. This concept, found in James 1:12 and Revelation 2:10, emphasizes that our faithfulness in this life will be rewarded with eternal life and glory in the next."
+        },
         "biblicalContext": {
           "crownImagery": [
             "Ancient crowns as symbols of victory and honor",
@@ -2114,7 +2138,10 @@
         "Being patient"
       ],
       "detailedContent": {
-        "overview": "The Mustard Seed parable is one of Jesus' most encouraging teachings about the Kingdom of God. This parable, found in Matthew 13:31-32, illustrates how God's kingdom starts with seemingly insignificant beginnings but grows into something substantial and beneficial for many. It teaches us about faith, patience, and the power of small things in God's hands.",
+        "overview": {
+          "type": "text",
+          "content": "The Mustard Seed parable is one of Jesus' most encouraging teachings about the Kingdom of God. This parable, found in Matthew 13:31-32, illustrates how God's kingdom starts with seemingly insignificant beginnings but grows into something substantial and beneficial for many. It teaches us about faith, patience, and the power of small things in God's hands."
+        },
         "biblicalContext": {
           "parableSetting": [
             "Part of Jesus' series of kingdom parables",
@@ -2347,7 +2374,10 @@
         "Understanding impact"
       ],
       "detailedContent": {
-        "overview": "The Leaven metaphor is a powerful biblical symbol that illustrates how small influences can have widespread effects, either positive or negative. This metaphor appears in both positive contexts (the Kingdom of God) and negative contexts (sin and corruption), teaching us about the power of influence and the importance of being intentional about what we allow to influence us and others.",
+        "overview": {
+          "type": "text",
+          "content": "The Leaven metaphor is a powerful biblical symbol that illustrates how small influences can have widespread effects, either positive or negative. This metaphor appears in both positive contexts (the Kingdom of God) and negative contexts (sin and corruption), teaching us about the power of influence and the importance of being intentional about what we allow to influence us and others."
+        },
         "biblicalContext": {
           "leavenInScripture": [
             "Used in both positive and negative contexts",
@@ -2596,7 +2626,10 @@
         "Living abundantly"
       ],
       "detailedContent": {
-        "overview": "The 'Living Water' metaphor is one of Jesus' most profound teachings about spiritual life and satisfaction. This metaphor, found in John 4, reveals that Jesus offers something far superior to physical water - a spiritual reality that quenches our deepest thirst and becomes a source of life for others. It speaks to our fundamental need for spiritual fulfillment and the abundant life that comes through relationship with Christ.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Living Water' metaphor is one of Jesus' most profound teachings about spiritual life and satisfaction. This metaphor, found in John 4, reveals that Jesus offers something far superior to physical water - a spiritual reality that quenches our deepest thirst and becomes a source of life for others. It speaks to our fundamental need for spiritual fulfillment and the abundant life that comes through relationship with Christ."
+        },
         "biblicalContext": {
           "samaritanWoman": [
             "Jesus meets a woman at Jacob's well in Samaria",
@@ -2829,7 +2862,10 @@
         "Finding satisfaction in Christ"
       ],
       "detailedContent": {
-        "overview": "The 'Bread of Life' metaphor is one of Jesus' most profound 'I AM' statements, revealing His role as the essential spiritual sustenance for humanity. This metaphor, found in John 6, follows the miraculous feeding of the 5,000 and establishes Jesus as the only source of true spiritual satisfaction and eternal life.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Bread of Life' metaphor is one of Jesus' most profound 'I AM' statements, revealing His role as the essential spiritual sustenance for humanity. This metaphor, found in John 6, follows the miraculous feeding of the 5,000 and establishes Jesus as the only source of true spiritual satisfaction and eternal life."
+        },
         "biblicalContext": {
           "johnsGospel": [
             "Part of John's seven 'I AM' statements revealing Jesus' divinity",
@@ -3044,7 +3080,10 @@
         "Avoiding darkness"
       ],
       "detailedContent": {
-        "overview": "The 'Children of Light vs Darkness' metaphor is a powerful biblical contrast that illustrates the fundamental difference between believers and unbelievers. This concept, found throughout Scripture, reveals that our spiritual identity determines our nature, behavior, and destiny. It emphasizes the transformation that occurs when we become children of light and the responsibility to live accordingly.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Children of Light vs Darkness' metaphor is a powerful biblical contrast that illustrates the fundamental difference between believers and unbelievers. This concept, found throughout Scripture, reveals that our spiritual identity determines our nature, behavior, and destiny. It emphasizes the transformation that occurs when we become children of light and the responsibility to live accordingly."
+        },
         "biblicalContext": {
           "paulineTeaching": [
             "Ephesians 5:8: 'For you were once darkness, but now you are light in the Lord'",
@@ -3259,7 +3298,10 @@
         "Seeking direction"
       ],
       "detailedContent": {
-        "overview": "The 'Lamp to My Feet' metaphor is a beautiful and practical image that illustrates how God's Word provides guidance and illumination for our daily journey. This metaphor, found in Psalm 119:105, reveals that Scripture is not just a book of rules or history, but a living guide that lights our path and shows us the way forward in life.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Lamp to My Feet' metaphor is a beautiful and practical image that illustrates how God's Word provides guidance and illumination for our daily journey. This metaphor, found in Psalm 119:105, reveals that Scripture is not just a book of rules or history, but a living guide that lights our path and shows us the way forward in life."
+        },
         "biblicalContext": {
           "psalm119": [
             "Part of the longest chapter in the Bible (176 verses)",
@@ -3474,7 +3516,10 @@
         "Avoiding darkness"
       ],
       "detailedContent": {
-        "overview": "The 'Kingdom of Light vs Darkness' concept reveals the fundamental spiritual reality of two opposing kingdoms that exist in the spiritual realm. This teaching, found throughout Scripture, explains that we are either citizens of God's kingdom of light or subjects of Satan's domain of darkness. Understanding this spiritual reality is crucial for Christian living and spiritual warfare.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Kingdom of Light vs Darkness' concept reveals the fundamental spiritual reality of two opposing kingdoms that exist in the spiritual realm. This teaching, found throughout Scripture, explains that we are either citizens of God's kingdom of light or subjects of Satan's domain of darkness. Understanding this spiritual reality is crucial for Christian living and spiritual warfare."
+        },
         "biblicalContext": {
           "paulineTeaching": [
             "Colossians 1:13: 'He has rescued us from the dominion of darkness'",
@@ -3689,7 +3734,10 @@
         "Being receptive"
       ],
       "detailedContent": {
-        "overview": "The 'Sower and the Seed' parable is one of Jesus' most important teachings about the Kingdom of God and how people respond to God's Word. This parable, found in Matthew 13, reveals that the same message produces different results depending on the condition of the heart. It teaches us about evangelism, spiritual growth, and the importance of preparing our hearts to receive God's truth.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Sower and the Seed' parable is one of Jesus' most important teachings about the Kingdom of God and how people respond to God's Word. This parable, found in Matthew 13, reveals that the same message produces different results depending on the condition of the heart. It teaches us about evangelism, spiritual growth, and the importance of preparing our hearts to receive God's truth."
+        },
         "biblicalContext": {
           "parableSetting": [
             "Part of Jesus' series of kingdom parables",
@@ -3916,7 +3964,10 @@
         "Understanding timing"
       ],
       "detailedContent": {
-        "overview": "The 'Harvest' metaphor is a powerful biblical image that represents both the spiritual results of our labor and the final judgment of God. This concept, found throughout Scripture, teaches us about God's timing, the principle of sowing and reaping, and the importance of being prepared for the harvest. It encourages us to be patient in our work and faithful in our service.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Harvest' metaphor is a powerful biblical image that represents both the spiritual results of our labor and the final judgment of God. This concept, found throughout Scripture, teaches us about God's timing, the principle of sowing and reaping, and the importance of being prepared for the harvest. It encourages us to be patient in our work and faithful in our service."
+        },
         "biblicalContext": {
           "agriculturalBackground": [
             "Ancient Israel was an agricultural society",
@@ -4077,7 +4128,10 @@
         "Growing spiritually"
       ],
       "detailedContent": {
-        "overview": "The 'Tree Planted by Streams' metaphor is a beautiful biblical image that illustrates spiritual stability, nourishment, and fruitfulness. This metaphor, found in Psalm 1:3, describes the person who delights in God's Word and meditates on it day and night. It reveals the secret to spiritual health and productivity: staying connected to the source of life and nourishment.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Tree Planted by Streams' metaphor is a beautiful biblical image that illustrates spiritual stability, nourishment, and fruitfulness. This metaphor, found in Psalm 1:3, describes the person who delights in God's Word and meditates on it day and night. It reveals the secret to spiritual health and productivity: staying connected to the source of life and nourishment."
+        },
         "biblicalContext": {
           "psalm1": [
             "The opening psalm that sets the tone for the entire Psalter",
@@ -4238,7 +4292,10 @@
         "Showing evidence of faith"
       ],
       "detailedContent": {
-        "overview": "The 'Fruit of the Spirit' is a beautiful biblical metaphor that describes the visible evidence of God's work in a believer's life. This teaching, found in Galatians 5:22-23, reveals that when we allow the Holy Spirit to work in us, He produces character qualities that reflect God's nature. These fruits are not something we manufacture ourselves, but the natural result of God's transforming work in our hearts.",
+        "overview": {
+          "type": "text",
+          "content": "The 'Fruit of the Spirit' is a beautiful biblical metaphor that describes the visible evidence of God's work in a believer's life. This teaching, found in Galatians 5:22-23, reveals that when we allow the Holy Spirit to work in us, He produces character qualities that reflect God's nature. These fruits are not something we manufacture ourselves, but the natural result of God's transforming work in our hearts."
+        },
         "biblicalContext": {
           "galatiansContext": [
             "Written to counter legalistic teaching in the early church",
