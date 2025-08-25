@@ -62,33 +62,36 @@ function parseList(content, startIndex) {
           
 
           
-          <!-- Key Themes -->
-          {concept.keyThemes && concept.keyThemes.length > 0 && (
-            <div class="mt-6">
-              <h3 class="text-lg font-semibold text-gray-700 mb-3">Key Themes</h3>
-              <div class="flex flex-wrap justify-center gap-2">
-                {concept.keyThemes.map((theme) => (
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-600 border border-blue-200">
-                    {theme}
-                  </span>
-                ))}
-              </div>
+          <!-- Key Themes and Application Areas -->
+          {(concept.keyThemes && concept.keyThemes.length > 0) || (concept.application && concept.application.length > 0) ? (
+            <div class="mt-6 space-y-4">
+              {concept.keyThemes && concept.keyThemes.length > 0 && (
+                <div class="flex items-center justify-center gap-4">
+                  <h3 class="text-lg font-semibold text-gray-700 whitespace-nowrap">Key Themes:</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {concept.keyThemes.map((theme) => (
+                      <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-600 border border-blue-200">
+                        {theme}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              {concept.application && concept.application.length > 0 && (
+                <div class="flex items-center justify-center gap-4">
+                  <h3 class="text-lg font-semibold text-gray-700 whitespace-nowrap">Application Areas:</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {concept.application.map((app) => (
+                      <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-50 text-green-600 border border-green-200">
+                        {app}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-          
-          <!-- Application Areas -->
-          {concept.application && concept.application.length > 0 && (
-            <div class="mt-6">
-              <h3 class="text-lg font-semibold text-gray-700 mb-3">Application Areas</h3>
-              <div class="flex flex-wrap justify-center gap-2">
-                {concept.application.map((app) => (
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-50 text-green-600 border border-green-200">
-                    {app}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
+          ) : null}
         </div>
       </div>
     </section>
