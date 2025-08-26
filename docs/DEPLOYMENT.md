@@ -21,12 +21,16 @@ The deployment workflow:
 To deploy manually:
 
 ```bash
-npm run deploy
+npm run build
+git add dist/
+git commit -m "Update site"
+git push origin main
 ```
 
-This command:
+This process:
 - Builds the project (`npm run build`)
-- Deploys to GitHub Pages using gh-pages
+- Adds the built files to git
+- Commits and pushes to GitHub
 
 ## GitHub Pages Configuration
 

@@ -15,8 +15,7 @@
     "security-check": "npm run validate-csp",
     "test-404": "echo 'Navigate to a non-existent URL (e.g., /nonexistent-page) to test the 404 page'",
     "check-concepts": "node scripts/check-pending-concepts.js",
-    "concepts-report": "node scripts/check-pending-concepts.js docs/CONCEPTS_PROGRESS_REPORT.md",
-    "deploy": "npm run build && gh-pages -d dist"
+    "concepts-report": "node scripts/check-pending-concepts.js docs/CONCEPTS_PROGRESS_REPORT.md"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",
@@ -32,7 +31,6 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "gh-pages": "^6.3.0"
+    "@types/node": "^24.3.0"
   }
 }
