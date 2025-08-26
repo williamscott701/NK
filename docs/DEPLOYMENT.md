@@ -12,9 +12,9 @@ This project uses **local build + main branch deployment** for GitHub Pages.
 
 The deployment workflow:
 1. Builds the project locally with `npm run build`
-2. Updates the `dist/` folder in the `main` branch
-3. Pushes the built `dist/` folder to GitHub
-4. GitHub Pages automatically serves from the `main` branch
+2. Copies built files from `dist/` to the root of the `main` branch
+3. Pushes the built files to GitHub
+4. GitHub Pages automatically serves from the root of the `main` branch
 
 ## Manual Deployment
 
@@ -22,14 +22,16 @@ To deploy manually:
 
 ```bash
 npm run build
-git add dist/
+cp -r dist/* .
+git add .
 git commit -m "Update site"
 git push origin main
 ```
 
 This process:
 - Builds the project (`npm run build`)
-- Adds the built files to git
+- Copies built files to the root
+- Adds all changes to git
 - Commits and pushes to GitHub
 
 ## GitHub Pages Configuration
