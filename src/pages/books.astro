@@ -399,7 +399,7 @@ const books = booksData.books;
 
       // Event listeners for category buttons
       categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(this: HTMLButtonElement) {
           const category = this.dataset.category;
           const books = this.dataset.books;
           const testament = this.dataset.testament;
