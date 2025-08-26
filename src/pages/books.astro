@@ -237,13 +237,25 @@ const books = booksData.books;
       // Book dropdown functionality
       const bookSelect = document.getElementById('bookSelect');
       
-      bookSelect.addEventListener('change', function() {
-        const selectedBookId = this.value;
-        if (selectedBookId) {
-          // Navigate to the selected book page
-          window.location.href = PATHS.book(selectedBookId);
-        }
-      });
+      if (bookSelect) {
+        console.log('Book select element found:', bookSelect);
+        
+        bookSelect.addEventListener('change', function() {
+          const selectedBookId = this.value;
+          console.log('Book selected:', selectedBookId);
+          
+          if (selectedBookId) {
+            // Navigate to the selected book page
+            // Handle GitHub Pages base URL
+            const baseUrl = window.location.hostname.includes('github.io') ? '/NK' : '';
+            const bookUrl = `${baseUrl}/book/${selectedBookId}`;
+            console.log('Navigating to:', bookUrl);
+            window.location.href = bookUrl;
+          }
+        });
+      } else {
+        console.error('Book select element not found!');
+      }
 
       // Sort dropdown functionality
       const sortSelect = document.getElementById('sortSelect');
