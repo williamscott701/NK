@@ -94,9 +94,7 @@ const books = booksData.books;
               <option value="canonical">Canonical</option>
               <option value="chronological">Chronological</option>
             </select>
-            <div class="text-sm text-gray-500">
-              <span id="filteredCount" class="hidden px-3 py-1 bg-blue-50 text-blue-700 rounded-lg border border-blue-200">Filtered results</span>
-            </div>
+
           </div>
         </div>
 
@@ -218,7 +216,6 @@ const books = booksData.books;
       const booksGrid = document.getElementById('booksGrid');
       const bookCards = document.querySelectorAll('.book-card');
       const resultsCount = document.getElementById('resultsCount');
-      const filteredCount = document.getElementById('filteredCount');
       const noResults = document.getElementById('noResults');
       const activeFilters = document.getElementById('activeFilters');
       
@@ -290,23 +287,7 @@ const books = booksData.books;
         // Update UI
         resultsCount.textContent = visibleCount;
         
-        if (category !== 'all') {
-          filteredCount.classList.remove('hidden');
-          const categoryNames = {
-            'law': 'Law (Torah)',
-            'history': 'History',
-            'wisdom': 'Wisdom & Poetry',
-            'prophets': 'Prophets',
-            'gospels': 'Gospels',
-            'letters': 'Letters (Epistles)',
-            'apocalyptic': 'Apocalyptic',
-            'old-testament': 'Old Testament',
-            'new-testament': 'New Testament'
-          };
-          filteredCount.textContent = `Showing ${categoryNames[category] || category} books`;
-        } else {
-          filteredCount.classList.add('hidden');
-        }
+
 
         // Show/hide no results message
         if (visibleCount === 0) {
@@ -360,7 +341,6 @@ const books = booksData.books;
 
         // Update UI
         resultsCount.textContent = originalBooks.length;
-        filteredCount.classList.add('hidden');
         noResults.classList.add('hidden');
         activeFilters.classList.add('hidden');
         activeCategory = null;
