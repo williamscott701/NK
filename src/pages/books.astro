@@ -95,7 +95,7 @@ const books = booksData.books;
               <option value="chronological">Chronological</option>
             </select>
             <div class="text-sm text-gray-500">
-              <span id="filteredCount" class="hidden">Filtered results</span>
+              <span id="filteredCount" class="hidden px-3 py-1 bg-blue-50 text-blue-700 rounded-lg border border-blue-200">Filtered results</span>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ const books = booksData.books;
         </div>
 
         <!-- Active Filters Display -->
-        <div id="activeFilters" class="mt-6 flex flex-wrap gap-2 hidden">
+        <div id="activeFilters" class="mt-6 flex flex-wrap gap-3 hidden">
           <!-- Active filters will be displayed here -->
         </div>
       </div>
@@ -292,7 +292,18 @@ const books = booksData.books;
         
         if (category !== 'all') {
           filteredCount.classList.remove('hidden');
-          filteredCount.textContent = `Showing ${category} books`;
+          const categoryNames = {
+            'law': 'Law (Torah)',
+            'history': 'History',
+            'wisdom': 'Wisdom & Poetry',
+            'prophets': 'Prophets',
+            'gospels': 'Gospels',
+            'letters': 'Letters (Epistles)',
+            'apocalyptic': 'Apocalyptic',
+            'old-testament': 'Old Testament',
+            'new-testament': 'New Testament'
+          };
+          filteredCount.textContent = `Showing ${categoryNames[category] || category} books`;
         } else {
           filteredCount.classList.add('hidden');
         }
