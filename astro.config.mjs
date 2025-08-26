@@ -15,7 +15,7 @@ export default defineConfig({
   site: 'https://biblebing.com',
   base: '',
   server: {
-    port: 8089,
+    port: 8080,
     host: true,
     headers: {
       // Content Security Policy

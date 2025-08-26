@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run kill-port && astro dev",
     "start": "npm run kill-port && astro dev",
-    "kill-port": "lsof -ti:8089 | xargs kill -9 2>/dev/null || true",
+    "kill-port": "lsof -ti:8080 | xargs kill -9 2>/dev/null || true",
     "dev-clean": "npm run kill-port && astro dev",
     "start-robust": "./start-dev.sh",
     "build": "astro build",
