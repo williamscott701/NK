@@ -9,14 +9,14 @@ export const getPath = (path: string): string => {
       return path;
     }
     
-    // Check if we're on GitHub Pages
+    // Check if we're on GitHub Pages (legacy support)
     if (window.location.hostname.includes('github.io')) {
       const baseUrl = '/NK';
       return `${baseUrl}${path}`;
     }
   }
   
-  // For local development, don't add prefix
+  // For custom domain and local development, don't add prefix
   return path;
 };
 

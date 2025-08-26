@@ -12,8 +12,8 @@ export default defineConfig({
     mdx()
   ],
   output: 'static',
-  site: 'https://williamscott701.github.io',
-  base: '/NK',
+  site: 'https://biblebing.com',
+  base: '',
   server: {
     port: 8089,
     host: true,
