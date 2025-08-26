@@ -9,7 +9,11 @@ import { PATHS } from '../utils/paths';
 const concepts = conceptsData.concepts;
 ---
 
-<Layout title="Bible Concepts - Understanding Scripture">
+<Layout 
+  title="Bible Concepts - Understanding Scripture" 
+  description="Discover the deep meanings behind key biblical concepts like love, faith, hope, and salvation. Each concept is supported by relevant verses and explanations."
+  image="/favicon.svg"
+>
   <main class="min-h-screen">
     <!-- Header Section -->
     <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-8 md:py-16">
@@ -53,7 +57,7 @@ const concepts = conceptsData.concepts;
       <div class="max-w-6xl mx-auto px-6">
         <!-- Filter Section -->
         <div class="flex flex-wrap gap-4 justify-end mb-6">
-          <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-bible-gold focus:border-transparent">
+                      <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-bible-gold focus:border-transparent" aria-label="Filter concepts by category">
             <option value="">All Categories</option>
             <option value="Christian Living">Christian Living</option>
             <option value="Spiritual Growth">Spiritual Growth</option>

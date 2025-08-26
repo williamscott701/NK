@@ -2,9 +2,20 @@
 export interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: string;
 }
 
-const { title, description = "Learn the concepts of the Bible with our modern, interactive web app." } = Astro.props;
+const { 
+  title, 
+  description = "Discover divine wisdom with BibleBing - explore Bible books, concepts, and stories in a modern, interactive web app.", 
+  image = "/favicon.svg",
+  type = "website"
+} = Astro.props;
+
+// Generate Open Graph and Twitter meta tags
+const ogImage = image.startsWith('http') ? image : `https://biblebing.com${image}`;
+const twitterImage = ogImage;
 ---
 
 <!doctype html>
@@ -13,6 +24,29 @@ const { title, description = "Learn the concepts of the Bible with our modern, i
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="BibleBing" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={twitterImage} />
+    <meta property="twitter:site" content="@biblebing" />
+    
+    <!-- Additional SEO -->
+    <meta name="author" content="BibleBing" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#3b82f6" />
+    <link rel="canonical" href={Astro.url} />
     
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="

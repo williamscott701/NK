@@ -1,267 +1,75 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
-import Breadcrumb from '../components/Breadcrumb.tsx';
-import PageSearch from '../components/PageSearch.tsx';
-import conceptsData from '../data/bible-concepts.json';
-import booksData from '../data/bible-books.json';
-import storiesData from '../data/bible-stories.json';
 import { PATHS } from '../utils/paths';
-
-const concepts = conceptsData.concepts;
-const books = booksData.books;
-const stories = storiesData.stories;
-
-// Get some featured content for suggestions
-const featuredConcepts = concepts.slice(0, 3);
-const featuredBooks = books.slice(0, 3);
-const featuredStories = stories.slice(0, 3);
 ---
 
-<Layout title="Page Not Found - BibleBing" description="The page you're looking for couldn't be found. Explore our Bible resources and get back on track.">
-  <main class="min-h-screen">
-    <!-- Header Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-16">
-      <div class="absolute top-10 left-10 w-48 h-48 bg-bible-gold/5 rounded-full blur-2xl"></div>
-      <div class="absolute bottom-10 right-10 w-64 h-64 bg-bible-blue/5 rounded-full blur-2xl"></div>
-      
-      <div class="relative z-10 max-w-6xl mx-auto px-6">
-        <!-- Breadcrumb -->
-        <Breadcrumb 
-          client:load 
-          items={[
-            { label: 'Home', href: PATHS.home() },
-            { label: 'Page Not Found' }
-          ]} 
-        />
-
-        <!-- 404 Header -->
-        <div class="text-center mb-12">
-          <div class="mb-8">
-            <h1 class="text-8xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400 mb-4">
-              404
-            </h1>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Page Not Found
-            </h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto hidden sm:block">
-              The page you're looking for doesn't exist. But don't worry - you can still explore our Bible resources and find what you need.
-            </p>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto sm:hidden">
-              Page not found. Explore our Bible resources.
-            </p>
-          </div>
-
-          <!-- Search Section -->
-          <div class="max-w-2xl mx-auto">
-            <PageSearch 
-              client:load 
-              placeholder="Search for Bible concepts, stories, or books..."
-              conceptsData={concepts}
-              booksData={books}
-              storiesData={stories}
-              searchMode="all"
-            />
-          </div>
+<Layout title="Page Not Found - BibleBing" description="The page you're looking for doesn't exist. Return to BibleBing to continue exploring biblical content.">
+  <main class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center px-4">
+    <div class="text-center max-w-2xl mx-auto">
+      <!-- 404 Icon -->
+      <div class="mb-8">
+        <div class="w-32 h-32 bg-gradient-to-r from-bible-blue to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.47-.881-6.08-2.33"></path>
+          </svg>
         </div>
       </div>
-    </section>
 
-    <!-- Quick Navigation Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
-          Quick Navigation
-        </h3>
+      <!-- Error Message -->
+      <h1 class="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-bible-blue to-indigo-600 mb-4">
+        404
+      </h1>
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+        Page Not Found
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto">
+        The page you're looking for doesn't exist or has been moved. Let's get you back on track to discovering divine wisdom.
+      </p>
+
+      <!-- Navigation Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href={PATHS.home()} 
+          class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-bible-blue to-indigo-600 text-white font-semibold rounded-lg hover:from-bible-blue/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+          aria-label="Return to home page"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+          </svg>
+          Go Home
+        </a>
         
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Bible Books -->
-          <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-sky-400 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Books</h4>
-            <p class="text-gray-600 mb-4 hidden sm:block">Explore all 66 books of the Bible with chapter-by-chapter navigation.</p>
-            <p class="text-gray-600 mb-4 sm:hidden">All 66 books with chapters.</p>
-            <a href={PATHS.books()} class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
-              Browse Books
-            </a>
-          </div>
-
-          <!-- Bible Concepts -->
-          <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Concepts</h4>
-            <p class="text-gray-600 mb-4 hidden sm:block">Discover key biblical concepts like love, faith, hope, and more.</p>
-            <p class="text-gray-600 mb-4 sm:hidden">Key concepts like love, faith, hope.</p>
-            <a href={PATHS.concepts()} class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold">
-              Explore Concepts
-            </a>
-          </div>
-
-          <!-- Bible Stories -->
-          <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-800 mb-3">Bible Stories</h4>
-            <p class="text-gray-600 mb-4 hidden sm:block">Read inspiring stories from the Bible with modern explanations.</p>
-            <p class="text-gray-600 mb-4 sm:hidden">Inspiring Bible stories.</p>
-            <a href={PATHS.stories()} class="inline-block bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition-colors font-semibold">
-              Read Stories
-            </a>
-          </div>
-        </div>
+        <a 
+          href={PATHS.books()} 
+          class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-bible-gold to-amber-600 text-white font-semibold rounded-lg hover:from-bible-gold/90 hover:to-amber-600/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+          aria-label="Browse Bible books"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5c1.747 0 3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C16.5 18.523 14.754 19 13.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
+          </svg>
+          Browse Books
+        </a>
       </div>
-    </section>
 
-    <!-- Featured Content Section -->
-    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div class="max-w-6xl mx-auto px-6">
-        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
-          Popular Content
+      <!-- Search Suggestion -->
+      <div class="mt-12 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">
+          Can't find what you're looking for?
         </h3>
-        
-        <div class="grid lg:grid-cols-3 gap-8">
-          <!-- Featured Concepts -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-              <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-              </svg>
-              Popular Concepts
-            </h4>
-            <div class="space-y-3">
-              {featuredConcepts.map((concept) => (
-                <a href={PATHS.concept(concept.id)} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <h5 class="font-semibold text-gray-800">{concept.title}</h5>
-                  <p class="text-sm text-gray-600 line-clamp-2">{concept.description}</p>
-                </a>
-              ))}
-            </div>
-            <div class="mt-4 pt-4 border-t border-gray-200">
-              <a href={PATHS.concepts()} class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
-                View All Concepts →
-              </a>
-            </div>
-          </div>
-
-          <!-- Featured Books -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-              <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
-              </svg>
-              Popular Books
-            </h4>
-            <div class="space-y-3">
-              {featuredBooks.map((book) => (
-                <a href={PATHS.book(book.id)} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <h5 class="font-semibold text-gray-800">{book.name}</h5>
-                  <p class="text-sm text-gray-600 line-clamp-2">{book.description}</p>
-                </a>
-              ))}
-            </div>
-            <div class="mt-4 pt-4 border-t border-gray-200">
-              <a href={PATHS.books()} class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
-                View All Books →
-              </a>
-            </div>
-          </div>
-
-          <!-- Featured Stories -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-              <svg class="w-6 h-6 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
-              </svg>
-              Popular Stories
-            </h4>
-            <div class="space-y-3">
-              {featuredStories.map((story) => (
-                <a href={PATHS.story(story.id)} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <h5 class="font-semibold text-gray-800">{story.title}</h5>
-                  <p class="text-sm text-gray-600 line-clamp-2">{story.summary}</p>
-                </a>
-              ))}
-            </div>
-            <div class="mt-4 pt-4 border-t border-gray-200">
-              <a href={PATHS.stories()} class="text-blue-500 hover:text-blue-600 font-semibold text-sm">
-                View All Stories →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Help Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-bold text-gray-800 mb-6">
-          Still Can't Find What You're Looking For?
-        </h3>
-        <p class="text-lg text-gray-600 mb-8">
-          Our search feature can help you find specific Bible verses, concepts, or stories. 
-          Try searching with different keywords or browse our categories.
+        <p class="text-gray-600 mb-4">
+          Try searching for biblical content, stories, or concepts using our search feature.
         </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href={PATHS.home()} class="inline-block bg-gradient-to-r from-blue-500 to-sky-500 text-white px-8 py-4 rounded-lg hover:from-blue-600 hover:to-sky-600 transition-all duration-200 font-semibold text-lg">
-            Go to Homepage
-          </a>
-          <a href={PATHS.books()} class="inline-block bg-gray-100 text-gray-700 px-8 py-4 rounded-lg hover:bg-gray-200 transition-colors font-semibold text-lg">
-            Browse All Content
-          </a>
-        </div>
+        <a 
+          href={PATHS.home()} 
+          class="inline-flex items-center text-bible-blue hover:text-bible-blue/80 font-medium transition-colors"
+          aria-label="Go to search page"
+        >
+          <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          Search Bible Content
+        </a>
       </div>
-    </section>
+    </div>
   </main>
-  
-  <Footer />
 </Layout>
-
-<style>
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-</style>
-
-<script>
-  // Track 404 error for analytics
-  document.addEventListener('DOMContentLoaded', function() {
-    // Track 404 page view and error for analytics
-    // Note: gtag analytics integration would be added here if needed
-
-    // Send to custom analytics if available
-    try {
-      fetch('/api/analytics/404', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          url: window.location.href,
-          referrer: document.referrer,
-          userAgent: navigator.userAgent,
-          timestamp: Date.now()
-        }),
-      }).catch(() => {
-        // Silently fail if endpoint doesn't exist
-      });
-    } catch (e) {
-      // Ignore errors
-    }
-  });
-</script>
