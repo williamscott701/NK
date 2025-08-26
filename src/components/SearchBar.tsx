@@ -183,9 +183,9 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
         }`}>
           <div className="absolute inset-0 bg-gradient-to-r from-bible-gold/20 to-bible-blue/20 rounded-2xl blur-xl"></div>
           <div className="relative bg-white/90 backdrop-blur-sm border border-white/20 rounded-2xl shadow-2xl overflow-hidden">
-            <div className="flex items-center p-6">
+            <div className="flex items-center p-3 sm:p-4 md:p-6">
               <svg 
-                className="w-8 h-8 text-bible-blue mr-4 flex-shrink-0" 
+                className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-bible-blue mr-2 sm:mr-3 md:mr-4 flex-shrink-0" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -207,11 +207,11 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
                   setTimeout(() => setShowResults(false), 200);
                 }}
                 placeholder={placeholder}
-                className="flex-1 text-xl text-gray-800 placeholder-gray-500 bg-transparent outline-none"
+                className="flex-1 text-base sm:text-lg md:text-xl text-gray-800 placeholder-gray-500 bg-transparent outline-none min-w-0"
               />
               <button
                 type="submit"
-                className="ml-4 px-8 py-3 bg-gradient-to-r from-bible-blue to-blue-600 text-white font-semibold rounded-xl hover:from-bible-blue/90 hover:to-blue-600/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="ml-2 sm:ml-3 md:ml-4 px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 bg-gradient-to-r from-bible-blue to-blue-600 text-white text-sm sm:text-base font-semibold rounded-xl hover:from-bible-blue/90 hover:to-blue-600/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 flex-shrink-0"
               >
                 Search
               </button>
