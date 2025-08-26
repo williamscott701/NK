@@ -1,58 +1,595 @@
 {
   "stories": [
     {
-      "id": "creation",
-      "title": "The Creation",
-      "book": "Genesis",
-      "chapters": "1-2",
-      "summary": "God creates the heavens and the earth, and all living creatures, culminating with the creation of mankind",
-      "themes": ["God's Power", "Purpose", "Beauty", "Order"],
-      "keyVerse": "Genesis 1:1 - In the beginning God created the heavens and the earth."
+      "id": "cain-and-abel",
+      "title": "Cain and Abel",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "4"
+        }
+      ],
+      "summary": "The first brothers, jealousy, and the consequences of sin.",
+      "themes": ["Jealousy", "Sin", "Consequences", "Brotherhood"],
+      "keyVerse": "Genesis 4:7 - If you do what is right, will you not be accepted? But if you do not do what is right, sin is crouching at your door."
     },
     {
-      "id": "noahs-ark",
-      "title": "Noah's Ark",
-      "book": "Genesis",
-      "chapters": "6-9",
-      "summary": "God saves Noah and his family from the worldwide flood through the ark",
-      "themes": ["Obedience", "Salvation", "God's Judgment", "New Beginning"],
-      "keyVerse": "Genesis 7:1 - The LORD then said to Noah, 'Go into the ark, you and your whole family, because I have found you righteous in this generation.'"
+      "id": "jacob-and-esau",
+      "title": "Jacob and Esau",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "25-33"
+        }
+      ],
+      "summary": "Sibling rivalry, trickery, and reconciliation.",
+      "themes": ["Sibling Rivalry", "Trickery", "Reconciliation", "Family"],
+      "keyVerse": "Genesis 33:4 - But Esau ran to meet Jacob and embraced him; he threw his arms around his neck and kissed him."
+    },
+    {
+      "id": "jacobs-ladder",
+      "title": "Jacob's Ladder",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "28"
+        }
+      ],
+      "summary": "God's promise and presence.",
+      "themes": ["God's Promise", "God's Presence", "Divine Communication", "Faith"],
+      "keyVerse": "Genesis 28:15 - I am with you and will watch over you wherever you go."
     },
     {
       "id": "moses-burning-bush",
       "title": "Moses and the Burning Bush",
-      "book": "Exodus",
-      "chapters": "3-4",
-      "summary": "God calls Moses to lead the Israelites out of Egypt through a burning bush that is not consumed",
-      "themes": ["God's Call", "Holy Ground", "Divine Mission", "God's Name"],
+      "references": [
+        {
+          "book": "Exodus",
+          "chapters": "3"
+        }
+      ],
+      "summary": "God's call and assurance.",
+      "themes": ["God's Call", "Divine Mission", "Assurance", "Holy Ground"],
       "keyVerse": "Exodus 3:14 - God said to Moses, 'I AM WHO I AM. This is what you are to say to the Israelites: I AM has sent me to you.'"
+    },
+    {
+      "id": "golden-calf",
+      "title": "The Golden Calf",
+      "references": [
+        {
+          "book": "Exodus",
+          "chapters": "32"
+        }
+      ],
+      "summary": "Warning against idolatry.",
+      "themes": ["Idolatry", "Warning", "Sin", "Consequences"],
+      "keyVerse": "Exodus 32:8 - They have been quick to turn away from what I commanded them and have made themselves an idol cast in the shape of a calf."
+    },
+    {
+      "id": "joshua-jericho",
+      "title": "Joshua and the Battle of Jericho",
+      "references": [
+        {
+          "book": "Joshua",
+          "chapters": "6"
+        }
+      ],
+      "summary": "God's power in giving victory.",
+      "themes": ["God's Power", "Victory", "Faith", "Obedience"],
+      "keyVerse": "Joshua 6:20 - When the trumpets sounded, the army shouted, and at the sound of the trumpet, when the men gave a loud shout, the wall collapsed."
+    },
+    {
+      "id": "gideons-army",
+      "title": "Gideon's Army",
+      "references": [
+        {
+          "book": "Judges",
+          "chapters": "7"
+        }
+      ],
+      "summary": "God using small things to accomplish big purposes.",
+      "themes": ["God's Power", "Small Things", "Faith", "Trust"],
+      "keyVerse": "Judges 7:2 - The LORD said to Gideon, 'You have too many men. I cannot deliver Midian into their hands.'"
+    },
+    {
+      "id": "samson-and-delilah",
+      "title": "Samson and Delilah",
+      "references": [
+        {
+          "book": "Judges",
+          "chapters": "13-16"
+        }
+      ],
+      "summary": "Strength, weakness, and God's redemption.",
+      "themes": ["Strength", "Weakness", "Redemption", "God's Grace"],
+      "keyVerse": "Judges 16:28 - Then Samson prayed to the LORD, 'Sovereign LORD, remember me. Please, God, strengthen me just once more.'"
+    },
+    {
+      "id": "ruth-and-naomi",
+      "title": "Ruth and Naomi",
+      "references": [
+        {
+          "book": "Ruth",
+          "chapters": "1-4"
+        }
+      ],
+      "summary": "Loyalty, kindness, and God's providence.",
+      "themes": ["Loyalty", "Kindness", "God's Providence", "Love"],
+      "keyVerse": "Ruth 1:16 - But Ruth replied, 'Don't urge me to leave you or to turn back from you. Where you go I will go, and where you stay I will stay.'"
+    },
+    {
+      "id": "esther-saves-people",
+      "title": "Esther Saves Her People",
+      "references": [
+        {
+          "book": "Esther",
+          "chapters": "1-10"
+        }
+      ],
+      "summary": "Courage and God's hidden hand.",
+      "themes": ["Courage", "God's Hidden Hand", "Providence", "Faith"],
+      "keyVerse": "Esther 4:14 - For if you remain silent at this time, relief and deliverance for the Jews will arise from another place."
+    },
+    {
+      "id": "elijah-baal-prophets",
+      "title": "Elijah and the Prophets of Baal",
+      "references": [
+        {
+          "book": "1 Kings",
+          "chapters": "18"
+        }
+      ],
+      "summary": "God's power over false gods.",
+      "themes": ["God's Power", "False Gods", "Faith", "Victory"],
+      "keyVerse": "1 Kings 18:39 - When all the people saw this, they fell prostrate and cried, 'The LORD—he is God! The LORD—he is God!'"
+    },
+    {
+      "id": "jonah-great-fish",
+      "title": "Jonah and the Great Fish",
+      "references": [
+        {
+          "book": "Jonah",
+          "chapters": "1-4"
+        }
+      ],
+      "summary": "Obedience, repentance, and God's mercy.",
+      "themes": ["Obedience", "Repentance", "God's Mercy", "Second Chances"],
+      "keyVerse": "Jonah 2:2 - In my distress I called to the LORD, and he answered me."
+    },
+    {
+      "id": "jesus-tempted",
+      "title": "Jesus Tempted in the Wilderness",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "4"
+        },
+        {
+          "book": "Luke",
+          "chapters": "4"
+        }
+      ],
+      "summary": "Victory over temptation.",
+      "themes": ["Victory", "Temptation", "Scripture", "Resistance"],
+      "keyVerse": "Matthew 4:10 - Jesus said to him, 'Away from me, Satan! For it is written: Worship the Lord your God, and serve him only.'"
+    },
+    {
+      "id": "sermon-on-mount",
+      "title": "The Sermon on the Mount",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "5-7"
+        }
+      ],
+      "summary": "Teachings on love, forgiveness, and living faithfully.",
+      "themes": ["Love", "Forgiveness", "Faithful Living", "Kingdom Values"],
+      "keyVerse": "Matthew 5:3 - Blessed are the poor in spirit, for theirs is the kingdom of heaven."
+    },
+    {
+      "id": "jesus-heals-paralytic",
+      "title": "Jesus Heals the Paralytic",
+      "references": [
+        {
+          "book": "Mark",
+          "chapters": "2"
+        }
+      ],
+      "summary": "Forgiveness and healing.",
+      "themes": ["Forgiveness", "Healing", "Faith", "Authority"],
+      "keyVerse": "Mark 2:5 - When Jesus saw their faith, he said to the paralytic, 'Son, your sins are forgiven.'"
+    },
+    {
+      "id": "woman-at-well",
+      "title": "Jesus and the Woman at the Well",
+      "references": [
+        {
+          "book": "John",
+          "chapters": "4"
+        }
+      ],
+      "summary": "Living water and breaking social barriers.",
+      "themes": ["Living Water", "Social Barriers", "Acceptance", "Truth"],
+      "keyVerse": "John 4:14 - Whoever drinks the water I give them will never thirst. Indeed, the water I give them will become in them a spring of water welling up to eternal life."
+    },
+    {
+      "id": "zacchaeus",
+      "title": "Zacchaeus the Tax Collector",
+      "references": [
+        {
+          "book": "Luke",
+          "chapters": "19"
+        }
+      ],
+      "summary": "Transformation through meeting Jesus.",
+      "themes": ["Transformation", "Repentance", "Acceptance", "Change"],
+      "keyVerse": "Luke 19:8 - But Zacchaeus stood up and said to the Lord, 'Look, Lord! Here and now I give half of my possessions to the poor.'"
+    },
+    {
+      "id": "rich-young-ruler",
+      "title": "The Rich Young Ruler",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "19"
+        }
+      ],
+      "summary": "Choosing between wealth and following Jesus.",
+      "themes": ["Wealth", "Choice", "Following Jesus", "Priorities"],
+      "keyVerse": "Matthew 19:21 - Jesus answered, 'If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven.'"
+    },
+    {
+      "id": "jesus-raises-lazarus",
+      "title": "Jesus Raises Lazarus",
+      "references": [
+        {
+          "book": "John",
+          "chapters": "11"
+        }
+      ],
+      "summary": "Power over death and pointing to resurrection.",
+      "themes": ["Power Over Death", "Resurrection", "Faith", "Hope"],
+      "keyVerse": "John 11:25 - Jesus said to her, 'I am the resurrection and the life. The one who believes in me will live, even though they die.'"
+    },
+    {
+      "id": "road-to-emmaus",
+      "title": "The Road to Emmaus",
+      "references": [
+        {
+          "book": "Luke",
+          "chapters": "24"
+        }
+      ],
+      "summary": "Recognizing the risen Christ.",
+      "themes": ["Risen Christ", "Recognition", "Scripture", "Revelation"],
+      "keyVerse": "Luke 24:31 - Then their eyes were opened and they recognized him, and he disappeared from their sight."
+    },
+    {
+      "id": "philip-ethiopian",
+      "title": "Philip and the Ethiopian Eunuch",
+      "references": [
+        {
+          "book": "Acts",
+          "chapters": "8"
+        }
+      ],
+      "summary": "Sharing the gospel across cultures.",
+      "themes": ["Gospel Sharing", "Cross-Cultural", "Evangelism", "Scripture"],
+      "keyVerse": "Acts 8:35 - Then Philip began with that very passage of Scripture and told him the good news about Jesus."
+    },
+    {
+      "id": "pauls-conversion",
+      "title": "Paul's Conversion",
+      "references": [
+        {
+          "book": "Acts",
+          "chapters": "9"
+        }
+      ],
+      "summary": "Transformation from enemy to apostle.",
+      "themes": ["Conversion", "Transformation", "God's Grace", "New Life"],
+      "keyVerse": "Acts 9:6 - 'Now get up and go into the city, and you will be told what you must do.'"
+    },
+    {
+      "id": "paul-silas-prison",
+      "title": "Paul and Silas in Prison",
+      "references": [
+        {
+          "book": "Acts",
+          "chapters": "16"
+        }
+      ],
+      "summary": "Joy in suffering and God's deliverance.",
+      "themes": ["Joy in Suffering", "God's Deliverance", "Praise", "Faith"],
+      "keyVerse": "Acts 16:25 - About midnight Paul and Silas were praying and singing hymns to God, and the other prisoners were listening to them."
+    },
+    {
+      "id": "creation-world",
+      "title": "Creation of the World",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "1-2"
+        }
+      ],
+      "summary": "God creates the heavens, earth, animals, and humans, showing His power and purpose.",
+      "themes": ["God's Power", "Purpose", "Creation", "Order"],
+      "keyVerse": "Genesis 1:1 - In the beginning God created the heavens and the earth."
+    },
+    {
+      "id": "adam-eve-garden",
+      "title": "Adam and Eve in the Garden",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "3"
+        }
+      ],
+      "summary": "Teaches about temptation, sin, and the need for redemption.",
+      "themes": ["Temptation", "Sin", "Redemption", "Consequences"],
+      "keyVerse": "Genesis 3:15 - And I will put enmity between you and the woman, and between your offspring and hers."
+    },
+    {
+      "id": "noahs-ark",
+      "title": "Noah's Ark",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "6-9"
+        }
+      ],
+      "summary": "God saves Noah and his family from the flood, a story of judgment and mercy.",
+      "themes": ["Judgment", "Mercy", "Salvation", "Obedience"],
+      "keyVerse": "Genesis 7:1 - The LORD then said to Noah, 'Go into the ark, you and your whole family, because I have found you righteous in this generation.'"
+    },
+    {
+      "id": "tower-babel",
+      "title": "Tower of Babel",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "11"
+        }
+      ],
+      "summary": "Explains pride, human ambition, and God's sovereignty.",
+      "themes": ["Pride", "Human Ambition", "God's Sovereignty", "Consequences"],
+      "keyVerse": "Genesis 11:4 - Then they said, 'Come, let us build ourselves a city, with a tower that reaches to the heavens.'"
+    },
+    {
+      "id": "abraham-isaac",
+      "title": "Abraham and Isaac",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "22"
+        }
+      ],
+      "summary": "A story of faith, trust, and obedience to God.",
+      "themes": ["Faith", "Trust", "Obedience", "Sacrifice"],
+      "keyVerse": "Genesis 22:8 - Abraham answered, 'God himself will provide the lamb for the burnt offering, my son.'"
+    },
+    {
+      "id": "joseph-brothers",
+      "title": "Joseph and His Brothers",
+      "references": [
+        {
+          "book": "Genesis",
+          "chapters": "37-50"
+        }
+      ],
+      "summary": "A tale of jealousy, forgiveness, and God turning evil for good.",
+      "themes": ["Jealousy", "Forgiveness", "God's Providence", "Reconciliation"],
+      "keyVerse": "Genesis 50:20 - You intended to harm me, but God intended it for good to accomplish what is now being done."
+    },
+    {
+      "id": "moses-exodus",
+      "title": "Moses and the Exodus",
+      "references": [
+        {
+          "book": "Exodus",
+          "chapters": "1-14"
+        }
+      ],
+      "summary": "God delivers Israel from slavery, showing His power and covenant love.",
+      "themes": ["Deliverance", "God's Power", "Covenant Love", "Freedom"],
+      "keyVerse": "Exodus 14:31 - And when the Israelites saw the great power the LORD displayed against the Egyptians, the people feared the LORD and put their trust in him."
+    },
+    {
+      "id": "ten-commandments",
+      "title": "The Ten Commandments",
+      "references": [
+        {
+          "book": "Exodus",
+          "chapters": "20"
+        }
+      ],
+      "summary": "God gives His law, a foundation for living faithfully.",
+      "themes": ["God's Law", "Foundation", "Faithful Living", "Commandments"],
+      "keyVerse": "Exodus 20:2 - I am the LORD your God, who brought you out of Egypt, out of the land of slavery."
     },
     {
       "id": "david-goliath",
       "title": "David and Goliath",
-      "book": "1 Samuel",
-      "chapters": "17",
-      "summary": "Young David defeats the giant Goliath with faith in God and a simple sling",
-      "themes": ["Faith", "Courage", "God's Power", "David's Rise"],
+      "references": [
+        {
+          "book": "1 Samuel",
+          "chapters": "17"
+        }
+      ],
+      "summary": "A lesson in courage, faith, and God's strength through the weak.",
+      "themes": ["Courage", "Faith", "God's Strength", "Victory"],
       "keyVerse": "1 Samuel 17:45 - David said to the Philistine, 'You come against me with sword and spear and javelin, but I come against you in the name of the LORD Almighty.'"
     },
     {
+      "id": "daniel-lions-den",
+      "title": "Daniel in the Lion's Den",
+      "references": [
+        {
+          "book": "Daniel",
+          "chapters": "6"
+        }
+      ],
+      "summary": "Shows God's protection and the reward for remaining faithful.",
+      "themes": ["God's Protection", "Faithfulness", "Reward", "Trust"],
+      "keyVerse": "Daniel 6:22 - My God sent his angel, and he shut the mouths of the lions."
+    },
+    {
       "id": "birth-of-jesus",
-      "title": "The Birth of Jesus",
-      "book": "Luke",
-      "chapters": "2",
-      "summary": "Jesus is born in Bethlehem, announced by angels, and visited by shepherds",
-      "themes": ["Incarnation", "Humility", "Joy", "God's Love"],
-      "keyVerse": "Luke 2:11 - Today in the town of David a Savior has been born to you; he is the Messiah, the Lord."
+      "title": "Birth of Jesus",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "1-2"
+        },
+        {
+          "book": "Luke",
+          "chapters": "2"
+        }
+      ],
+      "summary": "The fulfillment of prophecy and God coming to live among us.",
+      "themes": ["Prophecy Fulfillment", "Incarnation", "God's Love", "Humility"],
+      "keyVerse": "Matthew 1:23 - The virgin will conceive and give birth to a son, and they will call him Immanuel."
+    },
+    {
+      "id": "baptism-of-jesus",
+      "title": "Baptism of Jesus",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "3"
+        },
+        {
+          "book": "Luke",
+          "chapters": "3"
+        }
+      ],
+      "summary": "Marks the beginning of Jesus' ministry, with God affirming His Son.",
+      "themes": ["Ministry Beginning", "Divine Affirmation", "Baptism", "Trinity"],
+      "keyVerse": "Matthew 3:17 - And a voice from heaven said, 'This is my Son, whom I love; with him I am well pleased.'"
+    },
+    {
+      "id": "jesus-miracles",
+      "title": "Jesus' Miracles",
+      "references": [
+        {
+          "book": "Various Gospels",
+          "chapters": "Various"
+        }
+      ],
+      "summary": "Healing the sick, calming storms, feeding the 5,000—showing His power and compassion.",
+      "themes": ["Miracles", "Power", "Compassion", "Faith"],
+      "keyVerse": "Matthew 14:14 - When Jesus landed and saw a large crowd, he had compassion on them and healed their sick."
+    },
+    {
+      "id": "good-samaritan",
+      "title": "The Good Samaritan",
+      "references": [
+        {
+          "book": "Luke",
+          "chapters": "10:25-37"
+        }
+      ],
+      "summary": "A parable about loving others beyond social or cultural boundaries.",
+      "themes": ["Love", "Social Boundaries", "Compassion", "Neighbor"],
+      "keyVerse": "Luke 10:37 - The expert in the law replied, 'The one who had mercy on him.' Jesus told him, 'Go and do likewise.'"
+    },
+    {
+      "id": "prodigal-son",
+      "title": "The Prodigal Son",
+      "references": [
+        {
+          "book": "Luke",
+          "chapters": "15:11-32"
+        }
+      ],
+      "summary": "A parable about forgiveness, repentance, and God's love.",
+      "themes": ["Forgiveness", "Repentance", "God's Love", "Grace"],
+      "keyVerse": "Luke 15:20 - So he got up and went to his father. But while he was still a long way off, his father saw him and was filled with compassion for him."
+    },
+    {
+      "id": "jesus-walks-water",
+      "title": "Jesus Walks on Water",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "14:22-33"
+        }
+      ],
+      "summary": "Teaches about faith and trust in Christ during trials.",
+      "themes": ["Faith", "Trust", "Trials", "God's Power"],
+      "keyVerse": "Matthew 14:31 - Immediately Jesus reached out his hand and caught him. 'You of little faith,' he said, 'why did you doubt?'"
+    },
+    {
+      "id": "last-supper",
+      "title": "The Last Supper",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "26"
+        },
+        {
+          "book": "Luke",
+          "chapters": "22"
+        }
+      ],
+      "summary": "Jesus institutes communion, pointing to His sacrifice.",
+      "themes": ["Communion", "Sacrifice", "Remembrance", "New Covenant"],
+      "keyVerse": "Matthew 26:26 - While they were eating, Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples."
+    },
+    {
+      "id": "crucifixion",
+      "title": "The Crucifixion",
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "27"
+        },
+        {
+          "book": "Luke",
+          "chapters": "23"
+        },
+        {
+          "book": "John",
+          "chapters": "19"
+        }
+      ],
+      "summary": "The central story of salvation—Jesus' sacrifice for humanity's sins.",
+      "themes": ["Salvation", "Sacrifice", "Sin", "Redemption"],
+      "keyVerse": "Matthew 27:46 - About three in the afternoon Jesus cried out in a loud voice, 'Eli, Eli, lema sabachthani?'"
     },
     {
       "id": "resurrection",
       "title": "The Resurrection",
-      "book": "Matthew",
-      "chapters": "28",
-      "summary": "Jesus rises from the dead, conquering death and providing eternal life for all who believe",
-      "themes": ["Victory", "Hope", "Eternal Life", "God's Power"],
+      "references": [
+        {
+          "book": "Matthew",
+          "chapters": "28"
+        },
+        {
+          "book": "Luke",
+          "chapters": "24"
+        },
+        {
+          "book": "John",
+          "chapters": "20"
+        }
+      ],
+      "summary": "The triumph over sin and death, the heart of Christian hope.",
+      "themes": ["Triumph", "Victory Over Death", "Hope", "Eternal Life"],
       "keyVerse": "Matthew 28:6 - He is not here; he has risen, just as he said. Come and see the place where he lay."
+    },
+    {
+      "id": "pentecost",
+      "title": "Pentecost",
+      "references": [
+        {
+          "book": "Acts",
+          "chapters": "2"
+        }
+      ],
+      "summary": "The coming of the Holy Spirit, empowering the church to spread the gospel.",
+      "themes": ["Holy Spirit", "Empowerment", "Church", "Gospel Spreading"],
+      "keyVerse": "Acts 2:4 - All of them were filled with the Holy Spirit and began to speak in other tongues as the Spirit enabled them."
     }
   ]
 }
