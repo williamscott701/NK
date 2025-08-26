@@ -12,10 +12,10 @@ export default defineConfig({
     mdx()
   ],
   output: 'static',
-  site: 'https://williamscott701.github.io',
+  site: 'https://williamscott701.github.io/NK',
   base: '/NK',
   server: {
-    port: 8080,
+    port: 8089,
     host: true,
     headers: {
       // Content Security Policy
