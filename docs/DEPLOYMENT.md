@@ -1,21 +1,20 @@
 # Deployment Guide
 
-This project is automatically deployed to GitHub Pages using GitHub Actions.
+This project uses **local build + branch deployment** for GitHub Pages.
 
 ## How It Works
 
-1. **Automatic Deployment**: Every time code is pushed to the `main` branch, GitHub Actions automatically builds and deploys the site.
-
-2. **Manual Deployment**: You can also trigger deployment manually from the GitHub Actions tab.
+1. **Local Build**: Build the project on your local machine
+2. **Branch Deployment**: Deploy the built `dist/` folder to the `gh-pages` branch
+3. **Simple & Fast**: No complex CI/CD, just direct deployment
 
 ## Deployment Process
 
 The deployment workflow:
-1. Checks out the code
-2. Sets up Node.js 18
-3. Installs dependencies with `npm ci`
-4. Builds the project with `npm run build`
-5. Deploys the `dist/` folder to GitHub Pages
+1. Builds the project locally with `npm run build`
+2. Creates/updates the `gh-pages` branch
+3. Pushes the built `dist/` folder to GitHub
+4. GitHub Pages automatically serves from the `gh-pages` branch
 
 ## Manual Deployment
 
@@ -31,16 +30,17 @@ This command:
 
 ## GitHub Pages Configuration
 
-- **Source**: GitHub Actions (recommended)
+- **Source**: Deploy from a branch
 - **Branch**: `gh-pages` (auto-created by gh-pages package)
 - **URL**: https://williamscott701.github.io/NK
 
 ## Troubleshooting
 
 If deployment fails:
-1. Check the GitHub Actions logs
+1. Check the build output for errors
 2. Ensure all TypeScript errors are fixed
 3. Verify the build works locally with `npm run build`
+4. Check that the `gh-pages` branch exists and contains the `dist/` folder
 
 ## Local Development
 
