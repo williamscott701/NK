@@ -12,7 +12,7 @@ export default defineConfig({
     mdx()
   ],
   output: 'static',
-  site: 'https://your-domain.com',
+  site: 'https://williamscott701.github.io',
   server: {
     port: 8080,
     host: true,
