@@ -19,7 +19,7 @@ export const GET: APIRoute = async () => {
   
   // Generate chapter pages for each book
   const chapterPages = booksData.books.flatMap(book => 
-    book.chapters.map(chapter => `/book/${book.id}/chapter/${chapter.number}`)
+    book.chaptersContent ? book.chaptersContent.map(chapter => `/book/${book.id}/chapter/${chapter.number}`) : []
   );
 
   // Generate concept pages
