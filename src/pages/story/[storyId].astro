@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.tsx';
 import Footer from '../../components/Footer.astro';
 import storiesData from '../../data/bible-stories.json';
+import { PATHS } from '../../utils/paths';
 
 export async function getStaticPaths() {
   return storiesData.stories.map((story) => ({
@@ -29,8 +30,8 @@ const firstReference = story.references[0];
         <Breadcrumb 
           client:load 
           items={[
-            { label: 'Home', href: '/' },
-            { label: 'Stories', href: '/stories' },
+            { label: 'Home', href: PATHS.home() },
+            { label: 'Stories', href: PATHS.stories() },
             { label: story.title }
           ]} 
         />
@@ -115,7 +116,7 @@ const firstReference = story.references[0];
             This story is found in {firstReference.book}, chapters {firstReference.chapters}. Click below to read the complete biblical text with context and commentary.
           </p>
           <a 
-            href={`/book/${firstReference.book.toLowerCase().replace(/\s+/g, '-')}/chapter/${firstReference.chapters.split('-')[0]}`}
+                            href={PATHS.chapter(firstReference.book.toLowerCase().replace(/\s+/g, '-'), firstReference.chapters.split('-')[0])}
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Read Full Text
@@ -129,7 +130,7 @@ const firstReference = story.references[0];
         <div class="text-center">
           <h3 class="text-2xl font-bold text-gray-800 mb-6">Explore More Stories</h3>
           <a 
-            href="/stories" 
+                          href={PATHS.stories()} 
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Browse All Stories

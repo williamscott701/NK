@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PageSearch from '../components/PageSearch.tsx';
 import Breadcrumb from '../components/Breadcrumb.tsx';
 import conceptsData from '../data/bible-concepts.json';
+import { PATHS } from '../utils/paths';
 
 const concepts = conceptsData.concepts;
 ---
@@ -19,7 +20,7 @@ const concepts = conceptsData.concepts;
         <Breadcrumb 
           client:load 
           items={[
-            { label: 'Home', href: '/' },
+            { label: 'Home', href: PATHS.home() },
             { label: 'Concepts' }
           ]} 
         />
@@ -149,7 +150,7 @@ const concepts = conceptsData.concepts;
                 
                 <div class="mt-auto">
                   <a 
-                    href={`/concept/${concept.id}`}
+                    href={PATHS.concept(concept.id)}
                     class="block w-full bg-gradient-to-r from-blue-400 to-sky-400 text-white py-2 px-4 rounded-lg hover:from-blue-500 hover:to-sky-500 transition-all duration-200 font-semibold text-center"
                   >
                     {concept.detailedContent ? 'Read Full Content' : 'Start Reading'}
@@ -218,10 +219,10 @@ const concepts = conceptsData.concepts;
         <div>
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2">
-            <li><a href="/books" class="text-gray-300 hover:text-white transition-colors">Books</a></li>
-            <li><a href="/concepts" class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
-            <li><a href="/stories" class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                          <li><a href={PATHS.books()} class="text-gray-300 hover:text-white transition-colors">Books</a></li>
+              <li><a href={PATHS.concepts()} class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
+              <li><a href={PATHS.stories()} class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
+            <li><a href={PATHS.about()} class="text-gray-300 hover:text-white transition-colors">About</a></li>
           </ul>
         </div>
 
@@ -229,10 +230,10 @@ const concepts = conceptsData.concepts;
         <div>
           <h4 class="text-lg font-semibold mb-4">Support</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href={PATHS.help()} class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href={PATHS.contact()} class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href={PATHS.privacy()} class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href={PATHS.terms()} class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
           </ul>
         </div>
       </div>

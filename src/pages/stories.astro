@@ -4,6 +4,7 @@ import PageSearch from '../components/PageSearch.tsx';
 import Breadcrumb from '../components/Breadcrumb.tsx';
 import Footer from '../components/Footer.astro';
 import storiesData from '../data/bible-stories.json';
+import { PATHS } from '../utils/paths';
 
 const stories = storiesData.stories;
 ---
@@ -20,7 +21,7 @@ const stories = storiesData.stories;
         <Breadcrumb 
           client:load 
           items={[
-            { label: 'Home', href: '/' },
+            { label: 'Home', href: PATHS.home() },
             { label: 'Stories' }
           ]} 
         />
@@ -90,7 +91,7 @@ const stories = storiesData.stories;
                 
                 <div class="mt-auto">
                   <a 
-                    href={`/story/${story.id}`}
+                    href={PATHS.story(story.id)}
                     class="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-4 rounded-lg hover:from-green-500/90 hover:to-emerald-600/90 transition-all duration-200 font-semibold text-center"
                   >
                     Read Full Story

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PageSearch from '../components/PageSearch.tsx';
 import Breadcrumb from '../components/Breadcrumb.tsx';
 import booksData from '../data/bible-books.json';
+import { PATHS } from '../utils/paths';
 
 const books = booksData.books;
 ---
@@ -19,7 +20,7 @@ const books = booksData.books;
         <Breadcrumb 
           client:load 
           items={[
-            { label: 'Home', href: '/' },
+            { label: 'Home', href: PATHS.home() },
             { label: 'Books' }
           ]} 
         />
@@ -143,7 +144,7 @@ const books = booksData.books;
                 
                 <div class="mt-auto">
                   <a 
-                    href={`/book/${book.id}`}
+                    href={PATHS.book(book.id)}
                     class="block w-full bg-gradient-to-r from-bible-blue to-blue-600 text-white py-2 px-4 rounded-lg hover:from-bible-blue/90 hover:to-blue-600/90 transition-all duration-200 font-semibold text-center text-sm md:text-base"
                   >
                     Explore Chapters
@@ -207,7 +208,7 @@ const books = booksData.books;
       </div>
     </section>
   </main>
-  <script define:vars={{ books }}>
+  <script define:vars={{ books, PATHS }}>
     // Book filtering functionality
     document.addEventListener('DOMContentLoaded', function() {
       const booksGrid = document.getElementById('booksGrid');
@@ -232,7 +233,7 @@ const books = booksData.books;
         const selectedBookId = this.value;
         if (selectedBookId) {
           // Navigate to the selected book page
-          window.location.href = `/book/${selectedBookId}`;
+          window.location.href = PATHS.book(selectedBookId);
         }
       });
 
@@ -483,10 +484,10 @@ const books = booksData.books;
         <div>
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2">
-            <li><a href="/books" class="text-gray-300 hover:text-white transition-colors">Books</a></li>
-            <li><a href="/concepts" class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
-            <li><a href="/stories" class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                          <li><a href={PATHS.books()} class="text-gray-300 hover:text-white transition-colors">Books</a></li>
+              <li><a href={PATHS.concepts()} class="text-gray-300 hover:text-white transition-colors">Concepts</a></li>
+              <li><a href={PATHS.stories()} class="text-gray-300 hover:text-white transition-colors">Stories</a></li>
+            <li><a href={PATHS.about()} class="text-gray-300 hover:text-white transition-colors">About</a></li>
           </ul>
         </div>
 
@@ -494,10 +495,10 @@ const books = booksData.books;
         <div>
           <h4 class="text-lg font-semibold mb-4">Support</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href={PATHS.help()} class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href={PATHS.contact()} class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href={PATHS.privacy()} class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href={PATHS.terms()} class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
           </ul>
         </div>
       </div>
