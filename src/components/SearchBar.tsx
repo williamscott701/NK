@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { PATHS } from '../utils/paths';
 
 interface SearchProps {
   placeholder?: string;
@@ -49,7 +50,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
             type: 'book',
             title: book.name,
             description: book.description,
-            url: `/book/${book.id}`,
+            url: PATHS.book(book.id),
             relevance: 10
           });
         }
@@ -60,7 +61,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
             type: 'book',
             title: `${book.name} - by ${book.author}`,
             description: book.description,
-            url: `/book/${book.id}`,
+            url: PATHS.book(book.id),
             relevance: 9
           });
         }
@@ -71,7 +72,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
             type: 'book',
             title: `${book.name} - Themes`,
             description: `Contains themes: ${book.themes.join(', ')}`,
-            url: `/book/${book.id}`,
+            url: PATHS.book(book.id),
             relevance: 8
           });
         }
@@ -86,7 +87,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
                 type: 'chapter',
                 title: `${book.name} - Chapter ${chapter.number}`,
                 description: chapter.title || chapter.summary || '',
-                url: `/book/${book.id}/chapter/${chapter.number}`,
+                url: PATHS.chapter(book.id, chapter.number),
                 relevance: 7
               });
             }
@@ -102,7 +103,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
             type: 'concept',
             title: concept.title,
             description: concept.description,
-            url: `/concept/${concept.id}`,
+            url: PATHS.concept(concept.id),
             relevance: 9
           });
         }
@@ -117,7 +118,7 @@ export default function SearchBar({ placeholder = "Search Bible verses, concepts
             type: 'story',
             title: story.title,
             description: story.summary,
-            url: `/story/${story.id}`,
+            url: PATHS.story(story.id),
             relevance: 8
           });
         }
