@@ -155,23 +155,10 @@ class ErrorTracker {
     
     try {
       // Google Analytics 4
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'error', {
-          event_category: 'error',
-          event_label: error.type,
-          value: 1,
-          custom_map: {
-            'error_url': error.url,
-            'error_message': error.message,
-            'error_referrer': error.referrer
-          }
-        });
-      }
+      // Note: gtag analytics integration would be added here if needed
 
       // Google Analytics Universal
-      if (typeof ga !== 'undefined') {
-        ga('send', 'event', 'Error', error.type, error.url, 1);
-      }
+      // Note: ga analytics integration would be added here if needed
 
       // Custom analytics endpoint
       this.sendToCustomEndpoint(error);

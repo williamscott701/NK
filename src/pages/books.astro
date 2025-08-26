@@ -369,8 +369,8 @@ const books = booksData.books;
         
         // Sort only the visible cards
         visibleCards.sort((a, b) => {
-          const bookA = books.find(book => book.id === a.dataset.id);
-          const bookB = books.find(book => book.id === b.dataset.id);
+          const bookA = Array.from(books).find(book => book.id === a.dataset.id);
+          const bookB = Array.from(books).find(book => book.id === b.dataset.id);
           
           if (!bookA || !bookB) return 0;
           
@@ -399,7 +399,7 @@ const books = booksData.books;
 
       // Event listeners for category buttons
       categoryButtons.forEach(button => {
-        button.addEventListener('click', function(this: HTMLButtonElement) {
+        button.addEventListener('click', function() {
           const category = this.dataset.category;
           const books = this.dataset.books;
           const testament = this.dataset.testament;

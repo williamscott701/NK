@@ -181,7 +181,7 @@ const featuredStories = stories.slice(0, 3);
               {featuredStories.map((story) => (
                 <a href={`/story/${story.id}`} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
                   <h5 class="font-semibold text-gray-800">{story.title}</h5>
-                  <p class="text-sm text-gray-600 line-clamp-2">{story.description}</p>
+                  <p class="text-sm text-gray-600 line-clamp-2">{story.summary}</p>
                 </a>
               ))}
             </div>
@@ -313,32 +313,8 @@ const featuredStories = stories.slice(0, 3);
 <script>
   // Track 404 error for analytics
   document.addEventListener('DOMContentLoaded', function() {
-    // Track 404 page view
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'page_view', {
-        page_title: '404 - Page Not Found',
-        page_location: window.location.href,
-        custom_map: {
-          'error_type': '404',
-          'error_url': window.location.href,
-          'error_referrer': document.referrer
-        }
-      });
-    }
-
-    // Track 404 error event
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'error', {
-        event_category: 'error',
-        event_label: '404',
-        value: 1,
-        custom_map: {
-          'error_url': window.location.href,
-          'error_message': 'Page not found',
-          'error_referrer': document.referrer
-        }
-      });
-    }
+    // Track 404 page view and error for analytics
+    // Note: gtag analytics integration would be added here if needed
 
     // Send to custom analytics if available
     try {

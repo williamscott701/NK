@@ -253,6 +253,8 @@ const concepts = conceptsData.concepts;
       const conceptCards = document.querySelectorAll('[data-concept]');
       
       function filterConcepts() {
+        if (!categoryFilter) return;
+        
         const selectedCategory = categoryFilter.value;
         
         conceptCards.forEach(card => {
@@ -261,14 +263,16 @@ const concepts = conceptsData.concepts;
           const categoryMatch = !selectedCategory || category === selectedCategory;
           
           if (categoryMatch) {
-            card.style.display = 'block';
+            (card as HTMLElement).style.display = 'block';
           } else {
-            card.style.display = 'none';
+            (card as HTMLElement).style.display = 'none';
           }
         });
       }
       
-      categoryFilter.addEventListener('change', filterConcepts);
+      if (categoryFilter) {
+        categoryFilter.addEventListener('change', filterConcepts);
+      }
     });
   </script>
 

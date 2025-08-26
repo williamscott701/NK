@@ -8,7 +8,7 @@
     "kill-port": "lsof -ti:8080 | xargs kill -9 2>/dev/null || true",
     "dev-clean": "npm run kill-port && astro dev",
     "start-robust": "./start-dev.sh",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "validate-csp": "node scripts/security/validate-csp.js",
@@ -29,8 +29,5 @@
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
-  },
-  "devDependencies": {
-    "@types/node": "^24.3.0"
   }
 }
