@@ -13,6 +13,7 @@ export default defineConfig({
   ],
   output: 'static',
   site: 'https://williamscott701.github.io',
+  base: '/NK/',
   server: {
     port: 8080,
     host: true,
