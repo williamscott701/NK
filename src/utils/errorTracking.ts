@@ -136,7 +136,7 @@ class ErrorTracker {
   }
 
   private logToConsole(error: ErrorInfo): void {
-    if (process.env.NODE_ENV === 'development') {
+    if (typeof process !== 'undefined' && process.env.NODE_ENV === 'development') {
       console.group(`🚨 Error Tracked: ${error.type.toUpperCase()}`);
       console.log('Message:', error.message);
       console.log('URL:', error.url);
