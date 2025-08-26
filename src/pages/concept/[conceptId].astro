@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.tsx';
 import DataTable from '../../components/DataTable.astro';
 import conceptsData from '../../data/bible-concepts.json';
+import { PATHS } from '../../utils/paths';
 
 export async function getStaticPaths() {
   return conceptsData.concepts.map((concept) => ({

@@ -1,8 +1,23 @@
 // Utility functions for handling paths with base URL
 export const getPath = (path: string): string => {
-  // For GitHub Pages deployment, always include /NK prefix
-  const baseUrl = '/NK';
-  return `${baseUrl}${path}`;
+  // Check if we're already on a page with /NK prefix to avoid duplication
+  if (typeof window !== 'undefined') {
+    // Client-side: check current path
+    const currentPath = window.location.pathname;
+    if (currentPath.startsWith('/NK')) {
+      // Already on /NK page, don't add another /NK
+      return path;
+    }
+    
+    // Check if we're on GitHub Pages
+    if (window.location.hostname.includes('github.io')) {
+      const baseUrl = '/NK';
+      return `${baseUrl}${path}`;
+    }
+  }
+  
+  // For local development, don't add prefix
+  return path;
 };
 
 // Common paths
