@@ -15,7 +15,7 @@
     "security-check": "npm run validate-csp",
     "test-404": "echo 'Navigate to a non-existent URL (e.g., /nonexistent-page) to test the 404 page'",
     "check-concepts": "node scripts/check-pending-concepts.js",
-    "concepts-report": "node scripts/check-pending-concepts.js docs/CONCEPTS_PROGRESS_REPORT.md"
+    "concepts-report": "node scripts/check-pending-concepts.js CONCEPTS_PROGRESS_REPORT.md"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",

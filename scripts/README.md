@@ -1,10 +1,8 @@
 # Scripts
 
-This directory contains various utility scripts for the Bible web application.
+This directory contains utility scripts for the Bible web application.
 
-## Bible Order Scripts
-
-Scripts for managing and fixing Bible book orders and chronological arrangements.
+## Current Scripts
 
 ### `check-pending-concepts.js`
 
@@ -81,86 +79,11 @@ Robust development server startup script with port management.
 ./scripts/utilities/start-dev.sh
 ```
 
-## Analysis Scripts
+## Removed Scripts
 
-Scripts for analyzing Bible content and structure.
+The following scripts were removed as they were one-time fixes and no longer needed:
 
-### `chronological_order_analysis.js`
+- **Bible Order Scripts**: All chronological and canonical order scripts were one-time fixes
+- **Analysis Scripts**: Order verification and analysis scripts were one-time tasks
 
-Analyzes the chronological order of Bible content.
-
-### `detailed_order_check.js`
-
-Performs detailed checks on Bible content ordering.
-
-## Bible Order Management
-
-Scripts for managing Bible book orders and chapter arrangements.
-
-### `check_book_chapters.js`
-
-Checks Bible book chapters for completeness and accuracy.
-
-### `check_book_orders.js`
-
-Verifies Bible book ordering against canonical standards.
-
-### `check_remaining.js`
-
-Identifies remaining work in Bible order management.
-
-### `fix_chronological_order.js`
-
-Fixes chronological ordering issues in Bible content.
-
-### `fix_duplicate_chronological.js`
-
-Removes duplicate chronological entries.
-
-### `remove_duplicate_chapters.js`
-
-Eliminates duplicate chapter entries.
-
-### `show_canonical_order.js`
-
-Displays the canonical order of Bible books.
-
-### `show_chronological_order.js`
-
-Shows the chronological order of Bible content.
-
-### `update_chronological_order.js`
-
-Updates chronological ordering information.
-
-### `verify_and_fix_book_orders.js`
-
-Comprehensive verification and fixing of Bible book orders.
-
-## Content Conversion
-
-### `convert-concepts-to-markdown.js`
-
-Converts Bible concepts from JSON to markdown format.
-
-## Running Scripts
-
-Most scripts can be run directly with Node.js:
-
-```bash
-node scripts/script-name.js
-```
-
-Some scripts have npm shortcuts defined in `package.json`:
-
-```bash
-npm run script-name
-```
-
-## Script Dependencies
-
-Scripts use ES modules syntax (import/export) as the project is configured with `"type": "module"` in package.json.
-
-## Error Handling
-
-Scripts include comprehensive error handling and will exit gracefully with informative error messages if files cannot be read or processed.
+The Bible book ordering has been completed and these maintenance scripts are no longer required for ongoing development.

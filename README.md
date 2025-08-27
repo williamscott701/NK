@@ -1,39 +1,21 @@
 # NK - Bible Study Project
 
-A comprehensive Bible study application built with Astro, featuring Bible concepts, stories, and chronological ordering tools.
+A comprehensive Bible study application built with Astro, featuring Bible concepts, stories, and book navigation.
 
 ## Project Structure
 
 ### 📁 Scripts
-All JavaScript utilities and analysis tools are organized in the `scripts/` directory:
+Essential utility scripts organized in the `scripts/` directory:
 
-#### `scripts/bible-order/` - Bible Ordering Scripts
-Scripts for managing and fixing Bible book and chapter ordering:
-- `show_chronological_order.js` - Display chronological order of Bible books
-- `show_canonical_order.js` - Display canonical order of Bible books
-- `final_chronological_fix.js` - Final fixes for chronological ordering
-- `fix_duplicate_chronological.js` - Remove duplicate chronological entries
-- `update_chronological_order.js` - Update chronological order data
-- `fix_chronological_order.js` - Fix chronological order issues
-- `verify_and_fix_book_orders.js` - Verify and fix book order problems
-- `check_book_orders.js` - Check book ordering consistency
-- `check_book_chapters.js` - Verify chapter counts for books
-- `remove_duplicate_chapters.js` - Remove duplicate chapter entries
-- `check_remaining.js` - Check remaining tasks and issues
+#### `scripts/utilities/` - Development Scripts
+- `start-dev.sh` - Development server startup script with port management
 
-#### `scripts/analysis/` - Analysis Scripts
-Scripts for analyzing Bible data and order:
-- `chronological_order_analysis.js` - Analyze chronological ordering
-- `detailed_order_check.js` - Detailed checking of book orders
+#### `scripts/security/` - Security Scripts  
+- `validate-csp.js` - Content Security Policy validation
 
-#### `scripts/utilities/` - Utility Scripts
-General utility scripts:
-- `start-dev.sh` - Development server startup script
-
-### 📁 Documentation
-Markdown documentation files:
-- `docs/BIBLE_ORDER_STATUS.md` - Current status of Bible ordering
-- `docs/BIBLE_COMPLETION_TASKS.md` - Tasks for completing Bible setup
+#### `scripts/` - Content Management
+- `check-pending-concepts.js` - Track Bible concept content progress
+- `README.md` - Script documentation
 
 ### 🚀 Getting Started
 
@@ -47,13 +29,9 @@ Markdown documentation files:
    ./scripts/utilities/start-dev.sh
    ```
 
-3. **Run Bible ordering scripts:**
+3. **Check content progress:**
    ```bash
-   # Show current chronological order
-   node scripts/bible-order/show_chronological_order.js
-   
-   # Fix ordering issues
-   node scripts/bible-order/fix_chronological_order.js
+   npm run check-concepts
    ```
 
 ## Features
@@ -73,7 +51,7 @@ Markdown documentation files:
 
 ## Development
 
-The project uses Astro for static site generation with TypeScript support. All Bible-related scripts are organized in the `scripts/` directory for easy maintenance and execution.
+The project uses Astro for static site generation with TypeScript support. Essential scripts are organized in the `scripts/` directory for development and content management.
 
 ## License
 
