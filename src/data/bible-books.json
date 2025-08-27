@@ -913,6 +913,22 @@
           ]
         },
         {
+          "number": 3,
+          "title": "The Burning Bush",
+          "summary": "God appears to Moses in a burning bush and commissions him to deliver Israel",
+          "keyVerses": [
+            "Exodus 3:2",
+            "Exodus 3:14",
+            "Exodus 3:15"
+          ],
+          "content": "And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed. And Moses said, 'I will turn aside to see this great sight, why the bush is not burned.'",
+          "themes": [
+            "God's Holiness",
+            "Divine Commission",
+            "I AM"
+          ]
+        },
+        {
           "number": 4,
           "title": "Moses' Signs and Reluctance",
           "summary": "God gives Moses miraculous signs and overcomes his objections",
@@ -1049,6 +1065,23 @@
           ]
         },
         {
+          "number": 12,
+          "title": "The Passover",
+          "summary": "God institutes the Passover and delivers Israel from Egypt",
+          "keyVerses": [
+            "Exodus 12:13",
+            "Exodus 12:23",
+            "Exodus 12:42"
+          ],
+          "content": "The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you, and no plague will befall you to destroy you, when I strike the land of Egypt.",
+          "themes": [
+            "Passover",
+            "Deliverance",
+            "Blood Sacrifice",
+            "Redemption"
+          ]
+        },
+        {
           "number": 13,
           "title": "Consecration of the Firstborn",
           "summary": "God commands the consecration of firstborn and the Feast of Unleavened Bread",
@@ -1063,6 +1096,23 @@
             "Firstborn",
             "Womb",
             "Tell"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Crossing the Red Sea",
+          "summary": "God parts the Red Sea for Israel to escape and destroys Pharaoh's army",
+          "keyVerses": [
+            "Exodus 14:13",
+            "Exodus 14:21",
+            "Exodus 14:30"
+          ],
+          "content": "And Moses said to the people, 'Fear not, stand firm, and see the salvation of the Lord, which he will work for you today. For the Egyptians whom you see today, you shall never see again.'",
+          "themes": [
+            "Deliverance",
+            "God's Power",
+            "Faith",
+            "Victory"
           ]
         },
         {
@@ -1148,6 +1198,23 @@
             "Covenant",
             "Treasured",
             "Holy Nation"
+          ]
+        },
+        {
+          "number": 20,
+          "title": "The Ten Commandments",
+          "summary": "God gives the Ten Commandments to Israel at Mount Sinai",
+          "keyVerses": [
+            "Exodus 20:2",
+            "Exodus 20:3",
+            "Exodus 20:12"
+          ],
+          "content": "And God spoke all these words, saying, 'I am the Lord your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before me.'",
+          "themes": [
+            "Law",
+            "Covenant",
+            "Holiness",
+            "Commandments"
           ]
         },
         {
@@ -1474,73 +1541,6 @@
           ]
         },
         {
-          "number": 3,
-          "title": "The Burning Bush",
-          "summary": "God appears to Moses in a burning bush and commissions him to deliver Israel",
-          "keyVerses": [
-            "Exodus 3:2",
-            "Exodus 3:14",
-            "Exodus 3:15"
-          ],
-          "content": "And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed. And Moses said, 'I will turn aside to see this great sight, why the bush is not burned.'",
-          "themes": [
-            "God's Holiness",
-            "Divine Commission",
-            "I AM"
-          ]
-        },
-        {
-          "number": 12,
-          "title": "The Passover",
-          "summary": "God institutes the Passover and delivers Israel from Egypt",
-          "keyVerses": [
-            "Exodus 12:13",
-            "Exodus 12:23",
-            "Exodus 12:42"
-          ],
-          "content": "The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you, and no plague will befall you to destroy you, when I strike the land of Egypt.",
-          "themes": [
-            "Passover",
-            "Deliverance",
-            "Blood Sacrifice",
-            "Redemption"
-          ]
-        },
-        {
-          "number": 14,
-          "title": "Crossing the Red Sea",
-          "summary": "God parts the Red Sea for Israel to escape and destroys Pharaoh's army",
-          "keyVerses": [
-            "Exodus 14:13",
-            "Exodus 14:21",
-            "Exodus 14:30"
-          ],
-          "content": "And Moses said to the people, 'Fear not, stand firm, and see the salvation of the Lord, which he will work for you today. For the Egyptians whom you see today, you shall never see again.'",
-          "themes": [
-            "Deliverance",
-            "God's Power",
-            "Faith",
-            "Victory"
-          ]
-        },
-        {
-          "number": 20,
-          "title": "The Ten Commandments",
-          "summary": "God gives the Ten Commandments to Israel at Mount Sinai",
-          "keyVerses": [
-            "Exodus 20:2",
-            "Exodus 20:3",
-            "Exodus 20:12"
-          ],
-          "content": "And God spoke all these words, saying, 'I am the Lord your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before me.'",
-          "themes": [
-            "Law",
-            "Covenant",
-            "Holiness",
-            "Commandments"
-          ]
-        },
-        {
           "number": 40,
           "title": "The Tabernacle Erected",
           "summary": "Moses erects the tabernacle and God's glory fills it",
@@ -1831,6 +1831,23 @@
           ]
         },
         {
+          "number": 16,
+          "title": "The Day of Atonement",
+          "summary": "God establishes the annual Day of Atonement for Israel's sins",
+          "keyVerses": [
+            "Leviticus 16:30",
+            "Leviticus 16:34",
+            "Leviticus 16:15"
+          ],
+          "content": "For on this day shall atonement be made for you to cleanse you. You shall be clean before the Lord from all your sins. It is a Sabbath of solemn rest to you, and you shall afflict yourselves; it is a statute forever.",
+          "themes": [
+            "Atonement",
+            "Forgiveness",
+            "High Priest",
+            "Sacrifice"
+          ]
+        },
+        {
           "number": 17,
           "title": "The Place of Sacrifice",
           "summary": "Laws about where sacrifices may be offered",
@@ -1862,6 +1879,23 @@
             "Uncover Nakedness",
             "Unclean",
             "Nations"
+          ]
+        },
+        {
+          "number": 19,
+          "title": "Laws of Holiness",
+          "summary": "God calls Israel to be holy and gives laws for righteous living",
+          "keyVerses": [
+            "Leviticus 19:2",
+            "Leviticus 19:18",
+            "Leviticus 19:15"
+          ],
+          "content": "Speak to all the congregation of the people of Israel and say to them: You shall be holy, for I the Lord your God am holy. You shall not hate your brother in your heart, but you shall reason frankly with your neighbor, lest you incur sin because of him.",
+          "themes": [
+            "Holiness",
+            "Love",
+            "Justice",
+            "Righteousness"
           ]
         },
         {
@@ -1998,40 +2032,6 @@
             "Shekel",
             "Sanctuary",
             "Value"
-          ]
-        },
-        {
-          "number": 16,
-          "title": "The Day of Atonement",
-          "summary": "God establishes the annual Day of Atonement for Israel's sins",
-          "keyVerses": [
-            "Leviticus 16:30",
-            "Leviticus 16:34",
-            "Leviticus 16:15"
-          ],
-          "content": "For on this day shall atonement be made for you to cleanse you. You shall be clean before the Lord from all your sins. It is a Sabbath of solemn rest to you, and you shall afflict yourselves; it is a statute forever.",
-          "themes": [
-            "Atonement",
-            "Forgiveness",
-            "High Priest",
-            "Sacrifice"
-          ]
-        },
-        {
-          "number": 19,
-          "title": "Laws of Holiness",
-          "summary": "God calls Israel to be holy and gives laws for righteous living",
-          "keyVerses": [
-            "Leviticus 19:2",
-            "Leviticus 19:18",
-            "Leviticus 19:15"
-          ],
-          "content": "Speak to all the congregation of the people of Israel and say to them: You shall be holy, for I the Lord your God am holy. You shall not hate your brother in your heart, but you shall reason frankly with your neighbor, lest you incur sin because of him.",
-          "themes": [
-            "Holiness",
-            "Love",
-            "Justice",
-            "Righteousness"
           ]
         }
       ],
@@ -2254,6 +2254,40 @@
             "Aaron",
             "Cushite Woman",
             "Spoken"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "The Twelve Spies",
+          "summary": "Twelve spies explore the Promised Land, but only two trust God",
+          "keyVerses": [
+            "Numbers 13:30",
+            "Numbers 13:31",
+            "Numbers 13:33"
+          ],
+          "content": "But Caleb quieted the people before Moses and said, 'Let us go up at once and occupy it, for we are well able to overcome it.' Then the men who had gone up with him said, 'We are not able to go up against the people, for they are stronger than we are.'",
+          "themes": [
+            "Faith",
+            "Fear",
+            "Trust",
+            "Promise"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Israel's Rebellion",
+          "summary": "Israel rebels against God and is sentenced to wander 40 years",
+          "keyVerses": [
+            "Numbers 14:11",
+            "Numbers 14:23",
+            "Numbers 14:34"
+          ],
+          "content": "And the Lord said to Moses, 'How long will this people despise me? And how long will they not believe in me, in spite of all the signs that I have done among them?'",
+          "themes": [
+            "Rebellion",
+            "Consequences",
+            "Judgment",
+            "Patience"
           ]
         },
         {
@@ -2629,40 +2663,6 @@
             "Machir",
             "Manasseh"
           ]
-        },
-        {
-          "number": 13,
-          "title": "The Twelve Spies",
-          "summary": "Twelve spies explore the Promised Land, but only two trust God",
-          "keyVerses": [
-            "Numbers 13:30",
-            "Numbers 13:31",
-            "Numbers 13:33"
-          ],
-          "content": "But Caleb quieted the people before Moses and said, 'Let us go up at once and occupy it, for we are well able to overcome it.' Then the men who had gone up with him said, 'We are not able to go up against the people, for they are stronger than we are.'",
-          "themes": [
-            "Faith",
-            "Fear",
-            "Trust",
-            "Promise"
-          ]
-        },
-        {
-          "number": 14,
-          "title": "Israel's Rebellion",
-          "summary": "Israel rebels against God and is sentenced to wander 40 years",
-          "keyVerses": [
-            "Numbers 14:11",
-            "Numbers 14:23",
-            "Numbers 14:34"
-          ],
-          "content": "And the Lord said to Moses, 'How long will this people despise me? And how long will they not believe in me, in spite of all the signs that I have done among them?'",
-          "themes": [
-            "Rebellion",
-            "Consequences",
-            "Judgment",
-            "Patience"
-          ]
         }
       ],
       "canonicalOrder": 4,
@@ -2765,6 +2765,23 @@
             "Brought Out",
             "No Other Gods",
             "Carved Image"
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The Great Commandment",
+          "summary": "Moses declares the greatest commandment to love God with all your heart",
+          "keyVerses": [
+            "Deuteronomy 6:4",
+            "Deuteronomy 6:5",
+            "Deuteronomy 6:6"
+          ],
+          "content": "Hear, O Israel: The Lord our God, the Lord is one. You shall love the Lord your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart.",
+          "themes": [
+            "Love",
+            "Obedience",
+            "Teaching",
+            "Heart"
           ]
         },
         {
@@ -3159,6 +3176,23 @@
           ]
         },
         {
+          "number": 30,
+          "title": "Choose Life",
+          "summary": "Moses presents the choice between life and death, blessing and curse",
+          "keyVerses": [
+            "Deuteronomy 30:19",
+            "Deuteronomy 30:20",
+            "Deuteronomy 30:14"
+          ],
+          "content": "I call heaven and earth to witness against you today, that I have set before you life and death, blessing and curse. Therefore choose life, that you and your offspring may live, loving the Lord your God, obeying his voice and holding fast to him.",
+          "themes": [
+            "Choice",
+            "Life",
+            "Blessing",
+            "Obedience"
+          ]
+        },
+        {
           "number": 31,
           "title": "Joshua to Succeed Moses",
           "summary": "Moses appoints Joshua as his successor",
@@ -3225,40 +3259,6 @@
             "Jericho",
             "All the Land"
           ]
-        },
-        {
-          "number": 6,
-          "title": "The Great Commandment",
-          "summary": "Moses declares the greatest commandment to love God with all your heart",
-          "keyVerses": [
-            "Deuteronomy 6:4",
-            "Deuteronomy 6:5",
-            "Deuteronomy 6:6"
-          ],
-          "content": "Hear, O Israel: The Lord our God, the Lord is one. You shall love the Lord your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart.",
-          "themes": [
-            "Love",
-            "Obedience",
-            "Teaching",
-            "Heart"
-          ]
-        },
-        {
-          "number": 30,
-          "title": "Choose Life",
-          "summary": "Moses presents the choice between life and death, blessing and curse",
-          "keyVerses": [
-            "Deuteronomy 30:19",
-            "Deuteronomy 30:20",
-            "Deuteronomy 30:14"
-          ],
-          "content": "I call heaven and earth to witness against you today, that I have set before you life and death, blessing and curse. Therefore choose life, that you and your offspring may live, loving the Lord your God, obeying his voice and holding fast to him.",
-          "themes": [
-            "Choice",
-            "Life",
-            "Blessing",
-            "Obedience"
-          ]
         }
       ],
       "canonicalOrder": 5,
@@ -3293,23 +3293,6 @@
             "God's Presence",
             "Courage",
             "Scripture Meditation"
-          ]
-        },
-        {
-          "number": 6,
-          "title": "The Fall of Jericho",
-          "summary": "The walls of Jericho fall after Israel marches around the city",
-          "keyVerses": [
-            "Joshua 6:2",
-            "Joshua 6:20",
-            "Joshua 6:27"
-          ],
-          "content": "And the Lord said to Joshua, 'See, I have given Jericho into your hand, with its king and mighty men of valor.' So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people shouted a great shout, and the wall fell down flat.",
-          "themes": [
-            "Obedience",
-            "Faith",
-            "God's Power",
-            "Victory"
           ]
         },
         {
@@ -3378,6 +3361,23 @@
             "Reproach",
             "Manna",
             "Produce"
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The Fall of Jericho",
+          "summary": "The walls of Jericho fall after Israel marches around the city",
+          "keyVerses": [
+            "Joshua 6:2",
+            "Joshua 6:20",
+            "Joshua 6:27"
+          ],
+          "content": "And the Lord said to Joshua, 'See, I have given Jericho into your hand, with its king and mighty men of valor.' So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people shouted a great shout, and the wall fell down flat.",
+          "themes": [
+            "Obedience",
+            "Faith",
+            "God's Power",
+            "Victory"
           ]
         },
         {
@@ -8034,6 +8034,23 @@
           ]
         },
         {
+          "number": 19,
+          "title": "My Redeemer Lives",
+          "summary": "Job expresses faith that his Redeemer lives",
+          "keyVerses": [
+            "Job 19:25",
+            "Job 19:26",
+            "Job 19:27"
+          ],
+          "content": "For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another.",
+          "themes": [
+            "Redeemer",
+            "Resurrection Hope",
+            "Faith",
+            "Vision of God"
+          ]
+        },
+        {
           "number": 20,
           "title": "Zophar's Second Speech",
           "summary": "Zophar describes the short-lived prosperity of the wicked",
@@ -8337,23 +8354,6 @@
             "Voice",
             "Works",
             "Power"
-          ]
-        },
-        {
-          "number": 19,
-          "title": "My Redeemer Lives",
-          "summary": "Job expresses faith that his Redeemer lives",
-          "keyVerses": [
-            "Job 19:25",
-            "Job 19:26",
-            "Job 19:27"
-          ],
-          "content": "For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another.",
-          "themes": [
-            "Redeemer",
-            "Resurrection Hope",
-            "Faith",
-            "Vision of God"
           ]
         },
         {
@@ -11043,23 +11043,6 @@
           ]
         },
         {
-          "number": 3,
-          "title": "Trust in the Lord",
-          "summary": "Wisdom about trusting God and the benefits of following His ways",
-          "keyVerses": [
-            "Proverbs 3:5",
-            "Proverbs 3:6",
-            "Proverbs 3:12"
-          ],
-          "content": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
-          "themes": [
-            "Trust",
-            "Guidance",
-            "Understanding",
-            "God's Ways"
-          ]
-        },
-        {
           "number": 2,
           "title": "The Value of Wisdom",
           "summary": "The benefits of seeking wisdom and understanding",
@@ -11074,6 +11057,23 @@
             "Wisdom",
             "Fear of Lord",
             "Knowledge"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Trust in the Lord",
+          "summary": "Wisdom about trusting God and the benefits of following His ways",
+          "keyVerses": [
+            "Proverbs 3:5",
+            "Proverbs 3:6",
+            "Proverbs 3:12"
+          ],
+          "content": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
+          "themes": [
+            "Trust",
+            "Guidance",
+            "Understanding",
+            "God's Ways"
           ]
         },
         {
@@ -12151,57 +12151,6 @@
           ]
         },
         {
-          "number": 40,
-          "title": "Comfort for God's People",
-          "summary": "God's comfort and the greatness of His power",
-          "keyVerses": [
-            "Isaiah 40:1",
-            "Isaiah 40:3",
-            "Isaiah 40:31"
-          ],
-          "content": "Comfort, comfort my people, says your God. A voice cries: 'In the wilderness prepare the way of the Lord; make straight in the desert a highway for our God.' But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles.",
-          "themes": [
-            "Comfort",
-            "Wilderness",
-            "Highway",
-            "Renewed Strength"
-          ]
-        },
-        {
-          "number": 53,
-          "title": "The Suffering Servant",
-          "summary": "Prophecy of the Messiah's suffering for our sins",
-          "keyVerses": [
-            "Isaiah 53:5",
-            "Isaiah 53:6",
-            "Isaiah 53:12"
-          ],
-          "content": "But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed. All we like sheep have gone astray; we have turned every one to his own way.",
-          "themes": [
-            "Suffering Servant",
-            "Atonement",
-            "Healing",
-            "Salvation"
-          ]
-        },
-        {
-          "number": 55,
-          "title": "Come to the Waters",
-          "summary": "Invitation to come to God for salvation and life",
-          "keyVerses": [
-            "Isaiah 55:1",
-            "Isaiah 55:6",
-            "Isaiah 55:8"
-          ],
-          "content": "Come, everyone who thirsts, come to the waters; and he who has no money, come, buy and eat! Come, buy wine and milk without money and without price. Seek the Lord while he may be found; call upon him while he is near.",
-          "themes": [
-            "Waters",
-            "Thirst",
-            "Seek",
-            "God's Ways"
-          ]
-        },
-        {
           "number": 13,
           "title": "The Fall of Babylon",
           "summary": "Prophecy of Babylon's destruction and God's judgment",
@@ -12661,6 +12610,23 @@
           ]
         },
         {
+          "number": 40,
+          "title": "Comfort for God's People",
+          "summary": "God's comfort and the greatness of His power",
+          "keyVerses": [
+            "Isaiah 40:1",
+            "Isaiah 40:3",
+            "Isaiah 40:31"
+          ],
+          "content": "Comfort, comfort my people, says your God. A voice cries: 'In the wilderness prepare the way of the Lord; make straight in the desert a highway for our God.' But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles.",
+          "themes": [
+            "Comfort",
+            "Wilderness",
+            "Highway",
+            "Renewed Strength"
+          ]
+        },
+        {
           "number": 41,
           "title": "Fear Not, for I Am with You",
           "summary": "God's comfort to Israel and challenge to idols",
@@ -12865,6 +12831,23 @@
           ]
         },
         {
+          "number": 53,
+          "title": "The Suffering Servant",
+          "summary": "Prophecy of the Messiah's suffering for our sins",
+          "keyVerses": [
+            "Isaiah 53:5",
+            "Isaiah 53:6",
+            "Isaiah 53:12"
+          ],
+          "content": "But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed. All we like sheep have gone astray; we have turned every one to his own way.",
+          "themes": [
+            "Suffering Servant",
+            "Atonement",
+            "Healing",
+            "Salvation"
+          ]
+        },
+        {
           "number": 54,
           "title": "The Eternal Covenant of Peace",
           "summary": "Prophecy of Israel's restoration and everlasting peace",
@@ -12879,6 +12862,23 @@
             "Barren",
             "Children",
             "Mountains"
+          ]
+        },
+        {
+          "number": 55,
+          "title": "Come to the Waters",
+          "summary": "Invitation to come to God for salvation and life",
+          "keyVerses": [
+            "Isaiah 55:1",
+            "Isaiah 55:6",
+            "Isaiah 55:8"
+          ],
+          "content": "Come, everyone who thirsts, come to the waters; and he who has no money, come, buy and eat! Come, buy wine and milk without money and without price. Seek the Lord while he may be found; call upon him while he is near.",
+          "themes": [
+            "Waters",
+            "Thirst",
+            "Seek",
+            "God's Ways"
           ]
         },
         {
@@ -12967,6 +12967,23 @@
           ]
         },
         {
+          "number": 61,
+          "title": "The Year of the Lord's Favor",
+          "summary": "Prophecy of the Messiah's ministry and restoration",
+          "keyVerses": [
+            "Isaiah 61:1",
+            "Isaiah 61:2",
+            "Isaiah 61:3"
+          ],
+          "content": "The Spirit of the Lord God is upon me, because the Lord has anointed me to bring good news to the poor; he has sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to those who are bound.",
+          "themes": [
+            "Spirit",
+            "Anointed",
+            "Good News",
+            "Liberty"
+          ]
+        },
+        {
           "number": 62,
           "title": "Zion's Coming Salvation",
           "summary": "Promise of Zion's restoration and new names",
@@ -13049,23 +13066,6 @@
             "Throne",
             "New Heavens",
             "New Earth"
-          ]
-        },
-        {
-          "number": 61,
-          "title": "The Year of the Lord's Favor",
-          "summary": "Prophecy of the Messiah's ministry and restoration",
-          "keyVerses": [
-            "Isaiah 61:1",
-            "Isaiah 61:2",
-            "Isaiah 61:3"
-          ],
-          "content": "The Spirit of the Lord God is upon me, because the Lord has anointed me to bring good news to the poor; he has sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to those who are bound.",
-          "themes": [
-            "Spirit",
-            "Anointed",
-            "Good News",
-            "Liberty"
           ]
         }
       ],
@@ -15541,40 +15541,6 @@
           ]
         },
         {
-          "number": 6,
-          "title": "Woe to Those at Ease",
-          "summary": "Woe to those who are complacent and trust in their strength",
-          "keyVerses": [
-            "Amos 6:1",
-            "Amos 6:3",
-            "Amos 6:8"
-          ],
-          "content": "Woe to those who are at ease in Zion, and to those who feel secure on the mountain of Samaria, the notable men of the first of the nations, to whom the house of Israel comes! Woe to those who lie on beds of ivory and stretch themselves out on their couches.",
-          "themes": [
-            "Woe",
-            "Ease",
-            "Security",
-            "Ivory"
-          ]
-        },
-        {
-          "number": 8,
-          "title": "The Basket of Summer Fruit",
-          "summary": "Vision of summer fruit symbolizes Israel's end and judgment",
-          "keyVerses": [
-            "Amos 8:1",
-            "Amos 8:2",
-            "Amos 8:11"
-          ],
-          "content": "This is what the Lord God showed me: behold, a basket of summer fruit. And he said, Amos, what do you see? And I said, A basket of summer fruit. Then the Lord said to me, The end has come upon my people Israel; I will never again pass by them.",
-          "themes": [
-            "Basket",
-            "Summer Fruit",
-            "End",
-            "Pass By"
-          ]
-        },
-        {
           "number": 5,
           "title": "Seek Good",
           "summary": "Call to seek good and establish justice",
@@ -15592,6 +15558,23 @@
           ]
         },
         {
+          "number": 6,
+          "title": "Woe to Those at Ease",
+          "summary": "Woe to those who are complacent and trust in their strength",
+          "keyVerses": [
+            "Amos 6:1",
+            "Amos 6:3",
+            "Amos 6:8"
+          ],
+          "content": "Woe to those who are at ease in Zion, and to those who feel secure on the mountain of Samaria, the notable men of the first of the nations, to whom the house of Israel comes! Woe to those who lie on beds of ivory and stretch themselves out on their couches.",
+          "themes": [
+            "Woe",
+            "Ease",
+            "Security",
+            "Ivory"
+          ]
+        },
+        {
           "number": 7,
           "title": "Visions of Judgment",
           "summary": "Amos sees visions of coming judgment on Israel",
@@ -15606,6 +15589,23 @@
             "Plumb Line",
             "Divine Standard",
             "Judgment"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "The Basket of Summer Fruit",
+          "summary": "Vision of summer fruit symbolizes Israel's end and judgment",
+          "keyVerses": [
+            "Amos 8:1",
+            "Amos 8:2",
+            "Amos 8:11"
+          ],
+          "content": "This is what the Lord God showed me: behold, a basket of summer fruit. And he said, Amos, what do you see? And I said, A basket of summer fruit. Then the Lord said to me, The end has come upon my people Israel; I will never again pass by them.",
+          "themes": [
+            "Basket",
+            "Summer Fruit",
+            "End",
+            "Pass By"
           ]
         },
         {
@@ -17728,23 +17728,6 @@
           ]
         },
         {
-          "number": 3,
-          "title": "Jesus and Nicodemus",
-          "summary": "Jesus teaches about being born again and God's love for the world",
-          "keyVerses": [
-            "John 3:3",
-            "John 3:16",
-            "John 3:17"
-          ],
-          "content": "Jesus answered him, 'Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.' For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
-          "themes": [
-            "New Birth",
-            "God's Love",
-            "Eternal Life",
-            "Salvation"
-          ]
-        },
-        {
           "number": 2,
           "title": "The Wedding at Cana",
           "summary": "Jesus performs His first miracle by turning water into wine",
@@ -17759,6 +17742,23 @@
             "Glory",
             "Belief",
             "Temple"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Jesus and Nicodemus",
+          "summary": "Jesus teaches about being born again and God's love for the world",
+          "keyVerses": [
+            "John 3:3",
+            "John 3:16",
+            "John 3:17"
+          ],
+          "content": "Jesus answered him, 'Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.' For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+          "themes": [
+            "New Birth",
+            "God's Love",
+            "Eternal Life",
+            "Salvation"
           ]
         },
         {
