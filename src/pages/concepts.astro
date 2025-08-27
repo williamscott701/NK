@@ -7,6 +7,8 @@ import conceptsData from '../data/bible-concepts.json';
 import { PATHS } from '../utils/paths';
 
 const concepts = conceptsData.concepts;
+// Dynamically generate filter options from unique categories
+const uniqueCategories = [...new Set(concepts.map(concept => concept.category).filter(Boolean))];
 ---
 
 <Layout 
@@ -57,22 +59,11 @@ const concepts = conceptsData.concepts;
       <div class="max-w-6xl mx-auto px-6">
         <!-- Filter Section -->
         <div class="flex flex-wrap gap-4 justify-end mb-6">
-                      <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-bible-gold focus:border-transparent" aria-label="Filter concepts by category">
+          <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-bible-gold focus:border-transparent" aria-label="Filter concepts by category">
             <option value="">All Categories</option>
-            <option value="Christian Living">Christian Living</option>
-            <option value="Spiritual Growth">Spiritual Growth</option>
-            <option value="God's Character">God's Character</option>
-            <option value="Spiritual Warfare">Spiritual Warfare</option>
-            <option value="Eternal Rewards">Eternal Rewards</option>
-            <option value="Kingdom of God">Kingdom of God</option>
-            <option value="Influence">Influence</option>
-            <option value="Spiritual Life">Spiritual Life</option>
-            <option value="Christology">Christology</option>
-            <option value="Spiritual Identity">Spiritual Identity</option>
-            <option value="God's Word">God's Word</option>
-            <option value="Spiritual Realms">Spiritual Realms</option>
-            <option value="Evangelism">Evangelism</option>
-            <option value="Righteous Living">Righteous Living</option>
+            {uniqueCategories.map((category) => (
+              <option value={category}>{category}</option>
+            ))}
           </select>
         </div>
         
@@ -168,25 +159,7 @@ const concepts = conceptsData.concepts;
       </div>
     </section>
 
-    <!-- Featured Concept -->
-    <section class="py-16 bg-gradient-to-br from-blue-50 to-sky-50">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 text-center">
-          <h3 class="text-3xl font-bold text-blue-400 mb-4">Featured Concept: Love</h3>
-          <p class="text-xl text-gray-600 mb-6">
-            "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
-          </p>
-          <p class="text-blue-400 font-semibold mb-6">1 Corinthians 13:4</p>
-          <p class="text-gray-600 leading-relaxed hidden sm:block">
-            Love is perhaps the most central concept in Christianity. From God's love for humanity demonstrated through Christ's sacrifice, 
-            to the call for believers to love one another, this theme runs throughout Scripture as the greatest commandment and the defining characteristic of faith.
-          </p>
-          <p class="text-gray-600 leading-relaxed sm:hidden">
-            Love is the central concept in Christianity, from God's love to loving one another.
-          </p>
-        </div>
-      </div>
-    </section>
+
   </main>
   
   <Footer />
