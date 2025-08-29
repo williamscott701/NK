@@ -16,6 +16,9 @@ const { story } = Astro.props;
 
 // Get the first reference for display purposes
 const firstReference = story.references[0];
+
+// Check if story has enhanced details
+const hasEnhancedContent = story.storyDetails;
 ---
 
 <Layout title={`${story.title} - Bible Story`}>
@@ -25,7 +28,7 @@ const firstReference = story.references[0];
       <div class="absolute top-10 left-10 w-48 h-48 bg-green-500/5 rounded-full blur-2xl"></div>
       <div class="absolute bottom-10 right-10 w-64 h-64 bg-green-500/5 rounded-full blur-2xl"></div>
       
-      <div class="relative z-10 max-w-4xl mx-auto px-4 md:px-6">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
         <!-- Breadcrumb -->
         <Breadcrumb 
           client:load 
@@ -44,26 +47,51 @@ const firstReference = story.references[0];
             </svg>
           </div>
           <h1 class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-700 mb-4">
-            {story.title}
+            📚 {story.title}
           </h1>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             {story.summary}
           </p>
+          
+          <!-- Completion Status Indicator -->
+          <div class="mt-6 flex items-center justify-center">
+            {hasEnhancedContent ? (
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-medium rounded-full shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Complete Story</span>
+              </div>
+            ) : (
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-medium rounded-full shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Basic Story - Enhanced Version Coming Soon</span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Story Content -->
     <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-6">
+      <div class="max-w-6xl mx-auto px-6">
         <!-- Story Details -->
         <div class="grid md:grid-cols-2 gap-8 mb-12">
           <!-- Story Information -->
           <div class="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">Story Information</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+              <span class="text-2xl">ℹ️</span>
+              Story Information
+            </h3>
             <div class="space-y-4">
               <div>
-                <span class="font-semibold text-gray-700">References:</span>
+                <span class="font-semibold text-gray-700 flex items-center gap-2">
+                  <span>📖</span>
+                  References:
+                </span>
                 <div class="mt-2 space-y-2">
                   {story.references.map((ref) => (
                     <div class="text-gray-600">
@@ -73,7 +101,10 @@ const firstReference = story.references[0];
                 </div>
               </div>
               <div>
-                <span class="font-semibold text-gray-700">Themes:</span>
+                <span class="font-semibold text-gray-700 flex items-center gap-2">
+                  <span>🏷️</span>
+                  Themes:
+                </span>
                 <div class="mt-2 flex flex-wrap gap-2">
                   {story.themes.map((theme) => (
                     <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full border border-green-200">
@@ -87,7 +118,10 @@ const firstReference = story.references[0];
 
           <!-- Key Verse -->
           <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg border border-green-200">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">Key Verse</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+              <span class="text-2xl">💎</span>
+              Key Verse
+            </h3>
             <div class="text-center">
               <blockquote class="text-lg text-gray-700 leading-relaxed italic border-l-4 border-green-500 pl-6 mb-4">
                 "{story.keyVerse}"
@@ -99,46 +133,725 @@ const firstReference = story.references[0];
           </div>
         </div>
 
-        <!-- Full Story Summary -->
+        {hasEnhancedContent && (
+          <>
+            <!-- Background Section -->
+            <div class="mb-12">
+              <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+              <span class="text-3xl">🌍</span>
+              Story Background
+            </h2>
+              <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-200">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  {story.storyDetails.background}
+                </p>
+              </div>
+            </div>
+
+            <!-- Characters Section -->
+            <div class="mb-12">
+              <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                <span class="text-3xl">👥</span>
+                Characters
+              </h2>
+              <div class="grid md:grid-cols-3 gap-6">
+                {story.storyDetails.characters.map((character) => (
+                  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-purple-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">{character.name}</h3>
+                    <div class="space-y-3">
+                      <div>
+                        <span class="font-semibold text-gray-700">Role:</span>
+                        <p class="text-gray-600">{character.role}</p>
+                      </div>
+                      <div>
+                        <span class="font-semibold text-gray-700">Description:</span>
+                        <p class="text-gray-600">{character.description}</p>
+                      </div>
+                      <div>
+                        <span class="font-semibold text-gray-700">Personality:</span>
+                        <p class="text-gray-600">{character.personality}</p>
+                      </div>
+                      {character.motivations && (
+                        <div>
+                          <span class="font-semibold text-gray-700">Motivations:</span>
+                          <p class="text-gray-600">{character.motivations}</p>
+                        </div>
+                      )}
+                      {character.transformation && (
+                        <div>
+                          <span class="font-semibold text-gray-700">Transformation:</span>
+                          <p class="text-gray-600">{character.transformation}</p>
+                        </div>
+                      )}
+                      {character.legacy && (
+                        <div>
+                          <span class="font-semibold text-gray-700">Legacy:</span>
+                          <p class="text-gray-600">{character.legacy}</p>
+                        </div>
+                      )}
+                      {character.actions && (
+                        <div>
+                          <span class="font-semibold text-gray-700">Actions:</span>
+                          <p class="text-gray-600">{character.actions}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Plot Section - for stories that have plot */}
+            {story.storyDetails.plot && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">📖</span>
+                  Story Plot
+                </h2>
+                <div class="space-y-6">
+                  {story.storyDetails.plot.map((plotPoint, index) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <div class="flex-1">
+                          <h3 class="text-xl font-bold text-gray-800 mb-2">{plotPoint.title}</h3>
+                          <p class="text-gray-700 leading-relaxed mb-3">{plotPoint.description}</p>
+                          <div class="text-sm text-amber-600 font-medium mb-3">{plotPoint.verse}</div>
+                          {plotPoint.significance && (
+                            <div class="bg-amber-100/50 rounded-lg p-3 border border-amber-300">
+                              <span class="font-semibold text-amber-800">Significance:</span>
+                              <p class="text-amber-700 mt-1">{plotPoint.significance}</p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Key Events Section - for stories that have keyEvents */}
+            {story.storyDetails.keyEvents && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">🎯</span>
+                  Key Events
+                </h2>
+                <div class="space-y-6">
+                  {story.storyDetails.keyEvents.map((event, index) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <div class="flex-1">
+                          <h3 class="text-xl font-bold text-gray-800 mb-2">{event.title}</h3>
+                          <p class="text-gray-700 leading-relaxed mb-3">{event.description}</p>
+                          <div class="text-sm text-amber-600 font-medium mb-3">{event.verse}</div>
+                          {event.significance && (
+                            <div class="bg-amber-100/50 rounded-lg p-3 border border-amber-300">
+                              <span class="font-semibold text-amber-800">Significance:</span>
+                              <p class="text-amber-700 mt-1">{event.significance}</p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Battle Preparation Section - for David and Goliath */}
+            {story.storyDetails.battlePreparation && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Battle Preparation</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.battlePreparation.map((prep) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{prep.aspect}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{prep.details}</p>
+                      <div class="text-sm text-amber-600 font-medium">{prep.significance}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Battle Sequence Section - for David and Goliath */}
+            {story.storyDetails.battleSequence && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Battle Sequence</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.battleSequence.map((stage, index) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <div class="flex-1">
+                          <h3 class="text-xl font-bold text-gray-800 mb-2">{stage.stage}</h3>
+                          <p class="text-gray-700 leading-relaxed mb-3">{stage.description}</p>
+                          <div class="text-sm text-amber-600 font-medium">{stage.significance}</div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Construction Details Section - for Noah's Ark */}
+            {story.storyDetails.constructionDetails && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Construction Details</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.constructionDetails.map((detail) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{detail.aspect}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{detail.details}</p>
+                      <div class="text-sm text-amber-600 font-medium">{detail.significance}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Flood Timeline Section - for Noah's Ark */}
+            {story.storyDetails.floodTimeline && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Flood Timeline</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.floodTimeline.map((event, index) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <div class="flex-1">
+                          <h3 class="text-xl font-bold text-gray-800 mb-2">{event.event}</h3>
+                          <p class="text-gray-700 leading-relaxed mb-3">{event.description}</p>
+                          <div class="flex items-center gap-4 text-sm text-amber-600 font-medium">
+                            <span>Duration: {event.duration}</span>
+                            <span>{event.significance}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Animal Care Section - for Noah's Ark */}
+            {story.storyDetails.animalCare && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Animal Care</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                  {story.storyDetails.animalCare.map((animal) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{animal.category}</h3>
+                      <div class="space-y-2">
+                        <p class="text-gray-700"><span class="font-semibold">Count:</span> {animal.count}</p>
+                        <p class="text-gray-700"><span class="font-semibold">Purpose:</span> {animal.purpose}</p>
+                        <p class="text-sm text-amber-600 font-medium">{animal.significance}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Covenant Promises Section - for Noah's Ark */}
+            {story.storyDetails.covenantPromises && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Covenant Promises</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                  {story.storyDetails.covenantPromises.map((promise) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{promise.promise}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{promise.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{promise.significance}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Family Dynamics Section - for Jacob and Esau */}
+            {story.storyDetails.familyDynamics && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Family Dynamics</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.familyDynamics.map((dynamic) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{dynamic.issue}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{dynamic.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{dynamic.impact}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Life Lessons Section - for Jacob and Esau */}
+            {story.storyDetails.lifeLessons && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">💡</span>
+                  Life Lessons
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.lifeLessons.map((lesson, index) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">{lesson}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Spiritual Principles Section - for David and Goliath */}
+            {story.storyDetails.spiritualPrinciples && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Spiritual Principles</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.spiritualPrinciples.map((principle) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{principle.principle}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{principle.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{principle.application}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Leadership Lessons Section - for David and Goliath */}
+            {story.storyDetails.leadershipLessons && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">👑</span>
+                  Leadership Lessons
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.leadershipLessons.map((lesson) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{lesson.lesson}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{lesson.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{lesson.application}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Psychological Insights Section - for David and Goliath */}
+            {story.storyDetails.psychologicalInsights && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Psychological Insights</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.psychologicalInsights.map((insight) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{insight.insight}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{insight.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{insight.application}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Scientific Connections Section - for Noah's Ark */}
+            {story.storyDetails.scientificConnections && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Scientific Connections</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                  {story.storyDetails.scientificConnections.map((connection) => (
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{connection.topic}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{connection.description}</p>
+                      <div class="text-sm text-amber-600 font-medium">{connection.connection}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Lessons Section - for stories that have lessons */}
+            {story.storyDetails.lessons && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">💡</span>
+                  Key Lessons
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.lessons.map((lesson, index) => (
+                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-lg border border-emerald-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">{lesson}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Spiritual Lessons Section - for stories that have spiritualLessons */}
+            {story.storyDetails.spiritualLessons && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">🙏</span>
+                  Spiritual Lessons
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.spiritualLessons.map((lesson, index) => (
+                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-lg border border-emerald-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">{lesson}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Symbolism Section - for stories that have symbolism */}
+            {story.storyDetails.symbolism && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">🔍</span>
+                  Symbolism & Meaning
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                  {story.storyDetails.symbolism.map((symbol) => (
+                    <div class="bg-gradient-to-br from-rose-50 to-red-50 rounded-2xl p-6 shadow-lg border border-rose-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{symbol.element}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{symbol.meaning}</p>
+                      <div class="text-sm text-rose-600 font-medium">{symbol.biblicalReference}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Historical Context Section - for stories that have historicalContext */}
+            {story.storyDetails.historicalContext && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">⏰</span>
+                  Historical Context
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 shadow-lg border border-indigo-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cultural Setting</h3>
+                    <div class="space-y-3">
+                      <div>
+                        <span class="font-semibold text-gray-700">Time Period:</span>
+                        <p class="text-gray-600">{story.storyDetails.historicalContext.timePeriod}</p>
+                      </div>
+                      <div>
+                        <span class="font-semibold text-gray-700">Social Structure:</span>
+                        <p class="text-gray-600">{story.storyDetails.historicalContext.socialStructure}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 shadow-lg border border-indigo-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Religious Practices</h3>
+                    <div class="space-y-3">
+                      <div>
+                        <span class="font-semibold text-gray-700">Worship:</span>
+                        <p class="text-gray-600">{story.storyDetails.historicalContext.religiousPractices}</p>
+                      </div>
+                      <div>
+                        <span class="font-semibold text-gray-700">Lifestyle:</span>
+                        <p class="text-gray-600">{story.storyDetails.historicalContext.culturalSetting}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Theological Themes Section - for stories that have theologicalThemes */}
+            {story.storyDetails.theologicalThemes && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">✝️</span>
+                  Theological Themes
+                </h2>
+                <div class="space-y-6">
+                  {story.storyDetails.theologicalThemes.map((theme) => (
+                    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-6 shadow-lg border border-cyan-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{theme.theme}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{theme.explanation}</p>
+                      <div class="text-sm text-cyan-600 font-medium">{theme.biblicalPrinciple}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Spiritual Themes Section - for stories that have spiritualThemes */}
+            {story.storyDetails.spiritualThemes && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Spiritual Themes</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.spiritualThemes.map((theme) => (
+                    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-6 shadow-lg border border-cyan-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{theme.theme}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{theme.explanation}</p>
+                      <div class="text-sm text-cyan-600 font-medium">{theme.biblicalPrinciple}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Modern Applications Section - for stories that have modernApplications */}
+            {story.storyDetails.modernApplications && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">🚀</span>
+                  Modern Applications
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.modernApplications.map((application, index) => (
+                    <div class="bg-gradient-to-r from-lime-50 to-green-50 rounded-2xl p-6 shadow-lg border border-lime-200">
+                      <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-lime-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">{application}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+          </>
+        )}
+
+        {/* Additional Sections - only show if story has enhanced content */}
+        {hasEnhancedContent && (
+          <>
+            {/* Discussion Questions Section */}
+            {story.storyDetails.discussionQuestions && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">❓</span>
+                  Discussion Questions
+                </h2>
+                <div class="space-y-8">
+                  {story.storyDetails.discussionQuestions.map((category) => (
+                    <div class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-6 shadow-lg border border-yellow-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">{category.category}</h3>
+                      <div class="space-y-3">
+                        {category.questions.map((question, index) => (
+                          <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
+                              {index + 1}
+                            </div>
+                            <p class="text-gray-700 leading-relaxed">{question}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Cross References Section */}
+            {story.storyDetails.crossReferences && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Cross References</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.crossReferences.map((crossRef) => (
+                    <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-6 shadow-lg border border-pink-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{crossRef.reference}</h3>
+                      <blockquote class="text-gray-700 leading-relaxed italic mb-3 border-l-4 border-pink-400 pl-4">
+                        "{crossRef.text}"
+                      </blockquote>
+                      <div class="text-sm text-pink-600 font-medium">{crossRef.connection}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Personal Reflection Section */}
+            {story.storyDetails.personalReflection && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Personal Reflection</h2>
+                <div class="space-y-6">
+                  {story.storyDetails.personalReflection.map((reflection) => (
+                    <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-6 shadow-lg border border-teal-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{reflection.prompt}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{reflection.question}</p>
+                      <div class="text-sm text-teal-600 font-medium">{reflection.scripture}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Memory Verses Section */}
+            {story.storyDetails.memoryVerses && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Memory Verses</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.memoryVerses.map((memoryVerse) => (
+                    <div class="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-6 shadow-lg border border-emerald-200">
+                      <h3 class="text-lg font-bold text-gray-800 mb-3">{memoryVerse.verse}</h3>
+                      <blockquote class="text-gray-700 leading-relaxed italic mb-3 border-l-4 border-emerald-400 pl-4">
+                        "{memoryVerse.text}"
+                      </blockquote>
+                      <div class="text-sm text-emerald-600 font-medium">{memoryVerse.focus}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Family Activities Section */}
+            {story.storyDetails.familyActivities && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">👨‍👩‍👧‍👦</span>
+                  Family Activities
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.familyActivities.map((activity) => (
+                    <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6 shadow-lg border border-orange-200">
+                      <h3 class="text-xl font-bold text-gray-800 mb-3">{activity.activity}</h3>
+                      <p class="text-gray-700 leading-relaxed mb-3">{activity.description}</p>
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm text-orange-600 font-medium">Ages: {activity.ageGroup}</span>
+                        <span class="text-sm text-orange-600 font-medium">{activity.materials}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Further Study Section */}
+            {story.storyDetails.furtherStudy && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">🔬</span>
+                  Further Study Resources
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {story.storyDetails.furtherStudy.map((resource) => (
+                    <div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-6 shadow-lg border border-slate-200">
+                      <div class="flex items-start gap-3 mb-3">
+                        <div class="w-8 h-8 bg-slate-500 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                          {resource.type === 'Book' ? (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.477-4.5-1.253"></path>
+                            </svg>
+                          ) : resource.type === 'Article' ? (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                          ) : resource.type === 'Video' ? (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                          ) : (
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                          )}
+                        </div>
+                        <div>
+                          <h3 class="text-lg font-bold text-gray-800">{resource.title}</h3>
+                          {resource.author && <p class="text-sm text-gray-600">by {resource.author}</p>}
+                          {resource.source && <p class="text-sm text-gray-600">from {resource.source}</p>}
+                        </div>
+                      </div>
+                      <p class="text-gray-700 leading-relaxed">{resource.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
+        <!-- Prayer Section -->
         <div class="mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Story Summary</h2>
-          <div class="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
-            <p class="text-lg text-gray-700 leading-relaxed">
-              {story.summary}
-            </p>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+            <span class="text-3xl">🙏</span>
+            A Prayer for Reflection
+          </h2>
+          <div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-8 shadow-lg border border-slate-200">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6m1.5 0H15m-6 0h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <blockquote class="text-lg text-gray-700 leading-relaxed italic mb-6">
+                "Heavenly Father, as we reflect on the story of Cain and Abel, help us to examine our own hearts. 
+                <br><br>
+                Teach us to bring our best offerings to You with a spirit of worship and gratitude. 
+                <br><br>
+                Guard our hearts against jealousy and anger, and help us to rule over sin when it crouches at our door. 
+                <br><br>
+                Remind us that we are indeed our brother's keeper, called to love and care for one another. 
+                <br><br>
+                Thank You for Your warnings, Your mercy, and Your protection. 
+                <br><br>
+                In Jesus' name, Amen."
+              </blockquote>
+              <p class="text-sm text-gray-500">Take a moment to reflect on this story and how it applies to your life today.</p>
+            </div>
           </div>
         </div>
 
-        <!-- Read Full Story -->
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-gray-800 mb-6">Read the Full Story</h3>
-          <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-            This story is found in {firstReference.book}, chapters {firstReference.chapters}. Click below to read the complete biblical text with context and commentary.
-          </p>
-          <a 
-                            href={PATHS.chapter(firstReference.book.toLowerCase().replace(/\s+/g, '-'), firstReference.chapters.split('-')[0])}
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-          >
-            Read Full Text
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-            </svg>
-          </a>
+        <!-- Bottom Action Row -->
+        <div class="text-center">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+            <div class="text-center">
+              <a 
+                href={PATHS.chapter(firstReference.book.toLowerCase().replace(/\s+/g, '-'), firstReference.chapters.split('-')[0])}
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <span>📖</span>
+                Read Full Text
+              </a>
+            </div>
+            <div class="text-center">
+              <a 
+                href={PATHS.stories()} 
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <span>📚</span>
+                Browse All Stories
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- Explore More Stories -->
-        <div class="text-center">
-          <h3 class="text-2xl font-bold text-gray-800 mb-6">Explore More Stories</h3>
-          <a 
-                          href={PATHS.stories()} 
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-          >
-            Browse All Stories
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-            </svg>
-          </a>
-        </div>
+
       </div>
     </section>
   </main>

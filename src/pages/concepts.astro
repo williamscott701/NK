@@ -51,6 +51,44 @@ const uniqueCategories = [...new Set(concepts.map(concept => concept.category).f
           conceptsData={concepts}
           searchMode="concepts"
         />
+
+        <!-- Status Summary Section -->
+        <div class="mt-8 bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="space-y-2">
+              <div class="text-3xl font-bold text-blue-600">
+                {concepts.length}
+              </div>
+              <div class="text-sm text-gray-600">Total Concepts</div>
+            </div>
+            <div class="space-y-2">
+              <div class="text-3xl font-bold text-green-600">
+                {concepts.filter(c => c.detailedContent).length}
+              </div>
+              <div class="text-sm text-gray-600">Complete Concepts</div>
+            </div>
+            <div class="space-y-2">
+              <div class="text-3xl font-bold text-yellow-600">
+                {concepts.filter(c => !c.detailedContent).length}
+              </div>
+              <div class="text-sm text-gray-600">Basic Concepts</div>
+            </div>
+          </div>
+          
+          <!-- Progress Bar -->
+          <div class="mt-6">
+            <div class="flex justify-between text-sm text-gray-600 mb-2">
+              <span>Progress</span>
+              <span>{Math.round((concepts.filter(c => c.detailedContent).length / concepts.length) * 100)}% Complete</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div 
+                class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full transition-all duration-500"
+                style={`width: ${(concepts.filter(c => c.detailedContent).length / concepts.length) * 100}%`}
+              ></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -84,7 +122,24 @@ const uniqueCategories = [...new Set(concepts.map(concept => concept.category).f
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-bold text-gray-800">{concept.title}</h3>
-
+                    <!-- Status Badge -->
+                    <div class="flex items-center gap-2 mt-1">
+                      {concept.detailedContent ? (
+                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 border border-green-200">
+                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                          </svg>
+                          Complete
+                        </span>
+                      ) : (
+                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
+                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                          </svg>
+                          Basic
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
                 
@@ -149,7 +204,7 @@ const uniqueCategories = [...new Set(concepts.map(concept => concept.category).f
                     href={PATHS.concept(concept.id)}
                     class="block w-full bg-gradient-to-r from-blue-400 to-sky-400 text-white py-2 px-4 rounded-lg hover:from-blue-500 hover:to-sky-500 transition-all duration-200 font-semibold text-center"
                   >
-                    {concept.detailedContent ? 'Read Full Content' : 'Start Reading'}
+                    {concept.detailedContent ? 'Read Full Content' : 'View Basic Content'}
                   </a>
                 </div>
               </div>
