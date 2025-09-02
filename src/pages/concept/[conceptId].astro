@@ -159,44 +159,158 @@ const { concept } = Astro.props;
               </div>
             )}
 
-            <!-- Historical Context Section -->
-            {concept.detailedContent.historicalContext && (
-              <div class="mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
-                  <span class="text-3xl">📚</span>
-                  Historical Context
-                </h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                  {concept.detailedContent.historicalContext.ancientUses && (
-                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🏺</span>
-                        Ancient Uses
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.historicalContext.ancientUses.map((use) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{use}</span>
+            <!-- Dynamic Sections Renderer - handles all other sections -->
+            {Object.entries(concept.detailedContent).map(([sectionKey, sectionData]) => {
+              // Skip the overview section as it's already rendered above
+              if (sectionKey === 'overview') return null;
+              
+              // Skip sections that have specific handlers below
+              const handledSections = ['historicalContext', 'biblicalContext', 'spiritualMeaning', 'practicalApplications', 'challenges', 'challengesAndObstacles', 'biblicalExamples', 'modernRelevance', 'encouragementAndMotivation'];
+              if (handledSections.includes(sectionKey)) return null;
+              
+              if (!sectionData || (typeof sectionData === 'object' && Object.keys(sectionData).length === 0)) return null;
+              
+              // Create section title
+              const sectionTitle = sectionKey.replace(/([A-Z])/g, ' $1')
+                                            .replace(/^./, str => str.toUpperCase())
+                                            .trim();
+              
+              // Choose icon based on section name
+              let icon = '📋';
+              if (sectionKey.includes('agricultural') || sectionKey.includes('context')) icon = '🌾';
+              else if (sectionKey.includes('sheep') || sectionKey.includes('animal')) icon = '🐑';
+              else if (sectionKey.includes('spiritual') || sectionKey.includes('parallels')) icon = '✨';
+              else if (sectionKey.includes('god') || sectionKey.includes('shepherd')) icon = '👑';
+              else if (sectionKey.includes('practical') || sectionKey.includes('implications')) icon = '🛠️';
+              else if (sectionKey.includes('challenge') || sectionKey.includes('struggle')) icon = '⚠️';
+              else if (sectionKey.includes('practice') || sectionKey.includes('discipline')) icon = '🙏';
+              else if (sectionKey.includes('strategies') || sectionKey.includes('tactics')) icon = '🎯';
+              else if (sectionKey.includes('victory') || sectionKey.includes('triumph')) icon = '🏆';
+              else if (sectionKey.includes('components') || sectionKey.includes('elements')) icon = '🧩';
+              else if (sectionKey.includes('qualities') || sectionKey.includes('traits')) icon = '💎';
+              else if (sectionKey.includes('training') || sectionKey.includes('preparation')) icon = '🏋️';
+              else if (sectionKey.includes('obstacles') || sectionKey.includes('hindrances')) icon = '🚧';
+              else if (sectionKey.includes('nature') || sectionKey.includes('fight')) icon = '⚔️';
+              else if (sectionKey.includes('battlefield') || sectionKey.includes('arena')) icon = '🏟️';
+              else if (sectionKey.includes('weapons') || sectionKey.includes('armor')) icon = '🛡️';
+              else if (sectionKey.includes('finishing') || sectionKey.includes('completion')) icon = '🏁';
+              else if (sectionKey.includes('rewards') || sectionKey.includes('crown')) icon = '👑';
+              else if (sectionKey.includes('motivation') || sectionKey.includes('inspiration')) icon = '🌟';
+              else if (sectionKey.includes('community') || sectionKey.includes('aspects')) icon = '👥';
+              
+              return (
+                <div class="mb-12">
+                  <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                    <span class="text-3xl">{icon}</span>
+                    {sectionTitle}
+                  </h2>
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {Object.entries(sectionData).map(([subKey, subData]) => {
+                      if (!subData) return null;
+                      
+                      // Create subtitle
+                      const subTitle = subKey.replace(/([A-Z])/g, ' $1')
+                                             .replace(/^./, str => str.toUpperCase())
+                                             .trim();
+                      
+                      // Handle different data types
+                      let content = [];
+                      if (Array.isArray(subData)) {
+                        content = subData;
+                      } else if (typeof subData === 'string') {
+                        content = [subData];
+                      } else if (typeof subData === 'object') {
+                        // If it's an object, flatten it into an array
+                        content = Object.values(subData).flat().filter(Boolean);
+                      }
+                      
+                      if (content.length === 0) return null;
+                      
+                      return (
+                        <div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-6 shadow-lg border border-slate-200">
+                          <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                            <span>📌</span>
+                            {subTitle}
+                          </h3>
+                          <div class="space-y-3">
+                            {content.map((item, idx) => (
+                              <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700">{item}</span>
+                              </div>
+                            ))}
                           </div>
-                        ))}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+
+            <!-- Historical/Biblical Context Section -->
+            {(concept.detailedContent.historicalContext || concept.detailedContent.biblicalContext) && (
+              (() => {
+                const contextData = concept.detailedContent.historicalContext || concept.detailedContent.biblicalContext;
+                const hasContent = Object.keys(contextData).some(key => 
+                  contextData[key] && 
+                  ((Array.isArray(contextData[key]) && contextData[key].length > 0) || 
+                   (typeof contextData[key] === 'string' && contextData[key].trim().length > 0))
+                );
+                
+                if (!hasContent) return null;
+                
+                return (
+                  <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                      <span class="text-3xl">📚</span>
+                      {concept.detailedContent.historicalContext ? 'Historical Context' : 'Biblical Context'}
+                    </h2>
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 shadow-lg border border-amber-200">
+                      <div class="space-y-8">
+                        {Object.entries(contextData).map(([key, values]) => {
+                          if (!values || (Array.isArray(values) && values.length === 0) || (typeof values === 'string' && values.trim().length === 0)) return null;
+                          
+                          // Create subtitle
+                          const subTitle = key.replace(/([A-Z])/g, ' $1')
+                                             .replace(/^./, str => str.toUpperCase())
+                                             .trim();
+                          
+                          // Choose appropriate icon
+                          let icon = '📖';
+                          if (key.includes('ancient') || key.includes('uses')) icon = '🏺';
+                          else if (key.includes('cultural') || key.includes('significance')) icon = '🏛️';
+                          else if (key.includes('agricultural') || key.includes('background')) icon = '🌾';
+                          else if (key.includes('biblical') || key.includes('usage')) icon = '📖';
+                          else if (key.includes('athletic') || key.includes('imagery')) icon = '🏃';
+                          else if (key.includes('spiritual') || key.includes('parallels')) icon = '✨';
+                          
+                          return (
+                            <div class="border-b border-amber-200 last:border-b-0 pb-6 last:pb-0">
+                              <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                                <span>{icon}</span>
+                                {subTitle}
+                              </h3>
+                              {Array.isArray(values) ? (
+                                <div class="grid md:grid-cols-2 gap-4">
+                                  {values.map((item) => (
+                                    <div class="flex items-start gap-3">
+                                      <div class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
+                                      <span class="text-gray-700">{item}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              ) : (
+                                <p class="text-gray-700 leading-relaxed">{values}</p>
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
-                  )}
-                  
-                  {concept.detailedContent.historicalContext.culturalSignificance && (
-                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border border-amber-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🏛️</span>
-                        Cultural Significance
-                      </h3>
-                      <p class="text-gray-700 leading-relaxed">
-                        {concept.detailedContent.historicalContext.culturalSignificance}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </div>
+                  </div>
+                );
+              })()
             )}
 
             <!-- Spiritual Meaning Section -->
@@ -206,57 +320,45 @@ const { concept } = Astro.props;
                   <span class="text-3xl">✨</span>
                   Spiritual Meaning
                 </h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                  {concept.detailedContent.spiritualMeaning.preservation && (
-                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-purple-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🛡️</span>
-                        Preservation
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.spiritualMeaning.preservation.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Object.entries(concept.detailedContent.spiritualMeaning).map(([key, values]) => {
+                    if (!values || values.length === 0) return null;
+                    
+                    // Create a title from the key
+                    const title = key.replace(/([A-Z])/g, ' $1')
+                                     .replace(/^./, str => str.toUpperCase())
+                                     .trim();
+                    
+                    // Choose an appropriate icon based on the key
+                    let icon = '🌟';
+                    if (key.includes('preservation') || key.includes('protect')) icon = '🛡️';
+                    else if (key.includes('flavor') || key.includes('taste')) icon = '🎨';
+                    else if (key.includes('sowing') || key.includes('reap')) icon = '�';
+                    else if (key.includes('timing') || key.includes('patience')) icon = '⏰';
+                    else if (key.includes('abundance') || key.includes('fruit')) icon = '🍇';
+                    else if (key.includes('judgment') || key.includes('reward')) icon = '⚖️';
+                    else if (key.includes('illumination') || key.includes('light')) icon = '💡';
+                    else if (key.includes('guidance') || key.includes('direction')) icon = '🧭';
+                    else if (key.includes('exposure') || key.includes('truth')) icon = '🔍';
+                    else if (key.includes('witness') || key.includes('testimony')) icon = '📢';
+                    
+                    return (
+                      <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-purple-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                          <span>{icon}</span>
+                          {title}
+                        </h3>
+                        <div class="space-y-3">
+                          {values.map((item) => (
+                            <div class="flex items-start gap-3">
+                              <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <span class="text-gray-700">{item}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.spiritualMeaning.flavor && (
-                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-purple-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🎨</span>
-                        Flavor
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.spiritualMeaning.flavor.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.spiritualMeaning.distinctiveness && (
-                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-purple-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🌟</span>
-                        Distinctiveness
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.spiritualMeaning.distinctiveness.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -268,102 +370,91 @@ const { concept } = Astro.props;
                   <span class="text-3xl">🛠️</span>
                   Practical Applications
                 </h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                  {concept.detailedContent.practicalApplications.personalLife && (
-                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 shadow-lg border border-green-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>👤</span>
-                        Personal Life
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.practicalApplications.personalLife.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Object.entries(concept.detailedContent.practicalApplications).map(([key, values]) => {
+                    if (!values || values.length === 0) return null;
+                    
+                    // Create a title from the key
+                    const title = key.replace(/([A-Z])/g, ' $1')
+                                     .replace(/^./, str => str.toUpperCase())
+                                     .trim();
+                    
+                    // Choose an appropriate icon based on the key
+                    let icon = '💡';
+                    if (key.includes('personal') || key.includes('life')) icon = '👤';
+                    else if (key.includes('work') || key.includes('career')) icon = '💼';
+                    else if (key.includes('community') || key.includes('social')) icon = '🏘️';
+                    else if (key.includes('patient') || key.includes('patience')) icon = '⏳';
+                    else if (key.includes('preparing') || key.includes('preparation')) icon = '🎯';
+                    else if (key.includes('timing') || key.includes('understanding')) icon = '🧠';
+                    else if (key.includes('daily') || key.includes('routine')) icon = '📅';
+                    else if (key.includes('spiritual') || key.includes('discipline')) icon = '🙏';
+                    else if (key.includes('relationship') || key.includes('building')) icon = '🤝';
+                    
+                    return (
+                      <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 shadow-lg border border-green-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                          <span>{icon}</span>
+                          {title}
+                        </h3>
+                        <div class="space-y-3">
+                          {values.map((item) => (
+                            <div class="flex items-start gap-3">
+                              <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <span class="text-gray-700">{item}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.practicalApplications.workplace && (
-                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 shadow-lg border border-green-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>💼</span>
-                        Workplace
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.practicalApplications.workplace.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.practicalApplications.community && (
-                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 shadow-lg border border-green-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🏘️</span>
-                        Community
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.practicalApplications.community.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    );
+                  })}
                 </div>
               </div>
             )}
 
             <!-- Challenges Section -->
-            {concept.detailedContent.challenges && (
+            {(concept.detailedContent.challenges || concept.detailedContent.challengesAndObstacles) && (
               <div class="mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
                   <span class="text-3xl">⚠️</span>
-                  Challenges & Prevention
+                  Challenges & Obstacles
                 </h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                  {concept.detailedContent.challenges.losingSaltiness && (
-                    <div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-red-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>🔴</span>
-                        Common Challenges
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.challenges.losingSaltiness.map((challenge) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{challenge}</span>
-                          </div>
-                        ))}
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Object.entries(concept.detailedContent.challenges || concept.detailedContent.challengesAndObstacles).map(([key, values]) => {
+                    if (!values || values.length === 0) return null;
+                    
+                    // Create a title from the key
+                    const title = key.replace(/([A-Z])/g, ' $1')
+                                     .replace(/^./, str => str.toUpperCase())
+                                     .trim();
+                    
+                    // Choose an appropriate icon based on the key
+                    let icon = '⚠️';
+                    if (key.includes('losing') || key.includes('prevention')) icon = '🔴';
+                    else if (key.includes('impatience') || key.includes('patience')) icon = '⏰';
+                    else if (key.includes('discouragement') || key.includes('discourage')) icon = '😔';
+                    else if (key.includes('unrealistic') || key.includes('expectations')) icon = '🎯';
+                    else if (key.includes('external') || key.includes('opposition')) icon = '🏔️';
+                    else if (key.includes('internal') || key.includes('struggle')) icon = '💭';
+                    else if (key.includes('spiritual') || key.includes('attack')) icon = '⚔️';
+                    
+                    return (
+                      <div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                          <span>{icon}</span>
+                          {title}
+                        </h3>
+                        <div class="space-y-3">
+                          {values.map((item) => (
+                            <div class="flex items-start gap-3">
+                              <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <span class="text-gray-700">{item}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.challenges.prevention && (
-                    <div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-red-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>✅</span>
-                        Prevention Strategies
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.challenges.prevention.map((strategy) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{strategy}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -375,40 +466,60 @@ const { concept } = Astro.props;
                   <span class="text-3xl">📖</span>
                   Biblical Examples
                 </h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                  {concept.detailedContent.biblicalExamples.positive && (
-                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-lg border border-emerald-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>✅</span>
-                        Positive Examples
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.biblicalExamples.positive.map((example) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{example}</span>
-                          </div>
-                        ))}
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Object.entries(concept.detailedContent.biblicalExamples).map(([key, values]) => {
+                    if (!values || values.length === 0) return null;
+                    
+                    // Create a title from the key
+                    const title = key.replace(/([A-Z])/g, ' $1')
+                                     .replace(/^./, str => str.toUpperCase())
+                                     .trim();
+                    
+                    // Choose an appropriate icon and color based on the key
+                    let icon = '📖';
+                    let bgColor = 'from-emerald-50 to-teal-50';
+                    let borderColor = 'border-emerald-200';
+                    let dotColor = 'bg-emerald-500';
+                    
+                    if (key.includes('positive') || key.includes('faithful')) {
+                      icon = '✅';
+                      bgColor = 'from-emerald-50 to-teal-50';
+                      borderColor = 'border-emerald-200';
+                      dotColor = 'bg-emerald-500';
+                    } else if (key.includes('negative') || key.includes('warning')) {
+                      icon = '❌';
+                      bgColor = 'from-red-50 to-pink-50';
+                      borderColor = 'border-red-200';
+                      dotColor = 'bg-red-500';
+                    } else if (key.includes('old') || key.includes('testament')) {
+                      icon = '📜';
+                      bgColor = 'from-amber-50 to-orange-50';
+                      borderColor = 'border-amber-200';
+                      dotColor = 'bg-amber-500';
+                    } else if (key.includes('new') || key.includes('testament')) {
+                      icon = '✨';
+                      bgColor = 'from-blue-50 to-indigo-50';
+                      borderColor = 'border-blue-200';
+                      dotColor = 'bg-blue-500';
+                    }
+                    
+                    return (
+                      <div class={`bg-gradient-to-r ${bgColor} rounded-2xl p-6 shadow-lg border ${borderColor}`}>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                          <span>{icon}</span>
+                          {title}
+                        </h3>
+                        <div class="space-y-3">
+                          {values.map((example) => (
+                            <div class="flex items-start gap-3">
+                              <div class={`w-2 h-2 ${dotColor} rounded-full mt-2 flex-shrink-0`}></div>
+                              <span class="text-gray-700">{example}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  
-                  {concept.detailedContent.biblicalExamples.negative && (
-                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-lg border border-emerald-200">
-                      <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                        <span>❌</span>
-                        Negative Examples
-                      </h3>
-                      <div class="space-y-3">
-                        {concept.detailedContent.biblicalExamples.negative.map((example) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{example}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -421,45 +532,186 @@ const { concept } = Astro.props;
                   Modern Relevance
                 </h2>
                 <div class="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-8 shadow-lg border border-sky-200">
-                  <div class="grid md:grid-cols-2 gap-6">
-                    {concept.detailedContent.modernRelevance.today && (
-                      <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                          <span>📱</span>
-                          Today's World
-                        </h3>
-                        <div class="space-y-3">
-                                                  {concept.detailedContent.modernRelevance.today.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
+                  <div class="space-y-8">
+                    {Object.entries(concept.detailedContent.modernRelevance).map(([key, values]) => {
+                      if (!values || values.length === 0) return null;
+                      
+                      // Create a title from the key
+                      const title = key.replace(/([A-Z])/g, ' $1')
+                                       .replace(/^./, str => str.toUpperCase())
+                                       .trim();
+                      
+                      // Choose an appropriate icon based on the key
+                      let icon = '🌍';
+                      if (key.includes('today') || key.includes('current')) icon = '📱';
+                      else if (key.includes('future') || key.includes('implications')) icon = '🚀';
+                      else if (key.includes('instant') || key.includes('gratification')) icon = '⚡';
+                      else if (key.includes('spiritual') || key.includes('investment')) icon = '💎';
+                      else if (key.includes('ministry') || key.includes('effectiveness')) icon = '⛪';
+                      else if (key.includes('technology') || key.includes('digital')) icon = '💻';
+                      else if (key.includes('entertainment') || key.includes('media')) icon = '🎬';
+                      else if (key.includes('workplace') || key.includes('work')) icon = '💼';
+                      else if (key.includes('relationship') || key.includes('social')) icon = '🤝';
+                      
+                      return (
+                        <div class="border-b border-sky-200 last:border-b-0 pb-6 last:pb-0">
+                          <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                            <span class="text-2xl">{icon}</span>
+                            {title}
+                          </h3>
+                          <div class="grid md:grid-cols-2 gap-4">
+                            {values.map((item) => (
+                              <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700">{item}</span>
+                              </div>
+                            ))}
                           </div>
-                        ))}
                         </div>
-                      </div>
-                    )}
-                    
-                    {concept.detailedContent.modernRelevance.future && (
-                      <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                          <span>🚀</span>
-                          Future Implications
-                        </h3>
-                        <div class="space-y-3">
-                                                  {concept.detailedContent.modernRelevance.future.map((item) => (
-                          <div class="flex items-start gap-3">
-                            <div class="w-2 h-2 bg-sky-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <span class="text-gray-700">{item}</span>
-                          </div>
-                        ))}
-                        </div>
-                      </div>
-                    )}
+                      );
+                    })}
                   </div>
                 </div>
               </div>
             )}
+
+            <!-- Encouragement and Motivation Section -->
+            {concept.detailedContent.encouragementAndMotivation && (
+              <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+                  <span class="text-3xl">💪</span>
+                  Encouragement & Motivation
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Object.entries(concept.detailedContent.encouragementAndMotivation).map(([key, values]) => {
+                    if (!values || values.length === 0) return null;
+                    
+                    // Create a title from the key
+                    const title = key.replace(/([A-Z])/g, ' $1')
+                                     .replace(/^./, str => str.toUpperCase())
+                                     .trim();
+                    
+                    // Choose an appropriate icon based on the key
+                    let icon = '💪';
+                    if (key.includes('god') || key.includes('promise')) icon = '🤝';
+                    else if (key.includes('eternal') || key.includes('perspective')) icon = '⭐';
+                    else if (key.includes('immediate') || key.includes('benefits')) icon = '🎁';
+                    else if (key.includes('presence') || key.includes('comfort')) icon = '🤗';
+                    else if (key.includes('reward') || key.includes('inheritance')) icon = '👑';
+                    
+                    return (
+                      <div class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-6 shadow-lg border border-yellow-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                          <span>{icon}</span>
+                          {title}
+                        </h3>
+                        <div class="space-y-3">
+                          {values.map((item) => (
+                            <div class="flex items-start gap-3">
+                              <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <span class="text-gray-700">{item}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </>
+        )}
+
+        <!-- Key Verses Section (outside detailedContent) -->
+        {concept.verses && concept.verses.length > 0 && (
+          <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+              <span class="text-3xl">📖</span>
+              Key Verses
+            </h2>
+            <div class="space-y-8">
+              {concept.verses.map((verse, index) => (
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-indigo-200">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-3 flex items-center gap-3">
+                      <span>📜</span>
+                      {verse.reference}
+                    </h3>
+                    <blockquote class="text-lg text-gray-700 italic leading-relaxed pl-4 border-l-4 border-indigo-300">
+                      "{verse.text}"
+                    </blockquote>
+                  </div>
+                  
+                  {verse.historicalContext && (
+                    <div class="mb-6">
+                      <h4 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                        <span>🏛️</span>
+                        Historical Context
+                      </h4>
+                      <div class="grid md:grid-cols-2 gap-4">
+                        {Object.entries(verse.historicalContext).map(([key, value]) => (
+                          <div class="bg-white rounded-lg p-4 shadow-sm border border-indigo-100">
+                            <span class="font-medium text-indigo-700 capitalize">
+                              {key.replace(/([A-Z])/g, ' $1').trim()}:
+                            </span>
+                            <p class="text-gray-700 mt-1">{value}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {verse.theologicalInsights && (
+                    <div>
+                      <h4 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                        <span>✨</span>
+                        Theological Insights
+                      </h4>
+                      <div class="grid md:grid-cols-2 gap-4">
+                        {Object.entries(verse.theologicalInsights).map(([key, value]) => (
+                          <div class="bg-white rounded-lg p-4 shadow-sm border border-indigo-100">
+                            <span class="font-medium text-indigo-700 capitalize">
+                              {key.replace(/([A-Z])/g, ' $1').trim()}:
+                            </span>
+                            <p class="text-gray-700 mt-1">{value}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Prayer Section (outside detailedContent) -->
+        {concept.prayer && concept.prayer.length > 0 && (
+          <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center gap-3">
+              <span class="text-3xl">🙏</span>
+              Prayer
+            </h2>
+            <div class="bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl p-8 shadow-lg border border-rose-200">
+              <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-6">
+                  <div class="w-16 h-16 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-rose-800">A Prayer for This Concept</h3>
+                </div>
+                <div class="space-y-4">
+                  {concept.prayer.map((line, index) => (
+                    <p class="text-lg text-gray-700 leading-relaxed text-center italic">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         )}
 
         {!concept.detailedContent && (
